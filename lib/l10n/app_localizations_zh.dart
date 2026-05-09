@@ -950,7 +950,7 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get description =>
-      '提示正文 (支持显示中文，多行文字需直接输入回车，无需使用转义序列\"\n\"，注意iOS端庭院内无法查看提示内容)';
+      '提示正文 (支持显示中文，多行文字需直接输入回车，无需使用转义序列，注意iOS端庭院内无法查看提示内容)';
 
   @override
   String get levelNumber => '关卡序号';
@@ -990,7 +990,7 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get beatTheLevelDialogHint =>
-      '支持显示中文，多行文字需直接输入回车，无需使用转义序列\n，注意iOS端庭院内无法查看提示内容。';
+      '支持显示中文，多行文字需直接输入回车，无需使用转义序列，注意iOS端庭院内无法查看提示内容。';
 
   @override
   String get levelHintText => '关卡提示文字';

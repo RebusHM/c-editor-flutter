@@ -973,7 +973,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get description =>
-      'Description (supports Chinese; press Enter for line breaks, no escape sequences needed. Note: not visible in Creative Courtyard on iOS)';
+      'Trip Description (supports Chinese; press Enter for line breaks, no escape sequences needed. Note: not visible in Creative Courtyard on iOS)';
 
   @override
   String get levelNumber => 'Level number';

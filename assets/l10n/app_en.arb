@@ -1303,7 +1303,7 @@
   "dropConfigPlantFood": "Drop config (Plant Food)",
   "zombiesCarryingPlants": "Zombies carrying seed packets",
   "zombiesCarryingPlantFood": "Zombies carrying Plant Food",
-  "description": "Description (supports Chinese; press Enter for line breaks, no escape sequences needed. Note: not visible in Creative Courtyard on iOS)",
+  "description": "Trip Description (supports Chinese; press Enter for line breaks, no escape sequences needed. Note: not visible in Creative Courtyard on iOS)",
   "descriptiveName": "Descriptive Name",
   "count": "Count",
   "targetDistance": "Flowerbed Distance (TargetDistance) — Distance from the left edge (in columns); higher values are closer to the house; supports decimals",
