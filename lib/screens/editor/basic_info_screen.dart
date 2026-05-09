@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:z_editor/data/pvz_models.dart';
-import 'package:z_editor/data/music_suffix_catalog.dart';
 import 'package:z_editor/data/rtid_parser.dart';
 import 'package:z_editor/data/repository/stage_repository.dart';
 import 'package:z_editor/l10n/app_localizations.dart';
@@ -18,17 +17,6 @@ const _musicTypeOptions = [
   ('MiniGame_E', 'MiniGame_E'),
 ];
 
-const _ambientAudioValues = [
-  '',
-  'Amb_Tutorial_Garden_BG_LP',
-  'Egypt_Wind_BG',
-  'PVZ_Pirate_BG_WaterBubble_LP_02',
-  'WildWest_Wind',
-  'Atlantis_Currents_BG',
-];
-
-String _ambientAudioResourceKey(String value) =>
-    value.isEmpty ? 'ambientAudio_default' : 'ambientAudio_$value';
 const _lootOptions = [
   ('RTID(DefaultLoot@LevelModules)', 'DefaultLoot'),
   ('RTID(NoLoot@LevelModules)', 'NoLoot'),
@@ -49,8 +37,7 @@ class BasicInfoScreen extends StatefulWidget {
     required this.levelFile,
     required this.levelDef,
     required this.onBack,
-    required this.onStageTap,
-    this.onMusicSuffixTap,
+    required     this.onStageTap,
     required this.onChanged,
   });
 
@@ -61,10 +48,6 @@ class BasicInfoScreen extends StatefulWidget {
     LevelDefinitionData levelDef,
     VoidCallback onStagePicked,
   )? onStageTap;
-  final Future<void> Function(
-    LevelDefinitionData levelDef,
-    VoidCallback onMusicSuffixPicked,
-  )? onMusicSuffixTap;
   final VoidCallback onChanged;
 
   @override
@@ -134,10 +117,6 @@ class _BasicInfoScreenState extends State<BasicInfoScreen> {
     final def = widget.levelDef;
     final theme = Theme.of(context);
     final stageInfo = RtidParser.parse(def.stageModule);
-    final musicSuffixName = ResourceNames.lookup(
-      context,
-      MusicSuffixCatalog.resourceKey(def.musicSuffix),
-    );
     final isDesktop = theme.platform == TargetPlatform.windows ||
         theme.platform == TargetPlatform.macOS ||
         theme.platform == TargetPlatform.linux;
@@ -320,80 +299,6 @@ class _BasicInfoScreenState extends State<BasicInfoScreen> {
             ),
             const SizedBox(height: 12),
             Card(
-              child: Material(
-                color: Colors.transparent,
-                child: widget.onMusicSuffixTap == null
-                    ? Padding(
-                        padding: const EdgeInsets.all(12),
-                        child: _musicSuffixRow(
-                          context,
-                          def: def,
-                          l10n: l10n,
-                          theme: theme,
-                          musicSuffixName: musicSuffixName,
-                          showChevron: false,
-                        ),
-                      )
-                    : InkWell(
-                        onTap: () {
-                          widget.onMusicSuffixTap!.call(def, () {
-                            if (mounted) setState(() {});
-                          });
-                        },
-                        borderRadius: BorderRadius.circular(12),
-                        child: Padding(
-                          padding: const EdgeInsets.all(12),
-                          child: _musicSuffixRow(
-                            context,
-                            def: def,
-                            l10n: l10n,
-                            theme: theme,
-                            musicSuffixName: musicSuffixName,
-                            showChevron: true,
-                          ),
-                        ),
-                      ),
-              ),
-            ),
-            const SizedBox(height: 12),
-            Card(
-              child: Padding(
-                padding: const EdgeInsets.all(16),
-                child: DropdownButtonFormField<String>(
-                  initialValue: _ambientAudioValues.contains(def.ambientAudioSuffix)
-                      ? def.ambientAudioSuffix
-                      : '',
-                  decoration: editorInputDecoration(
-                    context,
-                    labelText:
-                        '${l10n?.ambientAudioSuffix ?? 'Ambient audio suffix'} (AmbientAudioSuffix)',
-                    focusColor: theme.colorScheme.primary,
-                  ),
-                  items: _ambientAudioValues.map((v) {
-                    final label =
-                        ResourceNames.lookup(context, _ambientAudioResourceKey(v));
-                    return DropdownMenuItem<String>(
-                      value: v,
-                      child: Text(
-                        v.isEmpty ? label : '$label • $v',
-                        maxLines: 1,
-                        overflow: TextOverflow.ellipsis,
-                      ),
-                    );
-                  }).toList(),
-                  onChanged: (v) {
-                    if (v != null) {
-                      setState(() {
-                        def.ambientAudioSuffix = v;
-                        _sync();
-                      });
-                    }
-                  },
-                ),
-              ),
-            ),
-            const SizedBox(height: 12),
-            Card(
               child: Padding(
                 padding: const EdgeInsets.all(16),
                 child: DropdownButtonFormField<String>(
@@ -516,83 +421,3 @@ extension _FirstOrNull<E> on Iterable<E> {
   }
 }
 
-Widget _musicSuffixRow(
-  BuildContext context, {
-  required LevelDefinitionData def,
-  required AppLocalizations? l10n,
-  required ThemeData theme,
-  required String musicSuffixName,
-  required bool showChevron,
-}) {
-  return Row(
-    children: [
-      ClipRRect(
-        borderRadius: BorderRadius.circular(8),
-        child: SizedBox(
-          width: 56,
-          height: 56,
-          child: () {
-            if (def.musicSuffix.isEmpty) {
-              return const AssetImageWidget(
-                assetPath: MusicSuffixCatalog.unknownIconAsset,
-                width: 56,
-                height: 56,
-                fit: BoxFit.cover,
-              );
-            }
-            final alias = MusicSuffixCatalog.stageAliasForIcon(def.musicSuffix);
-            final iconName = alias == null
-                ? null
-                : StageRepository.allItems
-                    .where((s) => s.alias == alias)
-                    .firstOrNull
-                    ?.iconName;
-            if (iconName != null) {
-              final path = 'assets/images/stages/$iconName';
-              return AssetImageWidget(
-                assetPath: path,
-                altCandidates: imageAltCandidates(path),
-                width: 56,
-                height: 56,
-                fit: BoxFit.cover,
-              );
-            }
-            return const AssetImageWidget(
-              assetPath: MusicSuffixCatalog.unknownIconAsset,
-              width: 56,
-              height: 56,
-              fit: BoxFit.cover,
-            );
-          }(),
-        ),
-      ),
-      const SizedBox(width: 16),
-      Expanded(
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            Text(
-              '${l10n?.musicSuffix ?? 'Music suffix'} (MusicSuffix)',
-              style: theme.textTheme.bodySmall?.copyWith(
-                color: theme.colorScheme.onSurfaceVariant,
-              ),
-            ),
-            Text(
-              musicSuffixName,
-              style: theme.textTheme.titleMedium,
-            ),
-            if (def.musicSuffix.isNotEmpty)
-              Text(
-                def.musicSuffix,
-                style: theme.textTheme.bodySmall?.copyWith(
-                  color: theme.colorScheme.onSurfaceVariant,
-                ),
-              ),
-          ],
-        ),
-      ),
-      if (showChevron) const Icon(Icons.arrow_forward_ios, size: 16),
-    ],
-  );
-}

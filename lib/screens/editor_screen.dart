@@ -100,7 +100,6 @@ import 'package:z_editor/screens/select/module_selection_screen.dart';
 import 'package:z_editor/screens/select/plant_selection_screen.dart';
 import 'package:z_editor/screens/select/zombie_selection_screen.dart';
 import 'package:z_editor/screens/select/tool_selection_screen.dart';
-import 'package:z_editor/screens/select/music_suffix_selection_screen.dart';
 import 'package:z_editor/screens/select/stage_selection_screen.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:z_editor/bloc/editor/editor_cubit.dart';
@@ -458,10 +457,6 @@ class _EditorScreenState extends State<EditorScreen> {
             levelDef: levelDef,
             onStagePicked: onStagePicked,
           ),
-          onMusicSuffixTap: (levelDef, onPicked) => _openMusicSuffixSelection(
-            levelDef: levelDef,
-            onPicked: onPicked,
-          ),
           onChanged: _markDirty,
         ),
       ),
@@ -526,35 +521,6 @@ class _EditorScreenState extends State<EditorScreen> {
             Navigator.pop(stageRouteContext);
           },
           onBack: () => Navigator.pop(stageRouteContext),
-        ),
-      ),
-    );
-  }
-
-  Future<void> _openMusicSuffixSelection({
-    required LevelDefinitionData levelDef,
-    VoidCallback? onPicked,
-  }) async {
-    if (_ec.state.levelFile == null) return;
-    await Navigator.push<void>(
-      context,
-      MaterialPageRoute<void>(
-        builder: (routeContext) => MusicSuffixSelectionScreen(
-          currentCodename: levelDef.musicSuffix,
-          onBack: () => Navigator.pop(routeContext),
-          onCodenameSelected: (code) {
-            levelDef.musicSuffix = code;
-            for (final o in _ec.state.levelFile!.objects) {
-              if (o.objClass == 'LevelDefinition') {
-                o.objData = levelDef.toJson();
-                break;
-              }
-            }
-            _markDirty();
-            onPicked?.call();
-            if (!mounted) return;
-            Navigator.pop(routeContext);
-          },
         ),
       ),
     );
