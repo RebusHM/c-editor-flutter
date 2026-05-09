@@ -51,6 +51,7 @@ flutter:
     - assets/images/plants/
     - assets/images/zombies/
     - assets/images/stages/
+    - assets/images/music_suffixes/
     - assets/images/tags/
     - assets/images/griditems/
     - assets/images/tools/
