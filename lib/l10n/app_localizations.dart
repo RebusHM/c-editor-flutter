@@ -673,7 +673,7 @@ abstract class AppLocalizations {
   /// No description provided for @feature2.
   ///
   /// In en, this message translates to:
-  /// **'Multi-mode: I, Zombie, Vasebreaker, Last Stand, Zomboss battle, and more.'**
+  /// **'Multi-mode: I, Zombie, Vasebreaker, Last Stand, ZombossMech battle, and more.'**
   String get feature2;
 
   /// No description provided for @feature3.
@@ -814,11 +814,17 @@ abstract class AppLocalizations {
   /// **'Vasebreaker level template'**
   String get templateVaseBreakerExample;
 
-  /// No description provided for @templateZombossExample.
+  /// No description provided for @templateZombossMechExample.
+  ///
+  /// In en, this message translates to:
+  /// **'ZombossMech battle level template'**
+  String get templateZombossMechExample;
+
+  /// No description provided for @templateZombossBattleExample.
   ///
   /// In en, this message translates to:
   /// **'Zomboss battle level template'**
-  String get templateZombossExample;
+  String get templateZombossBattleExample;
 
   /// No description provided for @templateCustomZombieExample.
   ///
@@ -1288,11 +1294,17 @@ abstract class AppLocalizations {
   /// **'Vasebreaker'**
   String get vaseBreaker;
 
-  /// No description provided for @zomboss.
+  /// No description provided for @zombossMech.
+  ///
+  /// In en, this message translates to:
+  /// **'ZombossMech Battle'**
+  String get zombossMech;
+
+  /// No description provided for @zombossBattle.
   ///
   /// In en, this message translates to:
   /// **'Zomboss Battle'**
-  String get zomboss;
+  String get zombossBattle;
 
   /// No description provided for @moveSourceSameAsDest.
   ///
@@ -1425,6 +1437,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Switch custom zombie'**
   String get switchCustomZombie;
+
+  /// No description provided for @switchZombie.
+  ///
+  /// In en, this message translates to:
+  /// **'Switch zombie'**
+  String get switchZombie;
 
   /// No description provided for @customZombieAppearanceLocation.
   ///
@@ -2041,8 +2059,14 @@ abstract class AppLocalizations {
   /// No description provided for @conflictDesc_ZombossDeathDrop.
   ///
   /// In en, this message translates to:
-  /// **'Loot Drop in Zomboss Battle mode will prevent proper level completion.'**
+  /// **'Loot Drop in ZombossMech battle mode will prevent proper level completion.'**
   String get conflictDesc_ZombossDeathDrop;
+
+  /// No description provided for @conflictDesc_ZombossBattleDeathDrop.
+  ///
+  /// In en, this message translates to:
+  /// **'Loot Drop in Zomboss battle mode will prevent proper level completion.'**
+  String get conflictDesc_ZombossBattleDeathDrop;
 
   /// No description provided for @conflictDesc_WinConditionExclusive.
   ///
@@ -2707,26 +2731,38 @@ abstract class AppLocalizations {
   /// No description provided for @moduleTitle_ZombossBattleModuleProperties.
   ///
   /// In en, this message translates to:
-  /// **'Zomboss Battle'**
+  /// **'ZombossMech Battle'**
   String get moduleTitle_ZombossBattleModuleProperties;
 
   /// No description provided for @moduleDesc_ZombossBattleModuleProperties.
   ///
   /// In en, this message translates to:
-  /// **'Configures Zomboss parameters and types'**
+  /// **'Configures ZombossMech parameters and types'**
   String get moduleDesc_ZombossBattleModuleProperties;
 
   /// No description provided for @moduleTitle_ZombossBattleIntroProperties.
   ///
   /// In en, this message translates to:
-  /// **'Zomboss Intro'**
+  /// **'ZombossMech Intro'**
   String get moduleTitle_ZombossBattleIntroProperties;
 
   /// No description provided for @moduleDesc_ZombossBattleIntroProperties.
   ///
   /// In en, this message translates to:
-  /// **'Controls boss cutscenes and health bar display'**
+  /// **'Controls ZombossMech cutscenes and health bar display'**
   String get moduleDesc_ZombossBattleIntroProperties;
+
+  /// No description provided for @moduleTitle_ZombossLastStandMinigameProperties.
+  ///
+  /// In en, this message translates to:
+  /// **'Zomboss Battle'**
+  String get moduleTitle_ZombossLastStandMinigameProperties;
+
+  /// No description provided for @moduleDesc_ZombossLastStandMinigameProperties.
+  ///
+  /// In en, this message translates to:
+  /// **'Configures non-mech Zomboss last-stand battles (Kongfu, Qin, etc.)'**
+  String get moduleDesc_ZombossLastStandMinigameProperties;
 
   /// No description provided for @moduleTitle_SeedRainProperties.
   ///
@@ -5452,6 +5488,12 @@ abstract class AppLocalizations {
   /// **'Rows are 1-based: Row 1 = top lane, Row 5/6 = bottom lane. Standard lawns: 5 rows. Underwater World lawns: 6 rows.'**
   String get eventHelpSchoolBusRows;
 
+  /// No description provided for @eventHelpSchoolBusType.
+  ///
+  /// In en, this message translates to:
+  /// **'Type selects the ice cream van variant. Normal (schoolbus_normal) is the standard van. Special (schoolbus_special) shows Bubble Gun Imps and Lollipop Zombies on the van; they use their abilities while the van is moving.'**
+  String get eventHelpSchoolBusType;
+
   /// No description provided for @schoolBusHelpZombies.
   ///
   /// In en, this message translates to:
@@ -5475,6 +5517,18 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Type'**
   String get schoolBusType;
+
+  /// No description provided for @schoolBusTypeNormal.
+  ///
+  /// In en, this message translates to:
+  /// **'Normal'**
+  String get schoolBusTypeNormal;
+
+  /// No description provided for @schoolBusTypeSpecial.
+  ///
+  /// In en, this message translates to:
+  /// **'Special'**
+  String get schoolBusTypeSpecial;
 
   /// No description provided for @schoolBusHitPoints.
   ///
@@ -6994,11 +7048,17 @@ abstract class AppLocalizations {
   /// **'Edit preset zombie: {name}'**
   String editPresetZombie(Object name);
 
-  /// No description provided for @missingZombossModule.
+  /// No description provided for @missingZombossMechModule.
   ///
   /// In en, this message translates to:
-  /// **'Missing Zomboss Battle module (ZombossBattleModuleProperties)'**
-  String get missingZombossModule;
+  /// **'Missing ZombossMech battle module (ZombossBattleModuleProperties)'**
+  String get missingZombossMechModule;
+
+  /// No description provided for @missingZombossBattleModule.
+  ///
+  /// In en, this message translates to:
+  /// **'Missing Zomboss battle module (ZombossLastStandMinigameProperties)'**
+  String get missingZombossBattleModule;
 
   /// No description provided for @challengeNoConfig.
   ///
@@ -7285,20 +7345,152 @@ abstract class AppLocalizations {
   /// No description provided for @missingIntroModuleHint.
   ///
   /// In en, this message translates to:
-  /// **'Level is missing Zomboss Intro module (ZombossBattleIntroProperties). The level may not function correctly. Please add the module and reselect the Zomboss.'**
+  /// **'Level is missing ZombossMech intro module (ZombossBattleIntroProperties). The level may not function correctly. Please add the module and reselect the ZombossMech.'**
   String get missingIntroModuleHint;
 
-  /// No description provided for @zombossType.
+  /// No description provided for @zombossMechType.
   ///
   /// In en, this message translates to:
-  /// **'Zomboss type'**
-  String get zombossType;
+  /// **'ZombossMech type'**
+  String get zombossMechType;
 
-  /// No description provided for @unknownZomboss.
+  /// No description provided for @unknownZombossMech.
   ///
   /// In en, this message translates to:
-  /// **'Unknown Zomboss'**
-  String get unknownZomboss;
+  /// **'Unknown ZombossMech'**
+  String get unknownZombossMech;
+
+  /// No description provided for @zombossMechSelection.
+  ///
+  /// In en, this message translates to:
+  /// **'ZombossMech selection'**
+  String get zombossMechSelection;
+
+  /// No description provided for @zombossMechBaseLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Base ZombossMech'**
+  String get zombossMechBaseLabel;
+
+  /// No description provided for @zombossMechBaseHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Mech boss family (Egypt, Future, Memory Lane robot, etc.). Changing this updates the available variations below.'**
+  String get zombossMechBaseHint;
+
+  /// No description provided for @zombossMechVariationLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Variation'**
+  String get zombossMechVariationLabel;
+
+  /// No description provided for @zombossMechVariationHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Specific mech type used in-game (ZombossMechType). Options depend on the base ZombossMech selected above. Phase count and spawn position sync automatically.'**
+  String get zombossMechVariationHint;
+
+  /// No description provided for @zombossBattleSelection.
+  ///
+  /// In en, this message translates to:
+  /// **'Zomboss selection'**
+  String get zombossBattleSelection;
+
+  /// No description provided for @zombossBattleBaseLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Base zomboss'**
+  String get zombossBattleBaseLabel;
+
+  /// No description provided for @zombossBattleBaseHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Boss family (Kongfu blade, Qin Shi Huang, etc.). Changing this updates bundled resource groups automatically.'**
+  String get zombossBattleBaseHint;
+
+  /// No description provided for @zombossBattleVariationLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Variation'**
+  String get zombossBattleVariationLabel;
+
+  /// No description provided for @zombossBattleVariationHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Specific Zomboss type used in-game (ZombossTypeName). Options depend on the base zomboss selected above.'**
+  String get zombossBattleVariationHint;
+
+  /// No description provided for @zombossBattleStartingSunLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Starting sun (StartingSun)'**
+  String get zombossBattleStartingSunLabel;
+
+  /// No description provided for @zombossBattleStartingSunHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Sun available when the battle begins.'**
+  String get zombossBattleStartingSunHint;
+
+  /// No description provided for @zombossBattleStartingPlantfoodLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Starting plant food (StartingPlantfood)'**
+  String get zombossBattleStartingPlantfoodLabel;
+
+  /// No description provided for @zombossBattleStartingPlantfoodHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Plant Food available when the battle begins.'**
+  String get zombossBattleStartingPlantfoodHint;
+
+  /// No description provided for @zombossBattleInitialGridColLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Spawn column (ZombossInitialGridCol)'**
+  String get zombossBattleInitialGridColLabel;
+
+  /// No description provided for @zombossBattleInitialGridColHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Grid column where the Zomboss appears.'**
+  String get zombossBattleInitialGridColHint;
+
+  /// No description provided for @zombossBattleInitialGridRowLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Spawn row (ZombossInitialGridRow)'**
+  String get zombossBattleInitialGridRowLabel;
+
+  /// No description provided for @zombossBattleInitialGridRowHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Grid row where the Zomboss appears.'**
+  String get zombossBattleInitialGridRowHint;
+
+  /// No description provided for @zombossBattleStartStageIndexLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Start stage (ZombossStartStageIndex)'**
+  String get zombossBattleStartStageIndexLabel;
+
+  /// No description provided for @zombossBattleStartStageIndexHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Which boss phase index the fight begins at (0 = first phase).'**
+  String get zombossBattleStartStageIndexHint;
+
+  /// No description provided for @zombossBattleSkipPlantingLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Skip planting phase (SkipPlanting)'**
+  String get zombossBattleSkipPlantingLabel;
+
+  /// No description provided for @zombossBattleSkipPlantingHint.
+  ///
+  /// In en, this message translates to:
+  /// **'When enabled, the level skips the setup/planting phase before the boss fight.'**
+  String get zombossBattleSkipPlantingHint;
 
   /// No description provided for @parameters.
   ///
@@ -8236,11 +8428,17 @@ abstract class AppLocalizations {
   /// **'By default, this module uses the game’s built-in values. You can enable custom settings to edit detailed parameters.'**
   String get sunDropperHelpParamsBody;
 
-  /// No description provided for @noZombossFound.
+  /// No description provided for @noZombossMechFound.
   ///
   /// In en, this message translates to:
-  /// **'No zomboss found'**
-  String get noZombossFound;
+  /// **'No ZombossMech found'**
+  String get noZombossMechFound;
+
+  /// No description provided for @noZombossBattleFound.
+  ///
+  /// In en, this message translates to:
+  /// **'No zomboss definitions found'**
+  String get noZombossBattleFound;
 
   /// No description provided for @searchChallengeNameOrCode.
   ///
@@ -9322,6 +9520,132 @@ abstract class AppLocalizations {
   /// **'Open Module Settings'**
   String get openModuleSettings;
 
+  /// No description provided for @moduleTitle_GlacierModuleProperties.
+  ///
+  /// In en, this message translates to:
+  /// **'Glacier Spawn'**
+  String get moduleTitle_GlacierModuleProperties;
+
+  /// No description provided for @moduleDesc_GlacierModuleProperties.
+  ///
+  /// In en, this message translates to:
+  /// **'Zombie spawn weights for Ice Age Zomboss glacier blocks (6 columns from the left)'**
+  String get moduleDesc_GlacierModuleProperties;
+
+  /// No description provided for @glacierModuleTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Glacier module'**
+  String get glacierModuleTitle;
+
+  /// No description provided for @glacierModuleHelpTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Glacier module'**
+  String get glacierModuleHelpTitle;
+
+  /// No description provided for @glacierModuleHelpOverviewBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Configures which zombies can emerge from glacier blocks when the Ice Age Zomboss destroys them. Place this module at the start of the level Modules list. Without it, glacier blocks will not spawn zombies.'**
+  String get glacierModuleHelpOverviewBody;
+
+  /// No description provided for @glacierModuleHelpColumnsTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Columns and entries'**
+  String get glacierModuleHelpColumnsTitle;
+
+  /// No description provided for @glacierModuleHelpColumnsBody.
+  ///
+  /// In en, this message translates to:
+  /// **'ZombieSpawnData always has exactly six elements, one per column counting from the left edge of the lawn. Each column holds a weighted list of zombie types (TypeName), spawn weight (Weight), and level (Level, 0–10).'**
+  String get glacierModuleHelpColumnsBody;
+
+  /// No description provided for @glacierModuleHelpRequirementsTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Requirements'**
+  String get glacierModuleHelpRequirementsTitle;
+
+  /// No description provided for @glacierModuleHelpRequirementsBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Only takes effect together with the Zomboss Battle module when the selected Zomboss Mech is an Ice Age variant (zombossmech_iceage and its variations).'**
+  String get glacierModuleHelpRequirementsBody;
+
+  /// No description provided for @glacierModuleCompatibilityWarning.
+  ///
+  /// In en, this message translates to:
+  /// **'This module only works with the Zomboss Battle module and an Ice Age Zomboss Mech (zombossmech_iceage). Add or fix those settings so glacier blocks can spawn zombies.'**
+  String get glacierModuleCompatibilityWarning;
+
+  /// No description provided for @glacierModuleColumn.
+  ///
+  /// In en, this message translates to:
+  /// **'Column {columnIndex} (from left)'**
+  String glacierModuleColumn(int columnIndex);
+
+  /// No description provided for @glacierModuleEntryCount.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, one{1 entry} other{{count} entries}}'**
+  String glacierModuleEntryCount(int count);
+
+  /// No description provided for @glacierModuleEntryLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Entry {index}'**
+  String glacierModuleEntryLabel(int index);
+
+  /// No description provided for @glacierModuleNoEntries.
+  ///
+  /// In en, this message translates to:
+  /// **'No zombie entries for this column.'**
+  String get glacierModuleNoEntries;
+
+  /// No description provided for @glacierModuleAddEntry.
+  ///
+  /// In en, this message translates to:
+  /// **'Add zombie entry'**
+  String get glacierModuleAddEntry;
+
+  /// No description provided for @glacierModuleSelectZombie.
+  ///
+  /// In en, this message translates to:
+  /// **'Select zombie'**
+  String get glacierModuleSelectZombie;
+
+  /// No description provided for @glacierModuleEmptyType.
+  ///
+  /// In en, this message translates to:
+  /// **'No zombie selected'**
+  String get glacierModuleEmptyType;
+
+  /// No description provided for @glacierModuleWeight.
+  ///
+  /// In en, this message translates to:
+  /// **'Weight'**
+  String get glacierModuleWeight;
+
+  /// No description provided for @glacierModuleWeightTooltip.
+  ///
+  /// In en, this message translates to:
+  /// **'Relative spawn weight for this zombie in this column.'**
+  String get glacierModuleWeightTooltip;
+
+  /// No description provided for @glacierModuleLevel.
+  ///
+  /// In en, this message translates to:
+  /// **'Level (0–10)'**
+  String get glacierModuleLevel;
+
+  /// No description provided for @glacierModuleLevelTooltip.
+  ///
+  /// In en, this message translates to:
+  /// **'Zombie level from 0 to 10.'**
+  String get glacierModuleLevelTooltip;
+
   /// No description provided for @moduleTitle_HeianWindModuleProperties.
   ///
   /// In en, this message translates to:
@@ -9843,6 +10167,288 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'↳'**
   String get jsonViewerLineContinuation;
+
+  /// No description provided for @zombossMechCustomVariation.
+  ///
+  /// In en, this message translates to:
+  /// **'Custom'**
+  String get zombossMechCustomVariation;
+
+  /// No description provided for @editCustomZombossMech.
+  ///
+  /// In en, this message translates to:
+  /// **'Edit'**
+  String get editCustomZombossMech;
+
+  /// No description provided for @customZombossMechProperties.
+  ///
+  /// In en, this message translates to:
+  /// **'Custom ZombossMech properties'**
+  String get customZombossMechProperties;
+
+  /// No description provided for @customZombossMechScalars.
+  ///
+  /// In en, this message translates to:
+  /// **'General'**
+  String get customZombossMechScalars;
+
+  /// No description provided for @customZombossMechStages.
+  ///
+  /// In en, this message translates to:
+  /// **'Battle phases'**
+  String get customZombossMechStages;
+
+  /// No description provided for @customZombossMechEditHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Edit level-local property sheet for the memo (custom) mech variation.'**
+  String get customZombossMechEditHint;
+
+  /// No description provided for @zombossMechMinColumn.
+  ///
+  /// In en, this message translates to:
+  /// **'Min column'**
+  String get zombossMechMinColumn;
+
+  /// No description provided for @zombossMechMaxColumn.
+  ///
+  /// In en, this message translates to:
+  /// **'Max column'**
+  String get zombossMechMaxColumn;
+
+  /// No description provided for @zombossMechStageActions.
+  ///
+  /// In en, this message translates to:
+  /// **'Actions'**
+  String get zombossMechStageActions;
+
+  /// No description provided for @zombossMechActions.
+  ///
+  /// In en, this message translates to:
+  /// **'Actions'**
+  String get zombossMechActions;
+
+  /// No description provided for @zombossMechPropertiesLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Properties'**
+  String get zombossMechPropertiesLabel;
+
+  /// No description provided for @zombossMechAliasLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Alias'**
+  String get zombossMechAliasLabel;
+
+  /// No description provided for @zombossMechDeletePhase.
+  ///
+  /// In en, this message translates to:
+  /// **'Delete phase'**
+  String get zombossMechDeletePhase;
+
+  /// No description provided for @zombossMechDeletePhaseTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Delete phase {number}?'**
+  String zombossMechDeletePhaseTitle(int number);
+
+  /// No description provided for @zombossMechDeletePhaseMessage.
+  ///
+  /// In en, this message translates to:
+  /// **'This removes the phase and its action list. This cannot be undone.'**
+  String get zombossMechDeletePhaseMessage;
+
+  /// No description provided for @zombossMechPhasesHelp.
+  ///
+  /// In en, this message translates to:
+  /// **'Each phase has hit points, an ordered action list (executed top to bottom), and optionally a retreat action when the mech supports it.'**
+  String get zombossMechPhasesHelp;
+
+  /// No description provided for @zombossMechAddAction.
+  ///
+  /// In en, this message translates to:
+  /// **'Add action'**
+  String get zombossMechAddAction;
+
+  /// No description provided for @zombossMechNoStageActions.
+  ///
+  /// In en, this message translates to:
+  /// **'No actions yet'**
+  String get zombossMechNoStageActions;
+
+  /// No description provided for @zombossMechSelectAction.
+  ///
+  /// In en, this message translates to:
+  /// **'Select action'**
+  String get zombossMechSelectAction;
+
+  /// No description provided for @zombossMechSelectRetreatAction.
+  ///
+  /// In en, this message translates to:
+  /// **'Select retreat action'**
+  String get zombossMechSelectRetreatAction;
+
+  /// No description provided for @zombossMechCreateCustomAction.
+  ///
+  /// In en, this message translates to:
+  /// **'New custom action'**
+  String get zombossMechCreateCustomAction;
+
+  /// No description provided for @zombossMechEditCustomAction.
+  ///
+  /// In en, this message translates to:
+  /// **'Edit custom action'**
+  String get zombossMechEditCustomAction;
+
+  /// No description provided for @zombossMechActionCategoryAll.
+  ///
+  /// In en, this message translates to:
+  /// **'All'**
+  String get zombossMechActionCategoryAll;
+
+  /// No description provided for @zombossMechActionCategoryMovement.
+  ///
+  /// In en, this message translates to:
+  /// **'Movement'**
+  String get zombossMechActionCategoryMovement;
+
+  /// No description provided for @zombossMechActionCategoryAttack.
+  ///
+  /// In en, this message translates to:
+  /// **'Attack'**
+  String get zombossMechActionCategoryAttack;
+
+  /// No description provided for @zombossMechActionCategorySpecial.
+  ///
+  /// In en, this message translates to:
+  /// **'Special'**
+  String get zombossMechActionCategorySpecial;
+
+  /// No description provided for @zombossMechNoActionsFound.
+  ///
+  /// In en, this message translates to:
+  /// **'No actions found'**
+  String get zombossMechNoActionsFound;
+
+  /// No description provided for @zombossMechCustomActionLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Custom (CurrentLevel)'**
+  String get zombossMechCustomActionLabel;
+
+  /// No description provided for @zombossMechActionAliasHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Codename used in RTID(alias@CurrentLevel). You can change it later; references in this property sheet update automatically.'**
+  String get zombossMechActionAliasHint;
+
+  /// No description provided for @zombossMechActionBaseObjclass.
+  ///
+  /// In en, this message translates to:
+  /// **'Base objclass'**
+  String get zombossMechActionBaseObjclass;
+
+  /// No description provided for @zombossMechEditRetreatAction.
+  ///
+  /// In en, this message translates to:
+  /// **'Choose retreat action'**
+  String get zombossMechEditRetreatAction;
+
+  /// No description provided for @zombossMechAddZombie.
+  ///
+  /// In en, this message translates to:
+  /// **'Add zombie'**
+  String get zombossMechAddZombie;
+
+  /// No description provided for @zombossMechPickZombie.
+  ///
+  /// In en, this message translates to:
+  /// **'Pick zombie'**
+  String get zombossMechPickZombie;
+
+  /// No description provided for @zombossMechNoZombiesInList.
+  ///
+  /// In en, this message translates to:
+  /// **'No zombies in list'**
+  String get zombossMechNoZombiesInList;
+
+  /// No description provided for @zombossMechCatalogActionReadOnly.
+  ///
+  /// In en, this message translates to:
+  /// **'Built-in actions cannot be edited here. Create a custom action to change zombie lists.'**
+  String get zombossMechCatalogActionReadOnly;
+
+  /// No description provided for @zombossMechRetreatDisabled.
+  ///
+  /// In en, this message translates to:
+  /// **'Disabled'**
+  String get zombossMechRetreatDisabled;
+
+  /// No description provided for @zombossMechOpenGlacierModule.
+  ///
+  /// In en, this message translates to:
+  /// **'Open glacier module settings'**
+  String get zombossMechOpenGlacierModule;
+
+  /// No description provided for @zombossMechRobotSpawnRow.
+  ///
+  /// In en, this message translates to:
+  /// **'Row'**
+  String get zombossMechRobotSpawnRow;
+
+  /// No description provided for @zombossMechRobotSpawnRowRandom.
+  ///
+  /// In en, this message translates to:
+  /// **'Random (-1)'**
+  String get zombossMechRobotSpawnRowRandom;
+
+  /// No description provided for @zombossMechRobotSpawnLevel.
+  ///
+  /// In en, this message translates to:
+  /// **'Level'**
+  String get zombossMechRobotSpawnLevel;
+
+  /// No description provided for @zombossMechRobotSpawnWeight.
+  ///
+  /// In en, this message translates to:
+  /// **'Weight'**
+  String get zombossMechRobotSpawnWeight;
+
+  /// No description provided for @zombossMechRobotSpawnPlantfood.
+  ///
+  /// In en, this message translates to:
+  /// **'Plant food'**
+  String get zombossMechRobotSpawnPlantfood;
+
+  /// No description provided for @zombossMechRetreatAction.
+  ///
+  /// In en, this message translates to:
+  /// **'Retreat action'**
+  String get zombossMechRetreatAction;
+
+  /// No description provided for @zombossMechPhaseNumber.
+  ///
+  /// In en, this message translates to:
+  /// **'Phase {number}'**
+  String zombossMechPhaseNumber(int number);
+
+  /// No description provided for @zombossMechAddPhase.
+  ///
+  /// In en, this message translates to:
+  /// **'Add phase'**
+  String get zombossMechAddPhase;
+
+  /// No description provided for @zombossMechRemovePhase.
+  ///
+  /// In en, this message translates to:
+  /// **'Remove phase'**
+  String get zombossMechRemovePhase;
+
+  /// No description provided for @zombossMechHitPoints.
+  ///
+  /// In en, this message translates to:
+  /// **'Hit points'**
+  String get zombossMechHitPoints;
 }
 
 class _AppLocalizationsDelegate

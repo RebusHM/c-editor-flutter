@@ -398,7 +398,10 @@ class AppLocalizationsRu extends AppLocalizations {
   String get templateVaseBreakerExample => 'Пример «Разбей горшки»';
 
   @override
-  String get templateZombossExample => 'Пример боя с Зомбоссом';
+  String get templateZombossMechExample => 'Пример боя с ZombossMech';
+
+  @override
+  String get templateZombossBattleExample => 'Пример боя с Зомбоссом';
 
   @override
   String get templateCustomZombieExample => 'Пример пользовательского зомби';
@@ -637,7 +640,10 @@ class AppLocalizationsRu extends AppLocalizations {
   String get vaseBreaker => 'Разбей горшки';
 
   @override
-  String get zomboss => 'Зомбосс';
+  String get zombossMech => 'Бой с ZombossMech';
+
+  @override
+  String get zombossBattle => 'Бой с Зомбоссом';
 
   @override
   String get moveSourceSameAsDest => 'Исходная и целевая папки совпадают';
@@ -710,6 +716,9 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get switchCustomZombie => 'Сменить пользовательского зомби';
+
+  @override
+  String get switchZombie => 'Сменить зомби';
 
   @override
   String get customZombieAppearanceLocation => 'Появление:';
@@ -1062,7 +1071,11 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get conflictDesc_ZombossDeathDrop =>
-      'Смертельные капли в режиме Zomboss Battle помешают корректному завершению уровня.';
+      'Смертельные капли в режиме ZombossMech помешают корректному завершению уровня.';
+
+  @override
+  String get conflictDesc_ZombossBattleDeathDrop =>
+      'Смертельные капли в режиме боя с Зомбоссом помешают корректному завершению уровня.';
 
   @override
   String get conflictDesc_WinConditionExclusive =>
@@ -1448,17 +1461,26 @@ class AppLocalizationsRu extends AppLocalizations {
   String get moduleDesc_EvilDaveProperties => 'Включить режим «Я зомби»';
 
   @override
-  String get moduleTitle_ZombossBattleModuleProperties => 'Бой с Зомбоссом';
+  String get moduleTitle_ZombossBattleModuleProperties => 'Бой с ZombossMech';
 
   @override
-  String get moduleDesc_ZombossBattleModuleProperties => 'Параметры босса';
+  String get moduleDesc_ZombossBattleModuleProperties =>
+      'Параметры ZombossMech';
 
   @override
-  String get moduleTitle_ZombossBattleIntroProperties => 'Заставка Зомбосса';
+  String get moduleTitle_ZombossBattleIntroProperties => 'Заставка ZombossMech';
 
   @override
   String get moduleDesc_ZombossBattleIntroProperties =>
-      'Заставка и полоска здоровья босса';
+      'Заставка и полоска здоровья ZombossMech';
+
+  @override
+  String get moduleTitle_ZombossLastStandMinigameProperties =>
+      'Бой с Зомбоссом';
+
+  @override
+  String get moduleDesc_ZombossLastStandMinigameProperties =>
+      'Параметры боя с немеханическим Зомбоссом (Kongfu, Цинь и т.д.)';
 
   @override
   String get moduleTitle_SeedRainProperties => 'Семенной дождь';
@@ -2965,14 +2987,18 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get eventHelpSchoolBusBody =>
-      'Спавнит специальный фургон с мороженым (schoolbus_special), который выезжает справа в выбранном ряду. При уничтожении выпускает настроенных зомби.';
+      'Спавнит фургон с мороженым в выбранном ряду. Фургон выезжает справа, занимает два ряда и раздавливает растения на пути. Тип «Особый» (schoolbus_special) — с зомби на кузове, использующими способности в движении. Тип «Обычный» (schoolbus_normal) — стандартный вариант. После уничтожения выпускает настроенных зомби.';
 
   @override
   String get schoolBusHelpRows => 'Ряд';
 
   @override
   String get eventHelpSchoolBusRows =>
-      'Ряды с 1: ряд 1 = сверху, 5/6 = снизу. Стандарт: 5 рядов. Глубокое море: 6 рядов. Тип фиксирован: schoolbus_special.';
+      'Ряды с 1: ряд 1 = сверху, 5/6 = снизу. Стандарт: 5 рядов. Глубокое море: 6 рядов.';
+
+  @override
+  String get eventHelpSchoolBusType =>
+      'Тип выбирает вариант фургона. Обычный (schoolbus_normal) — стандартный фургон. Особый (schoolbus_special) — с пузырными и леденцовыми зомби на кузове; они используют способности во время движения.';
 
   @override
   String get schoolBusHelpZombies => 'Зомби';
@@ -2986,6 +3012,12 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get schoolBusType => 'Тип';
+
+  @override
+  String get schoolBusTypeNormal => 'Обычный';
+
+  @override
+  String get schoolBusTypeSpecial => 'Особый';
 
   @override
   String get schoolBusHitPoints => 'Здоровье фургона (SchoolBusHitPoints)';
@@ -3807,8 +3839,12 @@ class AppLocalizationsRu extends AppLocalizations {
   }
 
   @override
-  String get missingZombossModule =>
+  String get missingZombossMechModule =>
       'Отсутствует ZombossBattleModuleProperties';
+
+  @override
+  String get missingZombossBattleModule =>
+      'Отсутствует ZombossLastStandMinigameProperties';
 
   @override
   String get challengeNoConfig => 'Это испытание не поддерживает настройку.';
@@ -3980,13 +4016,92 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get missingIntroModuleHint =>
-      'Уровню не хватает ZombossBattleIntroProperties. Добавьте его.';
+      'Уровню не хватает ZombossBattleIntroProperties. Добавьте модуль и выберите ZombossMech снова.';
 
   @override
-  String get zombossType => 'Тип Зомбосса';
+  String get zombossMechType => 'Тип ZombossMech';
 
   @override
-  String get unknownZomboss => 'Неизвестный Зомбосс';
+  String get unknownZombossMech => 'Неизвестный ZombossMech';
+
+  @override
+  String get zombossMechSelection => 'Выбор ZombossMech';
+
+  @override
+  String get zombossMechBaseLabel => 'Базовый ZombossMech';
+
+  @override
+  String get zombossMechBaseHint =>
+      'Семейство мех-боссов (Египет, Будущее, робот Memory Lane и т.д.). При смене обновляется список вариантов ниже.';
+
+  @override
+  String get zombossMechVariationLabel => 'Вариант';
+
+  @override
+  String get zombossMechVariationHint =>
+      'Конкретный тип меха в уровне (ZombossMechType). Список зависит от выбранного базового ZombossMech. Фазы и позиция появления синхронизируются автоматически.';
+
+  @override
+  String get zombossBattleSelection => 'Выбор Зомбосса';
+
+  @override
+  String get zombossBattleBaseLabel => 'Базовый Зомбосс';
+
+  @override
+  String get zombossBattleBaseHint =>
+      'Семейство боссов (Kongfu, Цинь Шихуанди и т.д.). При смене автоматически обновляются группы ресурсов.';
+
+  @override
+  String get zombossBattleVariationLabel => 'Вариант';
+
+  @override
+  String get zombossBattleVariationHint =>
+      'Конкретный тип Зомбосса в уровне (ZombossTypeName). Список зависит от выбранного базового Зомбосса.';
+
+  @override
+  String get zombossBattleStartingSunLabel => 'Начальное солнце (StartingSun)';
+
+  @override
+  String get zombossBattleStartingSunHint => 'Солнце в начале боя.';
+
+  @override
+  String get zombossBattleStartingPlantfoodLabel =>
+      'Начальная удобр. (StartingPlantfood)';
+
+  @override
+  String get zombossBattleStartingPlantfoodHint => 'Удобрения в начале боя.';
+
+  @override
+  String get zombossBattleInitialGridColLabel =>
+      'Колонка появления (ZombossInitialGridCol)';
+
+  @override
+  String get zombossBattleInitialGridColHint =>
+      'Колонка сетки, где появляется Зомбосс.';
+
+  @override
+  String get zombossBattleInitialGridRowLabel =>
+      'Строка появления (ZombossInitialGridRow)';
+
+  @override
+  String get zombossBattleInitialGridRowHint =>
+      'Строка сетки, где появляется Зомбосс.';
+
+  @override
+  String get zombossBattleStartStageIndexLabel =>
+      'Начальная фаза (ZombossStartStageIndex)';
+
+  @override
+  String get zombossBattleStartStageIndexHint =>
+      'С какой фазы босса начинается бой (0 — первая фаза).';
+
+  @override
+  String get zombossBattleSkipPlantingLabel =>
+      'Пропустить посадку (SkipPlanting)';
+
+  @override
+  String get zombossBattleSkipPlantingHint =>
+      'Если включено, фаза посадки перед боем с боссом пропускается.';
 
   @override
   String get parameters => 'Параметры';
@@ -4503,7 +4618,10 @@ class AppLocalizationsRu extends AppLocalizations {
       'По умолчанию используются игровые значения. Можно включить пользовательский режим для редактирования.';
 
   @override
-  String get noZombossFound => 'Зомбосс не найден';
+  String get noZombossMechFound => 'ZombossMech не найден';
+
+  @override
+  String get noZombossBattleFound => 'Данные Зомбосса не найдены';
 
   @override
   String get searchChallengeNameOrCode =>
@@ -5126,6 +5244,89 @@ class AppLocalizationsRu extends AppLocalizations {
   String get openModuleSettings => 'Открыть настройки модуля';
 
   @override
+  String get moduleTitle_GlacierModuleProperties => 'Ледниковый спавн';
+
+  @override
+  String get moduleDesc_GlacierModuleProperties =>
+      'Веса зомби для ледяных блоков босса Ледникового периода (6 столбцов слева)';
+
+  @override
+  String get glacierModuleTitle => 'Модуль ледника';
+
+  @override
+  String get glacierModuleHelpTitle => 'Модуль ледника';
+
+  @override
+  String get glacierModuleHelpOverviewBody =>
+      'Задаёт, какие зомби появляются из ледяных блоков, когда босс Ледникового периода их разрушает. Размещайте модуль в начале списка Modules уровня. Без него блоки не призывают зомби.';
+
+  @override
+  String get glacierModuleHelpColumnsTitle => 'Столбцы и записи';
+
+  @override
+  String get glacierModuleHelpColumnsBody =>
+      'ZombieSpawnData всегда содержит ровно шесть элементов — по одному на столбец слева направо. В каждом столбце список записей: TypeName (тип зомби), Weight (вес) и Level (уровень 0–10).';
+
+  @override
+  String get glacierModuleHelpRequirementsTitle => 'Требования';
+
+  @override
+  String get glacierModuleHelpRequirementsBody =>
+      'Работает только вместе с модулем битвы с боссом, если выбран мех Ледникового периода (zombossmech_iceage и его варианты).';
+
+  @override
+  String get glacierModuleCompatibilityWarning =>
+      'Модуль работает только с модулем битвы с боссом и мехом Ледникового периода (zombossmech_iceage). Добавьте или исправьте эти настройки, чтобы ледяные блоки призывали зомби.';
+
+  @override
+  String glacierModuleColumn(int columnIndex) {
+    return 'Столбец $columnIndex (слева)';
+  }
+
+  @override
+  String glacierModuleEntryCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count записей',
+      many: '$count записей',
+      few: '$count записи',
+      one: '1 запись',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String glacierModuleEntryLabel(int index) {
+    return 'Запись $index';
+  }
+
+  @override
+  String get glacierModuleNoEntries => 'Нет записей зомби для этого столбца.';
+
+  @override
+  String get glacierModuleAddEntry => 'Добавить зомби';
+
+  @override
+  String get glacierModuleSelectZombie => 'Выбрать зомби';
+
+  @override
+  String get glacierModuleEmptyType => 'Зомби не выбран';
+
+  @override
+  String get glacierModuleWeight => 'Вес';
+
+  @override
+  String get glacierModuleWeightTooltip =>
+      'Относительный вес появления этого зомби в столбце.';
+
+  @override
+  String get glacierModuleLevel => 'Уровень (0–10)';
+
+  @override
+  String get glacierModuleLevelTooltip => 'Уровень зомби от 0 до 10.';
+
+  @override
   String get moduleTitle_HeianWindModuleProperties => 'Ветер Хэйан';
 
   @override
@@ -5404,4 +5605,155 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get jsonViewerLineContinuation => '↳';
+
+  @override
+  String get zombossMechCustomVariation => 'Свой';
+
+  @override
+  String get editCustomZombossMech => 'Изменить';
+
+  @override
+  String get customZombossMechProperties => 'Свои свойства ZombossMech';
+
+  @override
+  String get customZombossMechScalars => 'Общие';
+
+  @override
+  String get customZombossMechStages => 'Фазы боя';
+
+  @override
+  String get customZombossMechEditHint =>
+      'Редактирование свойств memo-варианта меха в файле уровня.';
+
+  @override
+  String get zombossMechMinColumn => 'Мин. колонка';
+
+  @override
+  String get zombossMechMaxColumn => 'Макс. колонка';
+
+  @override
+  String get zombossMechStageActions => 'Действия';
+
+  @override
+  String get zombossMechActions => 'Действия';
+
+  @override
+  String get zombossMechPropertiesLabel => 'Свойства';
+
+  @override
+  String get zombossMechAliasLabel => 'Псевдоним';
+
+  @override
+  String get zombossMechDeletePhase => 'Удалить фазу';
+
+  @override
+  String zombossMechDeletePhaseTitle(int number) {
+    return 'Удалить фазу $number?';
+  }
+
+  @override
+  String get zombossMechDeletePhaseMessage =>
+      'Фаза и её список действий будут удалены. Это нельзя отменить.';
+
+  @override
+  String get zombossMechPhasesHelp =>
+      'У каждой фазы есть очки здоровья, упорядоченный список действий (сверху вниз) и при поддержке — действие отступления.';
+
+  @override
+  String get zombossMechAddAction => 'Добавить действие';
+
+  @override
+  String get zombossMechNoStageActions => 'Действий пока нет';
+
+  @override
+  String get zombossMechSelectAction => 'Выбрать действие';
+
+  @override
+  String get zombossMechSelectRetreatAction => 'Выбрать отступление';
+
+  @override
+  String get zombossMechCreateCustomAction => 'Новое своё действие';
+
+  @override
+  String get zombossMechEditCustomAction => 'Редактировать своё действие';
+
+  @override
+  String get zombossMechActionCategoryAll => 'Все';
+
+  @override
+  String get zombossMechActionCategoryMovement => 'Движение';
+
+  @override
+  String get zombossMechActionCategoryAttack => 'Атака';
+
+  @override
+  String get zombossMechActionCategorySpecial => 'Особые';
+
+  @override
+  String get zombossMechNoActionsFound => 'Действия не найдены';
+
+  @override
+  String get zombossMechCustomActionLabel => 'Своё (CurrentLevel)';
+
+  @override
+  String get zombossMechActionAliasHint =>
+      'Имя в RTID(псевдоним@CurrentLevel). Можно изменить позже; ссылки в этом листе свойств обновятся автоматически.';
+
+  @override
+  String get zombossMechActionBaseObjclass => 'Базовый objclass';
+
+  @override
+  String get zombossMechEditRetreatAction => 'Выбрать отступление';
+
+  @override
+  String get zombossMechAddZombie => 'Добавить зомби';
+
+  @override
+  String get zombossMechPickZombie => 'Выбрать зомби';
+
+  @override
+  String get zombossMechNoZombiesInList => 'Список зомби пуст';
+
+  @override
+  String get zombossMechCatalogActionReadOnly =>
+      'Встроенные действия здесь не редактируются. Создайте своё действие, чтобы изменить списки зомби.';
+
+  @override
+  String get zombossMechRetreatDisabled => 'Отключено';
+
+  @override
+  String get zombossMechOpenGlacierModule =>
+      'Открыть настройки ледникового модуля';
+
+  @override
+  String get zombossMechRobotSpawnRow => 'Ряд';
+
+  @override
+  String get zombossMechRobotSpawnRowRandom => 'Случайный (-1)';
+
+  @override
+  String get zombossMechRobotSpawnLevel => 'Уровень';
+
+  @override
+  String get zombossMechRobotSpawnWeight => 'Вес';
+
+  @override
+  String get zombossMechRobotSpawnPlantfood => 'Удобрение';
+
+  @override
+  String get zombossMechRetreatAction => 'Отступление';
+
+  @override
+  String zombossMechPhaseNumber(int number) {
+    return 'Фаза $number';
+  }
+
+  @override
+  String get zombossMechAddPhase => 'Добавить фазу';
+
+  @override
+  String get zombossMechRemovePhase => 'Удалить фазу';
+
+  @override
+  String get zombossMechHitPoints => 'Очки здоровья';
 }

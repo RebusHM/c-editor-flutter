@@ -388,7 +388,10 @@ class AppLocalizationsZh extends AppLocalizations {
   String get templateVaseBreakerExample => '砸罐子示例';
 
   @override
-  String get templateZombossExample => '僵王战示例';
+  String get templateZombossMechExample => '僵王机甲战示例';
+
+  @override
+  String get templateZombossBattleExample => '僵王战示例';
 
   @override
   String get templateCustomZombieExample => '自定义僵尸示例';
@@ -627,7 +630,10 @@ class AppLocalizationsZh extends AppLocalizations {
   String get vaseBreaker => '砸罐子';
 
   @override
-  String get zomboss => '僵王战';
+  String get zombossMech => '僵王机甲战';
+
+  @override
+  String get zombossBattle => '僵王战';
 
   @override
   String get moveSourceSameAsDest => '源目录和目标目录相同';
@@ -696,6 +702,9 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get switchCustomZombie => '切换自定义僵尸';
+
+  @override
+  String get switchZombie => '切换僵尸';
 
   @override
   String get customZombieAppearanceLocation => '出现位置：';
@@ -1029,7 +1038,10 @@ class AppLocalizationsZh extends AppLocalizations {
   String get conflictDesc_EvilDaveVictory => '我是僵尸模式不能使用僵尸胜利条件。';
 
   @override
-  String get conflictDesc_ZombossDeathDrop => '僵王战中死亡掉落会阻止关卡正常完成。';
+  String get conflictDesc_ZombossDeathDrop => '僵王机甲战中死亡掉落会阻止关卡正常完成。';
+
+  @override
+  String get conflictDesc_ZombossBattleDeathDrop => '僵王战中死亡掉落会阻止关卡正常完成。';
 
   @override
   String get conflictDesc_WinConditionExclusive =>
@@ -1384,16 +1396,23 @@ class AppLocalizationsZh extends AppLocalizations {
   String get moduleDesc_EvilDaveProperties => '启用我是僵尸模式，需配置僵尸卡槽和预置植物';
 
   @override
-  String get moduleTitle_ZombossBattleModuleProperties => '僵王战模式';
+  String get moduleTitle_ZombossBattleModuleProperties => '僵王机甲战模式';
 
   @override
-  String get moduleDesc_ZombossBattleModuleProperties => '配置僵王战模式参数以及僵王种类';
+  String get moduleDesc_ZombossBattleModuleProperties => '配置僵王机甲战模式参数以及机甲种类';
 
   @override
-  String get moduleTitle_ZombossBattleIntroProperties => '僵王转场';
+  String get moduleTitle_ZombossBattleIntroProperties => '僵王机甲转场';
 
   @override
-  String get moduleDesc_ZombossBattleIntroProperties => '控制僵王战前的过场动画与血条显示';
+  String get moduleDesc_ZombossBattleIntroProperties => '控制僵王机甲战前的过场动画与血条显示';
+
+  @override
+  String get moduleTitle_ZombossLastStandMinigameProperties => '僵王战';
+
+  @override
+  String get moduleDesc_ZombossLastStandMinigameProperties =>
+      '配置非机甲僵王战（功夫、秦始皇等）';
 
   @override
   String get moduleTitle_SeedRainProperties => '种子雨';
@@ -2850,6 +2869,10 @@ class AppLocalizationsZh extends AppLocalizations {
       '行数从1开始计，地图最上面一行为1，最下面一行为5（或6）。标准地图共有5行，海底世界地图共有6行。';
 
   @override
+  String get eventHelpSchoolBusType =>
+      '类型决定生成的冰淇淋车变体。普通（schoolbus_normal）为标准冰淇淋车。特殊（schoolbus_special）贴图显示泡泡枪小鬼和棒棒糖僵尸，车辆在前进过程中会持续释放对应技能。';
+
+  @override
   String get schoolBusHelpZombies => '乘客说明';
 
   @override
@@ -2861,6 +2884,12 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get schoolBusType => '车辆类型 (Type)';
+
+  @override
+  String get schoolBusTypeNormal => '普通';
+
+  @override
+  String get schoolBusTypeSpecial => '特殊';
 
   @override
   String get schoolBusHitPoints => '车辆血量 (SchoolBusHitPoints)';
@@ -3673,7 +3702,11 @@ class AppLocalizationsZh extends AppLocalizations {
   }
 
   @override
-  String get missingZombossModule => '缺少 ZombossBattleModuleProperties';
+  String get missingZombossMechModule => '缺少 ZombossBattleModuleProperties';
+
+  @override
+  String get missingZombossBattleModule =>
+      '缺少 ZombossLastStandMinigameProperties';
 
   @override
   String get challengeNoConfig => '此挑战不支持配置。';
@@ -3840,13 +3873,82 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get missingIntroModuleHint =>
-      '关卡未检测到僵王战转场模块 (ZombossBattleIntro)，可能无法正常运行，请添加僵王战转场模块后重新选择僵王。';
+      '关卡未检测到僵王机甲转场模块 (ZombossBattleIntro)，可能无法正常运行，请添加转场模块后重新选择机甲。';
 
   @override
-  String get zombossType => '僵王类型';
+  String get zombossMechType => '僵王机甲类型';
 
   @override
-  String get unknownZomboss => '未知僵王';
+  String get unknownZombossMech => '未知僵王机甲';
+
+  @override
+  String get zombossMechSelection => '僵王机甲选择';
+
+  @override
+  String get zombossMechBaseLabel => '基础机甲';
+
+  @override
+  String get zombossMechBaseHint => '机甲僵王家族（埃及、未来、回忆之旅机器人等）。更改此项会更新下方可选变体。';
+
+  @override
+  String get zombossMechVariationLabel => '变体';
+
+  @override
+  String get zombossMechVariationHint =>
+      '关卡中使用的具体机甲类型（ZombossMechType），选项取决于上方选择的基础机甲。阶段数与出现位置会自动同步。';
+
+  @override
+  String get zombossBattleSelection => '僵王选择';
+
+  @override
+  String get zombossBattleBaseLabel => '基础僵王';
+
+  @override
+  String get zombossBattleBaseHint => '僵王家族（功夫大刀、秦始皇等）。更改此项会自动更新资源组。';
+
+  @override
+  String get zombossBattleVariationLabel => '变体';
+
+  @override
+  String get zombossBattleVariationHint =>
+      '关卡中使用的具体僵王类型（ZombossTypeName），选项取决于上方选择的基础僵王。';
+
+  @override
+  String get zombossBattleStartingSunLabel => '初始阳光 (StartingSun)';
+
+  @override
+  String get zombossBattleStartingSunHint => '战斗开始时的阳光数量。';
+
+  @override
+  String get zombossBattleStartingPlantfoodLabel => '初始能量豆 (StartingPlantfood)';
+
+  @override
+  String get zombossBattleStartingPlantfoodHint => '战斗开始时的能量豆数量。';
+
+  @override
+  String get zombossBattleInitialGridColLabel => '出现列 (ZombossInitialGridCol)';
+
+  @override
+  String get zombossBattleInitialGridColHint => '僵王出现的网格列。';
+
+  @override
+  String get zombossBattleInitialGridRowLabel => '出现行 (ZombossInitialGridRow)';
+
+  @override
+  String get zombossBattleInitialGridRowHint => '僵王出现的网格行。';
+
+  @override
+  String get zombossBattleStartStageIndexLabel =>
+      '起始阶段 (ZombossStartStageIndex)';
+
+  @override
+  String get zombossBattleStartStageIndexHint => '战斗从第几阶段开始（0 为第一阶段）。';
+
+  @override
+  String get zombossBattleSkipPlantingLabel => '跳过种植阶段 (SkipPlanting)';
+
+  @override
+  String get zombossBattleSkipPlantingHint => '启用后，僵王战前不进行种植/setup 阶段。';
 
   @override
   String get parameters => '关卡参数';
@@ -4343,7 +4445,10 @@ class AppLocalizationsZh extends AppLocalizations {
       '常规情况下，本模块使用在游戏文件里的定义，也可以选择打开自定义开关对详细参数进行编辑。';
 
   @override
-  String get noZombossFound => '未找到僵王';
+  String get noZombossMechFound => '未找到僵王机甲';
+
+  @override
+  String get noZombossBattleFound => '未找到僵王数据';
 
   @override
   String get searchChallengeNameOrCode => '搜索挑战名称或代码';
@@ -4929,6 +5034,79 @@ class AppLocalizationsZh extends AppLocalizations {
   String get openModuleSettings => '打开模块设置';
 
   @override
+  String get moduleTitle_GlacierModuleProperties => '冰川召唤';
+
+  @override
+  String get moduleDesc_GlacierModuleProperties => '冰河僵王冰川障碍物召唤僵尸的权重（从左起共 6 列）';
+
+  @override
+  String get glacierModuleTitle => '冰川模块';
+
+  @override
+  String get glacierModuleHelpTitle => '冰川模块说明';
+
+  @override
+  String get glacierModuleHelpOverviewBody =>
+      '配置冰河僵王破坏冰川障碍物时召唤的僵尸种类与权重。请放在关卡开头 Modules 列表中；未配置则冰川不会召唤僵尸。';
+
+  @override
+  String get glacierModuleHelpColumnsTitle => '列与条目';
+
+  @override
+  String get glacierModuleHelpColumnsBody =>
+      'ZombieSpawnData 必须恰好 6 个元素，从最左第 1 列起每列一项。每列内为加权列表：TypeName（僵尸种类）、Weight（权重）、Level（等级 0–10）。';
+
+  @override
+  String get glacierModuleHelpRequirementsTitle => '使用条件';
+
+  @override
+  String get glacierModuleHelpRequirementsBody =>
+      '须与僵王战斗模块同时使用，且所选僵王为冰河机甲变体（zombossmech_iceage 及其变体）时才会生效。';
+
+  @override
+  String get glacierModuleCompatibilityWarning =>
+      '此模块须与僵王战斗模块一起使用，且僵王须为冰河机甲（zombossmech_iceage）。请添加或修正相关设置，冰川障碍物才能召唤僵尸。';
+
+  @override
+  String glacierModuleColumn(int columnIndex) {
+    return '第 $columnIndex 列（自左）';
+  }
+
+  @override
+  String glacierModuleEntryCount(int count) {
+    return '$count 条';
+  }
+
+  @override
+  String glacierModuleEntryLabel(int index) {
+    return '条目 $index';
+  }
+
+  @override
+  String get glacierModuleNoEntries => '此列暂无僵尸条目。';
+
+  @override
+  String get glacierModuleAddEntry => '添加僵尸条目';
+
+  @override
+  String get glacierModuleSelectZombie => '选择僵尸';
+
+  @override
+  String get glacierModuleEmptyType => '未选择僵尸';
+
+  @override
+  String get glacierModuleWeight => '权重';
+
+  @override
+  String get glacierModuleWeightTooltip => '该僵尸在本列的相对召唤权重。';
+
+  @override
+  String get glacierModuleLevel => '等级（0–10）';
+
+  @override
+  String get glacierModuleLevelTooltip => '僵尸等级，范围 0 至 10。';
+
+  @override
   String get moduleTitle_HeianWindModuleProperties => '平安神风';
 
   @override
@@ -5197,4 +5375,151 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get jsonViewerLineContinuation => '↳';
+
+  @override
+  String get zombossMechCustomVariation => '自定义';
+
+  @override
+  String get editCustomZombossMech => '编辑';
+
+  @override
+  String get customZombossMechProperties => '自定义 ZombossMech 属性';
+
+  @override
+  String get customZombossMechScalars => '常规';
+
+  @override
+  String get customZombossMechStages => '战斗阶段';
+
+  @override
+  String get customZombossMechEditHint => '编辑关卡内 memo（自定义）机甲变体的属性表。';
+
+  @override
+  String get zombossMechMinColumn => '最小列';
+
+  @override
+  String get zombossMechMaxColumn => '最大列';
+
+  @override
+  String get zombossMechStageActions => '动作';
+
+  @override
+  String get zombossMechActions => '动作';
+
+  @override
+  String get zombossMechPropertiesLabel => '属性';
+
+  @override
+  String get zombossMechAliasLabel => '别名';
+
+  @override
+  String get zombossMechDeletePhase => '删除阶段';
+
+  @override
+  String zombossMechDeletePhaseTitle(int number) {
+    return '删除第 $number 阶段？';
+  }
+
+  @override
+  String get zombossMechDeletePhaseMessage => '将移除此阶段及其动作列表，且无法撤销。';
+
+  @override
+  String get zombossMechPhasesHelp =>
+      '每个阶段包含生命值、按顺序执行的动作列表（自上而下），以及可选的撤退动作（若机甲支持）。';
+
+  @override
+  String get zombossMechAddAction => '添加动作';
+
+  @override
+  String get zombossMechNoStageActions => '暂无动作';
+
+  @override
+  String get zombossMechSelectAction => '选择动作';
+
+  @override
+  String get zombossMechSelectRetreatAction => '选择撤退动作';
+
+  @override
+  String get zombossMechCreateCustomAction => '新建自定义动作';
+
+  @override
+  String get zombossMechEditCustomAction => '编辑自定义动作';
+
+  @override
+  String get zombossMechActionCategoryAll => '全部';
+
+  @override
+  String get zombossMechActionCategoryMovement => '移动';
+
+  @override
+  String get zombossMechActionCategoryAttack => '攻击';
+
+  @override
+  String get zombossMechActionCategorySpecial => '特殊';
+
+  @override
+  String get zombossMechNoActionsFound => '未找到动作';
+
+  @override
+  String get zombossMechCustomActionLabel => '自定义（CurrentLevel）';
+
+  @override
+  String get zombossMechActionAliasHint =>
+      '用于 RTID(别名@CurrentLevel) 的代号，可稍后修改；本属性表中的引用会自动更新。';
+
+  @override
+  String get zombossMechActionBaseObjclass => '基础 objclass';
+
+  @override
+  String get zombossMechEditRetreatAction => '选择撤退动作';
+
+  @override
+  String get zombossMechAddZombie => '添加僵尸';
+
+  @override
+  String get zombossMechPickZombie => '选择僵尸';
+
+  @override
+  String get zombossMechNoZombiesInList => '列表中暂无僵尸';
+
+  @override
+  String get zombossMechCatalogActionReadOnly => '内置动作无法在此编辑。请创建自定义动作以修改僵尸列表。';
+
+  @override
+  String get zombossMechRetreatDisabled => '已禁用';
+
+  @override
+  String get zombossMechOpenGlacierModule => '打开冰川模块设置';
+
+  @override
+  String get zombossMechRobotSpawnRow => '行';
+
+  @override
+  String get zombossMechRobotSpawnRowRandom => '随机 (-1)';
+
+  @override
+  String get zombossMechRobotSpawnLevel => '等级';
+
+  @override
+  String get zombossMechRobotSpawnWeight => '权重';
+
+  @override
+  String get zombossMechRobotSpawnPlantfood => '植物食物';
+
+  @override
+  String get zombossMechRetreatAction => '撤退动作';
+
+  @override
+  String zombossMechPhaseNumber(int number) {
+    return '第 $number 阶段';
+  }
+
+  @override
+  String get zombossMechAddPhase => '添加阶段';
+
+  @override
+  String get zombossMechRemovePhase => '移除阶段';
+
+  @override
+  String get zombossMechHitPoints => '生命值';
 }

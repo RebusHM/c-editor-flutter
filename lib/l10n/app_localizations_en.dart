@@ -316,7 +316,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get feature2 =>
-      'Multi-mode: I, Zombie, Vasebreaker, Last Stand, Zomboss battle, and more.';
+      'Multi-mode: I, Zombie, Vasebreaker, Last Stand, ZombossMech battle, and more.';
 
   @override
   String get feature3 =>
@@ -396,7 +396,10 @@ class AppLocalizationsEn extends AppLocalizations {
   String get templateVaseBreakerExample => 'Vasebreaker level template';
 
   @override
-  String get templateZombossExample => 'Zomboss battle level template';
+  String get templateZombossMechExample => 'ZombossMech battle level template';
+
+  @override
+  String get templateZombossBattleExample => 'Zomboss battle level template';
 
   @override
   String get templateCustomZombieExample => 'Custom zombie level template';
@@ -635,7 +638,10 @@ class AppLocalizationsEn extends AppLocalizations {
   String get vaseBreaker => 'Vasebreaker';
 
   @override
-  String get zomboss => 'Zomboss Battle';
+  String get zombossMech => 'ZombossMech Battle';
+
+  @override
+  String get zombossBattle => 'Zomboss Battle';
 
   @override
   String get moveSourceSameAsDest => 'Source and target folder are the same';
@@ -708,6 +714,9 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get switchCustomZombie => 'Switch custom zombie';
+
+  @override
+  String get switchZombie => 'Switch zombie';
 
   @override
   String get customZombieAppearanceLocation => 'Location:';
@@ -1059,7 +1068,11 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get conflictDesc_ZombossDeathDrop =>
-      'Loot Drop in Zomboss Battle mode will prevent proper level completion.';
+      'Loot Drop in ZombossMech battle mode will prevent proper level completion.';
+
+  @override
+  String get conflictDesc_ZombossBattleDeathDrop =>
+      'Loot Drop in Zomboss battle mode will prevent proper level completion.';
 
   @override
   String get conflictDesc_WinConditionExclusive =>
@@ -1456,18 +1469,25 @@ class AppLocalizationsEn extends AppLocalizations {
       'Enable I, Zombie mode (requires zombie bank and preset plants)';
 
   @override
-  String get moduleTitle_ZombossBattleModuleProperties => 'Zomboss Battle';
+  String get moduleTitle_ZombossBattleModuleProperties => 'ZombossMech Battle';
 
   @override
   String get moduleDesc_ZombossBattleModuleProperties =>
-      'Configures Zomboss parameters and types';
+      'Configures ZombossMech parameters and types';
 
   @override
-  String get moduleTitle_ZombossBattleIntroProperties => 'Zomboss Intro';
+  String get moduleTitle_ZombossBattleIntroProperties => 'ZombossMech Intro';
 
   @override
   String get moduleDesc_ZombossBattleIntroProperties =>
-      'Controls boss cutscenes and health bar display';
+      'Controls ZombossMech cutscenes and health bar display';
+
+  @override
+  String get moduleTitle_ZombossLastStandMinigameProperties => 'Zomboss Battle';
+
+  @override
+  String get moduleDesc_ZombossLastStandMinigameProperties =>
+      'Configures non-mech Zomboss last-stand battles (Kongfu, Qin, etc.)';
 
   @override
   String get moduleTitle_SeedRainProperties => 'It\'s Raining Seeds';
@@ -3019,6 +3039,10 @@ class AppLocalizationsEn extends AppLocalizations {
       'Rows are 1-based: Row 1 = top lane, Row 5/6 = bottom lane. Standard lawns: 5 rows. Underwater World lawns: 6 rows.';
 
   @override
+  String get eventHelpSchoolBusType =>
+      'Type selects the ice cream van variant. Normal (schoolbus_normal) is the standard van. Special (schoolbus_special) shows Bubble Gun Imps and Lollipop Zombies on the van; they use their abilities while the van is moving.';
+
+  @override
   String get schoolBusHelpZombies => 'Zombies';
 
   @override
@@ -3030,6 +3054,12 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get schoolBusType => 'Type';
+
+  @override
+  String get schoolBusTypeNormal => 'Normal';
+
+  @override
+  String get schoolBusTypeSpecial => 'Special';
 
   @override
   String get schoolBusHitPoints => ' Van health (SchoolBusHitPoints)';
@@ -3862,8 +3892,12 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
-  String get missingZombossModule =>
-      'Missing Zomboss Battle module (ZombossBattleModuleProperties)';
+  String get missingZombossMechModule =>
+      'Missing ZombossMech battle module (ZombossBattleModuleProperties)';
+
+  @override
+  String get missingZombossBattleModule =>
+      'Missing Zomboss battle module (ZombossLastStandMinigameProperties)';
 
   @override
   String get challengeNoConfig =>
@@ -4036,13 +4070,94 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get missingIntroModuleHint =>
-      'Level is missing Zomboss Intro module (ZombossBattleIntroProperties). The level may not function correctly. Please add the module and reselect the Zomboss.';
+      'Level is missing ZombossMech intro module (ZombossBattleIntroProperties). The level may not function correctly. Please add the module and reselect the ZombossMech.';
 
   @override
-  String get zombossType => 'Zomboss type';
+  String get zombossMechType => 'ZombossMech type';
 
   @override
-  String get unknownZomboss => 'Unknown Zomboss';
+  String get unknownZombossMech => 'Unknown ZombossMech';
+
+  @override
+  String get zombossMechSelection => 'ZombossMech selection';
+
+  @override
+  String get zombossMechBaseLabel => 'Base ZombossMech';
+
+  @override
+  String get zombossMechBaseHint =>
+      'Mech boss family (Egypt, Future, Memory Lane robot, etc.). Changing this updates the available variations below.';
+
+  @override
+  String get zombossMechVariationLabel => 'Variation';
+
+  @override
+  String get zombossMechVariationHint =>
+      'Specific mech type used in-game (ZombossMechType). Options depend on the base ZombossMech selected above. Phase count and spawn position sync automatically.';
+
+  @override
+  String get zombossBattleSelection => 'Zomboss selection';
+
+  @override
+  String get zombossBattleBaseLabel => 'Base zomboss';
+
+  @override
+  String get zombossBattleBaseHint =>
+      'Boss family (Kongfu blade, Qin Shi Huang, etc.). Changing this updates bundled resource groups automatically.';
+
+  @override
+  String get zombossBattleVariationLabel => 'Variation';
+
+  @override
+  String get zombossBattleVariationHint =>
+      'Specific Zomboss type used in-game (ZombossTypeName). Options depend on the base zomboss selected above.';
+
+  @override
+  String get zombossBattleStartingSunLabel => 'Starting sun (StartingSun)';
+
+  @override
+  String get zombossBattleStartingSunHint =>
+      'Sun available when the battle begins.';
+
+  @override
+  String get zombossBattleStartingPlantfoodLabel =>
+      'Starting plant food (StartingPlantfood)';
+
+  @override
+  String get zombossBattleStartingPlantfoodHint =>
+      'Plant Food available when the battle begins.';
+
+  @override
+  String get zombossBattleInitialGridColLabel =>
+      'Spawn column (ZombossInitialGridCol)';
+
+  @override
+  String get zombossBattleInitialGridColHint =>
+      'Grid column where the Zomboss appears.';
+
+  @override
+  String get zombossBattleInitialGridRowLabel =>
+      'Spawn row (ZombossInitialGridRow)';
+
+  @override
+  String get zombossBattleInitialGridRowHint =>
+      'Grid row where the Zomboss appears.';
+
+  @override
+  String get zombossBattleStartStageIndexLabel =>
+      'Start stage (ZombossStartStageIndex)';
+
+  @override
+  String get zombossBattleStartStageIndexHint =>
+      'Which boss phase index the fight begins at (0 = first phase).';
+
+  @override
+  String get zombossBattleSkipPlantingLabel =>
+      'Skip planting phase (SkipPlanting)';
+
+  @override
+  String get zombossBattleSkipPlantingHint =>
+      'When enabled, the level skips the setup/planting phase before the boss fight.';
 
   @override
   String get parameters => 'Parameters';
@@ -4567,7 +4682,10 @@ class AppLocalizationsEn extends AppLocalizations {
       'By default, this module uses the game’s built-in values. You can enable custom settings to edit detailed parameters.';
 
   @override
-  String get noZombossFound => 'No zomboss found';
+  String get noZombossMechFound => 'No ZombossMech found';
+
+  @override
+  String get noZombossBattleFound => 'No zomboss definitions found';
 
   @override
   String get searchChallengeNameOrCode =>
@@ -5195,6 +5313,87 @@ class AppLocalizationsEn extends AppLocalizations {
   String get openModuleSettings => 'Open Module Settings';
 
   @override
+  String get moduleTitle_GlacierModuleProperties => 'Glacier Spawn';
+
+  @override
+  String get moduleDesc_GlacierModuleProperties =>
+      'Zombie spawn weights for Ice Age Zomboss glacier blocks (6 columns from the left)';
+
+  @override
+  String get glacierModuleTitle => 'Glacier module';
+
+  @override
+  String get glacierModuleHelpTitle => 'Glacier module';
+
+  @override
+  String get glacierModuleHelpOverviewBody =>
+      'Configures which zombies can emerge from glacier blocks when the Ice Age Zomboss destroys them. Place this module at the start of the level Modules list. Without it, glacier blocks will not spawn zombies.';
+
+  @override
+  String get glacierModuleHelpColumnsTitle => 'Columns and entries';
+
+  @override
+  String get glacierModuleHelpColumnsBody =>
+      'ZombieSpawnData always has exactly six elements, one per column counting from the left edge of the lawn. Each column holds a weighted list of zombie types (TypeName), spawn weight (Weight), and level (Level, 0–10).';
+
+  @override
+  String get glacierModuleHelpRequirementsTitle => 'Requirements';
+
+  @override
+  String get glacierModuleHelpRequirementsBody =>
+      'Only takes effect together with the Zomboss Battle module when the selected Zomboss Mech is an Ice Age variant (zombossmech_iceage and its variations).';
+
+  @override
+  String get glacierModuleCompatibilityWarning =>
+      'This module only works with the Zomboss Battle module and an Ice Age Zomboss Mech (zombossmech_iceage). Add or fix those settings so glacier blocks can spawn zombies.';
+
+  @override
+  String glacierModuleColumn(int columnIndex) {
+    return 'Column $columnIndex (from left)';
+  }
+
+  @override
+  String glacierModuleEntryCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count entries',
+      one: '1 entry',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String glacierModuleEntryLabel(int index) {
+    return 'Entry $index';
+  }
+
+  @override
+  String get glacierModuleNoEntries => 'No zombie entries for this column.';
+
+  @override
+  String get glacierModuleAddEntry => 'Add zombie entry';
+
+  @override
+  String get glacierModuleSelectZombie => 'Select zombie';
+
+  @override
+  String get glacierModuleEmptyType => 'No zombie selected';
+
+  @override
+  String get glacierModuleWeight => 'Weight';
+
+  @override
+  String get glacierModuleWeightTooltip =>
+      'Relative spawn weight for this zombie in this column.';
+
+  @override
+  String get glacierModuleLevel => 'Level (0–10)';
+
+  @override
+  String get glacierModuleLevelTooltip => 'Zombie level from 0 to 10.';
+
+  @override
   String get moduleTitle_HeianWindModuleProperties => 'Heian Divine Wind';
 
   @override
@@ -5477,4 +5676,154 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get jsonViewerLineContinuation => '↳';
+
+  @override
+  String get zombossMechCustomVariation => 'Custom';
+
+  @override
+  String get editCustomZombossMech => 'Edit';
+
+  @override
+  String get customZombossMechProperties => 'Custom ZombossMech properties';
+
+  @override
+  String get customZombossMechScalars => 'General';
+
+  @override
+  String get customZombossMechStages => 'Battle phases';
+
+  @override
+  String get customZombossMechEditHint =>
+      'Edit level-local property sheet for the memo (custom) mech variation.';
+
+  @override
+  String get zombossMechMinColumn => 'Min column';
+
+  @override
+  String get zombossMechMaxColumn => 'Max column';
+
+  @override
+  String get zombossMechStageActions => 'Actions';
+
+  @override
+  String get zombossMechActions => 'Actions';
+
+  @override
+  String get zombossMechPropertiesLabel => 'Properties';
+
+  @override
+  String get zombossMechAliasLabel => 'Alias';
+
+  @override
+  String get zombossMechDeletePhase => 'Delete phase';
+
+  @override
+  String zombossMechDeletePhaseTitle(int number) {
+    return 'Delete phase $number?';
+  }
+
+  @override
+  String get zombossMechDeletePhaseMessage =>
+      'This removes the phase and its action list. This cannot be undone.';
+
+  @override
+  String get zombossMechPhasesHelp =>
+      'Each phase has hit points, an ordered action list (executed top to bottom), and optionally a retreat action when the mech supports it.';
+
+  @override
+  String get zombossMechAddAction => 'Add action';
+
+  @override
+  String get zombossMechNoStageActions => 'No actions yet';
+
+  @override
+  String get zombossMechSelectAction => 'Select action';
+
+  @override
+  String get zombossMechSelectRetreatAction => 'Select retreat action';
+
+  @override
+  String get zombossMechCreateCustomAction => 'New custom action';
+
+  @override
+  String get zombossMechEditCustomAction => 'Edit custom action';
+
+  @override
+  String get zombossMechActionCategoryAll => 'All';
+
+  @override
+  String get zombossMechActionCategoryMovement => 'Movement';
+
+  @override
+  String get zombossMechActionCategoryAttack => 'Attack';
+
+  @override
+  String get zombossMechActionCategorySpecial => 'Special';
+
+  @override
+  String get zombossMechNoActionsFound => 'No actions found';
+
+  @override
+  String get zombossMechCustomActionLabel => 'Custom (CurrentLevel)';
+
+  @override
+  String get zombossMechActionAliasHint =>
+      'Codename used in RTID(alias@CurrentLevel). You can change it later; references in this property sheet update automatically.';
+
+  @override
+  String get zombossMechActionBaseObjclass => 'Base objclass';
+
+  @override
+  String get zombossMechEditRetreatAction => 'Choose retreat action';
+
+  @override
+  String get zombossMechAddZombie => 'Add zombie';
+
+  @override
+  String get zombossMechPickZombie => 'Pick zombie';
+
+  @override
+  String get zombossMechNoZombiesInList => 'No zombies in list';
+
+  @override
+  String get zombossMechCatalogActionReadOnly =>
+      'Built-in actions cannot be edited here. Create a custom action to change zombie lists.';
+
+  @override
+  String get zombossMechRetreatDisabled => 'Disabled';
+
+  @override
+  String get zombossMechOpenGlacierModule => 'Open glacier module settings';
+
+  @override
+  String get zombossMechRobotSpawnRow => 'Row';
+
+  @override
+  String get zombossMechRobotSpawnRowRandom => 'Random (-1)';
+
+  @override
+  String get zombossMechRobotSpawnLevel => 'Level';
+
+  @override
+  String get zombossMechRobotSpawnWeight => 'Weight';
+
+  @override
+  String get zombossMechRobotSpawnPlantfood => 'Plant food';
+
+  @override
+  String get zombossMechRetreatAction => 'Retreat action';
+
+  @override
+  String zombossMechPhaseNumber(int number) {
+    return 'Phase $number';
+  }
+
+  @override
+  String get zombossMechAddPhase => 'Add phase';
+
+  @override
+  String get zombossMechRemovePhase => 'Remove phase';
+
+  @override
+  String get zombossMechHitPoints => 'Hit points';
 }
