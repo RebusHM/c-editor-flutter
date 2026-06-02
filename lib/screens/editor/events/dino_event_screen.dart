@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:z_editor/data/level_parser.dart';
 import 'package:z_editor/data/pvz_models.dart';
 import 'package:z_editor/l10n/app_localizations.dart';
+import 'package:z_editor/l10n/resource_names.dart';
 import 'package:z_editor/widgets/editor_components.dart';
 
 /// Dino event editor. Ported from Z-Editor-master DinoEventEP.kt
@@ -31,13 +32,19 @@ class _DinoEventScreenState extends State<DinoEventScreen> {
   bool get _isDeepSeaLawn => LevelParser.isDeepSeaLawnFromFile(widget.levelFile);
   int get _maxRowIndex => _isDeepSeaLawn ? 5 : 4;
 
-  static const _dinoOptions = [
-    ('raptor', 'Raptor'),
-    ('stego', 'Stego'),
-    ('ptero', 'Ptero'),
-    ('tyranno', 'Tyranno'),
-    ('ankylo', 'Ankylo'),
+  static const _dinoTypeIds = [
+    'raptor',
+    'stego',
+    'ptero',
+    'tyranno',
+    'ankylo',
   ];
+
+  String _dinoTypeLabel(BuildContext context, String typeId) {
+    final key = 'dinoType_$typeId';
+    final localized = ResourceNames.lookup(context, key);
+    return localized != key ? localized : typeId;
+  }
 
   @override
   void initState() {
@@ -109,8 +116,18 @@ class _DinoEventScreenState extends State<DinoEventScreen> {
                   body: l10n?.eventHelpDinoBody ?? '',
                 ),
                 HelpSectionData(
-                  title: l10n?.duration ?? 'Duration',
-                  body: l10n?.eventHelpDinoDuration ?? '',
+                  title: l10n?.dinoType ?? 'Dinosaur type',
+                  body: l10n?.eventHelpDinoType ?? '',
+                ),
+                HelpSectionData(
+                  title: l10n?.dinoRowTitle ?? 'Row',
+                  body: l10n?.eventHelpDinoRow ?? '',
+                ),
+                HelpSectionData(
+                  title: l10n?.dinoWaveDuration ?? 'Stay duration',
+                  body: l10n?.eventHelpDinoWaveDuration ??
+                      l10n?.eventHelpDinoDuration ??
+                      '',
                 ),
               ],
             ),
@@ -135,7 +152,7 @@ class _DinoEventScreenState extends State<DinoEventScreen> {
                           Icon(Icons.pets, color: theme.colorScheme.secondary),
                           const SizedBox(width: 8),
                           Text(
-                            'Dino type (DinoType)',
+                            l10n?.dinoType ?? 'Dinosaur type',
                             style: theme.textTheme.titleMedium?.copyWith(
                               fontWeight: FontWeight.bold,
                             ),
@@ -144,18 +161,17 @@ class _DinoEventScreenState extends State<DinoEventScreen> {
                       ),
                       const SizedBox(height: 16),
                       DropdownButtonFormField<String>(
-                        initialValue: _dinoOptions
-                                .any((e) => e.$1 == _data.dinoType)
+                        initialValue: _dinoTypeIds.contains(_data.dinoType)
                             ? _data.dinoType
                             : null,
-                        decoration: const InputDecoration(
-                          labelText: 'Dino type',
-                          border: OutlineInputBorder(),
+                        decoration: InputDecoration(
+                          labelText: l10n?.dinoType ?? 'Dinosaur type',
+                          border: const OutlineInputBorder(),
                         ),
-                        items: _dinoOptions
-                            .map((e) => DropdownMenuItem(
-                                  value: e.$1,
-                                  child: Text(e.$2),
+                        items: _dinoTypeIds
+                            .map((id) => DropdownMenuItem(
+                                  value: id,
+                                  child: Text(_dinoTypeLabel(context, id)),
                                 ))
                             .toList(),
                         onChanged: (v) {
@@ -181,7 +197,7 @@ class _DinoEventScreenState extends State<DinoEventScreen> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
-                        'Position & duration',
+                        l10n?.positionAndDuration ?? 'Position & timing',
                         style: theme.textTheme.titleMedium?.copyWith(
                           fontWeight: FontWeight.bold,
                         ),
@@ -189,7 +205,10 @@ class _DinoEventScreenState extends State<DinoEventScreen> {
                       const SizedBox(height: 16),
                       Row(
                         children: [
-                          Text(l10n?.dinoRow(_data.dinoRow + 1) ?? 'Row (DinoRow): ${_data.dinoRow + 1}'),
+                          Text(
+                            l10n?.dinoRow(_data.dinoRow + 1) ??
+                                'Row: ${_data.dinoRow + 1}',
+                          ),
                           const SizedBox(width: 8),
                           IconButton(
                             icon: const Icon(Icons.remove),
@@ -222,9 +241,10 @@ class _DinoEventScreenState extends State<DinoEventScreen> {
                       const SizedBox(height: 12),
                       TextFormField(
                         initialValue: _data.dinoWaveDuration.toString(),
-                        decoration: const InputDecoration(
-                          labelText: 'Duration (DinoWaveDuration)',
-                          border: OutlineInputBorder(),
+                        decoration: InputDecoration(
+                          labelText:
+                              l10n?.dinoWaveDuration ?? 'Stay duration (waves)',
+                          border: const OutlineInputBorder(),
                         ),
                         keyboardType: TextInputType.number,
                         onChanged: (v) {
