@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:z_editor/data/pvz_models.dart';
-import 'package:z_editor/l10n/app_localizations.dart';
-import 'package:z_editor/screens/editor/events/zombie_spawn_event_screen.dart';
+import 'package:c_editor/data/pvz_models.dart';
+import 'package:c_editor/l10n/app_localizations.dart';
+import 'package:c_editor/screens/editor/events/zombie_spawn_event_screen.dart';
 
 /// Jittered / standard zombie spawn event. Wraps ZombieSpawnEventScreen.
 class JitteredEventScreen extends StatelessWidget {

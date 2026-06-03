@@ -634,11 +634,11 @@ abstract class AppLocalizations {
   /// **'Software intro'**
   String get softwareIntro;
 
-  /// No description provided for @zEditor.
+  /// No description provided for @cEditor.
   ///
   /// In en, this message translates to:
-  /// **'Z-Editor'**
-  String get zEditor;
+  /// **'C-Editor'**
+  String get cEditor;
 
   /// No description provided for @pvzEditorSubtitle.
   ///
@@ -655,7 +655,7 @@ abstract class AppLocalizations {
   /// No description provided for @introText.
   ///
   /// In en, this message translates to:
-  /// **'Z-Editor is a visual level editing tool designed for Plants vs. Zombies 2. It aims to simplify editing level JSON files with an intuitive interface.'**
+  /// **'C-Editor is a visual level editing tool designed for Plants vs. Zombies 2 Chinese Edition. It aims to simplify editing level JSON files with an intuitive interface.'**
   String get introText;
 
   /// No description provided for @featuresSection.
@@ -697,20 +697,26 @@ abstract class AppLocalizations {
   /// No description provided for @usageText.
   ///
   /// In en, this message translates to:
-  /// **'1. Directory Setup: Tap the folder icon to select a folder for level JSON files.\n2. Open/Create: Tap a level to edit or use \"+\" to create from template.\n3. Modules: Add modules in the editor.\n4. Save: Tap save to write back to the JSON file.\n5. Convert level files: JSON can be converted into hot-update-readable HUJSON or encrypted RTON, after which the files can be imported into the game using other tools for testing (remember to manually change the file extension from .hujson back to .json before importing).\n6. If you have any questions or need help with advanced level creation, feel free to join the Plants vs. Zombies Discord server and ask in the PvZ2C-Modding channel thread.\nServer invite link: https://discord.gg/FBasnrE\nQQ group: 562251204'**
+  /// **'1. Directory Setup: Tap the folder icon to select a folder for level JSON files.\n2. Open/Create: Tap a level to edit or use \"+\" to create from template.\n3. Modules: Add modules in the editor.\n4. Save: Tap save to write back to the JSON file.\n5. Convert level files: JSON can be converted into hot-update-readable HUJSON or encrypted RTON, after which the files can be imported into the game using other tools for testing (remember to manually change the file extension from .hujson back to .json before importing).\n6. If you have any questions or need help with advanced level creation, feel free to join the Plants vs. Zombies Discord server and ask in the PvZ2C-Modding channel thread.'**
   String get usageText;
 
   /// No description provided for @usageTextDesktop.
   ///
   /// In en, this message translates to:
-  /// **'1. Directory Setup: Tap the folder icon to select a folder for level JSON files.\n2. Open/Create: Click a level to edit or use \"+\" to create from template.\n3. Modules: Add modules in the editor.\n4. Save: Click save to write back to the JSON file.\n5. Convert level files: JSON can be converted into hot-update-readable HUJSON or encrypted RTON, after which the files can be imported into the game using other tools for testing (remember to manually change the file extension from .hujson back to .json before importing).\n6. If you have any questions or need help with advanced level creation, feel free to join the Plants vs. Zombies Discord server and ask in the PvZ2C-Modding channel thread.\nServer invite link: https://discord.gg/FBasnrE\nQQ group: 562251204'**
+  /// **'1. Directory Setup: Tap the folder icon to select a folder for level JSON files.\n2. Open/Create: Click a level to edit or use \"+\" to create from template.\n3. Modules: Add modules in the editor.\n4. Save: Click save to write back to the JSON file.\n5. Convert level files: JSON can be converted into hot-update-readable HUJSON or encrypted RTON, after which the files can be imported into the game using other tools for testing (remember to manually change the file extension from .hujson back to .json before importing).\n6. If you have any questions or need help with advanced level creation, feel free to join the Plants vs. Zombies Discord server and ask in the PvZ2C-Modding channel thread.'**
   String get usageTextDesktop;
 
   /// No description provided for @usageTextMobile.
   ///
   /// In en, this message translates to:
-  /// **'1. Directory Setup: Tap the folder icon to select a folder for level JSON files.\n2. Open/Create: Tap a level to edit or use \"+\" to create from template.\n3. Modules: Add modules in the editor.\n4. Save: Tap save to write back to the JSON file.\n5. Convert level files: JSON can be converted into hot-update-readable HUJSON or encrypted RTON, after which the files can be imported into the game using other tools for testing (remember to manually change the file extension from .hujson back to .json before importing).\n6. If you have any questions or need help with advanced level creation, feel free to join the Plants vs. Zombies Discord server and ask in the PvZ2C-Modding channel thread.\nServer invite link: https://discord.gg/FBasnrE\nQQ group: 562251204'**
+  /// **'1. Directory Setup: Tap the folder icon to select a folder for level JSON files.\n2. Open/Create: Tap a level to edit or use \"+\" to create from template.\n3. Modules: Add modules in the editor.\n4. Save: Tap save to write back to the JSON file.\n5. Convert level files: JSON can be converted into hot-update-readable HUJSON or encrypted RTON, after which the files can be imported into the game using other tools for testing (remember to manually change the file extension from .hujson back to .json before importing).\n6. If you have any questions or need help with advanced level creation, feel free to join the Plants vs. Zombies Discord server and ask in the PvZ2C-Modding channel thread.'**
   String get usageTextMobile;
+
+  /// No description provided for @discordInviteLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Server invite link:'**
+  String get discordInviteLabel;
 
   /// No description provided for @creditsSection.
   ///
@@ -727,20 +733,80 @@ abstract class AppLocalizations {
   /// No description provided for @authorName.
   ///
   /// In en, this message translates to:
-  /// **'降维打击'**
+  /// **'CyberSteve777'**
   String get authorName;
 
   /// No description provided for @thanksLabel.
   ///
   /// In en, this message translates to:
-  /// **'Thanks:'**
+  /// **'Special thanks:'**
   String get thanksLabel;
 
   /// No description provided for @thanksNames.
   ///
   /// In en, this message translates to:
-  /// **'星寻、metal海枣、超越自我3333、桃酱、凉沈、小小师、顾小言、PhiLia093、咖啡、不留名'**
+  /// **'Devourdoom, Evilhack28, Chara, Haruma, vi_i_guess'**
   String get thanksNames;
+
+  /// No description provided for @sourceLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Source:'**
+  String get sourceLabel;
+
+  /// No description provided for @issuesLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Issues:'**
+  String get issuesLabel;
+
+  /// No description provided for @zEditorAcknowledgment.
+  ///
+  /// In en, this message translates to:
+  /// **'Creating this tool would be impossible without the creators of Z-Editor.'**
+  String get zEditorAcknowledgment;
+
+  /// No description provided for @zEditorCreditsSubsection.
+  ///
+  /// In en, this message translates to:
+  /// **'Z-Editor credits'**
+  String get zEditorCreditsSubsection;
+
+  /// No description provided for @zEditorAuthorLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Author:'**
+  String get zEditorAuthorLabel;
+
+  /// No description provided for @zEditorAuthorName.
+  ///
+  /// In en, this message translates to:
+  /// **'降维打击'**
+  String get zEditorAuthorName;
+
+  /// No description provided for @zEditorThanksLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Thanks:'**
+  String get zEditorThanksLabel;
+
+  /// No description provided for @zEditorThanksNames.
+  ///
+  /// In en, this message translates to:
+  /// **'星寻、metal海枣、超越自我3333、桃酱、凉沈、小小师、顾小言、PhiLia093、咖啡、不留名'**
+  String get zEditorThanksNames;
+
+  /// No description provided for @zEditorQqGroupLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'QQ group:'**
+  String get zEditorQqGroupLabel;
+
+  /// No description provided for @zEditorQqGroupNumber.
+  ///
+  /// In en, this message translates to:
+  /// **'960722092'**
+  String get zEditorQqGroupNumber;
 
   /// No description provided for @tagline.
   ///

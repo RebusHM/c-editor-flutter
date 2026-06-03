@@ -1,10 +1,10 @@
 import 'package:flutter/widgets.dart';
-import 'package:z_editor/data/models/zomboss_mech_catalog.dart';
-import 'package:z_editor/data/pvz_models/PvzLevelFile.dart';
-import 'package:z_editor/data/rtid_parser.dart';
-import 'package:z_editor/data/zomboss_mech_action_utils.dart';
-import 'package:z_editor/l10n/app_localizations.dart';
-import 'package:z_editor/l10n/resource_names.dart';
+import 'package:c_editor/data/models/zomboss_mech_catalog.dart';
+import 'package:c_editor/data/pvz_models/PvzLevelFile.dart';
+import 'package:c_editor/data/rtid_parser.dart';
+import 'package:c_editor/data/zomboss_mech_action_utils.dart';
+import 'package:c_editor/l10n/app_localizations.dart';
+import 'package:c_editor/l10n/resource_names.dart';
 
 /// Localization keys for [assets/l10n/resource_*.json] zomboss mech editor strings.
 abstract class ZombossMechL10n {

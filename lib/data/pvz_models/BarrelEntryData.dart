@@ -1,6 +1,6 @@
-import 'package:z_editor/data/pvz_models/PvzModel.dart';
+import 'package:c_editor/data/pvz_models/PvzModel.dart';
 
-import 'package:z_editor/data/pvz_models/BarrelParamsData.dart';
+import 'package:c_editor/data/pvz_models/BarrelParamsData.dart';
 
 class BarrelEntryData extends PvzModel {
   BarrelEntryData({required this.row, required this.type, this.params});

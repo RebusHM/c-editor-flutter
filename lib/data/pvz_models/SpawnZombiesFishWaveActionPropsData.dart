@@ -1,7 +1,7 @@
-import 'package:z_editor/data/pvz_models/PvzModel.dart';
+import 'package:c_editor/data/pvz_models/PvzModel.dart';
 
-import 'package:z_editor/data/pvz_models/FishSpawnData.dart';
-import 'package:z_editor/data/pvz_models/ZombieSpawnData.dart';
+import 'package:c_editor/data/pvz_models/FishSpawnData.dart';
+import 'package:c_editor/data/pvz_models/ZombieSpawnData.dart';
 
 class SpawnZombiesFishWaveActionPropsData extends PvzModel {
   SpawnZombiesFishWaveActionPropsData({

@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:z_editor/data/models/zomboss_mech_catalog.dart';
-import 'package:z_editor/data/models/zomboss_robot_spawn_entry.dart';
-import 'package:z_editor/data/pvz_models/PvzLevelFile.dart';
-import 'package:z_editor/data/zomboss_mech_action_utils.dart';
-import 'package:z_editor/data/zomboss_mech_l10n.dart';
-import 'package:z_editor/widgets/editor_components.dart';
-import 'package:z_editor/widgets/zomboss_mech_robot_spawn_list.dart';
-import 'package:z_editor/widgets/zomboss_mech_zombie_type_list.dart';
+import 'package:c_editor/data/models/zomboss_mech_catalog.dart';
+import 'package:c_editor/data/models/zomboss_robot_spawn_entry.dart';
+import 'package:c_editor/data/pvz_models/PvzLevelFile.dart';
+import 'package:c_editor/data/zomboss_mech_action_utils.dart';
+import 'package:c_editor/data/zomboss_mech_l10n.dart';
+import 'package:c_editor/widgets/editor_components.dart';
+import 'package:c_editor/widgets/zomboss_mech_robot_spawn_list.dart';
+import 'package:c_editor/widgets/zomboss_mech_zombie_type_list.dart';
 
 /// Dynamic editors for zomboss action objdata from catalog field specs.
 class ZombossMechActionFieldsEditor extends StatelessWidget {

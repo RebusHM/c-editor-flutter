@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:z_editor/data/registry/event_registry.dart';
-import 'package:z_editor/l10n/app_localizations.dart';
+import 'package:c_editor/data/registry/event_registry.dart';
+import 'package:c_editor/l10n/app_localizations.dart';
 
 /// Event selection for wave timeline. Ported from Z-Editor-master EventSelectionScreen.kt
 class EventSelectionScreen extends StatelessWidget {

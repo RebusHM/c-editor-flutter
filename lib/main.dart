@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:z_editor/app.dart';
-import 'package:z_editor/bloc/app_navigation/app_navigation_cubit.dart';
-import 'package:z_editor/bloc/settings/settings_cubit.dart';
-import 'package:z_editor/data/repository/grid_item_repository.dart';
-import 'package:z_editor/data/ambient_audio_catalog.dart';
-import 'package:z_editor/data/music_suffix_catalog.dart';
-import 'package:z_editor/data/repository/stage_repository.dart';
-import 'package:z_editor/data/repository/zomboss_battle_repository.dart';
-import 'package:z_editor/data/repository/zomboss_mech_repository.dart';
-import 'package:z_editor/l10n/resource_names.dart';
+import 'package:c_editor/app.dart';
+import 'package:c_editor/bloc/app_navigation/app_navigation_cubit.dart';
+import 'package:c_editor/bloc/settings/settings_cubit.dart';
+import 'package:c_editor/data/repository/grid_item_repository.dart';
+import 'package:c_editor/data/ambient_audio_catalog.dart';
+import 'package:c_editor/data/music_suffix_catalog.dart';
+import 'package:c_editor/data/repository/stage_repository.dart';
+import 'package:c_editor/data/repository/zomboss_battle_repository.dart';
+import 'package:c_editor/data/repository/zomboss_mech_repository.dart';
+import 'package:c_editor/l10n/resource_names.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();

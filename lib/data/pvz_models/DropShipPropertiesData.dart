@@ -1,6 +1,6 @@
-import 'package:z_editor/data/pvz_models/PvzModel.dart';
+import 'package:c_editor/data/pvz_models/PvzModel.dart';
 
-import 'package:z_editor/data/pvz_models/DropShipAppearWaveData.dart';
+import 'package:c_editor/data/pvz_models/DropShipAppearWaveData.dart';
 
 class DropShipPropertiesData extends PvzModel {
   DropShipPropertiesData({List<DropShipAppearWaveData>? appearWaves})

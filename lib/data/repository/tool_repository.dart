@@ -1,5 +1,5 @@
 import 'package:flutter/widgets.dart';
-import 'package:z_editor/l10n/resource_names.dart';
+import 'package:c_editor/l10n/resource_names.dart';
 
 /// Tool card info. Ported from Z-Editor-master ToolRepository.kt
 class ToolCardInfo {

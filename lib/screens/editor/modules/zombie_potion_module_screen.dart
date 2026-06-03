@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:z_editor/data/repository/grid_item_repository.dart';
-import 'package:z_editor/l10n/app_localizations.dart';
-import 'package:z_editor/l10n/resource_names.dart';
-import 'package:z_editor/data/pvz_models.dart';
-import 'package:z_editor/data/rtid_parser.dart';
-import 'package:z_editor/screens/select/grid_item_selection_screen.dart';
-import 'package:z_editor/widgets/editor_components.dart';
+import 'package:c_editor/data/repository/grid_item_repository.dart';
+import 'package:c_editor/l10n/app_localizations.dart';
+import 'package:c_editor/l10n/resource_names.dart';
+import 'package:c_editor/data/pvz_models.dart';
+import 'package:c_editor/data/rtid_parser.dart';
+import 'package:c_editor/screens/select/grid_item_selection_screen.dart';
+import 'package:c_editor/widgets/editor_components.dart';
 
 /// Zombie potion module editor. Ported from PotionPropertiesEP.kt
 class ZombiePotionModuleScreen extends StatefulWidget {

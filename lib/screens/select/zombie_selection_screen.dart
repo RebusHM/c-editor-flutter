@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:z_editor/bloc/editor/editor_cubit.dart';
-import 'package:z_editor/data/repository/zombie_repository.dart';
-import 'package:z_editor/theme/app_theme.dart';
-import 'package:z_editor/l10n/app_localizations.dart';
-import 'package:z_editor/l10n/resource_names.dart';
-import 'package:z_editor/screens/select/kongfu_rocket_flick_prompt.dart';
-import 'package:z_editor/widgets/asset_image.dart'
+import 'package:c_editor/bloc/editor/editor_cubit.dart';
+import 'package:c_editor/data/repository/zombie_repository.dart';
+import 'package:c_editor/theme/app_theme.dart';
+import 'package:c_editor/l10n/app_localizations.dart';
+import 'package:c_editor/l10n/resource_names.dart';
+import 'package:c_editor/screens/select/kongfu_rocket_flick_prompt.dart';
+import 'package:c_editor/widgets/asset_image.dart'
     show AssetImageWidget, imageAltCandidates;
-import 'package:z_editor/widgets/editor_components.dart'
+import 'package:c_editor/widgets/editor_components.dart'
     show ScrollableWithMouseDrag;
 
 /// Placeholder when a zombie has no icon or icon fails to load.

@@ -1,11 +1,11 @@
-name: z_editor
+name: c_editor
 description: "Level Editor for Plants vs. Zombies 2 Chinese"
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 
 
-version: 2.0.0+1
+version: 0.1.0+1
 
 environment:
   sdk: ^3.9.2
@@ -28,6 +28,7 @@ dependencies:
   permission_handler: ^11.3.1
   archive: ^4.0.2
   package_info_plus: ^8.1.2
+  url_launcher: ^6.3.1
   rijndael: ^1.0.1
 
 dev_dependencies:
@@ -62,6 +63,7 @@ flutter:
 flutter_launcher_icons:
   android: true
   ios: true
+  remove_alpha_ios: true
   image_path: "assets/icon.png"
   min_sdk_android: 21
   web:

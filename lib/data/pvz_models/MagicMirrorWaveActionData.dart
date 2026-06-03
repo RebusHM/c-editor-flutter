@@ -1,6 +1,6 @@
-import 'package:z_editor/data/pvz_models/PvzModel.dart';
+import 'package:c_editor/data/pvz_models/PvzModel.dart';
 
-import 'package:z_editor/data/pvz_models/MagicMirrorArrayData.dart';
+import 'package:c_editor/data/pvz_models/MagicMirrorArrayData.dart';
 
 class MagicMirrorWaveActionData extends PvzModel {
   MagicMirrorWaveActionData({this.arrays = const []});

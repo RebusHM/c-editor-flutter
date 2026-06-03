@@ -1,17 +1,17 @@
 import 'package:collection/collection.dart';
 import 'package:flutter/material.dart';
-import 'package:z_editor/data/level_parser.dart';
-import 'package:z_editor/data/pvz_models.dart';
-import 'package:z_editor/data/rtid_parser.dart';
-import 'package:z_editor/data/repository/zombie_repository.dart';
-import 'package:z_editor/data/repository/zombie_properties_repository.dart';
-import 'package:z_editor/data/repository/plant_repository.dart';
-import 'package:z_editor/l10n/app_localizations.dart';
-import 'package:z_editor/l10n/resource_names.dart';
-import 'package:z_editor/theme/app_theme.dart';
-import 'package:z_editor/widgets/asset_image.dart';
-import 'package:z_editor/widgets/editor_components.dart';
-import 'package:z_editor/screens/editor/events/fish_properties_entry_screen.dart';
+import 'package:c_editor/data/level_parser.dart';
+import 'package:c_editor/data/pvz_models.dart';
+import 'package:c_editor/data/rtid_parser.dart';
+import 'package:c_editor/data/repository/zombie_repository.dart';
+import 'package:c_editor/data/repository/zombie_properties_repository.dart';
+import 'package:c_editor/data/repository/plant_repository.dart';
+import 'package:c_editor/l10n/app_localizations.dart';
+import 'package:c_editor/l10n/resource_names.dart';
+import 'package:c_editor/theme/app_theme.dart';
+import 'package:c_editor/widgets/asset_image.dart';
+import 'package:c_editor/widgets/editor_components.dart';
+import 'package:c_editor/screens/editor/events/fish_properties_entry_screen.dart';
 
 /// Zombie + fish wave event for submarine levels.
 class ZombieFishWaveEventScreen extends StatefulWidget {

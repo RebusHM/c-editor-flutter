@@ -1,7 +1,7 @@
 import 'dart:convert';
 
 import 'package:flutter/widgets.dart';
-import 'package:z_editor/data/asset_loader.dart';
+import 'package:c_editor/data/asset_loader.dart';
 
 /// Stage data for level editor.
 enum StageType { all, main, extra, seasons, special }

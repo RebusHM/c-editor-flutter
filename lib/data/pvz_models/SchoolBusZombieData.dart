@@ -1,4 +1,4 @@
-import 'package:z_editor/data/pvz_models/PvzModel.dart';
+import 'package:c_editor/data/pvz_models/PvzModel.dart';
 
 class SchoolBusZombieData extends PvzModel {
   SchoolBusZombieData({this.typeName = '', this.level = 0});

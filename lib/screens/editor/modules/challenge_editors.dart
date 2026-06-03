@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:z_editor/data/challenge_resource_l10n.dart';
-import 'package:z_editor/data/pvz_models.dart';
-import 'package:z_editor/data/repository/challenge_repository.dart';
-import 'package:z_editor/l10n/app_localizations.dart';
-import 'package:z_editor/screens/editor/modules/star_challenge_property_editors.dart';
-import 'package:z_editor/theme/app_theme.dart';
+import 'package:c_editor/data/challenge_resource_l10n.dart';
+import 'package:c_editor/data/pvz_models.dart';
+import 'package:c_editor/data/repository/challenge_repository.dart';
+import 'package:c_editor/l10n/app_localizations.dart';
+import 'package:c_editor/screens/editor/modules/star_challenge_property_editors.dart';
+import 'package:c_editor/theme/app_theme.dart';
 
 /// Shows challenge editor in an alert dialog instead of a separate screen.
 Future<void> showChallengeEditorDialog(

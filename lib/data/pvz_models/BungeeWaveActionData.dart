@@ -1,6 +1,6 @@
-import 'package:z_editor/data/pvz_models/PvzModel.dart';
+import 'package:c_editor/data/pvz_models/PvzModel.dart';
 
-import 'package:z_editor/data/pvz_models/BungeeWaveTargetData.dart';
+import 'package:c_editor/data/pvz_models/BungeeWaveTargetData.dart';
 
 class BungeeWaveActionData extends PvzModel {
   BungeeWaveActionData({

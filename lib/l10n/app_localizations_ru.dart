@@ -297,7 +297,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get softwareIntro => 'О программе';
 
   @override
-  String get zEditor => 'Z-Editor';
+  String get cEditor => 'C-Editor';
 
   @override
   String get pvzEditorSubtitle => 'Визуальный редактор уровней PVZ2';
@@ -307,7 +307,7 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get introText =>
-      'Z-Editor — визуальный редактор уровней для Plants vs. Zombies 2. Упрощает редактирование JSON-файлов уровней с помощью интуитивного интерфейса.';
+      'C-Editor — визуальный редактор уровней для китайской версии Plants vs. Zombies 2. Упрощает редактирование JSON-файлов уровней с помощью интуитивного интерфейса.';
 
   @override
   String get featuresSection => 'Основные возможности';
@@ -333,15 +333,18 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get usageText =>
-      '1. Папка: нажмите на иконку папки, чтобы выбрать каталог с уровнями.\n2. Открыть/Создать: нажмите на уровень для редактирования или «+» для создания из шаблона.\n3. Модули: добавляйте модули в редакторе.\n4. Сохранить: нажмите «Сохранить» для записи в JSON.\nQQ-группа: 562251204';
+      '1. Папка: нажмите на иконку папки, чтобы выбрать каталог с уровнями.\n2. Открыть/Создать: нажмите на уровень для редактирования или «+» для создания из шаблона.\n3. Модули: добавляйте модули в редакторе.\n4. Сохранить: нажмите «Сохранить» для записи в JSON.\n5. Преобразование файлов уровней: JSON можно конвертировать в HUJSON для хот-апдейта или в зашифрованный RTON, затем импортировать в игру другими инструментами (перед импортом вручную смените расширение с .hujson на .json).\n6. Если у вас есть вопросы или нужна помощь с продвинутым созданием уровней, присоединяйтесь к Discord-серверу Plants vs. Zombies и пишите в ветке канала PvZ2C-Modding.';
 
   @override
   String get usageTextDesktop =>
-      '1. Папка: щёлкните по иконке папки для выбора каталога уровней.\n2. Открыть/Создать: щёлкните по уровню для редактирования или «+» для создания из шаблона.\n3. Модули: добавляйте модули в редакторе.\n4. Сохранить: щёлкните «Сохранить» для записи в JSON.\nQQ-группа: 562251204';
+      '1. Папка: щёлкните по иконке папки для выбора каталога уровней.\n2. Открыть/Создать: щёлкните по уровню для редактирования или «+» для создания из шаблона.\n3. Модули: добавляйте модули в редакторе.\n4. Сохранить: щёлкните «Сохранить» для записи в JSON.\n5. Преобразование файлов уровней: JSON можно конвертировать в HUJSON для хот-апдейта или в зашифрованный RTON, затем импортировать в игру другими инструментами (перед импортом вручную смените расширение с .hujson на .json).\n6. Если у вас есть вопросы или нужна помощь с продвинутым созданием уровней, присоединяйтесь к Discord-серверу Plants vs. Zombies и пишите в ветке канала PvZ2C-Modding.';
 
   @override
   String get usageTextMobile =>
-      '1. Папка: нажмите на иконку папки, чтобы выбрать каталог с уровнями.\n2. Открыть/Создать: нажмите на уровень для редактирования или «+» для создания из шаблона.\n3. Модули: добавляйте модули в редакторе.\n4. Сохранить: нажмите «Сохранить» для записи в JSON.\nQQ-группа: 562251204';
+      '1. Папка: нажмите на иконку папки, чтобы выбрать каталог с уровнями.\n2. Открыть/Создать: нажмите на уровень для редактирования или «+» для создания из шаблона.\n3. Модули: добавляйте модули в редакторе.\n4. Сохранить: нажмите «Сохранить» для записи в JSON.\n5. Преобразование файлов уровней: JSON можно конвертировать в HUJSON для хот-апдейта или в зашифрованный RTON, затем импортировать в игру другими инструментами (перед импортом вручную смените расширение с .hujson на .json).\n6. Если у вас есть вопросы или нужна помощь с продвинутым созданием уровней, присоединяйтесь к Discord-серверу Plants vs. Zombies и пишите в ветке канала PvZ2C-Modding.';
+
+  @override
+  String get discordInviteLabel => 'Ссылка-приглашение на сервер:';
 
   @override
   String get creditsSection => 'Благодарности';
@@ -350,14 +353,45 @@ class AppLocalizationsRu extends AppLocalizations {
   String get authorLabel => 'Автор:';
 
   @override
-  String get authorName => '降维打击';
+  String get authorName => 'CyberSteve777';
 
   @override
-  String get thanksLabel => 'Благодарность:';
+  String get thanksLabel => 'Особая благодарность:';
 
   @override
-  String get thanksNames =>
+  String get thanksNames => 'Devourdoom, Evilhack28, Chara, Haruma, vi_i_guess';
+
+  @override
+  String get sourceLabel => 'Исходный код:';
+
+  @override
+  String get issuesLabel => 'Проблемы:';
+
+  @override
+  String get zEditorAcknowledgment =>
+      'Без создателей Z-Editor создание этого инструмента было бы невозможным.';
+
+  @override
+  String get zEditorCreditsSubsection => 'Благодарности Z-Editor';
+
+  @override
+  String get zEditorAuthorLabel => 'Автор:';
+
+  @override
+  String get zEditorAuthorName => '降维打击';
+
+  @override
+  String get zEditorThanksLabel => 'Благодарность:';
+
+  @override
+  String get zEditorThanksNames =>
       '星寻、metal海枣、超越自我3333、桃酱、凉沈、小小师、顾小言、PhiLia093、咖啡、不留名';
+
+  @override
+  String get zEditorQqGroupLabel => 'QQ-группа:';
+
+  @override
+  String get zEditorQqGroupNumber => '562251204';
 
   @override
   String get tagline => 'Создавайте бесконечные возможности';

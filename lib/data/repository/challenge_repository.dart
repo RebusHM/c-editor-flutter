@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:z_editor/data/pvz_models.dart';
-import 'package:z_editor/data/challenge_resource_l10n.dart';
+import 'package:c_editor/data/pvz_models.dart';
+import 'package:c_editor/data/challenge_resource_l10n.dart';
 
 /// Challenge type metadata. Ported from Z-Editor-master ChallengeRepository.kt
 class ChallengeTypeInfo {

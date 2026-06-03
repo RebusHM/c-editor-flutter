@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:z_editor/data/pvz_models.dart';
-import 'package:z_editor/data/rtid_parser.dart';
-import 'package:z_editor/l10n/app_localizations.dart';
-import 'package:z_editor/theme/app_theme.dart' show pvzLightOrangeDark, pvzLightOrangeLight;
-import 'package:z_editor/widgets/editor_components.dart' show showEditorHelpDialog, HelpSectionData, editorInputDecoration;
+import 'package:c_editor/data/pvz_models.dart';
+import 'package:c_editor/data/rtid_parser.dart';
+import 'package:c_editor/l10n/app_localizations.dart';
+import 'package:c_editor/theme/app_theme.dart' show pvzLightOrangeDark, pvzLightOrangeLight;
+import 'package:c_editor/widgets/editor_components.dart' show showEditorHelpDialog, HelpSectionData, editorInputDecoration;
 
 class MaxSunModuleScreen extends StatefulWidget {
   const MaxSunModuleScreen({

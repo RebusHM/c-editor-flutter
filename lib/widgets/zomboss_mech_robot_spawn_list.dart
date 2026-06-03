@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:z_editor/data/level_parser.dart';
-import 'package:z_editor/data/models/zomboss_robot_spawn_entry.dart';
-import 'package:z_editor/data/pvz_models/PvzLevelFile.dart';
-import 'package:z_editor/data/repository/zombie_repository.dart';
-import 'package:z_editor/l10n/app_localizations.dart';
-import 'package:z_editor/l10n/resource_names.dart';
-import 'package:z_editor/screens/select/zombie_selection_screen.dart';
-import 'package:z_editor/widgets/asset_image.dart';
-import 'package:z_editor/widgets/editor_components.dart';
+import 'package:c_editor/data/level_parser.dart';
+import 'package:c_editor/data/models/zomboss_robot_spawn_entry.dart';
+import 'package:c_editor/data/pvz_models/PvzLevelFile.dart';
+import 'package:c_editor/data/repository/zombie_repository.dart';
+import 'package:c_editor/l10n/app_localizations.dart';
+import 'package:c_editor/l10n/resource_names.dart';
+import 'package:c_editor/screens/select/zombie_selection_screen.dart';
+import 'package:c_editor/widgets/asset_image.dart';
+import 'package:c_editor/widgets/editor_components.dart';
 
 const _kUnknownZombieIcon = 'assets/images/others/unknown.webp';
 

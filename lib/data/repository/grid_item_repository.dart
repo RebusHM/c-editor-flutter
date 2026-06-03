@@ -1,8 +1,8 @@
 import 'dart:convert';
 
 import 'package:flutter/widgets.dart';
-import 'package:z_editor/data/repository/reference_repository.dart';
-import 'package:z_editor/data/asset_loader.dart';
+import 'package:c_editor/data/repository/reference_repository.dart';
+import 'package:c_editor/data/asset_loader.dart';
 
 /// Grid item info. Ported from Z-Editor-master GridItemRepository.kt
 /// For display use ResourceNames.lookup(context, 'griditem_$typeName').

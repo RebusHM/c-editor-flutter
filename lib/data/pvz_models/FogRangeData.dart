@@ -1,4 +1,4 @@
-import 'package:z_editor/data/pvz_models/PvzModel.dart';
+import 'package:c_editor/data/pvz_models/PvzModel.dart';
 
 class FogRangeData extends PvzModel {
   FogRangeData({this.mX = 4, this.mY = 0, this.mWidth = 8, this.mHeight = 5});

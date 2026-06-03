@@ -1,6 +1,6 @@
-import 'package:z_editor/data/pvz_models/PvzModel.dart';
+import 'package:c_editor/data/pvz_models/PvzModel.dart';
 
-import 'package:z_editor/data/pvz_models/FogRangeData.dart';
+import 'package:c_editor/data/pvz_models/FogRangeData.dart';
 
 class FairyTaleFogWaveActionData extends PvzModel {
   FairyTaleFogWaveActionData({

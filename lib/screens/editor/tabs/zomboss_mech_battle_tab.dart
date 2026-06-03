@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:z_editor/data/models/zomboss_mech_catalog.dart';
-import 'package:z_editor/data/pvz_models.dart';
-import 'package:z_editor/data/repository/zomboss_mech_repository.dart';
-import 'package:z_editor/l10n/app_localizations.dart';
-import 'package:z_editor/data/zomboss_mech_l10n.dart';
-import 'package:z_editor/l10n/resource_names.dart';
-import 'package:z_editor/screens/editor/others/custom_zomboss_mech_properties_screen.dart';
-import 'package:z_editor/widgets/asset_image.dart';
-import 'package:z_editor/widgets/editor_components.dart';
+import 'package:c_editor/data/models/zomboss_mech_catalog.dart';
+import 'package:c_editor/data/pvz_models.dart';
+import 'package:c_editor/data/repository/zomboss_mech_repository.dart';
+import 'package:c_editor/l10n/app_localizations.dart';
+import 'package:c_editor/data/zomboss_mech_l10n.dart';
+import 'package:c_editor/l10n/resource_names.dart';
+import 'package:c_editor/screens/editor/others/custom_zomboss_mech_properties_screen.dart';
+import 'package:c_editor/widgets/asset_image.dart';
+import 'package:c_editor/widgets/editor_components.dart';
 
 class ZombossMechBattleTab extends StatefulWidget {
   const ZombossMechBattleTab({

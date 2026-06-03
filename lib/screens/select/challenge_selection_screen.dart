@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:z_editor/data/repository/challenge_repository.dart';
-import 'package:z_editor/l10n/app_localizations.dart';
-import 'package:z_editor/theme/app_theme.dart';
+import 'package:c_editor/data/repository/challenge_repository.dart';
+import 'package:c_editor/l10n/app_localizations.dart';
+import 'package:c_editor/theme/app_theme.dart';
 
 /// Challenge selection. Ported from Z-Editor-master ChallengeSelectionScreen.kt
 /// Uses PvzOrange colors in both light and dark themes for consistency.

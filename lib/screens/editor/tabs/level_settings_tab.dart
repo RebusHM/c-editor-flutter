@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:z_editor/data/registry/conflict_registry.dart';
-import 'package:z_editor/theme/app_theme.dart';
-import 'package:z_editor/data/registry/module_registry.dart';
-import 'package:z_editor/data/pvz_models.dart';
-import 'package:z_editor/data/repository/plant_repository.dart';
-import 'package:z_editor/data/repository/reference_repository.dart';
-import 'package:z_editor/data/rtid_parser.dart';
-import 'package:z_editor/l10n/app_localizations.dart';
-import 'package:z_editor/l10n/resource_names.dart';
+import 'package:c_editor/data/registry/conflict_registry.dart';
+import 'package:c_editor/theme/app_theme.dart';
+import 'package:c_editor/data/registry/module_registry.dart';
+import 'package:c_editor/data/pvz_models.dart';
+import 'package:c_editor/data/repository/plant_repository.dart';
+import 'package:c_editor/data/repository/reference_repository.dart';
+import 'package:c_editor/data/rtid_parser.dart';
+import 'package:c_editor/l10n/app_localizations.dart';
+import 'package:c_editor/l10n/resource_names.dart';
 
 bool _shouldRecommendTunnelDefendModule(
   LevelDefinitionData levelDef,

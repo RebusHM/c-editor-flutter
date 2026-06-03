@@ -3,7 +3,7 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:permission_handler/permission_handler.dart';
-import 'package:z_editor/l10n/app_localizations.dart';
+import 'package:c_editor/l10n/app_localizations.dart';
 
 Future<void> ensureStoragePermission(BuildContext context) async {
   if (!Platform.isAndroid) return;

@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:z_editor/data/models/zomboss_mech_catalog.dart';
-import 'package:z_editor/data/pvz_models/PvzLevelFile.dart';
-import 'package:z_editor/data/zomboss_mech_l10n.dart';
-import 'package:z_editor/l10n/app_localizations.dart';
-import 'package:z_editor/theme/app_theme.dart';
+import 'package:c_editor/data/models/zomboss_mech_catalog.dart';
+import 'package:c_editor/data/pvz_models/PvzLevelFile.dart';
+import 'package:c_editor/data/zomboss_mech_l10n.dart';
+import 'package:c_editor/l10n/app_localizations.dart';
+import 'package:c_editor/theme/app_theme.dart';
 
 /// Accent for custom zomboss mech editor (matches boss / custom tooling).
 Color zombossMechAccent(BuildContext context) {

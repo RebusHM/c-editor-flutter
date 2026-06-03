@@ -1,4 +1,4 @@
-package team.international2c.z_editor
+package team.international2c.c_editor
 
 import io.flutter.embedding.android.FlutterActivity
 

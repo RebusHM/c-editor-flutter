@@ -4,10 +4,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:path/path.dart' as p;
-import 'package:z_editor/bloc/settings/settings_cubit.dart';
-import 'package:z_editor/data/repository/level_repository.dart';
-import 'package:z_editor/l10n/app_localizations.dart';
-import 'package:z_editor/screens/level_list_platform.dart';
+import 'package:c_editor/bloc/settings/settings_cubit.dart';
+import 'package:c_editor/data/repository/level_repository.dart';
+import 'package:c_editor/l10n/app_localizations.dart';
+import 'package:c_editor/screens/level_list_platform.dart';
 
 class LevelListScreen extends StatefulWidget {
   const LevelListScreen({

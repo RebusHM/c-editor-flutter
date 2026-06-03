@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:z_editor/data/pvz_models.dart';
-import 'package:z_editor/l10n/app_localizations.dart';
-import 'package:z_editor/data/rtid_parser.dart';
-import 'package:z_editor/data/repository/reference_repository.dart';
-import 'package:z_editor/data/repository/challenge_repository.dart';
-import 'package:z_editor/screens/select/challenge_selection_screen.dart';
-import 'package:z_editor/theme/app_theme.dart';
-import 'package:z_editor/widgets/editor_components.dart';
-import 'package:z_editor/screens/editor/modules/challenge_editors.dart' show showChallengeEditorDialog;
+import 'package:c_editor/data/pvz_models.dart';
+import 'package:c_editor/l10n/app_localizations.dart';
+import 'package:c_editor/data/rtid_parser.dart';
+import 'package:c_editor/data/repository/reference_repository.dart';
+import 'package:c_editor/data/repository/challenge_repository.dart';
+import 'package:c_editor/screens/select/challenge_selection_screen.dart';
+import 'package:c_editor/theme/app_theme.dart';
+import 'package:c_editor/widgets/editor_components.dart';
+import 'package:c_editor/screens/editor/modules/challenge_editors.dart' show showChallengeEditorDialog;
 
 class StarChallengeModuleScreen extends StatefulWidget {
   const StarChallengeModuleScreen({

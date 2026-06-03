@@ -5,7 +5,7 @@ import 'dart:io';
 
 void main() async {
   final baseDir = Directory.current;
-  final projectRoot = baseDir.path.endsWith('z_editor') ? baseDir.path : '$baseDir/z_editor';
+  final projectRoot = baseDir.path.endsWith('c_editor') ? baseDir.path : '$baseDir/c_editor';
   final assetsDir = Directory('$projectRoot/assets');
 
   final plantsJson = File('${assetsDir.path}/resources/Plants.json');

@@ -1,6 +1,6 @@
-import 'package:z_editor/data/pvz_models/PvzModel.dart';
+import 'package:c_editor/data/pvz_models/PvzModel.dart';
 
-import 'package:z_editor/data/pvz_models/FrostWindData.dart';
+import 'package:c_editor/data/pvz_models/FrostWindData.dart';
 
 class FrostWindWaveActionPropsData extends PvzModel {
   FrostWindWaveActionPropsData({this.winds = const []});

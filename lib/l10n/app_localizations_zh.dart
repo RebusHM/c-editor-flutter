@@ -291,7 +291,7 @@ class AppLocalizationsZh extends AppLocalizations {
   String get softwareIntro => '软件介绍';
 
   @override
-  String get zEditor => 'Z-Editor';
+  String get cEditor => 'C-Editor';
 
   @override
   String get pvzEditorSubtitle => 'PVZ2 关卡可视化编辑器';
@@ -301,7 +301,7 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get introText =>
-      'Z-Editor 是一款专为《植物大战僵尸2》设计的可视化关卡编辑工具。它旨在解决直接修改 JSON 文件繁琐、易错的问题，提供直观的图形界面来管理关卡配置。';
+      'C-Editor 是一款专为《植物大战僵尸2》中文版设计的可视化关卡编辑工具。它旨在解决直接修改 JSON 文件繁琐、易错的问题，提供直观的图形界面来管理关卡配置。';
 
   @override
   String get featuresSection => '核心功能';
@@ -323,31 +323,64 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get usageText =>
-      '1. 目录设置：首次进入请选择存放 JSON 关卡文件的目录。\n2. 导入/新建：点击列表项编辑现有关卡，或使用右下角按钮基于模板新建。\n3. 模块管理：在编辑器中可添加新模块。\n4. 保存关卡：编辑完成后点击保存，文件将回写到原 JSON。\n5. 转换关卡文件：可将 JSON 转换为热更新可读的 HUJSON 或加密后的 RTON，随后通过其他工具导入游戏内进行测试（记得在导入前手动将文件扩展名从 .hujson 改回 .json）。\n交流 QQ 群：562251204';
+      '1. 目录设置：首次进入请选择存放 JSON 关卡文件的目录。\n2. 导入/新建：点击列表项编辑现有关卡，或使用右下角按钮基于模板新建。\n3. 模块管理：在编辑器中可添加新模块。\n4. 保存关卡：编辑完成后点击保存，文件将回写到原 JSON。\n5. 转换关卡文件：可将 JSON 转换为热更新可读的 HUJSON 或加密后的 RTON，随后通过其他工具导入游戏内进行测试（记得在导入前手动将文件扩展名从 .hujson 改回 .json）。\n6. 如有疑问或需要高级关卡制作帮助，欢迎加入 Plants vs. Zombies Discord 服务器，在 PvZ2C-Modding 频道主题中提问。';
 
   @override
   String get usageTextDesktop =>
-      '1. 目录设置：点击文件夹图标选择 JSON 关卡目录。\n2. 导入/新建：点击列表项编辑现有关卡，或使用右下角按钮基于模板新建。\n3. 模块管理：在编辑器中可添加新模块。\n4. 保存关卡：点击保存将修改写回 JSON 文件。\n5. 转换关卡文件：可将 JSON 转换为热更新可读的 HUJSON 或加密后的 RTON，随后通过其他工具导入游戏内进行测试（记得在导入前手动将文件扩展名从 .hujson 改回 .json）。\n交流 QQ 群：562251204';
+      '1. 目录设置：点击文件夹图标选择 JSON 关卡目录。\n2. 导入/新建：点击列表项编辑现有关卡，或使用右下角按钮基于模板新建。\n3. 模块管理：在编辑器中可添加新模块。\n4. 保存关卡：点击保存将修改写回 JSON 文件。\n5. 转换关卡文件：可将 JSON 转换为热更新可读的 HUJSON 或加密后的 RTON，随后通过其他工具导入游戏内进行测试（记得在导入前手动将文件扩展名从 .hujson 改回 .json）。\n6. 如有疑问或需要高级关卡制作帮助，欢迎加入 Plants vs. Zombies Discord 服务器，在 PvZ2C-Modding 频道主题中提问。';
 
   @override
   String get usageTextMobile =>
-      '1. 目录设置：点击文件夹图标选择 JSON 关卡目录。\n2. 导入/新建：点击列表项编辑现有关卡，或使用右下角按钮基于模板新建。\n3. 模块管理：在编辑器中可添加新模块。\n4. 保存关卡：编辑完成后点击保存，文件将回写到原 JSON。\n5. 转换关卡文件：可将 JSON 转换为热更新可读的 HUJSON 或加密后的 RTON，随后通过其他工具导入游戏内进行测试（记得在导入前手动将文件扩展名从 .hujson 改回 .json）。\n交流 QQ 群：562251204';
+      '1. 目录设置：点击文件夹图标选择 JSON 关卡目录。\n2. 导入/新建：点击列表项编辑现有关卡，或使用右下角按钮基于模板新建。\n3. 模块管理：在编辑器中可添加新模块。\n4. 保存关卡：编辑完成后点击保存，文件将回写到原 JSON。\n5. 转换关卡文件：可将 JSON 转换为热更新可读的 HUJSON 或加密后的 RTON，随后通过其他工具导入游戏内进行测试（记得在导入前手动将文件扩展名从 .hujson 改回 .json）。\n6. 如有疑问或需要高级关卡制作帮助，欢迎加入 Plants vs. Zombies Discord 服务器，在 PvZ2C-Modding 频道主题中提问。';
+
+  @override
+  String get discordInviteLabel => '服务器邀请链接：';
 
   @override
   String get creditsSection => '致谢名单';
 
   @override
-  String get authorLabel => '软件作者：';
+  String get authorLabel => '作者：';
 
   @override
-  String get authorName => '降维打击';
+  String get authorName => 'CyberSteve777';
 
   @override
   String get thanksLabel => '特别鸣谢：';
 
   @override
-  String get thanksNames =>
+  String get thanksNames => 'Devourdoom、Evilhack28、Chara、Haruma、vi_i_guess';
+
+  @override
+  String get sourceLabel => '源码：';
+
+  @override
+  String get issuesLabel => '问题反馈：';
+
+  @override
+  String get zEditorAcknowledgment => '若没有 Z-Editor 的创作者，就不可能创造出本工具。';
+
+  @override
+  String get zEditorCreditsSubsection => 'Z-Editor 致谢';
+
+  @override
+  String get zEditorAuthorLabel => '作者：';
+
+  @override
+  String get zEditorAuthorName => '降维打击';
+
+  @override
+  String get zEditorThanksLabel => '特别鸣谢：';
+
+  @override
+  String get zEditorThanksNames =>
       '星寻、metal海枣、超越自我3333、桃酱、凉沈、小小师、顾小言、PhiLia093、咖啡、不留名';
+
+  @override
+  String get zEditorQqGroupLabel => 'QQ 群：';
+
+  @override
+  String get zEditorQqGroupNumber => '562251204';
 
   @override
   String get tagline => '穿越时空 创造无穷可能';

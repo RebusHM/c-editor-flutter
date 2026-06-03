@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:z_editor/data/repository/fish_type_repository.dart';
-import 'package:z_editor/l10n/app_localizations.dart';
-import 'package:z_editor/l10n/resource_names.dart';
-import 'package:z_editor/theme/app_theme.dart' show pvzFishDark, pvzFishLight;
-import 'package:z_editor/widgets/asset_image.dart' show AssetImageWidget, imageAltCandidates;
+import 'package:c_editor/data/repository/fish_type_repository.dart';
+import 'package:c_editor/l10n/app_localizations.dart';
+import 'package:c_editor/l10n/resource_names.dart';
+import 'package:c_editor/theme/app_theme.dart' show pvzFishDark, pvzFishLight;
+import 'package:c_editor/widgets/asset_image.dart' show AssetImageWidget, imageAltCandidates;
 
 /// Fish selection for ZombieFishWaveEvent. Selects creature types (fish).
 ///

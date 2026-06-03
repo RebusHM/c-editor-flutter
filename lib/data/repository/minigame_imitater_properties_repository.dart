@@ -1,7 +1,7 @@
 import 'dart:convert';
 
 import 'package:flutter/services.dart';
-import 'package:z_editor/data/pvz_models.dart';
+import 'package:c_editor/data/pvz_models.dart';
 
 /// Maps magic-hat plant ids ([PlantTypes.json] `TypeName`) to [PropertySheets.json] aliases (`Properties` RTID).
 const Map<String, String> kMagicHatPlantIdToPropertySheetAlias = {

@@ -1,8 +1,8 @@
 import 'dart:convert';
 import 'package:flutter/widgets.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:z_editor/data/asset_loader.dart';
-import 'package:z_editor/l10n/app_localizations.dart';
+import 'package:c_editor/data/asset_loader.dart';
+import 'package:c_editor/l10n/app_localizations.dart';
 
 enum PlantCategory { quality, role, attribute, other, collection }
 

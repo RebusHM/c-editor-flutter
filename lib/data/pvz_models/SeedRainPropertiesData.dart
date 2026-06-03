@@ -1,6 +1,6 @@
-import 'package:z_editor/data/pvz_models/PvzModel.dart';
+import 'package:c_editor/data/pvz_models/PvzModel.dart';
 
-import 'package:z_editor/data/pvz_models/SeedRainItem.dart';
+import 'package:c_editor/data/pvz_models/SeedRainItem.dart';
 
 class SeedRainPropertiesData extends PvzModel {
   SeedRainPropertiesData({this.rainInterval = 5, this.seedRains = const []});

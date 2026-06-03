@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:z_editor/data/level_parser.dart';
-import 'package:z_editor/data/pvz_models.dart';
-import 'package:z_editor/data/rtid_parser.dart';
-import 'package:z_editor/l10n/app_localizations.dart';
-import 'package:z_editor/theme/app_theme.dart' show pvzBrownDark, pvzBrownLight;
-import 'package:z_editor/widgets/asset_image.dart' show AssetImageWidget, imageAltCandidates;
-import 'package:z_editor/widgets/editor_components.dart';
+import 'package:c_editor/data/level_parser.dart';
+import 'package:c_editor/data/pvz_models.dart';
+import 'package:c_editor/data/rtid_parser.dart';
+import 'package:c_editor/l10n/app_localizations.dart';
+import 'package:c_editor/theme/app_theme.dart' show pvzBrownDark, pvzBrownLight;
+import 'package:c_editor/widgets/asset_image.dart' show AssetImageWidget, imageAltCandidates;
+import 'package:c_editor/widgets/editor_components.dart';
 
 /// Tunnel defend (mausoleum) module. Ported from TunnelDefendModuleEP.kt
 class TunnelDefendModuleScreen extends StatefulWidget {

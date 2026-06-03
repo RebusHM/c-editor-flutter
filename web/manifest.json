@@ -1,6 +1,6 @@
 {
-    "name": "z_editor",
-    "short_name": "z_editor",
+    "name": "c_editor",
+    "short_name": "c_editor",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#ffffff",

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:z_editor/l10n/app_localizations.dart';
-import 'package:z_editor/widgets/editor_components.dart';
+import 'package:c_editor/l10n/app_localizations.dart';
+import 'package:c_editor/widgets/editor_components.dart';
 
 /// Unknown/unregistered module placeholder. Ported from Z-Editor-master UnknownEP.kt
 class UnknownModuleScreen extends StatelessWidget {

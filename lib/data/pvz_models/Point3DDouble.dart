@@ -1,4 +1,4 @@
-import 'package:z_editor/data/pvz_models/PvzModel.dart';
+import 'package:c_editor/data/pvz_models/PvzModel.dart';
 
 class Point3DDouble extends PvzModel {
   Point3DDouble({this.x = 0.0, this.y = 0.0, this.z = 0.0});

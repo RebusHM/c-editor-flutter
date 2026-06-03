@@ -11,7 +11,7 @@ String _toEnglishFallback(String key) {
 
 void main() async {
   final baseDir = Directory.current;
-  final projectRoot = baseDir.path.endsWith('z_editor') ? baseDir.path : '$baseDir/z_editor';
+  final projectRoot = baseDir.path.endsWith('c_editor') ? baseDir.path : '$baseDir/c_editor';
   final assetsDir = Directory('$projectRoot/assets');
   final resourcesDir = Directory('${assetsDir.path}/resources');
   final l10nDir = Directory('${assetsDir.path}/l10n');

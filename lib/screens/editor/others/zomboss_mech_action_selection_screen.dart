@@ -1,12 +1,12 @@
 import 'package:collection/collection.dart';
 import 'package:flutter/material.dart';
-import 'package:z_editor/data/models/zomboss_mech_catalog.dart';
-import 'package:z_editor/data/pvz_models/PvzLevelFile.dart';
-import 'package:z_editor/data/rtid_parser.dart';
-import 'package:z_editor/data/zomboss_mech_action_utils.dart';
-import 'package:z_editor/data/zomboss_mech_l10n.dart';
-import 'package:z_editor/l10n/app_localizations.dart';
-import 'package:z_editor/screens/editor/others/custom_zomboss_mech_action_editor_screen.dart';
+import 'package:c_editor/data/models/zomboss_mech_catalog.dart';
+import 'package:c_editor/data/pvz_models/PvzLevelFile.dart';
+import 'package:c_editor/data/rtid_parser.dart';
+import 'package:c_editor/data/zomboss_mech_action_utils.dart';
+import 'package:c_editor/data/zomboss_mech_l10n.dart';
+import 'package:c_editor/l10n/app_localizations.dart';
+import 'package:c_editor/screens/editor/others/custom_zomboss_mech_action_editor_screen.dart';
 
 /// Picks a catalog or level-local zomboss action; returns RTID string.
 class ZombossMechActionSelectionScreen extends StatefulWidget {

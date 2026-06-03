@@ -1,8 +1,8 @@
-import 'package:z_editor/data/pvz_models/PvzModel.dart';
+import 'package:c_editor/data/pvz_models/PvzModel.dart';
 
-import 'package:z_editor/data/pvz_models/DropDelayConditionData.dart';
-import 'package:z_editor/data/pvz_models/InitialPlantListData.dart';
-import 'package:z_editor/data/pvz_models/SpeedConditionData.dart';
+import 'package:c_editor/data/pvz_models/DropDelayConditionData.dart';
+import 'package:c_editor/data/pvz_models/InitialPlantListData.dart';
+import 'package:c_editor/data/pvz_models/SpeedConditionData.dart';
 
 class ConveyorBeltData extends PvzModel {
   ConveyorBeltData({

@@ -1,7 +1,7 @@
 import 'dart:convert';
 
 import 'package:flutter/widgets.dart';
-import 'package:z_editor/data/asset_loader.dart';
+import 'package:c_editor/data/asset_loader.dart';
 
 /// PVZ2 `MusicSuffix` codenames and icons for picker UI (`assets/resources/MusicSuffixes.json`).
 class MusicSuffixCatalog {

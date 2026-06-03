@@ -5,9 +5,9 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
-import 'package:z_editor/app.dart';
-import 'package:z_editor/bloc/app_navigation/app_navigation_cubit.dart';
-import 'package:z_editor/bloc/settings/settings_cubit.dart';
+import 'package:c_editor/app.dart';
+import 'package:c_editor/bloc/app_navigation/app_navigation_cubit.dart';
+import 'package:c_editor/bloc/settings/settings_cubit.dart';
 
 void main() {
   testWidgets('App builds and loads', (WidgetTester tester) async {

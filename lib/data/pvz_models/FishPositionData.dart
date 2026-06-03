@@ -1,4 +1,4 @@
-import 'package:z_editor/data/pvz_models/PvzModel.dart';
+import 'package:c_editor/data/pvz_models/PvzModel.dart';
 
 class FishPositionData extends PvzModel {
   FishPositionData({this.mX = 0, this.mY = 0});

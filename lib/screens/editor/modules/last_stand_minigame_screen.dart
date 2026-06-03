@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:z_editor/data/pvz_models.dart';
-import 'package:z_editor/l10n/app_localizations.dart';
-import 'package:z_editor/data/rtid_parser.dart';
+import 'package:c_editor/data/pvz_models.dart';
+import 'package:c_editor/l10n/app_localizations.dart';
+import 'package:c_editor/data/rtid_parser.dart';
 
 /// Last stand minigame. Ported from Z-Editor-master LastStandMinigamePropertiesEP.kt
 class LastStandMinigameScreen extends StatefulWidget {

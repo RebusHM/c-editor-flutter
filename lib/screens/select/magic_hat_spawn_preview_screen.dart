@@ -1,11 +1,11 @@
 import 'package:collection/collection.dart';
 import 'package:flutter/material.dart';
-import 'package:z_editor/data/pvz_models.dart';
-import 'package:z_editor/data/repository/minigame_imitater_properties_repository.dart';
-import 'package:z_editor/data/repository/plant_repository.dart';
-import 'package:z_editor/l10n/app_localizations.dart';
-import 'package:z_editor/l10n/resource_names.dart';
-import 'package:z_editor/widgets/asset_image.dart'
+import 'package:c_editor/data/pvz_models.dart';
+import 'package:c_editor/data/repository/minigame_imitater_properties_repository.dart';
+import 'package:c_editor/data/repository/plant_repository.dart';
+import 'package:c_editor/l10n/app_localizations.dart';
+import 'package:c_editor/l10n/resource_names.dart';
+import 'package:c_editor/widgets/asset_image.dart'
     show AssetImageWidget, imageAltCandidates;
 
 const String _kUnknownIconPath = 'assets/images/others/unknown.webp';

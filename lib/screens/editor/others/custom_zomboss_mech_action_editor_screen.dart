@@ -1,14 +1,14 @@
 import 'package:collection/collection.dart';
 import 'package:flutter/material.dart';
-import 'package:z_editor/data/models/zomboss_mech_catalog.dart';
-import 'package:z_editor/data/pvz_models/PvzObject.dart';
-import 'package:z_editor/data/pvz_models/PvzLevelFile.dart';
-import 'package:z_editor/data/rtid_parser.dart';
-import 'package:z_editor/data/zomboss_mech_action_utils.dart';
-import 'package:z_editor/data/zomboss_mech_l10n.dart';
-import 'package:z_editor/l10n/app_localizations.dart';
-import 'package:z_editor/widgets/editor_components.dart';
-import 'package:z_editor/widgets/zomboss_mech_action_fields.dart';
+import 'package:c_editor/data/models/zomboss_mech_catalog.dart';
+import 'package:c_editor/data/pvz_models/PvzObject.dart';
+import 'package:c_editor/data/pvz_models/PvzLevelFile.dart';
+import 'package:c_editor/data/rtid_parser.dart';
+import 'package:c_editor/data/zomboss_mech_action_utils.dart';
+import 'package:c_editor/data/zomboss_mech_l10n.dart';
+import 'package:c_editor/l10n/app_localizations.dart';
+import 'package:c_editor/widgets/editor_components.dart';
+import 'package:c_editor/widgets/zomboss_mech_action_fields.dart';
 
 /// Creates or edits a level-local zomboss action ([CurrentLevel]).
 class CustomZombossMechActionEditorScreen extends StatefulWidget {

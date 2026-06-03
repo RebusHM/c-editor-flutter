@@ -1,11 +1,11 @@
 import 'package:collection/collection.dart';
 import 'package:flutter/material.dart';
-import 'package:z_editor/data/level_parser.dart';
-import 'package:z_editor/data/pvz_models.dart';
-import 'package:z_editor/data/rtid_parser.dart';
-import 'package:z_editor/l10n/app_localizations.dart';
-import 'package:z_editor/widgets/editor_components.dart';
-import 'package:z_editor/widgets/asset_image.dart'
+import 'package:c_editor/data/level_parser.dart';
+import 'package:c_editor/data/pvz_models.dart';
+import 'package:c_editor/data/rtid_parser.dart';
+import 'package:c_editor/l10n/app_localizations.dart';
+import 'package:c_editor/widgets/editor_components.dart';
+import 'package:c_editor/widgets/asset_image.dart'
     show AssetImageWidget, imageAltCandidates;
 
 /// Railcart properties editor. Ported from Z-Editor-master RailcartPropertiesEP.kt

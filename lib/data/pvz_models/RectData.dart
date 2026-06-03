@@ -1,4 +1,4 @@
-import 'package:z_editor/data/pvz_models/PvzModel.dart';
+import 'package:c_editor/data/pvz_models/PvzModel.dart';
 
 class RectData extends PvzModel {
   RectData({this.mX = 0, this.mY = 0, this.mWidth = 0, this.mHeight = 0});

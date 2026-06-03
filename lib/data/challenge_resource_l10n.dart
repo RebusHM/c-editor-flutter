@@ -1,5 +1,5 @@
 import 'package:flutter/widgets.dart';
-import 'package:z_editor/l10n/resource_names.dart';
+import 'package:c_editor/l10n/resource_names.dart';
 
 /// Star challenge field / enum labels from [assets/l10n/resource_*.json].
 abstract class ChallengeResourceL10n {

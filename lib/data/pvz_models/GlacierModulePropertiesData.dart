@@ -1,9 +1,9 @@
 import 'package:collection/collection.dart';
-import 'package:z_editor/data/pvz_models/GlacierColumnSpawnData.dart';
-import 'package:z_editor/data/pvz_models/GlacierSpawnEntryData.dart';
-import 'package:z_editor/data/pvz_models/PvzLevelFile.dart';
-import 'package:z_editor/data/pvz_models/PvzModel.dart';
-import 'package:z_editor/data/repository/zomboss_mech_repository.dart';
+import 'package:c_editor/data/pvz_models/GlacierColumnSpawnData.dart';
+import 'package:c_editor/data/pvz_models/GlacierSpawnEntryData.dart';
+import 'package:c_editor/data/pvz_models/PvzLevelFile.dart';
+import 'package:c_editor/data/pvz_models/PvzModel.dart';
+import 'package:c_editor/data/repository/zomboss_mech_repository.dart';
 
 /// `GlacierModuleProperties` — glacier-block zombie spawn weights (6 columns).
 class GlacierModulePropertiesData extends PvzModel {

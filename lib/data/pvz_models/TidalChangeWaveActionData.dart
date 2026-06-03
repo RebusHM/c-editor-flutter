@@ -1,6 +1,6 @@
-import 'package:z_editor/data/pvz_models/PvzModel.dart';
+import 'package:c_editor/data/pvz_models/PvzModel.dart';
 
-import 'package:z_editor/data/pvz_models/TidalChangeInternalData.dart';
+import 'package:c_editor/data/pvz_models/TidalChangeInternalData.dart';
 
 class TidalChangeWaveActionData extends PvzModel {
   TidalChangeWaveActionData({TidalChangeInternalData? tidalChange})

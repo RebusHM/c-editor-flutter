@@ -1,5 +1,5 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:z_editor/data/registry/module_registry.dart';
+import 'package:c_editor/data/registry/module_registry.dart';
 
 void main() {
   group('BronzeProperties module metadata', () {

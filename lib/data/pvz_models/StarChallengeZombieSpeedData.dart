@@ -1,4 +1,4 @@
-import 'package:z_editor/data/pvz_models/PvzModel.dart';
+import 'package:c_editor/data/pvz_models/PvzModel.dart';
 
 class StarChallengeZombieSpeedData extends PvzModel {
   StarChallengeZombieSpeedData({this.speedModifier = 0.0});

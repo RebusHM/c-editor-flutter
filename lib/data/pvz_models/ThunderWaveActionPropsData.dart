@@ -1,6 +1,6 @@
-import 'package:z_editor/data/pvz_models/PvzModel.dart';
+import 'package:c_editor/data/pvz_models/PvzModel.dart';
 
-import 'package:z_editor/data/pvz_models/ThunderEntryData.dart';
+import 'package:c_editor/data/pvz_models/ThunderEntryData.dart';
 
 class ThunderWaveActionPropsData extends PvzModel {
   ThunderWaveActionPropsData({this.thunders = const [], this.killRate = 0.3});

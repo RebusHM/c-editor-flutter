@@ -1,7 +1,7 @@
 import 'dart:convert';
 
 import 'package:flutter/widgets.dart';
-import 'package:z_editor/data/asset_loader.dart';
+import 'package:c_editor/data/asset_loader.dart';
 
 /// Ambient-level audio codenames (`AmbientAudioSuffix`) and resource bundle dependencies.
 class AmbientAudioCatalog {

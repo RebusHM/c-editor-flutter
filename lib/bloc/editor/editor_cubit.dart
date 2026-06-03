@@ -1,21 +1,21 @@
 import 'package:equatable/equatable.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:z_editor/data/level_parser.dart';
-import 'package:z_editor/data/pvz_models.dart';
-import 'package:z_editor/data/repository/level_repository.dart';
-import 'package:z_editor/data/repository/plant_repository.dart';
-import 'package:z_editor/data/repository/reference_repository.dart';
-import 'package:z_editor/data/repository/resilience_config_repository.dart';
-import 'package:z_editor/data/repository/zombie_properties_repository.dart';
-import 'package:z_editor/data/repository/fish_type_repository.dart';
-import 'package:z_editor/data/repository/fish_properties_repository.dart';
-import 'package:z_editor/data/repository/zombie_repository.dart';
-import 'package:z_editor/data/registry/module_registry.dart';
-import 'package:z_editor/data/rtid_parser.dart';
-import 'package:z_editor/bloc/editor/editor_tab_type.dart';
+import 'package:c_editor/data/level_parser.dart';
+import 'package:c_editor/data/pvz_models.dart';
+import 'package:c_editor/data/repository/level_repository.dart';
+import 'package:c_editor/data/repository/plant_repository.dart';
+import 'package:c_editor/data/repository/reference_repository.dart';
+import 'package:c_editor/data/repository/resilience_config_repository.dart';
+import 'package:c_editor/data/repository/zombie_properties_repository.dart';
+import 'package:c_editor/data/repository/fish_type_repository.dart';
+import 'package:c_editor/data/repository/fish_properties_repository.dart';
+import 'package:c_editor/data/repository/zombie_repository.dart';
+import 'package:c_editor/data/registry/module_registry.dart';
+import 'package:c_editor/data/rtid_parser.dart';
+import 'package:c_editor/bloc/editor/editor_tab_type.dart';
 
-export 'package:z_editor/bloc/editor/editor_tab_type.dart';
+export 'package:c_editor/bloc/editor/editor_tab_type.dart';
 
 part 'editor_state.dart';
 

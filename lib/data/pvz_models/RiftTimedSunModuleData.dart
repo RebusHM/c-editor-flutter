@@ -1,6 +1,6 @@
-import 'package:z_editor/data/pvz_models/PvzModel.dart';
+import 'package:c_editor/data/pvz_models/PvzModel.dart';
 
-import 'package:z_editor/data/pvz_models/RiftTimedSunData.dart';
+import 'package:c_editor/data/pvz_models/RiftTimedSunData.dart';
 
 class RiftTimedSunModuleData extends PvzModel {
   RiftTimedSunModuleData({this.sunDrops = const []});

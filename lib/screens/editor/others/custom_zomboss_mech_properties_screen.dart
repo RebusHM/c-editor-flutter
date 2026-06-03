@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:z_editor/data/models/zomboss_mech_catalog.dart';
-import 'package:z_editor/data/pvz_models.dart';
-import 'package:z_editor/data/repository/zomboss_mech_repository.dart';
-import 'package:z_editor/data/zomboss_mech_action_utils.dart';
-import 'package:z_editor/l10n/app_localizations.dart';
-import 'package:z_editor/l10n/resource_names.dart';
-import 'package:z_editor/screens/editor/others/custom_zomboss_mech_action_editor_screen.dart';
-import 'package:z_editor/screens/editor/others/zomboss_mech_action_selection_screen.dart';
-import 'package:z_editor/widgets/editor_components.dart';
-import 'package:z_editor/widgets/zomboss_mech_editor_widgets.dart';
+import 'package:c_editor/data/models/zomboss_mech_catalog.dart';
+import 'package:c_editor/data/pvz_models.dart';
+import 'package:c_editor/data/repository/zomboss_mech_repository.dart';
+import 'package:c_editor/data/zomboss_mech_action_utils.dart';
+import 'package:c_editor/l10n/app_localizations.dart';
+import 'package:c_editor/l10n/resource_names.dart';
+import 'package:c_editor/screens/editor/others/custom_zomboss_mech_action_editor_screen.dart';
+import 'package:c_editor/screens/editor/others/zomboss_mech_action_selection_screen.dart';
+import 'package:c_editor/widgets/editor_components.dart';
+import 'package:c_editor/widgets/zomboss_mech_editor_widgets.dart';
 
 /// Edits level-local zombossmech property sheet (`editableInstancePropsName`).
 class CustomZombossMechPropertiesScreen extends StatefulWidget {

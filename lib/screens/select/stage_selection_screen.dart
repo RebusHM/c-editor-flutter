@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:z_editor/data/rtid_parser.dart';
-import 'package:z_editor/data/repository/stage_repository.dart';
-import 'package:z_editor/l10n/app_localizations.dart';
-import 'package:z_editor/l10n/resource_names.dart';
-import 'package:z_editor/widgets/asset_image.dart' show AssetImageWidget, imageAltCandidates;
+import 'package:c_editor/data/rtid_parser.dart';
+import 'package:c_editor/data/repository/stage_repository.dart';
+import 'package:c_editor/l10n/app_localizations.dart';
+import 'package:c_editor/l10n/resource_names.dart';
+import 'package:c_editor/widgets/asset_image.dart' show AssetImageWidget, imageAltCandidates;
 
 /// Full-screen stage selection. Ported from Z-Editor-master StageSelectionScreen.kt
 class StageSelectionScreen extends StatefulWidget {

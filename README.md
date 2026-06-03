@@ -1,4 +1,4 @@
-# z_editor
+# c_editor
 
 Level Editor for Plants vs. Zombies 2 Chinese
 

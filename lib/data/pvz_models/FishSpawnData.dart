@@ -1,6 +1,6 @@
-import 'package:z_editor/data/pvz_models/PvzModel.dart';
+import 'package:c_editor/data/pvz_models/PvzModel.dart';
 
-import 'package:z_editor/data/pvz_models/FishPositionData.dart';
+import 'package:c_editor/data/pvz_models/FishPositionData.dart';
 
 class FishSpawnData extends PvzModel {
   FishSpawnData({this.type = '', FishPositionData? position})

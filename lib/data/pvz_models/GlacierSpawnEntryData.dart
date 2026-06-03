@@ -1,4 +1,4 @@
-import 'package:z_editor/data/pvz_models/PvzModel.dart';
+import 'package:c_editor/data/pvz_models/PvzModel.dart';
 
 /// One weighted zombie entry inside a glacier column (`Entries` item).
 class GlacierSpawnEntryData extends PvzModel {

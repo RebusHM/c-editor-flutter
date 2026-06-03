@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:z_editor/data/repository/tool_repository.dart';
-import 'package:z_editor/l10n/app_localizations.dart';
-import 'package:z_editor/widgets/asset_image.dart' show AssetImageWidget;
+import 'package:c_editor/data/repository/tool_repository.dart';
+import 'package:c_editor/l10n/app_localizations.dart';
+import 'package:c_editor/widgets/asset_image.dart' show AssetImageWidget;
 
 /// Tool selection. Ported from Z-Editor-master ToolSelectionScreen.kt
 class ToolSelectionScreen extends StatelessWidget {

@@ -1,4 +1,4 @@
-import 'package:z_editor/data/pvz_models/PvzModel.dart';
+import 'package:c_editor/data/pvz_models/PvzModel.dart';
 
 class StarChallengeSunReducedData extends PvzModel {
   StarChallengeSunReducedData({this.sunModifier = 0.0});

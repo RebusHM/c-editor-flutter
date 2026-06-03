@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:z_editor/data/registry/module_registry.dart';
-import 'package:z_editor/l10n/app_localizations.dart';
+import 'package:c_editor/data/registry/module_registry.dart';
+import 'package:c_editor/l10n/app_localizations.dart';
 
 class ModuleConflictRule {
   final Set<String> conflictingClasses;

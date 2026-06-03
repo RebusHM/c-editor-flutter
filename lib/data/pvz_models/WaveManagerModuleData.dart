@@ -1,6 +1,6 @@
-import 'package:z_editor/data/pvz_models/PvzModel.dart';
+import 'package:c_editor/data/pvz_models/PvzModel.dart';
 
-import 'package:z_editor/data/pvz_models/DynamicZombieGroup.dart';
+import 'package:c_editor/data/pvz_models/DynamicZombieGroup.dart';
 
 class WaveManagerModuleData extends PvzModel {
   WaveManagerModuleData({

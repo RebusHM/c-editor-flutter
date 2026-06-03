@@ -1,6 +1,6 @@
-import 'package:z_editor/data/pvz_models/PvzModel.dart';
+import 'package:c_editor/data/pvz_models/PvzModel.dart';
 
-import 'package:z_editor/data/pvz_models/SchoolBusDesData.dart';
+import 'package:c_editor/data/pvz_models/SchoolBusDesData.dart';
 
 class SchoolBusWaveActionPropsData extends PvzModel {
   SchoolBusWaveActionPropsData({SchoolBusDesData? des})

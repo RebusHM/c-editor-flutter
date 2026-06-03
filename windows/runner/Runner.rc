@@ -90,12 +90,12 @@ BEGIN
         BLOCK "040904e4"
         BEGIN
             VALUE "CompanyName", "team.international2c" "\0"
-            VALUE "FileDescription", "z_editor" "\0"
+            VALUE "FileDescription", "c_editor" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "z_editor" "\0"
+            VALUE "InternalName", "c_editor" "\0"
             VALUE "LegalCopyright", "Copyright (C) 2026 team.international2c. All rights reserved." "\0"
-            VALUE "OriginalFilename", "z_editor.exe" "\0"
-            VALUE "ProductName", "z_editor" "\0"
+            VALUE "OriginalFilename", "c_editor.exe" "\0"
+            VALUE "ProductName", "c_editor" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END

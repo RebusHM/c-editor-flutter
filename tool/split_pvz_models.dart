@@ -129,7 +129,7 @@ void main() {
       if (name == outFileClass) continue;
       if (_dartKw.contains(name)) continue;
       if (!references(transformedBody, name)) continue;
-      imps.add("import 'package:z_editor/data/pvz_models/$name.dart';");
+      imps.add("import 'package:c_editor/data/pvz_models/$name.dart';");
     }
     final sorted = imps.toList()..sort();
     return sorted;

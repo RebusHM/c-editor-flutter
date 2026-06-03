@@ -1,10 +1,10 @@
 import 'package:collection/collection.dart';
 import 'package:flutter/material.dart';
-import 'package:z_editor/data/level_parser.dart';
-import 'package:z_editor/data/pvz_models.dart';
-import 'package:z_editor/data/repository/reference_repository.dart';
-import 'package:z_editor/data/rtid_parser.dart';
-import 'package:z_editor/l10n/app_localizations.dart';
+import 'package:c_editor/data/level_parser.dart';
+import 'package:c_editor/data/pvz_models.dart';
+import 'package:c_editor/data/repository/reference_repository.dart';
+import 'package:c_editor/data/rtid_parser.dart';
+import 'package:c_editor/l10n/app_localizations.dart';
 
 /// Pirate plank properties editor. Ported from Z-Editor-master PiratePlankPropertiesEP.kt
 class PiratePlankPropertiesScreen extends StatefulWidget {

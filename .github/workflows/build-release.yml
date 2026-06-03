@@ -38,18 +38,18 @@ jobs:
       - run: flutter pub get
       - run: flutter build windows --release
 
-      # upload-artifact strips the path root you upload; use artifact/z_editor so the
-      # downloaded zip has z_editor/ at the top, not loose exe/dll/data.
+      # upload-artifact strips the path root you upload; use artifact/c_editor so the
+      # downloaded zip has c_editor/ at the top, not loose exe/dll/data.
       - name: Stage Windows bundle for artifact
         shell: pwsh
         run: |
-          $dest = "artifact/z_editor"
+          $dest = "artifact/c_editor"
           New-Item -ItemType Directory -Path $dest -Force | Out-Null
           Get-ChildItem -Path "build/windows/x64/runner/Release" -Force | Move-Item -Destination $dest
 
       - uses: actions/upload-artifact@v7
         with:
-          name: z-editor-windows-x64
+          name: c-editor-windows-x64
           path: artifact
           if-no-files-found: error
 
@@ -87,13 +87,13 @@ jobs:
 
       - name: Stage Linux bundle for artifact
         run: |
-          mkdir -p artifact/z_editor
+          mkdir -p artifact/c_editor
           shopt -s dotglob
-          mv build/linux/x64/release/bundle/* artifact/z_editor/
+          mv build/linux/x64/release/bundle/* artifact/c_editor/
 
       - uses: actions/upload-artifact@v7
         with:
-          name: z-editor-linux-x64
+          name: c-editor-linux-x64
           path: artifact
           if-no-files-found: error
 
@@ -158,10 +158,10 @@ jobs:
       - name: Stage APK artifact
         run: |
           mkdir -p artifacts
-          cp build/app/outputs/flutter-apk/app-release.apk artifacts/z-editor-release.apk
+          cp build/app/outputs/flutter-apk/app-release.apk artifacts/c-editor-release.apk
 
       - uses: actions/upload-artifact@v7
         with:
-          name: z-editor-android-apk
-          path: artifacts/z-editor-release.apk
+          name: c-editor-android-apk
+          path: artifacts/c-editor-release.apk
           if-no-files-found: error

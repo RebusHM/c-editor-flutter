@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:z_editor/data/challenge_resource_l10n.dart';
-import 'package:z_editor/data/zombie_conditions.dart';
-import 'package:z_editor/l10n/app_localizations.dart';
+import 'package:c_editor/data/challenge_resource_l10n.dart';
+import 'package:c_editor/data/zombie_conditions.dart';
+import 'package:c_editor/l10n/app_localizations.dart';
 
 /// Multi-select zombie conditions with checkboxes (for star challenges).
 class ZombieConditionSelectionScreen extends StatefulWidget {

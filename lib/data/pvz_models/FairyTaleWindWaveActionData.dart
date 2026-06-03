@@ -1,4 +1,4 @@
-import 'package:z_editor/data/pvz_models/PvzModel.dart';
+import 'package:c_editor/data/pvz_models/PvzModel.dart';
 
 class FairyTaleWindWaveActionData extends PvzModel {
   FairyTaleWindWaveActionData({this.duration = 5.0, this.velocityScale = 2.0});

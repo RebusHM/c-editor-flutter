@@ -2,18 +2,18 @@ import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:z_editor/escape_override.dart';
+import 'package:c_editor/escape_override.dart';
 import 'package:path/path.dart' as p;
 import 'package:flutter_localizations/flutter_localizations.dart';
-import 'package:z_editor/l10n/app_localizations.dart';
-import 'package:z_editor/data/repository/level_repository.dart';
-import 'package:z_editor/bloc/app_navigation/app_navigation_cubit.dart';
-import 'package:z_editor/bloc/settings/settings_cubit.dart';
-import 'package:z_editor/bloc/editor/editor_cubit.dart';
-import 'package:z_editor/screens/about_screen.dart';
-import 'package:z_editor/screens/editor_screen.dart';
-import 'package:z_editor/screens/level_list_screen.dart';
-import 'package:z_editor/theme/app_theme.dart';
+import 'package:c_editor/l10n/app_localizations.dart';
+import 'package:c_editor/data/repository/level_repository.dart';
+import 'package:c_editor/bloc/app_navigation/app_navigation_cubit.dart';
+import 'package:c_editor/bloc/settings/settings_cubit.dart';
+import 'package:c_editor/bloc/editor/editor_cubit.dart';
+import 'package:c_editor/screens/about_screen.dart';
+import 'package:c_editor/screens/editor_screen.dart';
+import 'package:c_editor/screens/level_list_screen.dart';
+import 'package:c_editor/theme/app_theme.dart';
 
 /// Wraps child and handles Escape key on desktop to trigger back/pop.
 /// Uses HardwareKeyboard.addHandler for immediate, global Escape handling.

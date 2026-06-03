@@ -2,7 +2,7 @@ import 'dart:convert';
 
 import 'package:collection/collection.dart';
 import 'package:flutter/widgets.dart';
-import 'package:z_editor/data/asset_loader.dart';
+import 'package:c_editor/data/asset_loader.dart';
 
 class ZombossBattleInfo {
   const ZombossBattleInfo({

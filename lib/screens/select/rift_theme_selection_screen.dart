@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:z_editor/data/repository/rift_theme_repository.dart';
-import 'package:z_editor/l10n/app_localizations.dart';
-import 'package:z_editor/l10n/resource_names.dart';
+import 'package:c_editor/data/repository/rift_theme_repository.dart';
+import 'package:c_editor/l10n/app_localizations.dart';
+import 'package:c_editor/l10n/resource_names.dart';
 
 /// Multi-select picker for rift themes. Tap to toggle; confirm with the check button.
 class RiftThemeSelectionScreen extends StatefulWidget {

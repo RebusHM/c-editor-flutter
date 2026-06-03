@@ -1,4 +1,4 @@
-import 'package:z_editor/data/pvz_models/PvzModel.dart';
+import 'package:c_editor/data/pvz_models/PvzModel.dart';
 
 class StarChallengeKillZombiesInTimeData extends PvzModel {
   StarChallengeKillZombiesInTimeData({this.zombiesToKill = 10, this.time = 10});

@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:z_editor/data/repository/zombie_repository.dart';
-import 'package:z_editor/data/zomboss_mech_action_utils.dart';
-import 'package:z_editor/l10n/app_localizations.dart';
-import 'package:z_editor/l10n/resource_names.dart';
-import 'package:z_editor/screens/select/zombie_selection_screen.dart';
-import 'package:z_editor/widgets/asset_image.dart';
+import 'package:c_editor/data/repository/zombie_repository.dart';
+import 'package:c_editor/data/zomboss_mech_action_utils.dart';
+import 'package:c_editor/l10n/app_localizations.dart';
+import 'package:c_editor/l10n/resource_names.dart';
+import 'package:c_editor/screens/select/zombie_selection_screen.dart';
+import 'package:c_editor/widgets/asset_image.dart';
 const _kUnknownZombieIcon = 'assets/images/others/unknown.webp';
 
 /// Displays and edits zombie type ids for spawn actions (`List<zombieType>`).

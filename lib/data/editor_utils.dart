@@ -1,5 +1,5 @@
 
-import 'package:z_editor/data/pvz_models.dart';
+import 'package:c_editor/data/pvz_models.dart';
 
 /// JSON sync utilities. Ported from Z-Editor-master EditorUtils.kt
 /// Provides helpers for syncing typed data with PvzObject.objData.

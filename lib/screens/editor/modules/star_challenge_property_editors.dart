@@ -1,20 +1,20 @@
 import 'package:flutter/material.dart';
-import 'package:z_editor/data/challenge_resource_l10n.dart';
-import 'package:z_editor/data/pvz_models/PvzLevelFile.dart';
-import 'package:z_editor/data/pvz_models/PvzObject.dart';
-import 'package:z_editor/data/repository/grid_item_repository.dart';
-import 'package:z_editor/data/repository/plant_repository.dart';
-import 'package:z_editor/data/repository/zombie_properties_repository.dart';
-import 'package:z_editor/data/repository/zombie_repository.dart';
-import 'package:z_editor/data/zombie_conditions.dart'
+import 'package:c_editor/data/challenge_resource_l10n.dart';
+import 'package:c_editor/data/pvz_models/PvzLevelFile.dart';
+import 'package:c_editor/data/pvz_models/PvzObject.dart';
+import 'package:c_editor/data/repository/grid_item_repository.dart';
+import 'package:c_editor/data/repository/plant_repository.dart';
+import 'package:c_editor/data/repository/zombie_properties_repository.dart';
+import 'package:c_editor/data/repository/zombie_repository.dart';
+import 'package:c_editor/data/zombie_conditions.dart'
     show StarChallengeProfessions;
-import 'package:z_editor/l10n/app_localizations.dart';
-import 'package:z_editor/l10n/resource_names.dart';
-import 'package:z_editor/screens/select/grid_item_selection_screen.dart';
-import 'package:z_editor/screens/select/plant_selection_screen.dart';
-import 'package:z_editor/screens/select/zombie_condition_selection_screen.dart';
-import 'package:z_editor/screens/select/zombie_selection_screen.dart';
-import 'package:z_editor/widgets/asset_image.dart'
+import 'package:c_editor/l10n/app_localizations.dart';
+import 'package:c_editor/l10n/resource_names.dart';
+import 'package:c_editor/screens/select/grid_item_selection_screen.dart';
+import 'package:c_editor/screens/select/plant_selection_screen.dart';
+import 'package:c_editor/screens/select/zombie_condition_selection_screen.dart';
+import 'package:c_editor/screens/select/zombie_selection_screen.dart';
+import 'package:c_editor/widgets/asset_image.dart'
     show AssetImageWidget, imageAltCandidates;
 
 String _resolveZombieDisplayType(String typeName) {

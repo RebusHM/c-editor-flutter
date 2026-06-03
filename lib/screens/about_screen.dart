@@ -1,6 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:package_info_plus/package_info_plus.dart';
-import 'package:z_editor/l10n/app_localizations.dart';
+import 'package:url_launcher/url_launcher.dart';
+import 'package:c_editor/l10n/app_localizations.dart';
+
+const _sourceUrl = 'https://github.com/CyberSteve777/c-editor-flutter';
+const _issuesUrl = 'https://github.com/CyberSteve777/c-editor-flutter/issues';
+const _discordInviteUrl = 'https://discord.gg/FBasnrE';
 
 String _usageTextForPlatform(BuildContext context, AppLocalizations l10n) {
   final p = Theme.of(context).platform;
@@ -8,6 +13,12 @@ String _usageTextForPlatform(BuildContext context, AppLocalizations l10n) {
       p == TargetPlatform.macOS ||
       p == TargetPlatform.linux;
   return isDesktop ? l10n.usageTextDesktop : l10n.usageTextMobile;
+}
+
+Future<void> _openUrl(String url) async {
+  final uri = Uri.parse(url);
+  if (!await canLaunchUrl(uri)) return;
+  await launchUrl(uri, mode: LaunchMode.externalApplication);
 }
 
 class AboutScreen extends StatelessWidget {
@@ -38,7 +49,7 @@ class AboutScreen extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             Text(
-              l10n.zEditor,
+              l10n.cEditor,
               textAlign: TextAlign.center,
               style: theme.textTheme.headlineMedium?.copyWith(
                 fontWeight: FontWeight.bold,
@@ -75,9 +86,23 @@ class AboutScreen extends StatelessWidget {
             ),
             _InfoCard(
               title: l10n.usageSection,
-              child: Text(
-                _usageTextForPlatform(context, l10n),
-                style: TextStyle(height: 1.5, color: theme.colorScheme.onSurface),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    _usageTextForPlatform(context, l10n),
+                    style: TextStyle(height: 1.5, color: theme.colorScheme.onSurface),
+                  ),
+                  if (l10n.discordInviteLabel.isNotEmpty) ...[
+                    const SizedBox(height: 8),
+                    _LinkRow(
+                      label: l10n.discordInviteLabel,
+                      url: _discordInviteUrl,
+                      onSurface: theme.colorScheme.onSurface,
+                      linkColor: theme.colorScheme.primary,
+                    ),
+                  ],
+                ],
               ),
             ),
             _InfoCard(
@@ -89,6 +114,38 @@ class AboutScreen extends StatelessWidget {
                   Text(l10n.authorName, style: TextStyle(color: theme.colorScheme.onSurface)),
                   _Bullet(l10n.thanksLabel),
                   Text(l10n.thanksNames, style: TextStyle(color: theme.colorScheme.onSurface)),
+                  _LinkRow(
+                    label: l10n.sourceLabel,
+                    url: _sourceUrl,
+                    onSurface: theme.colorScheme.onSurface,
+                    linkColor: theme.colorScheme.primary,
+                  ),
+                  _LinkRow(
+                    label: l10n.issuesLabel,
+                    url: _issuesUrl,
+                    onSurface: theme.colorScheme.onSurface,
+                    linkColor: theme.colorScheme.primary,
+                  ),
+                  const SizedBox(height: 12),
+                  Text(
+                    l10n.zEditorAcknowledgment,
+                    style: TextStyle(height: 1.5, color: theme.colorScheme.onSurface),
+                  ),
+                  const SizedBox(height: 12),
+                  Text(
+                    l10n.zEditorCreditsSubsection,
+                    style: theme.textTheme.titleSmall?.copyWith(
+                      fontWeight: FontWeight.bold,
+                      color: theme.colorScheme.primary,
+                    ),
+                  ),
+                  const SizedBox(height: 8),
+                  _Bullet(l10n.zEditorAuthorLabel),
+                  Text(l10n.zEditorAuthorName, style: TextStyle(color: theme.colorScheme.onSurface)),
+                  _Bullet(l10n.zEditorThanksLabel),
+                  Text(l10n.zEditorThanksNames, style: TextStyle(color: theme.colorScheme.onSurface)),
+                  _Bullet(l10n.zEditorQqGroupLabel),
+                  Text(l10n.zEditorQqGroupNumber, style: TextStyle(color: theme.colorScheme.onSurface)),
                 ],
               ),
             ),
@@ -114,6 +171,56 @@ class AboutScreen extends StatelessWidget {
             ),
           ],
         ),
+      ),
+    );
+  }
+}
+
+class _LinkRow extends StatelessWidget {
+  const _LinkRow({
+    required this.label,
+    required this.url,
+    required this.onSurface,
+    required this.linkColor,
+  });
+
+  final String label;
+  final String url;
+  final Color onSurface;
+  final Color linkColor;
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.symmetric(vertical: 2),
+      child: Row(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text('• ', style: TextStyle(fontWeight: FontWeight.bold, color: linkColor)),
+          Expanded(
+            child: Wrap(
+              crossAxisAlignment: WrapCrossAlignment.center,
+              children: [
+                Text(
+                  '$label ',
+                  style: TextStyle(height: 1.5, color: onSurface),
+                ),
+                InkWell(
+                  onTap: () => _openUrl(url),
+                  child: Text(
+                    url,
+                    style: TextStyle(
+                      height: 1.5,
+                      color: linkColor,
+                      decoration: TextDecoration.underline,
+                      decorationColor: linkColor,
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ],
       ),
     );
   }

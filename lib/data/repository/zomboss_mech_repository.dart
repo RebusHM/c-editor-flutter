@@ -2,11 +2,11 @@ import 'dart:convert';
 
 import 'package:collection/collection.dart';
 import 'package:flutter/widgets.dart';
-import 'package:z_editor/data/asset_loader.dart';
-import 'package:z_editor/data/models/zomboss_mech_catalog.dart';
-import 'package:z_editor/data/pvz_models/PvzObject.dart';
-import 'package:z_editor/data/pvz_models/PvzLevelFile.dart';
-import 'package:z_editor/data/pvz_models/LocationData.dart';
+import 'package:c_editor/data/asset_loader.dart';
+import 'package:c_editor/data/models/zomboss_mech_catalog.dart';
+import 'package:c_editor/data/pvz_models/PvzObject.dart';
+import 'package:c_editor/data/pvz_models/PvzLevelFile.dart';
+import 'package:c_editor/data/pvz_models/LocationData.dart';
 
 /// Dropdown value for the custom (memo) zombossmech variation in the battle tab.
 const kZombossMechCustomVariationValue = '__z_editor_custom__';

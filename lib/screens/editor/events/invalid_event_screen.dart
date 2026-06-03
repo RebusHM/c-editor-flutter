@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:z_editor/data/level_parser.dart';
-import 'package:z_editor/l10n/app_localizations.dart';
-import 'package:z_editor/widgets/editor_components.dart';
+import 'package:c_editor/data/level_parser.dart';
+import 'package:c_editor/l10n/app_localizations.dart';
+import 'package:c_editor/widgets/editor_components.dart';
 
 /// Invalid/broken event reference screen. Ported from Z-Editor-master InvalidEventEP.kt
 class InvalidEventScreen extends StatelessWidget {

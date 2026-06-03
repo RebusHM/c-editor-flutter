@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:z_editor/bloc/editor/editor_cubit.dart';
-import 'package:z_editor/l10n/app_localizations.dart';
+import 'package:c_editor/bloc/editor/editor_cubit.dart';
+import 'package:c_editor/l10n/app_localizations.dart';
 
 EditorCubit? _tryReadEditorCubit(BuildContext context) {
   try {

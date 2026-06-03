@@ -1,11 +1,11 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:z_editor/data/registry/event_registry.dart';
-import 'package:z_editor/data/level_parser.dart';
-import 'package:z_editor/data/pvz_models.dart';
-import 'package:z_editor/data/repository/grid_item_repository.dart';
-import 'package:z_editor/theme/app_theme.dart';
-import 'package:z_editor/widgets/asset_image.dart' show AssetImageWidget, imageAltCandidates;
+import 'package:c_editor/data/registry/event_registry.dart';
+import 'package:c_editor/data/level_parser.dart';
+import 'package:c_editor/data/pvz_models.dart';
+import 'package:c_editor/data/repository/grid_item_repository.dart';
+import 'package:c_editor/theme/app_theme.dart';
+import 'package:c_editor/widgets/asset_image.dart' show AssetImageWidget, imageAltCandidates;
 
 /// Shared editor UI components. Ported from Z-Editor-master EditorComponents.kt
 
