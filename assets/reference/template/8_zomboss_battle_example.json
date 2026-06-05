@@ -11,9 +11,8 @@
                 "Modules": [
                     "RTID(ZombossLastStand@CurrentLevel)",
                     "RTID(MausoleumMowers@LevelModules)",
-                    "RTID(PVZ2MausoleumModuleUnchartedMode@LevelModules)",
                     "RTID(ConveyorBelt@CurrentLevel)",
-                    "RTID(TunnelDefendDefault0@LevelModules)",
+                    "RTID(TunnelDefend@CurrentLevel)",
                     "RTID(DefaultZombieWinCondition@LevelModules)",
                     "RTID(FinalStageTimeLimitedChallenge@LevelModules)"
                 ],
@@ -142,6 +141,17 @@
                         "Speed": 100
                     }
                 ]
+            }
+        },
+        {
+            "aliases": [
+                "TunnelDefend"
+            ],
+            "objclass": "TunnelDefendModuleProperties",
+            "objdata": {
+                "Roads": [],
+                "TunnelSequenceInterval": 0.4,
+                "BrickMapIndex": 1
             }
         }
     ],
