@@ -76,28 +76,11 @@ class _GridItemSelectionScreenState extends State<GridItemSelectionScreen> {
           ),
           backgroundColor: themeColor,
           foregroundColor: Colors.white,
-          title: TextField(
+          title: AppBarSearchField(
+            hintText: l10n?.searchGridItems ?? 'Search grid items',
+            query: _searchQuery,
             onChanged: (v) => setState(() => _searchQuery = v),
-            decoration: InputDecoration(
-              hintText: l10n?.searchGridItems ?? 'Search grid items',
-              prefixIcon: Icon(
-                Icons.search,
-                color: Colors.white.withValues(alpha: 0.9),
-              ),
-              suffixIcon: _searchQuery.isNotEmpty
-                  ? IconButton(
-                      icon: Icon(
-                        Icons.clear,
-                        color: Colors.white.withValues(alpha: 0.9),
-                      ),
-                      onPressed: () => setState(() => _searchQuery = ''),
-                    )
-                  : null,
-              border: InputBorder.none,
-              filled: true,
-              fillColor: Colors.white.withValues(alpha: 0.2),
-            ),
-            style: const TextStyle(color: Colors.white),
+            onClear: () => setState(() => _searchQuery = ''),
           ),
         ),
         body: Column(

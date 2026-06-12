@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:c_editor/l10n/app_localizations.dart';
+import 'package:c_editor/widgets/editor_components.dart';
 
 class SelectionDialog<T> extends StatefulWidget {
   const SelectionDialog({
@@ -57,13 +58,13 @@ class _SelectionDialogState<T> extends State<SelectionDialog<T>> {
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
-            TextField(
+            SelectionSearchField(
+              hintText: l10n?.search ?? 'Search',
+              query: _searchController.text,
               controller: _searchController,
-              decoration: InputDecoration(
-                labelText: l10n?.search ?? 'Search',
-                prefixIcon: const Icon(Icons.search),
-                border: const OutlineInputBorder(),
-              ),
+              useOutlineBorder: true,
+              onChanged: (_) {},
+              onClear: () => _searchController.clear(),
             ),
             const SizedBox(height: 16),
             Expanded(

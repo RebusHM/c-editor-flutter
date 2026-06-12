@@ -51,20 +51,11 @@ class _StageSelectionScreenState extends State<StageSelectionScreen> {
             children: [
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-                child: TextField(
+                child: SelectionSearchField(
+                  hintText: l10n?.searchStage ?? 'Search stage',
+                  query: _searchQuery,
                   onChanged: (v) => setState(() => _searchQuery = v),
-                  decoration: InputDecoration(
-                    hintText: l10n?.searchStage ?? 'Search stage',
-                    prefixIcon: const Icon(Icons.search),
-                    suffixIcon: _searchQuery.isNotEmpty
-                        ? IconButton(
-                            icon: const Icon(Icons.clear),
-                            onPressed: () => setState(() => _searchQuery = ''),
-                          )
-                        : null,
-                    filled: true,
-                    border: OutlineInputBorder(borderRadius: BorderRadius.circular(24)),
-                  ),
+                  onClear: () => setState(() => _searchQuery = ''),
                 ),
               ),
               SingleChildScrollView(

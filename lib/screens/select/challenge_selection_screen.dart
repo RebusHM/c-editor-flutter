@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:c_editor/data/repository/challenge_repository.dart';
 import 'package:c_editor/l10n/app_localizations.dart';
 import 'package:c_editor/theme/app_theme.dart';
+import 'package:c_editor/widgets/editor_components.dart';
 
 /// Challenge selection. Ported from Z-Editor-master ChallengeSelectionScreen.kt
 /// Uses PvzOrange colors in both light and dark themes for consistency.
@@ -41,26 +42,13 @@ class _ChallengeSelectionScreenState extends State<ChallengeSelectionScreen> {
           icon: const Icon(Icons.arrow_back),
           onPressed: widget.onBack,
         ),
-        title: TextField(
+        title: SelectionSearchField(
+          hintText:
+              l10n?.searchChallengeNameOrCode ?? 'Search challenge name or code',
+          query: _searchQuery,
+          fillColor: theme.colorScheme.surface,
           onChanged: (v) => setState(() => _searchQuery = v),
-          style: TextStyle(color: theme.colorScheme.onSurface),
-          decoration: InputDecoration(
-            hintText: l10n?.searchChallengeNameOrCode ?? 'Search challenge name or code',
-            hintStyle: TextStyle(color: theme.colorScheme.onSurfaceVariant),
-            prefixIcon: Icon(Icons.search, color: theme.colorScheme.onSurfaceVariant),
-            suffixIcon: _searchQuery.isNotEmpty
-                ? IconButton(
-                    icon: Icon(Icons.clear, color: theme.colorScheme.onSurfaceVariant),
-                    onPressed: () => setState(() => _searchQuery = ''),
-                  )
-                : null,
-            filled: true,
-            fillColor: theme.colorScheme.surface,
-            border: OutlineInputBorder(
-              borderRadius: BorderRadius.circular(24),
-              borderSide: BorderSide.none,
-            ),
-          ),
+          onClear: () => setState(() => _searchQuery = ''),
         ),
       ),
       body: ListView.builder(

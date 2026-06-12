@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:c_editor/data/repository/rift_theme_repository.dart';
 import 'package:c_editor/l10n/app_localizations.dart';
 import 'package:c_editor/l10n/resource_names.dart';
+import 'package:c_editor/widgets/editor_components.dart';
 
 /// Multi-select picker for rift themes. Tap to toggle; confirm with the check button.
 class RiftThemeSelectionScreen extends StatefulWidget {
@@ -77,35 +78,13 @@ class _RiftThemeSelectionScreenState extends State<RiftThemeSelectionScreen> {
           tooltip: l10n?.back ?? 'Back',
           onPressed: widget.onBack,
         ),
-        title: TextField(
+        title: AppBarSearchField(
+          hintText: l10n?.selectedCountTapToSearch(_selectedIds.length) ??
+              'Selected ${_selectedIds.length}, tap to search',
+          query: _searchQuery,
+          borderRadius: 24,
           onChanged: (v) => setState(() => _searchQuery = v),
-          style: const TextStyle(color: Colors.white),
-          cursorColor: Colors.white,
-          decoration: InputDecoration(
-            hintText: l10n?.selectedCountTapToSearch(_selectedIds.length) ??
-                'Selected ${_selectedIds.length}, tap to search',
-            hintStyle: TextStyle(color: Colors.white.withValues(alpha: 0.7)),
-            prefixIcon: Icon(
-              Icons.search,
-              color: Colors.white.withValues(alpha: 0.85),
-            ),
-            suffixIcon: _searchQuery.isNotEmpty
-                ? IconButton(
-                    icon: Icon(
-                      Icons.clear,
-                      color: Colors.white.withValues(alpha: 0.85),
-                    ),
-                    onPressed: () => setState(() => _searchQuery = ''),
-                  )
-                : null,
-            filled: true,
-            fillColor: Colors.white.withValues(alpha: 0.15),
-            border: OutlineInputBorder(
-              borderRadius: BorderRadius.circular(24),
-              borderSide: BorderSide.none,
-            ),
-            contentPadding: const EdgeInsets.symmetric(vertical: 0),
-          ),
+          onClear: () => setState(() => _searchQuery = ''),
         ),
       ),
       floatingActionButton: FloatingActionButton(

@@ -10,7 +10,7 @@ import 'package:c_editor/screens/select/magic_hat_spawn_preview_screen.dart';
 import 'package:c_editor/widgets/asset_image.dart'
     show AssetImageWidget, imageAltCandidates;
 import 'package:c_editor/widgets/editor_components.dart'
-    show AccentBarTabBarStyle, ScrollableWithMouseDrag;
+    show AccentBarTabBarStyle, ScrollableWithMouseDrag, SelectionSearchField;
 
 /// Placeholder when a plant has no icon or icon fails to load.
 const String _kUnknownIconPath = 'assets/images/others/unknown.webp';
@@ -335,32 +335,19 @@ class _PlantSelectionScreenState extends State<PlantSelectionScreen> {
                   children: [
                     Padding(
                       padding: const EdgeInsets.fromLTRB(12, 8, 12, 4),
-                      child: TextField(
+                      child: SelectionSearchField(
+                        hintText: widget.isMultiSelect
+                            ? (l10n?.selectedCountTapToSearch(
+                                  widget.allowDuplicateSelection
+                                      ? _selectedIdsWithDuplicates.length
+                                      : _selectedIds.length,
+                                ) ??
+                                'Selected ${widget.allowDuplicateSelection ? _selectedIdsWithDuplicates.length : _selectedIds.length}, tap to search')
+                            : (l10n?.searchPlant ?? 'Search plant'),
+                        query: _searchQuery,
+                        fillColor: theme.colorScheme.surface,
                         onChanged: (v) => setState(() => _searchQuery = v),
-                        decoration: InputDecoration(
-                          hintText: widget.isMultiSelect
-                              ? (l10n?.selectedCountTapToSearch(
-                                    widget.allowDuplicateSelection
-                                        ? _selectedIdsWithDuplicates.length
-                                        : _selectedIds.length,
-                                  ) ??
-                                  'Selected ${widget.allowDuplicateSelection ? _selectedIdsWithDuplicates.length : _selectedIds.length}, tap to search')
-                              : (l10n?.searchPlant ?? 'Search plant'),
-                          prefixIcon: const Icon(Icons.search),
-                          suffixIcon: _searchQuery.isNotEmpty
-                              ? IconButton(
-                                  icon: const Icon(Icons.clear),
-                                  onPressed: () =>
-                                      setState(() => _searchQuery = ''),
-                                )
-                              : null,
-                          filled: true,
-                          fillColor: theme.colorScheme.surface,
-                          border: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(24),
-                            borderSide: BorderSide.none,
-                          ),
-                        ),
+                        onClear: () => setState(() => _searchQuery = ''),
                       ),
                     ),
                     DefaultTabController(

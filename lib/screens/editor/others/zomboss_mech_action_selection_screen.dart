@@ -8,6 +8,7 @@ import 'package:c_editor/data/zomboss_mech_l10n.dart';
 import 'package:c_editor/l10n/app_localizations.dart';
 import 'package:c_editor/screens/editor/others/custom_zomboss_mech_action_editor_screen.dart';
 import 'package:c_editor/widgets/animated_extended_fab.dart';
+import 'package:c_editor/widgets/editor_components.dart';
 
 /// Picks a catalog or level-local zomboss action; returns RTID string.
 class ZombossMechActionSelectionScreen extends StatefulWidget {
@@ -182,13 +183,12 @@ class _ZombossMechActionSelectionScreenState
                 ),
               Padding(
                 padding: const EdgeInsets.fromLTRB(16, 0, 16, 8),
-                child: TextField(
-                  decoration: InputDecoration(
-                    labelText: l10n?.search ?? 'Search',
-                    prefixIcon: const Icon(Icons.search),
-                    border: const OutlineInputBorder(),
-                  ),
+                child: SelectionSearchField(
+                  hintText: l10n?.search ?? 'Search',
+                  query: _query,
+                  useOutlineBorder: true,
                   onChanged: (v) => setState(() => _query = v),
+                  onClear: () => setState(() => _query = ''),
                 ),
               ),
               Expanded(

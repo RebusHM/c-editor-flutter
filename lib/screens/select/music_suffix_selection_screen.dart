@@ -3,6 +3,7 @@ import 'package:c_editor/data/music_suffix_catalog.dart';
 import 'package:c_editor/l10n/app_localizations.dart';
 import 'package:c_editor/l10n/resource_names.dart';
 import 'package:c_editor/widgets/asset_image.dart' show AssetImageWidget, imageAltCandidates;
+import 'package:c_editor/widgets/editor_components.dart';
 
 /// Picker for `MusicSuffix` (codename + icon + localized title).
 ///
@@ -54,22 +55,11 @@ class _MusicSuffixSelectionScreenState extends State<MusicSuffixSelectionScreen>
           preferredSize: const Size.fromHeight(64),
           child: Padding(
             padding: const EdgeInsets.fromLTRB(16, 0, 16, 12),
-            child: TextField(
+            child: SelectionSearchField(
+              hintText: l10n?.searchMusicSuffix ?? 'Search name or codename',
+              query: _searchQuery,
               onChanged: (v) => setState(() => _searchQuery = v),
-              decoration: InputDecoration(
-                hintText: l10n?.searchMusicSuffix ?? 'Search name or codename',
-                prefixIcon: const Icon(Icons.search),
-                suffixIcon: _searchQuery.isNotEmpty
-                    ? IconButton(
-                        icon: const Icon(Icons.clear),
-                        onPressed: () => setState(() => _searchQuery = ''),
-                      )
-                    : null,
-                filled: true,
-                border: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(24),
-                ),
-              ),
+              onClear: () => setState(() => _searchQuery = ''),
             ),
           ),
         ),

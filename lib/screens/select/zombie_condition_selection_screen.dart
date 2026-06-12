@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:c_editor/data/challenge_resource_l10n.dart';
 import 'package:c_editor/data/zombie_conditions.dart';
 import 'package:c_editor/l10n/app_localizations.dart';
+import 'package:c_editor/widgets/editor_components.dart';
 
 /// Multi-select zombie conditions with checkboxes (for star challenges).
 class ZombieConditionSelectionScreen extends StatefulWidget {
@@ -67,13 +68,12 @@ class _ZombieConditionSelectionScreenState
         children: [
           Padding(
             padding: const EdgeInsets.fromLTRB(16, 8, 16, 8),
-            child: TextField(
-              decoration: InputDecoration(
-                hintText: l10n?.search ?? 'Search',
-                prefixIcon: const Icon(Icons.search),
-                border: const OutlineInputBorder(),
-              ),
+            child: SelectionSearchField(
+              hintText: l10n?.search ?? 'Search',
+              query: _query,
+              useOutlineBorder: true,
               onChanged: (v) => setState(() => _query = v),
+              onClear: () => setState(() => _query = ''),
             ),
           ),
           Expanded(
