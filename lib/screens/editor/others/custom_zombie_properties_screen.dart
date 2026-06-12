@@ -2,6 +2,7 @@ import 'package:collection/collection.dart';
 import 'package:flutter/material.dart';
 import 'package:c_editor/data/pvz_models.dart';
 import 'package:c_editor/data/repository/resilience_config_repository.dart';
+import 'package:c_editor/data/repository/zombie_properties_repository.dart';
 import 'package:c_editor/data/rtid_parser.dart';
 import 'package:c_editor/l10n/app_localizations.dart';
 import 'package:c_editor/theme/app_theme.dart';
@@ -72,6 +73,13 @@ class _CustomZombiePropertiesScreenState
     final list = _typeData.resistences ?? const [];
     for (var i = 0; i < 7; i++) {
       _resistances[i] = i < list.length ? list[i] : 0.0;
+    }
+    if (!_supportsResilienceShield) {
+      if (_propsData.resilience != null) {
+        _stripUnsupportedResilience();
+        WidgetsBinding.instance.addPostFrameCallback((_) => widget.onChanged());
+      }
+      return;
     }
     _loadResilienceState();
   }
@@ -190,6 +198,32 @@ class _CustomZombiePropertiesScreenState
   }
 
   bool get _isResilienceEnabled => _propsData.resilience != null;
+
+  bool get _supportsResilienceShield =>
+      ZombiePropertiesRepository.supportsResilienceShield(_typeData.typeName);
+
+  void _stripUnsupportedResilience() {
+    final r = _propsData.resilience;
+    if (r == null) return;
+    if (r is String) {
+      final info = RtidParser.parse(r);
+      if (info?.source == 'CurrentLevel') {
+        final alias = info!.alias;
+        widget.levelFile.objects.removeWhere(
+          (o) =>
+              o.objClass == 'ZombieResilience' &&
+              o.aliases?.contains(alias) == true,
+        );
+      }
+    }
+    _propsData.resilience = null;
+    _resilienceUsePreset = true;
+    _resiliencePresetAlias = null;
+    _customResilienceObj = null;
+    _customResilienceData = ZombieResilienceData();
+    _customResilienceCodename = '';
+    _propsObj?.objData = _propsData.toJson();
+  }
 
   void _sync() {
     final allZero = _resistances.every((e) => e == 0.0);
@@ -895,169 +929,184 @@ class _CustomZombiePropertiesScreenState
                 ),
               ),
             ),
-              const SizedBox(height: 16),
-              Text(l10n?.resilienceArmor ?? 'Resilience (armor)',
-                  style: theme.textTheme.titleMedium?.copyWith(
-                    fontWeight: FontWeight.bold,
-                    color: themeColor,
-                  )),
-              const SizedBox(height: 8),
-              Card(
-                child: Theme(
-                  data: theme.copyWith(
-                    switchTheme: SwitchThemeData(
-                      trackColor: WidgetStateProperty.resolveWith((states) {
-                        if (states.contains(WidgetState.selected)) {
-                          return themeColor;
-                        }
-                        return null;
-                      }),
-                      thumbColor: WidgetStateProperty.resolveWith((states) {
-                        if (states.contains(WidgetState.selected)) {
-                          return theme.colorScheme.onPrimary;
-                        }
-                        return null;
-                      }),
+              if (_supportsResilienceShield) ...[
+                const SizedBox(height: 16),
+                Text(l10n?.resilienceArmor ?? 'Resilience (armor)',
+                    style: theme.textTheme.titleMedium?.copyWith(
+                      fontWeight: FontWeight.bold,
+                      color: themeColor,
+                    )),
+                const SizedBox(height: 8),
+                Card(
+                  child: Theme(
+                    data: theme.copyWith(
+                      switchTheme: SwitchThemeData(
+                        trackColor: WidgetStateProperty.resolveWith((states) {
+                          if (states.contains(WidgetState.selected)) {
+                            return themeColor;
+                          }
+                          return null;
+                        }),
+                        thumbColor: WidgetStateProperty.resolveWith((states) {
+                          if (states.contains(WidgetState.selected)) {
+                            return theme.colorScheme.onPrimary;
+                          }
+                          return null;
+                        }),
+                      ),
+                    ),
+                    child: Padding(
+                      padding: const EdgeInsets.all(16),
+                      child: Column(
+                        mainAxisSize: MainAxisSize.min,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          _switchRow(
+                            title:
+                                l10n?.enableResilience ?? 'Enable resilience',
+                            checked: _isResilienceEnabled,
+                            onChanged: (checked) {
+                              if (checked) {
+                                if (_resilienceUsePreset) {
+                                  final presets =
+                                      ResilienceConfigRepository.getAll();
+                                  if (presets.isNotEmpty) {
+                                    _propsData.resilience = presets.first.rtid;
+                                    _resiliencePresetAlias = presets.first.alias;
+                                  } else {
+                                    _propsData.resilience =
+                                        _ensureCustomResilienceInLevel();
+                                  }
+                                } else {
+                                  _propsData.resilience =
+                                      _ensureCustomResilienceInLevel();
+                                }
+                                _loadResilienceState();
+                              } else {
+                                _propsData.resilience = null;
+                              }
+                              _sync();
+                            },
+                          ),
+                          if (_isResilienceEnabled) ...[
+                            const Divider(height: 24),
+                            Row(
+                              children: [
+                                Expanded(
+                                  child: Column(
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.start,
+                                    children: [
+                                      Text(
+                                        l10n?.resilienceSource ?? 'Source',
+                                        style: const TextStyle(
+                                          fontWeight: FontWeight.bold,
+                                        ),
+                                      ),
+                                      const SizedBox(height: 4),
+                                      RadioGroup<bool>(
+                                        groupValue: _resilienceUsePreset,
+                                        onChanged: (v) {
+                                          if (v != null) {
+                                            setState(() {
+                                              _resilienceUsePreset = v;
+                                              if (v) {
+                                                final presets =
+                                                    ResilienceConfigRepository
+                                                        .getAll();
+                                                _propsData.resilience =
+                                                    presets.isNotEmpty
+                                                        ? presets.first.rtid
+                                                        : null;
+                                                _resiliencePresetAlias =
+                                                    presets.isNotEmpty
+                                                        ? presets.first.alias
+                                                        : null;
+                                              } else {
+                                                _propsData.resilience =
+                                                    _ensureCustomResilienceInLevel();
+                                              }
+                                            });
+                                            _sync();
+                                          }
+                                        },
+                                        child: Row(
+                                          children: [
+                                            Flexible(
+                                              child: RadioListTile<bool>(
+                                                value: true,
+                                                title: Text(
+                                                  l10n?.resiliencePreset ??
+                                                      'Preset',
+                                                ),
+                                              ),
+                                            ),
+                                            Flexible(
+                                              child: RadioListTile<bool>(
+                                                value: false,
+                                                title: Text(
+                                                  l10n?.resilienceCustom ??
+                                                      'Custom',
+                                                ),
+                                              ),
+                                            ),
+                                          ],
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              ],
+                            ),
+                            const SizedBox(height: 16),
+                            if (_resilienceUsePreset)
+                              DropdownButtonFormField<String>(
+                                isExpanded: true,
+                                initialValue: _resiliencePresetAlias ??
+                                    (ResilienceConfigRepository.getAll()
+                                            .isNotEmpty
+                                        ? ResilienceConfigRepository.getAll()
+                                            .first
+                                            .alias
+                                        : null),
+                                decoration: InputDecoration(
+                                  labelText: l10n?.resiliencePresetSelect ??
+                                      'Select preset',
+                                  border: const OutlineInputBorder(),
+                                ),
+                                items: ResilienceConfigRepository.getAll()
+                                    .map(
+                                      (e) => DropdownMenuItem<String>(
+                                        value: e.alias,
+                                        child: _WeakTypeDropdownRow(
+                                          weakType: e.data.weakType,
+                                          label: e.alias,
+                                        ),
+                                      ),
+                                    )
+                                    .toList(),
+                                onChanged: (v) {
+                                  if (v != null) {
+                                    setState(() {
+                                      _resiliencePresetAlias = v;
+                                      _propsData.resilience = RtidParser.build(
+                                        v,
+                                        'ResilienceConfig',
+                                      );
+                                    });
+                                    _sync();
+                                  }
+                                },
+                              )
+                            else
+                              _buildCustomResilienceFields(theme, l10n),
+                          ],
+                        ],
+                      ),
                     ),
                   ),
-                  child: Padding(
-                    padding: const EdgeInsets.all(16),
-                    child: Column(
-                      mainAxisSize: MainAxisSize.min,
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        _switchRow(
-                          title: l10n?.enableResilience ?? 'Enable resilience',
-                        checked: _isResilienceEnabled,
-                        onChanged: (checked) {
-                          if (checked) {
-                            if (_resilienceUsePreset) {
-                              final presets =
-                                  ResilienceConfigRepository.getAll();
-                              if (presets.isNotEmpty) {
-                                _propsData.resilience = presets.first.rtid;
-                                _resiliencePresetAlias = presets.first.alias;
-                              } else {
-                                _propsData.resilience =
-                                    _ensureCustomResilienceInLevel();
-                              }
-                            } else {
-                              _propsData.resilience =
-                                  _ensureCustomResilienceInLevel();
-                            }
-                            _loadResilienceState();
-                          } else {
-                            _propsData.resilience = null;
-                          }
-                          _sync();
-                        },
-                      ),
-                      if (_isResilienceEnabled) ...[
-                        const Divider(height: 24),
-                        Row(
-                          children: [
-                            Expanded(
-                              child: Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Text(
-                                    l10n?.resilienceSource ?? 'Source',
-                                    style: const TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                    ),
-                                  ),
-                                  const SizedBox(height: 4),
-                                  RadioGroup<bool>(
-                                    groupValue: _resilienceUsePreset,
-                                    onChanged: (v) {
-                                      if (v != null) {
-                                        setState(() {
-                                          _resilienceUsePreset = v;
-                                          if (v) {
-                                            final presets =
-                                                ResilienceConfigRepository.getAll();
-                                            _propsData.resilience =
-                                                presets.isNotEmpty
-                                                    ? presets.first.rtid
-                                                    : null;
-                                            _resiliencePresetAlias =
-                                                presets.isNotEmpty
-                                                    ? presets.first.alias
-                                                    : null;
-                                          } else {
-                                            _propsData.resilience =
-                                                _ensureCustomResilienceInLevel();
-                                          }
-                                        });
-                                        _sync();
-                                      }
-                                    },
-                                    child: Row(
-                                      children: [
-                                        Flexible(
-                                          child: RadioListTile<bool>(
-                                            value: true,
-                                            title: Text(l10n?.resiliencePreset ?? 'Preset'),
-                                          ),
-                                        ),
-                                        Flexible(
-                                          child: RadioListTile<bool>(
-                                            value: false,
-                                            title: Text(l10n?.resilienceCustom ?? 'Custom'),
-                                          ),
-                                        ),
-                                      ],
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ),
-                          ],
-                        ),
-                        const SizedBox(height: 16),
-                        if (_resilienceUsePreset)
-                          DropdownButtonFormField<String>(
-                            isExpanded: true,
-                            initialValue: _resiliencePresetAlias ??
-                                (ResilienceConfigRepository.getAll().isNotEmpty
-                                    ? ResilienceConfigRepository
-                                        .getAll()
-                                        .first
-                                        .alias
-                                    : null),
-                            decoration: InputDecoration(
-                              labelText: l10n?.resiliencePresetSelect ??
-                                  'Select preset',
-                              border: const OutlineInputBorder(),
-                            ),
-                            items: ResilienceConfigRepository.getAll()
-                                .map((e) => DropdownMenuItem<String>(
-                                      value: e.alias,
-                                      child: _WeakTypeDropdownRow(
-                                        weakType: e.data.weakType,
-                                        label: e.alias,
-                                      ),
-                                    ))
-                                .toList(),
-                            onChanged: (v) {
-                              if (v != null) {
-                                setState(() {
-                                  _resiliencePresetAlias = v;
-                                  _propsData.resilience =
-                                      RtidParser.build(v, 'ResilienceConfig');
-                                });
-                                _sync();
-                              }
-                            },
-                          )
-                        else
-                          _buildCustomResilienceFields(theme, l10n),
-                      ],
-                    ],
-                  ),
                 ),
-              ),
-            ),
+              ],
               const SizedBox(height: 16),
               Text(l10n?.resilience ?? 'Resilience',
                   style: theme.textTheme.titleMedium?.copyWith(
