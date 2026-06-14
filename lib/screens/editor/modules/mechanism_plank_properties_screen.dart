@@ -52,10 +52,12 @@ class _MechanismPlankPropertiesScreenState
           .toList();
 
   int get _mX => (_rect['mX'] as num?)?.toInt() ?? 0;
+  int get _mY => (_rect['mY'] as num?)?.toInt() ?? 0;
   int get _mWidth => (_rect['mWidth'] as num?)?.toInt() ?? 4;
+  int get _mHeight => (_rect['mHeight'] as num?)?.toInt() ?? 5;
 
-  int get _maxMX => (_gridCols - 1).clamp(0, _gridCols);
-  int get _maxWidth => (_gridCols - _mX).clamp(1, _gridCols);
+  int get _maxMX => (_gridCols - 1).clamp(0, _gridCols).toInt();
+  int get _maxWidth => (_gridCols - _mX).clamp(1, _gridCols).toInt();
 
   @override
   void initState() {
@@ -112,8 +114,10 @@ class _MechanismPlankPropertiesScreenState
   }
 
   void _normalizeValues() {
-    final newMX = _mX.clamp(0, _maxMX);
-    final newWidth = _mWidth.clamp(1, (_gridCols - newMX).clamp(1, _gridCols));
+    final newMX = _mX.clamp(0, _maxMX).toInt();
+    final newWidth = _mWidth
+        .clamp(1, (_gridCols - newMX).clamp(1, _gridCols))
+        .toInt();
 
     final rect = _rect;
     rect['mX'] = newMX;
@@ -131,8 +135,10 @@ class _MechanismPlankPropertiesScreenState
     required int mX,
     required int mWidth,
   }) {
-    final newMX = mX.clamp(0, _maxMX);
-    final newWidth = mWidth.clamp(1, (_gridCols - newMX).clamp(1, _gridCols));
+    final newMX = mX.clamp(0, _maxMX).toInt();
+    final newWidth = mWidth
+        .clamp(1, (_gridCols - newMX).clamp(1, _gridCols))
+        .toInt();
 
     final rect = _rect;
     rect['mX'] = newMX;
@@ -163,26 +169,49 @@ class _MechanismPlankPropertiesScreenState
     );
   }
 
-  bool _hasRailAt(int col, int row) {
-    final startX = _mX;
-    final endX = _mX + _mWidth - 1;
-    final rows = _plankRows.map((e) => int.tryParse(e)).whereType<int>();
+  Set<int> get _cartLocalRows => _plankRows
+      .map((e) => int.tryParse(e))
+      .whereType<int>()
+      .toSet();
 
-    return col >= startX && col <= endX && rows.contains(row);
+  bool _isInsideMechanismRect(int col, int row) {
+    final localCol = col - _mX;
+    final localRow = row - _mY;
+
+    return localCol >= 0 &&
+        localCol < _mWidth &&
+        localRow >= 0 &&
+        localRow < _mHeight;
+  }
+
+  bool _hasRailAt(int col, int row) {
+    if (!_isInsideMechanismRect(col, row)) return false;
+
+    final localRow = row - _mY;
+
+    // Connected Minecart rails are only generated on the lanes immediately
+    // above or below a Connected Minecart. For the default rows 0 and 4 with
+    // mHeight 5, this means rails appear on local rows 1 and 3, with local row
+    // 2 left disconnected.
+    return _cartLocalRows.any((cartRow) => (localRow - cartRow).abs() == 1);
   }
 
   bool _hasCartAt(int col, int row) {
-    final rows = _plankRows.map((e) => int.tryParse(e)).whereType<int>();
-    return col == _mX && rows.contains(row);
+    if (!_isInsideMechanismRect(col, row)) return false;
+
+    final localRow = row - _mY;
+    return _cartLocalRows.contains(localRow);
   }
 
   bool _hasOutOfAreaWarning() {
-    if (_mX < 0) return true;
+    if (_mX < 0 || _mY < 0) return true;
     if (_mX + _mWidth > _gridCols) return true;
+    if (_mY + _mHeight > _gridRows) return true;
 
-    for (final rowText in _plankRows) {
-      final row = int.tryParse(rowText);
-      if (row == null || row < 0 || row >= _gridRows) return true;
+    for (final cartRow in _cartLocalRows) {
+      final absoluteRow = _mY + cartRow;
+      if (cartRow < 0 || cartRow >= _mHeight) return true;
+      if (absoluteRow < 0 || absoluteRow >= _gridRows) return true;
     }
 
     return false;
