@@ -231,6 +231,7 @@ class ChallengeEditorContent extends StatelessWidget {
         return DefeatZombiesOfTypeChallengeEditor(
           object: object,
           onChanged: onChanged,
+          levelFile: levelFile,
         );
       case 'DestroyGridItemsChallengeProps':
         return DestroyGridItemsChallengeEditor(

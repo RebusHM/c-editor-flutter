@@ -39,7 +39,7 @@ class _CustomZombiePropertiesScreenState
   final List<double> _resistances = List<double>.filled(7, 0.0);
   ZombieResilienceData _customResilienceData = ZombieResilienceData();
   bool _resilienceUsePreset = true;
-  String? _resiliencePresetAlias;
+  String? _selectedResilienceRtid;
   String _customResilienceCodename = '';
 
   @override
@@ -97,25 +97,67 @@ class _CustomZombiePropertiesScreenState
     );
   }
 
-  void _removeCustomResilienceFromLevel() {
-    if (_customResilienceObj != null) {
-      widget.levelFile.objects.remove(_customResilienceObj!);
-    } else if (_customResilienceCodename.isNotEmpty) {
-      widget.levelFile.objects.removeWhere(
-        (o) =>
-            o.objClass == 'ZombieResilience' &&
-            o.aliases?.contains(_customResilienceCodename) == true,
+  List<_ResilienceShieldOption> _resilienceShieldOptions() {
+    final options = <_ResilienceShieldOption>[];
+    for (final entry in ResilienceConfigRepository.getAll()) {
+      options.add(
+        _ResilienceShieldOption(
+          rtid: entry.rtid,
+          alias: entry.alias,
+          source: 'ResilienceConfig',
+          weakType: entry.data.weakType,
+        ),
       );
     }
-    _customResilienceObj = null;
-    _customResilienceCodename = '';
+    for (final obj in widget.levelFile.objects) {
+      if (obj.objClass != 'ZombieResilience') continue;
+      final alias = obj.aliases?.firstOrNull;
+      if (alias == null || obj.objData is! Map) continue;
+      final data = ZombieResilienceData.fromJson(
+        Map<String, dynamic>.from(obj.objData as Map),
+      );
+      options.add(
+        _ResilienceShieldOption(
+          rtid: RtidParser.build(alias, 'CurrentLevel'),
+          alias: alias,
+          source: 'CurrentLevel',
+          weakType: data.weakType,
+        ),
+      );
+    }
+    return options;
+  }
+
+  void _applySelectedResilienceRtid(String rtid) {
+    _selectedResilienceRtid = rtid;
+    _propsData.resilience = rtid;
+    final info = RtidParser.parse(rtid);
+    if (info == null) return;
+    if (info.source == 'ResilienceConfig') {
+      _customResilienceObj = null;
+      _customResilienceCodename = '';
+      final entry = ResilienceConfigRepository.getByAlias(info.alias);
+      if (entry != null) {
+        _customResilienceData = _resilienceDataFromEntry(entry);
+      }
+    } else if (info.source == 'CurrentLevel') {
+      _customResilienceCodename = info.alias;
+      _customResilienceObj = widget.levelFile.objects.firstWhereOrNull(
+        (o) => o.aliases?.contains(info.alias) == true,
+      );
+      if (_customResilienceObj?.objData is Map) {
+        _customResilienceData = ZombieResilienceData.fromJson(
+          Map<String, dynamic>.from(_customResilienceObj!.objData as Map),
+        );
+      }
+    }
   }
 
   void _loadResilienceState() {
     final r = _propsData.resilience;
     if (r == null) {
       _resilienceUsePreset = true;
-      _resiliencePresetAlias = null;
+      _selectedResilienceRtid = null;
       _customResilienceObj = null;
       _customResilienceData = ZombieResilienceData();
       _customResilienceCodename = '';
@@ -145,26 +187,12 @@ class _CustomZombiePropertiesScreenState
     if (r is! String || r.isEmpty) return;
     final info = RtidParser.parse(r);
     if (info == null) return;
-    if (info.source == 'ResilienceConfig') {
+    if (info.source == 'ResilienceConfig' || info.source == 'CurrentLevel') {
       _resilienceUsePreset = true;
-      _resiliencePresetAlias = info.alias;
-      _customResilienceObj = null;
-      _customResilienceCodename = '';
-      final entry = ResilienceConfigRepository.getByAlias(info.alias);
-      _customResilienceData = entry != null
-          ? _resilienceDataFromEntry(entry)
-          : ZombieResilienceData();
-    } else {
-      _resilienceUsePreset = false;
-      _resiliencePresetAlias = null;
-      _customResilienceCodename = info.alias;
-      _customResilienceObj = widget.levelFile.objects.firstWhereOrNull(
-        (o) => o.aliases?.contains(info.alias) == true,
-      );
-      if (_customResilienceObj?.objData is Map) {
-        _customResilienceData = ZombieResilienceData.fromJson(
-          Map<String, dynamic>.from(_customResilienceObj!.objData as Map),
-        );
+      _selectedResilienceRtid = r;
+      _applySelectedResilienceRtid(r);
+      if (info.source == 'CurrentLevel' &&
+          _customResilienceObj?.objData is Map) {
         final raw = _customResilienceObj!.objData as Map;
         if (raw['AnimLabels'] == null) {
           _customResilienceObj!.objData = _customResilienceData.toLevelJson();
@@ -197,14 +225,18 @@ class _CustomZombiePropertiesScreenState
     if (_customResilienceObj != null) {
       _customResilienceObj!.aliases = [codename];
       _customResilienceObj!.objData = _customResilienceData.toLevelJson();
-      return RtidParser.build(codename, 'CurrentLevel');
+      final rtid = RtidParser.build(codename, 'CurrentLevel');
+      _selectedResilienceRtid = rtid;
+      return rtid;
     }
     final existing = widget.levelFile.objects
         .firstWhereOrNull((o) => o.aliases?.contains(codename) == true);
     if (existing != null && existing.objClass == 'ZombieResilience') {
       _customResilienceObj = existing;
       _customResilienceObj!.objData = _customResilienceData.toLevelJson();
-      return RtidParser.build(codename, 'CurrentLevel');
+      final rtid = RtidParser.build(codename, 'CurrentLevel');
+      _selectedResilienceRtid = rtid;
+      return rtid;
     }
     var finalCodename = codename;
     if (existing != null) {
@@ -218,7 +250,9 @@ class _CustomZombiePropertiesScreenState
     );
     widget.levelFile.objects.add(obj);
     _customResilienceObj = obj;
-    return RtidParser.build(finalCodename, 'CurrentLevel');
+    final rtid = RtidParser.build(finalCodename, 'CurrentLevel');
+    _selectedResilienceRtid = rtid;
+    return rtid;
   }
 
   bool get _isResilienceEnabled => _propsData.resilience != null;
@@ -229,20 +263,9 @@ class _CustomZombiePropertiesScreenState
   void _stripUnsupportedResilience() {
     final r = _propsData.resilience;
     if (r == null) return;
-    if (r is String) {
-      final info = RtidParser.parse(r);
-      if (info?.source == 'CurrentLevel') {
-        final alias = info!.alias;
-        widget.levelFile.objects.removeWhere(
-          (o) =>
-              o.objClass == 'ZombieResilience' &&
-              o.aliases?.contains(alias) == true,
-        );
-      }
-    }
     _propsData.resilience = null;
     _resilienceUsePreset = true;
-    _resiliencePresetAlias = null;
+    _selectedResilienceRtid = null;
     _customResilienceObj = null;
     _customResilienceData = ZombieResilienceData();
     _customResilienceCodename = '';
@@ -991,23 +1014,16 @@ class _CustomZombiePropertiesScreenState
                             checked: _isResilienceEnabled,
                             onChanged: (checked) {
                               if (checked) {
-                                if (_resilienceUsePreset) {
-                                  final presets =
-                                      ResilienceConfigRepository.getAll();
-                                  if (presets.isNotEmpty) {
-                                    _propsData.resilience = presets.first.rtid;
-                                    _resiliencePresetAlias = presets.first.alias;
-                                  } else {
-                                    _propsData.resilience =
-                                        _ensureCustomResilienceInLevel();
-                                  }
+                                final options = _resilienceShieldOptions();
+                                if (options.isNotEmpty) {
+                                  _applySelectedResilienceRtid(options.first.rtid);
                                 } else {
+                                  _resilienceUsePreset = false;
                                   _propsData.resilience =
                                       _ensureCustomResilienceInLevel();
                                 }
                                 _loadResilienceState();
                               } else {
-                                _removeCustomResilienceFromLevel();
                                 _propsData.resilience = null;
                               }
                               _sync();
@@ -1036,33 +1052,30 @@ class _CustomZombiePropertiesScreenState
                                             setState(() {
                                               _resilienceUsePreset = v;
                                               if (v) {
-                                                _removeCustomResilienceFromLevel();
-                                                final presets =
-                                                    ResilienceConfigRepository
-                                                        .getAll();
-                                                _propsData.resilience =
-                                                    presets.isNotEmpty
-                                                        ? presets.first.rtid
-                                                        : null;
-                                                _resiliencePresetAlias =
-                                                    presets.isNotEmpty
-                                                        ? presets.first.alias
-                                                        : null;
-                                              } else {
-                                                if (_resiliencePresetAlias !=
-                                                    null) {
-                                                  final entry =
-                                                      ResilienceConfigRepository
-                                                          .getByAlias(
-                                                    _resiliencePresetAlias!,
+                                                final options =
+                                                    _resilienceShieldOptions();
+                                                if (_selectedResilienceRtid !=
+                                                        null &&
+                                                    options.any(
+                                                      (o) =>
+                                                          o.rtid ==
+                                                          _selectedResilienceRtid,
+                                                    )) {
+                                                  _propsData.resilience =
+                                                      _selectedResilienceRtid;
+                                                } else if (options.isNotEmpty) {
+                                                  _applySelectedResilienceRtid(
+                                                    options.first.rtid,
                                                   );
-                                                  if (entry != null) {
-                                                    _customResilienceData =
-                                                        _resilienceDataFromEntry(
-                                                      entry,
-                                                    );
-                                                  }
                                                 }
+                                              } else {
+                                                if (_selectedResilienceRtid !=
+                                                    null) {
+                                                  _applySelectedResilienceRtid(
+                                                    _selectedResilienceRtid!,
+                                                  );
+                                                }
+                                                _resilienceUsePreset = false;
                                                 _propsData.resilience =
                                                     _ensureCustomResilienceInLevel();
                                               }
@@ -1070,27 +1083,44 @@ class _CustomZombiePropertiesScreenState
                                             _sync();
                                           }
                                         },
-                                        child: Row(
-                                          children: [
-                                            Flexible(
-                                              child: RadioListTile<bool>(
-                                                value: true,
-                                                title: Text(
-                                                  l10n?.resiliencePreset ??
-                                                      'Preset',
-                                                ),
+                                        child: Theme(
+                                          data: theme.copyWith(
+                                            radioTheme: RadioThemeData(
+                                              fillColor:
+                                                  WidgetStateProperty.resolveWith(
+                                                (states) {
+                                                  if (states.contains(
+                                                    WidgetState.selected,
+                                                  )) {
+                                                    return themeColor;
+                                                  }
+                                                  return null;
+                                                },
                                               ),
                                             ),
-                                            Flexible(
-                                              child: RadioListTile<bool>(
-                                                value: false,
-                                                title: Text(
-                                                  l10n?.resilienceCustom ??
-                                                      'Custom',
+                                          ),
+                                          child: Row(
+                                            children: [
+                                              Flexible(
+                                                child: RadioListTile<bool>(
+                                                  value: true,
+                                                  title: Text(
+                                                    l10n?.resiliencePreset ??
+                                                        'Existing',
+                                                  ),
                                                 ),
                                               ),
-                                            ),
-                                          ],
+                                              Flexible(
+                                                child: RadioListTile<bool>(
+                                                  value: false,
+                                                  title: Text(
+                                                    l10n?.resilienceCustom ??
+                                                        'Custom',
+                                                  ),
+                                                ),
+                                              ),
+                                            ],
+                                          ),
                                         ),
                                       ),
                                     ],
@@ -1100,50 +1130,42 @@ class _CustomZombiePropertiesScreenState
                             ),
                             const SizedBox(height: 16),
                             if (_resilienceUsePreset)
-                              DropdownButtonFormField<String>(
-                                isExpanded: true,
-                                initialValue: _resiliencePresetAlias ??
-                                    (ResilienceConfigRepository.getAll()
-                                            .isNotEmpty
-                                        ? ResilienceConfigRepository.getAll()
-                                            .first
-                                            .alias
-                                        : null),
-                                decoration: InputDecoration(
-                                  labelText: l10n?.resiliencePresetSelect ??
-                                      'Select preset',
-                                  border: const OutlineInputBorder(),
-                                ),
-                                items: ResilienceConfigRepository.getAll()
-                                    .map(
-                                      (e) => DropdownMenuItem<String>(
-                                        value: e.alias,
-                                        child: _WeakTypeDropdownRow(
-                                          weakType: e.data.weakType,
-                                          label: e.alias,
-                                        ),
-                                      ),
-                                    )
-                                    .toList(),
-                                onChanged: (v) {
-                                  if (v != null) {
-                                    setState(() {
-                                      _resiliencePresetAlias = v;
-                                      _propsData.resilience = RtidParser.build(
-                                        v,
-                                        'ResilienceConfig',
-                                      );
-                                      final entry =
-                                          ResilienceConfigRepository.getByAlias(
-                                        v,
-                                      );
-                                      if (entry != null) {
-                                        _customResilienceData =
-                                            _resilienceDataFromEntry(entry);
-                                      }
-                                    });
-                                    _sync();
-                                  }
+                              Builder(
+                                builder: (context) {
+                                  final options = _resilienceShieldOptions();
+                                  final selected = _selectedResilienceRtid ??
+                                      options.firstOrNull?.rtid;
+                                  return DropdownButtonFormField<String>(
+                                    isExpanded: true,
+                                    initialValue: selected,
+                                    decoration: InputDecoration(
+                                      labelText:
+                                          l10n?.resiliencePresetSelect ??
+                                              'Selected resilience shield',
+                                      border: const OutlineInputBorder(),
+                                    ),
+                                    items: options
+                                        .map(
+                                          (e) => DropdownMenuItem<String>(
+                                            value: e.rtid,
+                                            child: _WeakTypeDropdownRow(
+                                              weakType: e.weakType,
+                                              label: '${e.alias}@${e.source}',
+                                            ),
+                                          ),
+                                        )
+                                        .toList(),
+                                    onChanged: options.isEmpty
+                                        ? null
+                                        : (v) {
+                                            if (v != null) {
+                                              setState(() {
+                                                _applySelectedResilienceRtid(v);
+                                              });
+                                              _sync();
+                                            }
+                                          },
+                                  );
                                 },
                               )
                             else
@@ -1753,6 +1775,20 @@ class _ResilienceInputFieldState extends State<_ResilienceInputField> {
       },
     );
   }
+}
+
+class _ResilienceShieldOption {
+  const _ResilienceShieldOption({
+    required this.rtid,
+    required this.alias,
+    required this.source,
+    required this.weakType,
+  });
+
+  final String rtid;
+  final String alias;
+  final String source;
+  final int weakType;
 }
 
 class _WeakTypeDropdownRow extends StatelessWidget {

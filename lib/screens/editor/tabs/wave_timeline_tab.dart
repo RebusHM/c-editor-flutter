@@ -1046,10 +1046,13 @@ class _WaveTimelineTabState extends State<WaveTimelineTab> {
                         final ok = await showDialog<bool>(
                           context: context,
                           builder: (dctx) => AlertDialog(
-                            title: Text(l10n?.deleteEntity ?? 'Delete entity'),
+                            title: Text(
+                              l10n?.customZombieOrphanDeleteTitle ??
+                                  'Remove custom zombie data?',
+                            ),
                             content: Text(
-                              l10n?.customZombieDeleteConfirm ??
-                                  'Remove this custom zombie and its property data.',
+                              l10n?.customZombieOrphanDeleteMessage(info.alias) ??
+                                  '“${info.alias}” is no longer used in this level. Remove its zombie type and property objects from the level file?',
                             ),
                             actions: [
                               TextButton(
@@ -1058,7 +1061,7 @@ class _WaveTimelineTabState extends State<WaveTimelineTab> {
                               ),
                               FilledButton(
                                 onPressed: () => Navigator.pop(dctx, true),
-                                child: Text(l10n?.confirm ?? 'Confirm'),
+                                child: Text(l10n?.ok ?? 'OK'),
                               ),
                             ],
                           ),

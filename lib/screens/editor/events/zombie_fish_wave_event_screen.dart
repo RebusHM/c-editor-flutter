@@ -1,5 +1,6 @@
 import 'package:collection/collection.dart';
 import 'package:flutter/material.dart';
+import 'package:c_editor/data/custom_zombie_level_utils.dart';
 import 'package:c_editor/data/level_parser.dart';
 import 'package:c_editor/data/pvz_models.dart';
 import 'package:c_editor/data/rtid_parser.dart';
@@ -228,7 +229,9 @@ class _ZombieFishWaveEventScreenState extends State<ZombieFishWaveEventScreen> {
     _sync();
   }
 
-  void _removeZombie(int index) {
+  Future<void> _removeZombie(int index) async {
+    final removed = _data.zombies[index];
+    final info = RtidParser.parse(removed.type);
     final zombies = List<ZombieSpawnData>.from(_data.zombies)..removeAt(index);
     _data = SpawnZombiesFishWaveActionPropsData(
       notificationEvents: _data.notificationEvents,
@@ -238,6 +241,14 @@ class _ZombieFishWaveEventScreenState extends State<ZombieFishWaveEventScreen> {
       fishes: _data.fishes,
     );
     _sync();
+    if (info?.source == 'CurrentLevel' && mounted) {
+      await CustomZombieLevelUtils.maybePromptDeleteOrphan(
+        context: context,
+        levelFile: widget.levelFile,
+        alias: info!.alias,
+        onChanged: widget.onChanged,
+      );
+    }
   }
 
   void _openFishProperties() async {

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:c_editor/data/custom_zombie_level_utils.dart';
 import 'package:c_editor/data/challenge_resource_l10n.dart';
 import 'package:c_editor/data/pvz_models/PvzLevelFile.dart';
 import 'package:c_editor/data/pvz_models/PvzObject.dart';
@@ -489,10 +490,12 @@ class DefeatZombiesOfTypeChallengeEditor extends StatefulWidget {
     super.key,
     required this.object,
     required this.onChanged,
+    this.levelFile,
   });
 
   final PvzObject object;
   final VoidCallback onChanged;
+  final PvzLevelFile? levelFile;
 
   @override
   State<DefeatZombiesOfTypeChallengeEditor> createState() =>
@@ -561,13 +564,28 @@ class _DefeatZombiesOfTypeChallengeEditorState
     );
   }
 
-  void _removeZombieAt(int index) {
+  Future<void> _removeZombieAt(int index) async {
+    final removed = _zombieList[index];
     setState(() {
       final list = List<String>.from(_zombieList);
       list.removeAt(index);
       _setTypesToKill(list, _listType);
       _save();
     });
+    final levelFile = widget.levelFile;
+    if (levelFile == null || !mounted) return;
+    final alias = CustomZombieLevelUtils.resolveCustomZombieAlias(
+      levelFile,
+      removed,
+    );
+    if (alias != null) {
+      await CustomZombieLevelUtils.maybePromptDeleteOrphan(
+        context: context,
+        levelFile: levelFile,
+        alias: alias,
+        onChanged: widget.onChanged,
+      );
+    }
   }
 
   @override

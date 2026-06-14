@@ -281,6 +281,41 @@ abstract class ZombossMechActionUtils {
     return Map<String, dynamic>.from(_deepClone(source) as Map);
   }
 
+  static int countReferences(PvzLevelFile levelFile, String rtid) {
+    var count = 0;
+    for (final obj in levelFile.objects) {
+      count += _countRtidInValue(obj.objData, rtid);
+    }
+    return count;
+  }
+
+  static void deleteCustomActionObject(PvzLevelFile levelFile, String rtid) {
+    final info = RtidParser.parse(rtid);
+    if (info?.source != customSource) return;
+    levelFile.objects.removeWhere(
+      (o) => o.aliases?.contains(info!.alias) == true,
+    );
+  }
+
+  static int _countRtidInValue(dynamic value, String rtid) {
+    if (value == rtid) return 1;
+    if (value is List) {
+      var sum = 0;
+      for (final item in value) {
+        sum += _countRtidInValue(item, rtid);
+      }
+      return sum;
+    }
+    if (value is Map) {
+      var sum = 0;
+      for (final entry in value.entries) {
+        sum += _countRtidInValue(entry.value, rtid);
+      }
+      return sum;
+    }
+    return 0;
+  }
+
   static dynamic _deepClone(dynamic value) {
     if (value is Map) {
       return Map<String, dynamic>.fromEntries(

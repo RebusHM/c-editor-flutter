@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:c_editor/data/custom_zombie_level_utils.dart';
 import 'package:c_editor/data/pvz_models.dart';
 import 'package:c_editor/data/rtid_parser.dart';
 import 'package:c_editor/data/repository/zombie_properties_repository.dart';
@@ -138,13 +139,22 @@ class _WaveManagerModuleScreenState extends State<WaveManagerModuleScreen> {
     });
   }
 
-  void _removeZombie(int index) {
-    if (index < _firstGroup.zombiePool.length) {
-      _firstGroup.zombiePool.removeAt(index);
-      if (index < _firstGroup.zombieLevel.length) {
-        _firstGroup.zombieLevel.removeAt(index);
-      }
-      _sync();
+  Future<void> _removeZombie(int index) async {
+    if (index >= _firstGroup.zombiePool.length) return;
+    final removed = _firstGroup.zombiePool[index];
+    final info = RtidParser.parse(removed);
+    _firstGroup.zombiePool.removeAt(index);
+    if (index < _firstGroup.zombieLevel.length) {
+      _firstGroup.zombieLevel.removeAt(index);
+    }
+    _sync();
+    if (info?.source == 'CurrentLevel' && mounted) {
+      await CustomZombieLevelUtils.maybePromptDeleteOrphan(
+        context: context,
+        levelFile: widget.levelFile,
+        alias: info!.alias,
+        onChanged: widget.onChanged,
+      );
     }
   }
 

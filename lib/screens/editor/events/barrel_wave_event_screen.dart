@@ -1,5 +1,6 @@
 import 'package:collection/collection.dart';
 import 'package:flutter/material.dart';
+import 'package:c_editor/data/custom_zombie_level_utils.dart';
 import 'package:c_editor/data/level_parser.dart';
 import 'package:c_editor/data/pvz_models.dart';
 import 'package:c_editor/data/repository/zombie_repository.dart';
@@ -160,9 +161,10 @@ class _BarrelWaveEventScreenState extends State<BarrelWaveEventScreen> {
     });
   }
 
-  void _removeZombieFromBarrel(int barrelIndex, int zombieIndex) {
+  Future<void> _removeZombieFromBarrel(int barrelIndex, int zombieIndex) async {
     final entry = _data.barrels[barrelIndex];
     final params = entry.params!;
+    final removed = params.zombies[zombieIndex];
     final zombies = List<BarrelZombieData>.from(params.zombies)..removeAt(zombieIndex);
     _updateBarrel(barrelIndex, BarrelEntryData(
       row: entry.row,
@@ -173,6 +175,18 @@ class _BarrelWaveEventScreenState extends State<BarrelWaveEventScreen> {
         zombies: zombies,
       ),
     ));
+    final alias = CustomZombieLevelUtils.resolveCustomZombieAlias(
+      widget.levelFile,
+      removed.typeName,
+    );
+    if (alias != null && mounted) {
+      await CustomZombieLevelUtils.maybePromptDeleteOrphan(
+        context: context,
+        levelFile: widget.levelFile,
+        alias: alias,
+        onChanged: widget.onChanged,
+      );
+    }
   }
 
   void _updateBarrelZombie(int barrelIndex, int zombieIndex, BarrelZombieData z) {

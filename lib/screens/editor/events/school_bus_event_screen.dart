@@ -1,5 +1,6 @@
 import 'package:collection/collection.dart';
 import 'package:flutter/material.dart';
+import 'package:c_editor/data/custom_zombie_level_utils.dart';
 import 'package:c_editor/data/level_parser.dart';
 import 'package:c_editor/data/pvz_models.dart';
 import 'package:c_editor/data/repository/zombie_repository.dart';
@@ -111,8 +112,9 @@ class _SchoolBusEventScreenState extends State<SchoolBusEventScreen> {
     });
   }
 
-  void _removeZombie(int index) {
+  Future<void> _removeZombie(int index) async {
     final params = _data.des.params;
+    final removed = params.zombies[index];
     final zombies = List<SchoolBusZombieData>.from(params.zombies)
       ..removeAt(index);
     _updateParams(
@@ -122,6 +124,18 @@ class _SchoolBusEventScreenState extends State<SchoolBusEventScreen> {
         zombies: zombies,
       ),
     );
+    final alias = CustomZombieLevelUtils.resolveCustomZombieAlias(
+      widget.levelFile,
+      removed.typeName,
+    );
+    if (alias != null && mounted) {
+      await CustomZombieLevelUtils.maybePromptDeleteOrphan(
+        context: context,
+        levelFile: widget.levelFile,
+        alias: alias,
+        onChanged: widget.onChanged,
+      );
+    }
   }
 
   void _updateZombie(int index, SchoolBusZombieData z) {

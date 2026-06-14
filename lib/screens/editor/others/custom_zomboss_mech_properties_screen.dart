@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:c_editor/data/models/zomboss_mech_catalog.dart';
 import 'package:c_editor/data/pvz_models.dart';
 import 'package:c_editor/data/repository/zomboss_mech_repository.dart';
+import 'package:c_editor/data/rtid_parser.dart';
 import 'package:c_editor/data/zomboss_mech_action_utils.dart';
 import 'package:c_editor/l10n/app_localizations.dart';
 import 'package:c_editor/l10n/resource_names.dart';
@@ -267,6 +268,51 @@ class _CustomZombossMechPropertiesScreenState
     if (mounted) _sync();
   }
 
+  Future<void> _confirmRemoveStageAction(int stageIndex, int actionIndex) async {
+    final actions = _stageActions(_stages[stageIndex]);
+    if (actionIndex < 0 || actionIndex >= actions.length) return;
+    final rtid = actions[actionIndex];
+    final next = List<String>.from(actions)..removeAt(actionIndex);
+    _setStageActions(stageIndex, next);
+
+    if (!ZombossMechActionUtils.isCustomRtid(rtid) || !mounted) return;
+    if (ZombossMechActionUtils.countReferences(widget.levelFile, rtid) > 0) {
+      return;
+    }
+
+    final info = RtidParser.parse(rtid);
+    final alias = info?.alias ?? rtid;
+    final l10n = AppLocalizations.of(context);
+    final ok = await showDialog<bool>(
+      context: context,
+      builder: (ctx) => AlertDialog(
+        title: Text(
+          l10n?.zombossMechOrphanActionDeleteTitle ??
+              'Remove custom action data?',
+        ),
+        content: Text(
+          l10n?.zombossMechOrphanActionDeleteMessage(alias) ??
+              '“$alias” is no longer used in this level. Remove its action object from the level file?',
+        ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.pop(ctx, false),
+            child: Text(l10n?.cancel ?? 'Cancel'),
+          ),
+          FilledButton(
+            onPressed: () => Navigator.pop(ctx, true),
+            child: Text(l10n?.ok ?? 'OK'),
+          ),
+        ],
+      ),
+    );
+    if (ok == true) {
+      ZombossMechActionUtils.deleteCustomActionObject(widget.levelFile, rtid);
+      widget.onChanged();
+      if (mounted) setState(() {});
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context);
@@ -414,6 +460,8 @@ class _CustomZombossMechPropertiesScreenState
                   _sync();
                 },
                 onActionsChanged: (rtids) => _setStageActions(i, rtids),
+                onRemoveAction: (actionIndex) =>
+                    _confirmRemoveStageAction(i, actionIndex),
                 onAddAction: () => _pickAction(stageIndex: i, retreat: false),
                 onPickRetreat: () => _pickAction(stageIndex: i, retreat: true),
                 onEditCustomAction: _editCustomAction,
@@ -485,6 +533,7 @@ class _StageCard extends StatelessWidget {
     required this.onDelete,
     required this.onHitPointsChanged,
     required this.onActionsChanged,
+    required this.onRemoveAction,
     required this.onAddAction,
     required this.onPickRetreat,
     required this.onEditCustomAction,
@@ -508,6 +557,7 @@ class _StageCard extends StatelessWidget {
   final VoidCallback onDelete;
   final ValueChanged<int> onHitPointsChanged;
   final ValueChanged<List<String>> onActionsChanged;
+  final ValueChanged<int> onRemoveAction;
   final VoidCallback onAddAction;
   final VoidCallback onPickRetreat;
   final ValueChanged<String> onEditCustomAction;
@@ -640,11 +690,7 @@ class _StageCard extends StatelessWidget {
                           onEdit: isCustom
                               ? () => onEditCustomAction(rtid)
                               : null,
-                          onRemove: () {
-                            final next = List<String>.from(selectedActions)
-                              ..removeAt(actionIndex);
-                            onActionsChanged(next);
-                          },
+                          onRemove: () => onRemoveAction(actionIndex),
                         );
                       },
                     ),
