@@ -342,15 +342,15 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get usageText =>
-      '1. 目录设置：首次进入请选择存放 JSON 关卡文件的目录。\n2. 导入/新建：点击列表项编辑现有关卡，或使用右下角按钮基于模板新建。\n3. 模块管理：在编辑器中可添加新模块。\n4. 保存关卡：编辑完成后点击保存，文件将回写到原 JSON。\n5. 转换关卡文件：可将 JSON 转换为热更新可读的 HUJSON 或加密后的 RTON，随后通过其他工具导入游戏内进行测试（记得在导入前手动将文件扩展名从 .hujson 改回 .json）。\n6. 关卡创作完成后，在关卡列表滚动到顶部时，可点击右下角的“上传至创意庭院”浮动按钮，前往官方的植物大战僵尸2高级创作庭院作者中心。\n7. 你可以在「创意庭院·推荐关卡展示」网页中查看往期官方推荐的关卡ID及推荐理由。游玩这些关卡不仅能够支持优秀的关卡创作者，也有助于提升自己的关卡设计水平。\n8.如有疑问或需要高创关卡制作帮助，欢迎加入Plants vs. Zombies Discord服务器，在 PvZ2C-Modding 子区中提问。';
+      '1. 目录设置：首次进入请选择存放 JSON 关卡文件的目录。\n2. 导入/新建：点击列表项编辑现有关卡，或使用右下角按钮基于模板新建。\n3. 模块管理：在编辑器中可添加新模块。\n4. 保存关卡：编辑完成后点击保存，文件将回写到原 JSON。\n5. 转换关卡文件：可将 JSON 转换为热更新可读的 HUJSON 或加密后的 RTON，随后通过其他工具导入游戏内进行测试（记得在导入前手动将文件扩展名从 .hujson 改回 .json）。\n6. 位于关卡列表顶部时，可点击右下角的“上传至创意庭院”按钮，前往官方的植物大战僵尸2高级创作庭院作者中心。\n7. 可以在「创意庭院·推荐关卡展示」网页中查看往期官方推荐的关卡ID及推荐理由。游玩这些关卡不仅能够支持优秀的关卡创作者，也有助于提升自己的关卡设计水平。\n8.如有疑问或需要高创关卡制作帮助，欢迎加入Plants vs. Zombies Discord服务器，在 PvZ2C-Modding 子区中提问。';
 
   @override
   String get usageTextDesktop =>
-      '1. 目录设置：点击文件夹图标选择 JSON 关卡目录。\n2. 导入/新建：点击列表项编辑现有关卡，或使用右下角按钮基于模板新建。\n3. 模块管理：在编辑器中可添加新模块。\n4. 保存关卡：编辑完成后点击保存，文件将回写到原 JSON。\n5. 转换关卡文件：可将 JSON 转换为热更新可读的 HUJSON 或加密后的 RTON，随后通过其他工具导入游戏内进行测试（记得在导入前手动将文件扩展名从 .hujson 改回 .json）。\n6. 关卡创作完成后，在关卡列表滚动到顶部时，可点击右下角的“上传至创意庭院”浮动按钮，前往官方的植物大战僵尸2高级创作庭院作者中心。\n7. 你可以在「创意庭院·推荐关卡展示」网页中查看往期官方推荐的关卡ID及推荐理由。游玩这些关卡不仅能够支持优秀的关卡创作者，也有助于提升自己的关卡设计水平。\n8. 如有疑问或需要高创关卡制作帮助，欢迎加入Plants vs. Zombies Discord服务器，在 PvZ2C-Modding 子区中提问。';
+      '1. 目录设置：点击文件夹图标选择 JSON 关卡目录。\n2. 导入/新建：点击列表项编辑现有关卡，或使用右下角按钮基于模板新建。\n3. 模块管理：在编辑器中可添加新模块。\n4. 保存关卡：编辑完成后点击保存，文件将回写到原 JSON。\n5. 转换关卡文件：可将 JSON 转换为热更新可读的 HUJSON 或加密后的 RTON，随后通过其他工具导入游戏内进行测试（记得在导入前手动将文件扩展名从 .hujson 改回 .json）。\n6. 位于关卡列表顶部时，可点击右下角的“上传至创意庭院”按钮，前往官方的植物大战僵尸2高级创作庭院作者中心。\n7. 可以在「创意庭院·推荐关卡展示」网页中查看往期官方推荐的关卡ID及推荐理由。游玩这些关卡不仅能够支持优秀的关卡创作者，也有助于提升自己的关卡设计水平。\n8. 如有疑问或需要高创关卡制作帮助，欢迎加入Plants vs. Zombies Discord服务器，在 PvZ2C-Modding 子区中提问。';
 
   @override
   String get usageTextMobile =>
-      '1. 目录设置：点击文件夹图标选择 JSON 关卡目录。\n2. 导入/新建：点击列表项编辑现有关卡，或使用右下角按钮基于模板新建。\n3. 模块管理：在编辑器中可添加新模块。\n4. 保存关卡：编辑完成后点击保存，文件将回写到原 JSON。\n5. 转换关卡文件：可将 JSON 转换为热更新可读的 HUJSON 或加密后的 RTON，随后通过其他工具导入游戏内进行测试（记得在导入前手动将文件扩展名从 .hujson 改回 .json）。\n6. 关卡创作完成后，在关卡列表滚动到顶部时，可点击右下角的“上传至创意庭院”浮动按钮，前往官方的植物大战僵尸2高级创作庭院作者中心。\n7. 你可以在「创意庭院·推荐关卡展示」网页中查看往期官方推荐的关卡ID及推荐理由。游玩这些关卡不仅能够支持优秀的关卡创作者，也有助于提升自己的关卡设计水平。\n8. 如有疑问或需要高创关卡制作帮助，欢迎加入Plants vs. Zombies Discord服务器，在 PvZ2C-Modding 子区中提问。';
+      '1. 目录设置：点击文件夹图标选择 JSON 关卡目录。\n2. 导入/新建：点击列表项编辑现有关卡，或使用右下角按钮基于模板新建。\n3. 模块管理：在编辑器中可添加新模块。\n4. 保存关卡：编辑完成后点击保存，文件将回写到原 JSON。\n5. 转换关卡文件：可将 JSON 转换为热更新可读的 HUJSON 或加密后的 RTON，随后通过其他工具导入游戏内进行测试（记得在导入前手动将文件扩展名从 .hujson 改回 .json）。\n6. 位于关卡列表顶部时，可点击右下角的“上传至创意庭院”按钮，前往官方的植物大战僵尸2高级创作庭院作者中心。\n7. 可以在「创意庭院·推荐关卡展示」网页中查看往期官方推荐的关卡ID及推荐理由。游玩这些关卡不仅能够支持优秀的关卡创作者，也有助于提升自己的关卡设计水平。\n8. 如有疑问或需要高创关卡制作帮助，欢迎加入Plants vs. Zombies Discord服务器，在 PvZ2C-Modding 子区中提问。';
 
   @override
   String get usageRecommendedLevelsLabel => '创意庭院·推荐关卡展示：';
@@ -375,16 +375,17 @@ class AppLocalizationsZh extends AppLocalizations {
       'Devourdoom、Evilhack28、Chara、KL12、Haruma、nineteendo、vi_i_guess';
 
   @override
-  String get sourceLabel => '源码：';
+  String get sourceLabel => '代码仓库：';
 
   @override
   String get issuesLabel => '问题反馈：';
 
   @override
-  String get zEditorAcknowledgment => '若没有Z-Editor的创作者，就不可能创造出本工具。';
+  String get zEditorAcknowledgment =>
+      '在此，我们还要向 Z-Editor 的创作者们致以诚挚的感谢。本工具的诞生离不开他们所奠定的基础。';
 
   @override
-  String get zEditorCreditsSubsection => 'Z-Editor 致谢';
+  String get zEditorCreditsSubsection => 'Z-Editor 致谢名单';
 
   @override
   String get zEditorAuthorLabel => '作者：';
@@ -5442,10 +5443,10 @@ class AppLocalizationsZh extends AppLocalizations {
   String get bungeeWaveCurrentTarget => '当前目标';
 
   @override
-  String get bungeeWaveCol => 'Col';
+  String get bungeeWaveCol => '行';
 
   @override
-  String get bungeeWaveRow => 'Row';
+  String get bungeeWaveRow => '列';
 
   @override
   String get bungeeWavePropertiesConfig => '属性配置';
@@ -5836,15 +5837,135 @@ class AppLocalizationsZh extends AppLocalizations {
   String get mechanismPlankSettings => '连体矿车设置';
 
   @override
-  String get mechanismPlankStartColumn => '起始列';
+  String get mechanismPlankStartColumn => '起始列 (mX)';
 
   @override
-  String get mechanismPlankTrackLength => '轨道长度';
+  String get mechanismPlankTrackLength => '轨道宽度 (mWidth)';
 
   @override
   String get mechanismPlankEditNotice =>
-      '仅允许编辑 mX 和 mWidth。其他值会被保留，因为修改它们可能导致游戏内布局异常。';
+      '该界面仅支持编辑轨道宽度和起始列。其他参数采用预设值，因为修改它们可能会导致连体矿车无法正常使用。如需进一步自定义，请手动编辑JSON文件。';
 
   @override
-  String get mechanismPlankOutOfAreaWarning => '当前轨道范围可能超出可游玩区域。';
+  String get mechanismPlankOutOfAreaWarning => '当前轨道范围可能超出场地。';
+
+  @override
+  String get portalTypeEgypt => '主线埃及';
+
+  @override
+  String get portalTypeEgypt2 => '埃及2号';
+
+  @override
+  String get portalTypePirate => '主线海盗';
+
+  @override
+  String get portalTypeWest => '主线西部';
+
+  @override
+  String get portalTypeFuture => '主线未来';
+
+  @override
+  String get portalTypeFuture2 => '未来2号';
+
+  @override
+  String get portalTypeDark => '主线黑暗';
+
+  @override
+  String get portalTypeBeach => '主线沙滩';
+
+  @override
+  String get portalTypeIceAge => '主线冰河';
+
+  @override
+  String get portalTypeLostCity => '主线失落';
+
+  @override
+  String get portalTypeEighties => '主线摇滚';
+
+  @override
+  String get portalTypeDino => '主线恐龙';
+
+  @override
+  String get portalTypeEndlessEgypt => '无尽埃及';
+
+  @override
+  String get portalTypeEndlessPirate => '无尽海盗';
+
+  @override
+  String get portalTypeEndlessWest => '无尽西部';
+
+  @override
+  String get portalTypeEndlessFuture => '无尽未来';
+
+  @override
+  String get portalTypeEndlessDark => '无尽黑暗';
+
+  @override
+  String get portalTypeEndlessBeach => '无尽沙滩';
+
+  @override
+  String get portalTypeEndlessIceAge => '无尽冰河';
+
+  @override
+  String get portalTypeEndlessLostCity => '无尽失落';
+
+  @override
+  String get portalTypeEndlessEighties => '无尽摇滚';
+
+  @override
+  String get portalTypeEndlessDino => '无尽恐龙';
+
+  @override
+  String get portalTypeZombotany => '植物僵尸';
+
+  @override
+  String get portalTypeSlimeZombies => '史莱姆僵尸';
+
+  @override
+  String get portalTypeUniverse42 => '42号宇宙';
+
+  @override
+  String get portalTypeUniverse41 => '41号宇宙';
+
+  @override
+  String get portalTypeEliteHealerNormal => '普通治愈';
+
+  @override
+  String get portalTypeEliteElectricNormal => '普通闪电';
+
+  @override
+  String get portalTypeEliteBallistaNormal => '普通投罐';
+
+  @override
+  String get portalTypeEliteOnmyojiNormal => '普通阴阳';
+
+  @override
+  String get portalTypeEliteHealerHard => '困难治愈';
+
+  @override
+  String get portalTypeEliteElectricHard => '困难闪电';
+
+  @override
+  String get portalTypeEliteBallistaHard => '困难投罐';
+
+  @override
+  String get portalTypeEliteOnmyojiHard => '困难阴阳';
+
+  @override
+  String get portalTypeEliteHunter => '精英猎人';
+
+  @override
+  String get portalTypeEliteChief => '精英酋长';
+
+  @override
+  String get portalTypeEliteWeasel => '精英冰鼬';
+
+  @override
+  String get portalTypeEliteBumperCar => '精英碰碰';
+
+  @override
+  String get portalTypeEliteWizard => '精英巫师';
+
+  @override
+  String get portalTypeEliteKing => '精英国王';
 }

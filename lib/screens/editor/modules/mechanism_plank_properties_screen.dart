@@ -271,15 +271,14 @@ class _MechanismPlankPropertiesScreenState
                       max: _maxWidth,
                       onChanged: _setMWidth,
                     ),
-                    const SizedBox(height: 12),
-                    Text(
-                      l10n?.mechanismPlankEditNotice ??
-                          'Only mX and mWidth are editable. Other parameters are preserved because changing them may cause in-game layout bugs.',
-                      style: theme.textTheme.bodySmall,
-                    ),
                   ],
                 ),
               ),
+            ),
+            const SizedBox(height: 16),
+            _MechanismPlankInfoBanner(
+              message: l10n?.mechanismPlankEditNotice ??
+                  'Only mX and mWidth are editable. Other parameters are preserved because changing them may cause in-game layout bugs.',
             ),
             const SizedBox(height: 16),
             scaleTableForDesktop(
@@ -403,6 +402,41 @@ class _StepperField extends StatelessWidget {
           icon: const Icon(Icons.add),
         ),
       ],
+    );
+  }
+}
+
+
+class _MechanismPlankInfoBanner extends StatelessWidget {
+  const _MechanismPlankInfoBanner({required this.message});
+
+  final String message;
+
+  @override
+  Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    final color = theme.colorScheme.primary;
+
+    return Card(
+      child: Padding(
+        padding: const EdgeInsets.all(16),
+        child: Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Icon(Icons.info_outline, color: color, size: 24),
+            const SizedBox(width: 12),
+            Expanded(
+              child: Text(
+                message,
+                style: theme.textTheme.bodySmall?.copyWith(
+                  color: color,
+                  height: 1.3,
+                ),
+              ),
+            ),
+          ],
+        ),
+      ),
     );
   }
 }

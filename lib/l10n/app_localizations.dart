@@ -733,19 +733,19 @@ abstract class AppLocalizations {
   /// No description provided for @usageText.
   ///
   /// In en, this message translates to:
-  /// **'1. Directory Setup: Tap the folder icon to select a folder for level JSON files.\n2. Open/Create: Tap a level to edit or use \"+\" to create from template.\n3. Modules: Add modules in the editor.\n4. Save: Tap save to write back to the JSON file.\n5. Convert level files: JSON can be converted into hot-update-readable HUJSON or encrypted RTON, after which the files can be imported into the game using other tools for testing (remember to manually change the file extension from .hujson back to .json before importing).\n6. Once your level is complete, tap the \"Upload to Creative Courtyard\" floating button at the bottom-right of the level list (visible when scrolled to the top) to open the official Plants vs. Zombies 2 Advanced Creative Courtyard Creator Hub.\n7. You can view past officially recommended level IDs and the reasons they were selected on the \"Creative Courtyard · Recommended Levels Showcase\" webpage. Playing these levels not only supports talented level creators but also helps improve your own level design skills.\n8. If you have any questions or need help with advanced level creation, feel free to join the Plants vs. Zombies Discord server and ask in the PvZ2C-Modding channel thread.'**
+  /// **'1. Directory Setup: Tap the folder icon to select a folder for level JSON files.\n2. Open/Create: Tap a level to edit or use \"+\" to create from template.\n3. Modules: Add modules in the editor.\n4. Save: Tap save to write back to the JSON file.\n5. Convert level files: JSON can be converted into hot-update-readable HUJSON or encrypted RTON, after which the files can be imported into the game using other tools for testing (remember to manually change the file extension from .hujson back to .json before importing).\n6. 6. Tap the \"Upload to Creative Courtyard\" button to open the official Plants vs. Zombies 2 Advanced Creative Courtyard Creator Hub. The button is only visible when the level list is at the top.\n7. You can view past officially recommended level IDs and the reasons they were selected on the \"Creative Courtyard · Recommended Levels Showcase\" webpage. Playing these levels not only supports talented level creators but also helps improve your own level design skills.\n8. If you have any questions or need help with advanced level creation, feel free to join the Plants vs. Zombies Discord server and ask in the PvZ2C-Modding channel thread.'**
   String get usageText;
 
   /// No description provided for @usageTextDesktop.
   ///
   /// In en, this message translates to:
-  /// **'1. Directory Setup: Tap the folder icon to select a folder for level JSON files.\n2. Open/Create: Click a level to edit or use \"+\" to create from template.\n3. Modules: Add modules in the editor.\n4. Save: Click save to write back to the JSON file.\n5. Convert level files: JSON can be converted into hot-update-readable HUJSON or encrypted RTON, after which the files can be imported into the game using other tools for testing (remember to manually change the file extension from .hujson back to .json before importing).\n6. Once your level is complete, tap the \"Upload to Creative Courtyard\" floating button at the bottom-right of the level list (visible when scrolled to the top) to open the official Plants vs. Zombies 2 Advanced Creative Courtyard Creator Hub.\n7. You can view past officially recommended level IDs and the reasons they were selected on the \"Creative Courtyard · Recommended Levels Showcase\" webpage. Playing these levels not only supports talented level creators but also helps improve your own level design skills.\n8. If you have any questions or need help with advanced level creation, feel free to join the Plants vs. Zombies Discord server and ask in the PvZ2C-Modding channel thread.'**
+  /// **'1. Directory Setup: Tap the folder icon to select a folder for level JSON files.\n2. Open/Create: Click a level to edit or use \"+\" to create from template.\n3. Modules: Add modules in the editor.\n4. Save: Click save to write back to the JSON file.\n5. Convert level files: JSON can be converted into hot-update-readable HUJSON or encrypted RTON, after which the files can be imported into the game using other tools for testing (remember to manually change the file extension from .hujson back to .json before importing).\n6. 6. Tap the \"Upload to Creative Courtyard\" button to open the official Plants vs. Zombies 2 Advanced Creative Courtyard Creator Hub. The button is only visible when the level list is at the top.\n7. You can view past officially recommended level IDs and the reasons they were selected on the \"Creative Courtyard · Recommended Levels Showcase\" webpage. Playing these levels not only supports talented level creators but also helps improve your own level design skills.\n8. If you have any questions or need help with advanced level creation, feel free to join the Plants vs. Zombies Discord server and ask in the PvZ2C-Modding channel thread.'**
   String get usageTextDesktop;
 
   /// No description provided for @usageTextMobile.
   ///
   /// In en, this message translates to:
-  /// **'1. Directory Setup: Tap the folder icon to select a folder for level JSON files.\n2. Open/Create: Tap a level to edit or use \"+\" to create from template.\n3. Modules: Add modules in the editor.\n4. Save: Tap save to write back to the JSON file.\n5. Convert level files: JSON can be converted into hot-update-readable HUJSON or encrypted RTON, after which the files can be imported into the game using other tools for testing (remember to manually change the file extension from .hujson back to .json before importing).\n6. Once your level is complete, tap the \"Upload to Creative Courtyard\" floating button at the bottom-right of the level list (visible when scrolled to the top) to open the official Plants vs. Zombies 2 Advanced Creative Courtyard Creator Hub.\n7. You can view past officially recommended level IDs and the reasons they were selected on the \"Creative Courtyard · Recommended Levels Showcase\" webpage. Playing these levels not only supports talented level creators but also helps improve your own level design skills.\n8. If you have any questions or need help with advanced level creation, feel free to join the Plants vs. Zombies Discord server and ask in the PvZ2C-Modding channel thread.'**
+  /// **'1. Directory Setup: Tap the folder icon to select a folder for level JSON files.\n2. Open/Create: Tap a level to edit or use \"+\" to create from template.\n3. Modules: Add modules in the editor.\n4. Save: Tap save to write back to the JSON file.\n5. Convert level files: JSON can be converted into hot-update-readable HUJSON or encrypted RTON, after which the files can be imported into the game using other tools for testing (remember to manually change the file extension from .hujson back to .json before importing).\n6. 6. Tap the \"Upload to Creative Courtyard\" button to open the official Plants vs. Zombies 2 Advanced Creative Courtyard Creator Hub. The button is only visible when the level list is at the top.\n7. You can view past officially recommended level IDs and the reasons they were selected on the \"Creative Courtyard · Recommended Levels Showcase\" webpage. Playing these levels not only supports talented level creators but also helps improve your own level design skills.\n8. If you have any questions or need help with advanced level creation, feel free to join the Plants vs. Zombies Discord server and ask in the PvZ2C-Modding channel thread.'**
   String get usageTextMobile;
 
   /// No description provided for @usageRecommendedLevelsLabel.
@@ -793,7 +793,7 @@ abstract class AppLocalizations {
   /// No description provided for @sourceLabel.
   ///
   /// In en, this message translates to:
-  /// **'Source:'**
+  /// **'GitHub Repository:'**
   String get sourceLabel;
 
   /// No description provided for @issuesLabel.
@@ -805,7 +805,7 @@ abstract class AppLocalizations {
   /// No description provided for @zEditorAcknowledgment.
   ///
   /// In en, this message translates to:
-  /// **'Creating this tool would be impossible without the creators of Z-Editor.'**
+  /// **'We would also like to express our sincere gratitude to the creators of Z-Editor. The development of this tool would not have been possible without the foundation they established.'**
   String get zEditorAcknowledgment;
 
   /// No description provided for @zEditorCreditsSubsection.
@@ -10285,7 +10285,7 @@ abstract class AppLocalizations {
   /// No description provided for @bungeeWaveCol.
   ///
   /// In en, this message translates to:
-  /// **'Col'**
+  /// **'Column'**
   String get bungeeWaveCol;
 
   /// No description provided for @bungeeWaveRow.
@@ -11023,32 +11023,272 @@ abstract class AppLocalizations {
   /// No description provided for @mechanismPlankSettings.
   ///
   /// In en, this message translates to:
-  /// **'Connected Mincart settings'**
+  /// **'Connected Minecart settings'**
   String get mechanismPlankSettings;
 
   /// No description provided for @mechanismPlankStartColumn.
   ///
   /// In en, this message translates to:
-  /// **'Start column'**
+  /// **'Starting column (mx)'**
   String get mechanismPlankStartColumn;
 
   /// No description provided for @mechanismPlankTrackLength.
   ///
   /// In en, this message translates to:
-  /// **'Track length'**
+  /// **'Track length (mWidth)'**
   String get mechanismPlankTrackLength;
 
   /// No description provided for @mechanismPlankEditNotice.
   ///
   /// In en, this message translates to:
-  /// **'Only mX and mWidth are editable. Other values are preserved because changing them may cause in-game layout bugs.'**
+  /// **'This interface only supports editing the starting column and track length. All other parameters use preset values, as modifying them may cause Connected Minecarts to malfunction. For further customization, please edit the JSON file manually.'**
   String get mechanismPlankEditNotice;
 
   /// No description provided for @mechanismPlankOutOfAreaWarning.
   ///
   /// In en, this message translates to:
-  /// **'The current rail range may go outside the playable area.'**
+  /// **'The current rail range may go outside the lawn.'**
   String get mechanismPlankOutOfAreaWarning;
+
+  /// No description provided for @portalTypeEgypt.
+  ///
+  /// In en, this message translates to:
+  /// **'Ancient Egypt'**
+  String get portalTypeEgypt;
+
+  /// No description provided for @portalTypeEgypt2.
+  ///
+  /// In en, this message translates to:
+  /// **'Ancient Egypt 2'**
+  String get portalTypeEgypt2;
+
+  /// No description provided for @portalTypePirate.
+  ///
+  /// In en, this message translates to:
+  /// **'Pirate Seas'**
+  String get portalTypePirate;
+
+  /// No description provided for @portalTypeWest.
+  ///
+  /// In en, this message translates to:
+  /// **'Wild West'**
+  String get portalTypeWest;
+
+  /// No description provided for @portalTypeFuture.
+  ///
+  /// In en, this message translates to:
+  /// **'Far Future'**
+  String get portalTypeFuture;
+
+  /// No description provided for @portalTypeFuture2.
+  ///
+  /// In en, this message translates to:
+  /// **'Far Future 2'**
+  String get portalTypeFuture2;
+
+  /// No description provided for @portalTypeDark.
+  ///
+  /// In en, this message translates to:
+  /// **'Dark Ages'**
+  String get portalTypeDark;
+
+  /// No description provided for @portalTypeBeach.
+  ///
+  /// In en, this message translates to:
+  /// **'Big Wave Beach'**
+  String get portalTypeBeach;
+
+  /// No description provided for @portalTypeIceAge.
+  ///
+  /// In en, this message translates to:
+  /// **'Frostbite Caves'**
+  String get portalTypeIceAge;
+
+  /// No description provided for @portalTypeLostCity.
+  ///
+  /// In en, this message translates to:
+  /// **'Lost City'**
+  String get portalTypeLostCity;
+
+  /// No description provided for @portalTypeEighties.
+  ///
+  /// In en, this message translates to:
+  /// **'Neon Mixtape Tour'**
+  String get portalTypeEighties;
+
+  /// No description provided for @portalTypeDino.
+  ///
+  /// In en, this message translates to:
+  /// **'Jurassic Marsh'**
+  String get portalTypeDino;
+
+  /// No description provided for @portalTypeEndlessEgypt.
+  ///
+  /// In en, this message translates to:
+  /// **'Ancient Egypt (Endless)'**
+  String get portalTypeEndlessEgypt;
+
+  /// No description provided for @portalTypeEndlessPirate.
+  ///
+  /// In en, this message translates to:
+  /// **'Pirate Seas (Endless)'**
+  String get portalTypeEndlessPirate;
+
+  /// No description provided for @portalTypeEndlessWest.
+  ///
+  /// In en, this message translates to:
+  /// **'Wild West (Endless)'**
+  String get portalTypeEndlessWest;
+
+  /// No description provided for @portalTypeEndlessFuture.
+  ///
+  /// In en, this message translates to:
+  /// **'Far Future (Endless)'**
+  String get portalTypeEndlessFuture;
+
+  /// No description provided for @portalTypeEndlessDark.
+  ///
+  /// In en, this message translates to:
+  /// **'Dark Ages (Endless)'**
+  String get portalTypeEndlessDark;
+
+  /// No description provided for @portalTypeEndlessBeach.
+  ///
+  /// In en, this message translates to:
+  /// **'Big Wave Beach (Endless)'**
+  String get portalTypeEndlessBeach;
+
+  /// No description provided for @portalTypeEndlessIceAge.
+  ///
+  /// In en, this message translates to:
+  /// **'Frostbite Caves (Endless)'**
+  String get portalTypeEndlessIceAge;
+
+  /// No description provided for @portalTypeEndlessLostCity.
+  ///
+  /// In en, this message translates to:
+  /// **'Lost City (Endless)'**
+  String get portalTypeEndlessLostCity;
+
+  /// No description provided for @portalTypeEndlessEighties.
+  ///
+  /// In en, this message translates to:
+  /// **'Neon Mixtape Tour (Endless)'**
+  String get portalTypeEndlessEighties;
+
+  /// No description provided for @portalTypeEndlessDino.
+  ///
+  /// In en, this message translates to:
+  /// **'Jurassic Marsh (Endless)'**
+  String get portalTypeEndlessDino;
+
+  /// No description provided for @portalTypeZombotany.
+  ///
+  /// In en, this message translates to:
+  /// **'Zombotany'**
+  String get portalTypeZombotany;
+
+  /// No description provided for @portalTypeSlimeZombies.
+  ///
+  /// In en, this message translates to:
+  /// **'Zom-Blob'**
+  String get portalTypeSlimeZombies;
+
+  /// No description provided for @portalTypeUniverse42.
+  ///
+  /// In en, this message translates to:
+  /// **'Parallel Universe No. 42'**
+  String get portalTypeUniverse42;
+
+  /// No description provided for @portalTypeUniverse41.
+  ///
+  /// In en, this message translates to:
+  /// **'Parallel Universe No. 41'**
+  String get portalTypeUniverse41;
+
+  /// No description provided for @portalTypeEliteHealerNormal.
+  ///
+  /// In en, this message translates to:
+  /// **'Elite Healer (Normal)'**
+  String get portalTypeEliteHealerNormal;
+
+  /// No description provided for @portalTypeEliteElectricNormal.
+  ///
+  /// In en, this message translates to:
+  /// **'Elite Lightning Gun (Normal)'**
+  String get portalTypeEliteElectricNormal;
+
+  /// No description provided for @portalTypeEliteBallistaNormal.
+  ///
+  /// In en, this message translates to:
+  /// **'Elite Zcorpion (Normal)'**
+  String get portalTypeEliteBallistaNormal;
+
+  /// No description provided for @portalTypeEliteOnmyojiNormal.
+  ///
+  /// In en, this message translates to:
+  /// **'Elite Onmyoji (Normal)'**
+  String get portalTypeEliteOnmyojiNormal;
+
+  /// No description provided for @portalTypeEliteHealerHard.
+  ///
+  /// In en, this message translates to:
+  /// **'Elite Healer (Hard)'**
+  String get portalTypeEliteHealerHard;
+
+  /// No description provided for @portalTypeEliteElectricHard.
+  ///
+  /// In en, this message translates to:
+  /// **'Elite Lightning Gun (Hard)'**
+  String get portalTypeEliteElectricHard;
+
+  /// No description provided for @portalTypeEliteBallistaHard.
+  ///
+  /// In en, this message translates to:
+  /// **'Elite Zcorpion (Hard)'**
+  String get portalTypeEliteBallistaHard;
+
+  /// No description provided for @portalTypeEliteOnmyojiHard.
+  ///
+  /// In en, this message translates to:
+  /// **'Elite Onmyoji (Hard)'**
+  String get portalTypeEliteOnmyojiHard;
+
+  /// No description provided for @portalTypeEliteHunter.
+  ///
+  /// In en, this message translates to:
+  /// **'Elite Hunter'**
+  String get portalTypeEliteHunter;
+
+  /// No description provided for @portalTypeEliteChief.
+  ///
+  /// In en, this message translates to:
+  /// **'Elite Chief'**
+  String get portalTypeEliteChief;
+
+  /// No description provided for @portalTypeEliteWeasel.
+  ///
+  /// In en, this message translates to:
+  /// **'Elite Weasel Hoarder'**
+  String get portalTypeEliteWeasel;
+
+  /// No description provided for @portalTypeEliteBumperCar.
+  ///
+  /// In en, this message translates to:
+  /// **'Elite Bumper Car'**
+  String get portalTypeEliteBumperCar;
+
+  /// No description provided for @portalTypeEliteWizard.
+  ///
+  /// In en, this message translates to:
+  /// **'Elite Wizard'**
+  String get portalTypeEliteWizard;
+
+  /// No description provided for @portalTypeEliteKing.
+  ///
+  /// In en, this message translates to:
+  /// **'Elite King'**
+  String get portalTypeEliteKing;
 }
 
 class _AppLocalizationsDelegate

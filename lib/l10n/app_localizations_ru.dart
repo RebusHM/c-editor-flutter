@@ -6093,16 +6093,136 @@ class AppLocalizationsRu extends AppLocalizations {
   String get mechanismPlankSettings => 'Connected Minecart settings';
 
   @override
-  String get mechanismPlankStartColumn => 'Start column';
+  String get mechanismPlankStartColumn => 'Starting column (mx)';
 
   @override
-  String get mechanismPlankTrackLength => 'Track length';
+  String get mechanismPlankTrackLength => 'Track length (mWidth)';
 
   @override
   String get mechanismPlankEditNotice =>
-      'Only mX and mWidth are editable. Other values are preserved because changing them may cause in-game layout bugs.';
+      'This interface only supports editing the starting column and track length. All other parameters use preset values, as modifying them may cause Connected Minecarts to malfunction. For further customization, please edit the JSON file manually.';
 
   @override
   String get mechanismPlankOutOfAreaWarning =>
-      'The current rail range may go outside the playable area.';
+      'The current rail range may go outside the lawn.';
+
+  @override
+  String get portalTypeEgypt => 'Ancient Egypt';
+
+  @override
+  String get portalTypeEgypt2 => 'Ancient Egypt 2';
+
+  @override
+  String get portalTypePirate => 'Pirate Seas';
+
+  @override
+  String get portalTypeWest => 'Wild West';
+
+  @override
+  String get portalTypeFuture => 'Far Future';
+
+  @override
+  String get portalTypeFuture2 => 'Far Future 2';
+
+  @override
+  String get portalTypeDark => 'Dark Ages';
+
+  @override
+  String get portalTypeBeach => 'Big Wave Beach';
+
+  @override
+  String get portalTypeIceAge => 'Frostbite Caves';
+
+  @override
+  String get portalTypeLostCity => 'Lost City';
+
+  @override
+  String get portalTypeEighties => 'Neon Mixtape Tour';
+
+  @override
+  String get portalTypeDino => 'Jurassic Marsh';
+
+  @override
+  String get portalTypeEndlessEgypt => 'Ancient Egypt (Endless)';
+
+  @override
+  String get portalTypeEndlessPirate => 'Pirate Seas (Endless)';
+
+  @override
+  String get portalTypeEndlessWest => 'Wild West (Endless)';
+
+  @override
+  String get portalTypeEndlessFuture => 'Far Future (Endless)';
+
+  @override
+  String get portalTypeEndlessDark => 'Dark Ages (Endless)';
+
+  @override
+  String get portalTypeEndlessBeach => 'Big Wave Beach (Endless)';
+
+  @override
+  String get portalTypeEndlessIceAge => 'Frostbite Caves (Endless)';
+
+  @override
+  String get portalTypeEndlessLostCity => 'Lost City (Endless)';
+
+  @override
+  String get portalTypeEndlessEighties => 'Neon Mixtape Tour (Endless)';
+
+  @override
+  String get portalTypeEndlessDino => 'Jurassic Marsh (Endless)';
+
+  @override
+  String get portalTypeZombotany => 'Zombotany';
+
+  @override
+  String get portalTypeSlimeZombies => 'Zom-Blob';
+
+  @override
+  String get portalTypeUniverse42 => 'Parallel Universe No. 42';
+
+  @override
+  String get portalTypeUniverse41 => 'Parallel Universe No. 41';
+
+  @override
+  String get portalTypeEliteHealerNormal => 'Elite Healer (Normal)';
+
+  @override
+  String get portalTypeEliteElectricNormal => 'Elite Lightning Gun (Normal)';
+
+  @override
+  String get portalTypeEliteBallistaNormal => 'Elite Zcorpion (Normal)';
+
+  @override
+  String get portalTypeEliteOnmyojiNormal => 'Elite Onmyoji (Normal)';
+
+  @override
+  String get portalTypeEliteHealerHard => 'Elite Healer (Hard)';
+
+  @override
+  String get portalTypeEliteElectricHard => 'Elite Lightning Gun (Hard)';
+
+  @override
+  String get portalTypeEliteBallistaHard => 'Elite Zcorpion (Hard)';
+
+  @override
+  String get portalTypeEliteOnmyojiHard => 'Elite Onmyoji (Hard)';
+
+  @override
+  String get portalTypeEliteHunter => 'Elite Hunter';
+
+  @override
+  String get portalTypeEliteChief => 'Elite Chief';
+
+  @override
+  String get portalTypeEliteWeasel => 'Elite Weasel Hoarder';
+
+  @override
+  String get portalTypeEliteBumperCar => 'Elite Bumper Car';
+
+  @override
+  String get portalTypeEliteWizard => 'Elite Wizard';
+
+  @override
+  String get portalTypeEliteKing => 'Elite King';
 }
