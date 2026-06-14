@@ -537,6 +537,8 @@
   "moduleDesc_PiratePlankProperties": "Configures plank rows for Pirate Seas lawn",
   "moduleTitle_RailcartProperties": "Minecart and Rail",
   "moduleDesc_RailcartProperties": "Configures the initial layout of minecarts and rails",
+  "moduleTitle_MechanismPlankProperties": "Connected Minecart",
+  "moduleDesc_MechanismPlankProperties": "Configures the initial layout of Kongfu World minecarts and rails",
   "moduleTitle_PowerTileProperties": "Power Tiles",
   "moduleDesc_PowerTileProperties": "Configures Plant Food link effects and tile layout",
   "moduleTitle_ManholePipelineModuleProperties": "Manhole Pipeline",
@@ -711,7 +713,7 @@
   "enableEliteImmunities": "Enable elite immunities (EnableEliteImmunities)",
   "canSpawnPlantFood": "Can drop Plant Food (CanSpawnPlantFood)",
   "canSurrender": "Can die immediately at the end if no other zombies remain (CanSurrender)",
-  "canTriggerZombieWin": "Triggers game over when reaching the house (CanTriggerZombieWin)",
+  "canTriggerZombieWin": "Can trigger game over when reaching the house (CanTriggerZombieWin)",
   "resilience": "Resistances (Resistences)",
   "resilienceArmor": "Resilience Bar",
   "enableResilience": "Enable resilience",
@@ -1774,7 +1776,7 @@
   "heianWindModuleWindDelayHint": "unit: seconds",
   "heianWindModuleWindEntries": "Wind configurations",
   "heianWindModuleAddWind": "Add wind",
-  "heianWindModuleRow": "Affected Row (Row)",
+  "heianWindModuleRow": "Affected row (Row)",
   "heianWindModuleAllRows": "All rows (-1)",
   "heianWindModuleAffectZombies": "Affected zombie count (AffectZombies)",
   "heianWindModuleDistance": "Push Distance (Distance)",
@@ -1944,4 +1946,9 @@
   "gridOverrideModuleAppearances": "Wave groups",
   "gridOverrideModuleWaveFieldOneBased": "Wave (1 = first wave, 2 = second wave, ...)",
   "gridOverrideModuleTimelineNote": "Only wave 1 entries appear in the wave timeline tab."
+  "mechanismPlankSettings": "Connected Mincart settings",
+  "mechanismPlankStartColumn": "Start column",
+  "mechanismPlankTrackLength": "Track length",
+  "mechanismPlankEditNotice": "Only mX and mWidth are editable. Other values are preserved because changing them may cause in-game layout bugs.",
+  "mechanismPlankOutOfAreaWarning": "The current rail range may go outside the playable area."
 }

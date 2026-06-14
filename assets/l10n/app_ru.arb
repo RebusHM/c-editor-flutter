@@ -727,6 +727,8 @@
   "moduleDesc_PiratePlankProperties": "Ряды досок в Пиратском море",
   "moduleTitle_RailcartProperties": "Вагонетки",
   "moduleDesc_RailcartProperties": "Вагонетки и рельсы",
+  "moduleTitle_MechanismPlankProperties": "Connected Minecart",
+  "moduleDesc_MechanismPlankProperties": "Configures the initial layout of Kongfu World minecarts and rails",
   "moduleTitle_PowerTileProperties": "Силовые плитки",
   "moduleDesc_PowerTileProperties": "Расклад силовых плиток в Будущем",
   "moduleTitle_ManholePipelineModuleProperties": "Люки",
@@ -1966,4 +1968,9 @@
   "gridOverrideModuleAppearances": "Группы волн",
   "gridOverrideModuleWaveFieldOneBased": "Волна (1 = первая волна, 2 = вторая, …)",
   "gridOverrideModuleTimelineNote": "На временной шкале отображаются только записи волны 1."
+  "mechanismPlankSettings": "Connected Minecart settings",
+  "mechanismPlankStartColumn": "Start column",
+  "mechanismPlankTrackLength": "Track length",
+  "mechanismPlankEditNotice": "Only mX and mWidth are editable. Other values are preserved because changing them may cause in-game layout bugs.",
+  "mechanismPlankOutOfAreaWarning": "The current rail range may go outside the playable area."
 }

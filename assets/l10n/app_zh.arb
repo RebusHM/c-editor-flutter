@@ -661,7 +661,9 @@
   "moduleTitle_PiratePlankProperties": "海盗甲板",
   "moduleDesc_PiratePlankProperties": "配置海盗港湾地图的甲板行数",
   "moduleTitle_RailcartProperties": "矿车轨道",
-  "moduleDesc_RailcartProperties": "配置矿车与轨道初始布局",
+  "moduleDesc_RailcartProperties": "配置矿车与轨道的初始布局",
+  "moduleTitle_MechanismPlankProperties": "连体矿车",
+  "moduleDesc_MechanismPlankProperties": "配置功夫世界连体矿车与轨道的初始布局",
   "moduleTitle_PowerTileProperties": "能量瓷砖",
   "moduleDesc_PowerTileProperties": "配置能量豆联动效果与瓷砖布局",
   "moduleTitle_ManholePipelineModuleProperties": "地下管道",
@@ -1966,4 +1968,9 @@
   "gridOverrideModuleAppearances": "波次组",
   "gridOverrideModuleWaveFieldOneBased": "波次（1 = 第一波，2 = 第二波，…）",
   "gridOverrideModuleTimelineNote": "仅第一波条目会显示在波次时间轴中。"
+  "mechanismPlankSettings": "连体矿车设置",
+  "mechanismPlankStartColumn": "起始列",
+  "mechanismPlankTrackLength": "轨道长度",
+  "mechanismPlankEditNotice": "仅允许编辑 mX 和 mWidth。其他值会被保留，因为修改它们可能导致游戏内布局异常。",
+  "mechanismPlankOutOfAreaWarning": "当前轨道范围可能超出可游玩区域。"
 }
