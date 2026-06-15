@@ -62,6 +62,8 @@ import 'package:c_editor/screens/editor/modules/renai_module_screen.dart';
 import 'package:c_editor/screens/editor/modules/penny_classroom_module_screen.dart';
 import 'package:c_editor/screens/editor/modules/manhole_pipeline_module_screen.dart';
 import 'package:c_editor/screens/editor/modules/wave_manager_module_screen.dart';
+import 'package:c_editor/screens/editor/modules/wave_generator_module_screen.dart';
+import 'package:c_editor/screens/editor/modules/wave_generator_wave_screen.dart';
 import 'package:c_editor/screens/editor/modules/lawn_mower_properties_screen.dart';
 import 'package:c_editor/screens/editor/modules/tunnel_defend_module_screen.dart';
 import 'package:c_editor/screens/editor/modules/gulliver_tunnel_module_screen.dart';
@@ -74,6 +76,8 @@ import 'package:c_editor/screens/editor/tabs/vase_breaker_tab.dart';
 import 'package:c_editor/screens/editor/tabs/zomboss_battle_tab.dart';
 import 'package:c_editor/screens/editor/tabs/zomboss_mech_battle_tab.dart';
 import 'package:c_editor/screens/editor/tabs/wave_timeline_tab.dart';
+import 'package:c_editor/screens/editor/tabs/wave_generator_tab.dart';
+import 'package:c_editor/data/wave_generator_level_utils.dart';
 import 'package:c_editor/data/registry/event_registry.dart';
 import 'package:c_editor/screens/editor/events/invalid_event_screen.dart';
 import 'package:c_editor/screens/editor/events/beach_stage_event_screen.dart';
@@ -1621,6 +1625,61 @@ class _EditorScreenState extends State<EditorScreen> {
     );
   }
 
+  void _openZombieSelection(void Function(String) onSelected) {
+    Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (_) => ZombieSelectionScreen(
+          editorCubit: _ec,
+          multiSelect: false,
+          onZombieSelected: (id) {
+            Navigator.pop(context);
+            onSelected(id);
+          },
+          onMultiZombieSelected: (_) {},
+          onBack: () => Navigator.pop(context),
+        ),
+      ),
+    );
+  }
+
+  void _handleEditWaveGeneratorSettings() {
+    if (_ec.state.levelFile == null || _ec.state.parsedData == null) return;
+    final rtid = WaveGeneratorLevelUtils.moduleRtid(
+      _ec.state.levelFile!,
+      _ec.state.parsedData!,
+    );
+    if (rtid == null) return;
+    Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (context) => WaveGeneratorModuleScreen(
+          rtid: rtid,
+          levelFile: _ec.state.levelFile!,
+          onChanged: _markDirty,
+          onBack: () => Navigator.pop(context),
+          onRequestZombieSelection: _openZombieSelection,
+        ),
+      ),
+    ).then((_) => _setActiveTab(EditorTabType.waveGenerator));
+  }
+
+  void _handleEditWaveGeneratorWave(int waveIndex) {
+    if (_ec.state.levelFile == null) return;
+    Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (context) => WaveGeneratorWaveScreen(
+          waveIndex: waveIndex,
+          levelFile: _ec.state.levelFile!,
+          onChanged: _markDirty,
+          onBack: () => Navigator.pop(context),
+          onRequestZombieSelection: _openZombieSelection,
+        ),
+      ),
+    ).then((_) => _setActiveTab(EditorTabType.waveGenerator));
+  }
+
   void _handleCreateWaveContainer() {
     if (_ec.state.levelFile == null) return;
     var alias = 'WaveManagerProps';
@@ -2828,23 +2887,23 @@ class _EditorScreenState extends State<EditorScreen> {
             levelFile: _ec.state.levelFile!,
             onChanged: _markDirty,
             onBack: () => Navigator.pop(context),
-            onRequestZombieSelection: (onSelected) {
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (_) => ZombieSelectionScreen(
-                    editorCubit: _ec,
-                    multiSelect: false,
-                    onZombieSelected: (id) {
-                      Navigator.pop(context);
-                      onSelected(id);
-                    },
-                    onMultiZombieSelected: (_) {},
-                    onBack: () => Navigator.pop(context),
-                  ),
-                ),
-              );
-            },
+            onRequestZombieSelection: _openZombieSelection,
+          ),
+        ),
+      );
+      return;
+    }
+    if (info.source == 'CurrentLevel' &&
+        objClass == 'WaveGeneratorProperties') {
+      Navigator.push(
+        context,
+        MaterialPageRoute(
+          builder: (context) => WaveGeneratorModuleScreen(
+            rtid: rtid,
+            levelFile: _ec.state.levelFile!,
+            onChanged: _markDirty,
+            onBack: () => Navigator.pop(context),
+            onRequestZombieSelection: _openZombieSelection,
           ),
         ),
       );
@@ -2978,6 +3037,10 @@ class _EditorScreenState extends State<EditorScreen> {
                                   icon = Icons.timeline;
                                   label = l10n?.timeline ?? 'Timeline';
                                   break;
+                                case EditorTabType.waveGenerator:
+                                  icon = Icons.waves;
+                                  label = l10n?.waveGeneratorTabLabel ?? 'Waves';
+                                  break;
                                 case EditorTabType.iZombie:
                                   icon = Icons.groups;
                                   label = l10n?.iZombie ?? 'I, Zombie';
@@ -3040,6 +3103,16 @@ class _EditorScreenState extends State<EditorScreen> {
                                           _handleCreateWaveContainer(),
                                       onDeleteContainer: () =>
                                           _handleDeleteWaveContainer(),
+                                    );
+                                  case EditorTabType.waveGenerator:
+                                    return WaveGeneratorTab(
+                                      levelFile: _ec.state.levelFile!,
+                                      parsed: _ec.state.parsedData!,
+                                      onChanged: _markDirty,
+                                      onOpenModule: _handleEditModule,
+                                      onEditWaveGeneratorSettings:
+                                          _handleEditWaveGeneratorSettings,
+                                      onEditWave: _handleEditWaveGeneratorWave,
                                     );
                                   case EditorTabType.iZombie:
                                     return IZombieTab(

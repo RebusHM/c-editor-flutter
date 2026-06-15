@@ -101,6 +101,9 @@ class EditorCubit extends Cubit<EditorState> {
     if (classes.contains('WaveManagerModuleProperties')) {
       tabs.add(EditorTabType.timeline);
     }
+    if (classes.contains('WaveGeneratorProperties')) {
+      tabs.add(EditorTabType.waveGenerator);
+    }
     if (classes.contains('EvilDaveProperties')) tabs.add(EditorTabType.iZombie);
     if (classes.contains('VaseBreakerPresetProperties') ||
         classes.contains('VaseBreakerArcadeModuleProperties')) {

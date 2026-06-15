@@ -77,6 +77,8 @@ class ModuleRegistry {
     switch (key) {
       case 'moduleTitle_WaveManagerModuleProperties':
         return l10n.moduleTitle_WaveManagerModuleProperties;
+      case 'moduleTitle_WaveGeneratorProperties':
+        return l10n.moduleTitle_WaveGeneratorProperties;
       case 'moduleTitle_CustomLevelModuleProperties':
         return l10n.moduleTitle_CustomLevelModuleProperties;
       case 'moduleTitle_StandardLevelIntroProperties':
@@ -219,6 +221,8 @@ class ModuleRegistry {
     switch (key) {
       case 'moduleDesc_WaveManagerModuleProperties':
         return l10n.moduleDesc_WaveManagerModuleProperties;
+      case 'moduleDesc_WaveGeneratorProperties':
+        return l10n.moduleDesc_WaveGeneratorProperties;
       case 'moduleDesc_CustomLevelModuleProperties':
         return l10n.moduleDesc_CustomLevelModuleProperties;
       case 'moduleDesc_StandardLevelIntroProperties':
@@ -377,6 +381,20 @@ class ModuleRegistry {
         ],
       ),
       routeId: 'WaveManagerModule',
+    ),
+    'WaveGeneratorProperties': ModuleMetadata(
+      titleKey: 'moduleTitle_WaveGeneratorProperties',
+      descriptionKey: 'moduleDesc_WaveGeneratorProperties',
+      icon: Icons.waves,
+      isCore: true,
+      category: ModuleCategory.base,
+      defaultAlias: 'WaveGenerator',
+      initialDataFactory: () => WaveGeneratorPropertiesData(
+        waveSpendingPoints: 100,
+        waveSpendingPointIncrement: 100,
+        waves: [WaveGeneratorWaveData()],
+      ),
+      routeId: 'WaveGenerator',
     ),
     'CustomLevelModuleProperties': const ModuleMetadata(
       titleKey: 'moduleTitle_CustomLevelModuleProperties',

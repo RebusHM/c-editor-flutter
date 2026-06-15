@@ -6,11 +6,13 @@ class ParsedLevelData {
     this.levelDef,
     this.waveManager,
     this.waveModule,
+    this.waveGenerator,
     required this.objectMap,
   });
 
   LevelDefinitionData? levelDef;
   dynamic waveManager;
   dynamic waveModule;
+  dynamic waveGenerator;
   Map<String, PvzObject> objectMap;
 }

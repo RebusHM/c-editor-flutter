@@ -538,6 +538,8 @@ class _LevelListScreenState extends State<LevelListScreen> {
         return l10n.templateCustomZombieExample;
       case '10_i_plant_example.json':
         return l10n.templateIPlantExample;
+      case '11_old_style_example.json':
+        return l10n.templateOldStyleExample;
       default:
         return filename.replaceFirst(RegExp(r'\.json$'), '');
     }

@@ -88,6 +88,34 @@ class ConflictRegistry {
       },
       descriptionKey: 'conflictDesc_LawnMowerYard',
     ),
+    ModuleConflictRule(
+      conflictingClasses: {
+        'WaveGeneratorProperties',
+        'WaveManagerModuleProperties',
+      },
+      descriptionKey: 'conflictDesc_WaveGeneratorWaveManagerModule',
+    ),
+    ModuleConflictRule(
+      conflictingClasses: {
+        'WaveGeneratorProperties',
+        'WaveManagerProperties',
+      },
+      descriptionKey: 'conflictDesc_WaveGeneratorWaveManager',
+    ),
+    ModuleConflictRule(
+      conflictingClasses: {
+        'WaveGeneratorProperties',
+        'RenaiModuleProperties',
+      },
+      descriptionKey: 'conflictDesc_WaveGeneratorRenai',
+    ),
+    ModuleConflictRule(
+      conflictingClasses: {
+        'WaveGeneratorProperties',
+        'WitchModuleProperties',
+      },
+      descriptionKey: 'conflictDesc_WaveGeneratorWitch',
+    ),
   ];
 
   /// Returns list of (localized title, localized description) for active conflicts.
@@ -154,6 +182,14 @@ class ConflictRegistry {
         return l10n.conflictDesc_ProtectPlantRoof;
       case 'conflictDesc_LawnMowerYard':
         return l10n.conflictDesc_LawnMowerYard;
+      case 'conflictDesc_WaveGeneratorWaveManagerModule':
+        return l10n.conflictDesc_WaveGeneratorWaveManagerModule;
+      case 'conflictDesc_WaveGeneratorWaveManager':
+        return l10n.conflictDesc_WaveGeneratorWaveManager;
+      case 'conflictDesc_WaveGeneratorRenai':
+        return l10n.conflictDesc_WaveGeneratorRenai;
+      case 'conflictDesc_WaveGeneratorWitch':
+        return l10n.conflictDesc_WaveGeneratorWitch;
       default:
         return key;
     }

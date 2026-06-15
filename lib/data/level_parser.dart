@@ -36,10 +36,21 @@ class LevelParser {
       );
     }
 
+    WaveGeneratorPropertiesData? waveGenerator;
+    final wgObj = levelFile.objects
+        .where((o) => o.objClass == 'WaveGeneratorProperties')
+        .firstOrNull;
+    if (wgObj != null && wgObj.objData is Map<String, dynamic>) {
+      waveGenerator = WaveGeneratorPropertiesData.fromJson(
+        wgObj.objData as Map<String, dynamic>,
+      );
+    }
+
     return ParsedLevelData(
       levelDef: levelDef,
       waveManager: waveManager,
       waveModule: waveModule,
+      waveGenerator: waveGenerator,
       objectMap: objectMap,
     );
   }

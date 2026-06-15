@@ -98,6 +98,7 @@ class ObjectOrderRegistry {
     'StarChallengeSaveBombsProps',
     'WaveManagerModuleProperties',
     'WaveManagerProperties',
+    'WaveGeneratorProperties',
     'SpawnZombiesJitteredWaveActionProps',
     'SpawnZombiesFromGroundSpawnerProps',
     'SpawnZombiesFromGridItemSpawnerProps',

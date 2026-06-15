@@ -613,6 +613,7 @@ class ZombieIconCard extends StatelessWidget {
     required this.isCustom,
     required this.onTap,
     this.size = 56,
+    this.showLevelBadge = true,
   });
 
   final String? iconPath;
@@ -621,6 +622,7 @@ class ZombieIconCard extends StatelessWidget {
   final bool isCustom;
   final VoidCallback onTap;
   final double size;
+  final bool showLevelBadge;
 
   @override
   Widget build(BuildContext context) {
@@ -685,30 +687,31 @@ class ZombieIconCard extends StatelessWidget {
                       ),
                     ),
                   ),
-                Positioned(
-                  top: 2,
-                  right: 2,
-                  child: Container(
-                    padding: const EdgeInsets.symmetric(
-                      horizontal: 4,
-                      vertical: 2,
-                    ),
-                    decoration: BoxDecoration(
-                      color: theme.colorScheme.onSurfaceVariant.withValues(
-                        alpha: 0.9,
+                if (showLevelBadge)
+                  Positioned(
+                    top: 2,
+                    right: 2,
+                    child: Container(
+                      padding: const EdgeInsets.symmetric(
+                        horizontal: 4,
+                        vertical: 2,
                       ),
-                      borderRadius: BorderRadius.circular(4),
-                    ),
-                    child: Text(
-                      levelDisplay,
-                      style: TextStyle(
-                        fontSize: 10,
-                        fontWeight: FontWeight.bold,
-                        color: theme.colorScheme.surface,
+                      decoration: BoxDecoration(
+                        color: theme.colorScheme.onSurfaceVariant.withValues(
+                          alpha: 0.9,
+                        ),
+                        borderRadius: BorderRadius.circular(4),
+                      ),
+                      child: Text(
+                        levelDisplay,
+                        style: TextStyle(
+                          fontSize: 10,
+                          fontWeight: FontWeight.bold,
+                          color: theme.colorScheme.surface,
+                        ),
                       ),
                     ),
                   ),
-                ),
               ],
             ),
           ),
