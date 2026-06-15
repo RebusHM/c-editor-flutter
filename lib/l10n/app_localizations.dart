@@ -1552,6 +1552,30 @@ abstract class AppLocalizations {
   /// **'Switch custom zombie'**
   String get switchCustomZombie;
 
+  /// No description provided for @switchProperties.
+  ///
+  /// In en, this message translates to:
+  /// **'Switch properties'**
+  String get switchProperties;
+
+  /// No description provided for @defaultPropertiesLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Default'**
+  String get defaultPropertiesLabel;
+
+  /// No description provided for @addNewVariation.
+  ///
+  /// In en, this message translates to:
+  /// **'+ Add new variation'**
+  String get addNewVariation;
+
+  /// No description provided for @editCustomZombieAlias.
+  ///
+  /// In en, this message translates to:
+  /// **'Edit {alias}'**
+  String editCustomZombieAlias(String alias);
+
   /// No description provided for @switchZombie.
   ///
   /// In en, this message translates to:
@@ -1585,14 +1609,26 @@ abstract class AppLocalizations {
   /// No description provided for @customZombieOrphanDeleteTitle.
   ///
   /// In en, this message translates to:
-  /// **'Remove custom zombie data?'**
+  /// **'Erase custom properties from level?'**
   String get customZombieOrphanDeleteTitle;
 
   /// No description provided for @customZombieOrphanDeleteMessage.
   ///
   /// In en, this message translates to:
-  /// **'\"{alias}\" is no longer used in this level. Remove its zombie type and property objects from the level file?'**
+  /// **'\"{alias}\" will have no remaining uses in this level. Remove its zombie type and property objects from the level file? This cannot be undone.'**
   String customZombieOrphanDeleteMessage(String alias);
+
+  /// No description provided for @customZombieOrphanDeleteKeep.
+  ///
+  /// In en, this message translates to:
+  /// **'Keep in level'**
+  String get customZombieOrphanDeleteKeep;
+
+  /// No description provided for @customZombieOrphanDeleteErase.
+  ///
+  /// In en, this message translates to:
+  /// **'Erase from level'**
+  String get customZombieOrphanDeleteErase;
 
   /// No description provided for @editCustomZombieProperties.
   ///
@@ -4461,6 +4497,120 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Value range: 0.0–1.0 (0.0 = no resistance, 1.0 = full immunity)'**
   String get resilienceHint;
+
+  /// No description provided for @resilienceSelectedShieldLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Selected Resilience Shield:'**
+  String get resilienceSelectedShieldLabel;
+
+  /// No description provided for @selectionFilterBySource.
+  ///
+  /// In en, this message translates to:
+  /// **'By source'**
+  String get selectionFilterBySource;
+
+  /// No description provided for @selectionFilterByType.
+  ///
+  /// In en, this message translates to:
+  /// **'By type'**
+  String get selectionFilterByType;
+
+  /// No description provided for @selectionPreMade.
+  ///
+  /// In en, this message translates to:
+  /// **'Pre-made'**
+  String get selectionPreMade;
+
+  /// No description provided for @selectionDefinedByUser.
+  ///
+  /// In en, this message translates to:
+  /// **'Defined by user'**
+  String get selectionDefinedByUser;
+
+  /// No description provided for @aliasAlreadyTakenTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Alias already taken'**
+  String get aliasAlreadyTakenTitle;
+
+  /// No description provided for @aliasRenameConfirmTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Rename alias?'**
+  String get aliasRenameConfirmTitle;
+
+  /// No description provided for @aliasRenameConfirmMessage.
+  ///
+  /// In en, this message translates to:
+  /// **'Rename \"{oldAlias}\" to \"{newAlias}\"? All references in this level will be updated.'**
+  String aliasRenameConfirmMessage(String oldAlias, String newAlias);
+
+  /// No description provided for @resilienceSelectShield.
+  ///
+  /// In en, this message translates to:
+  /// **'Select resilience shield'**
+  String get resilienceSelectShield;
+
+  /// No description provided for @resilienceCreateCustom.
+  ///
+  /// In en, this message translates to:
+  /// **'New custom shield'**
+  String get resilienceCreateCustom;
+
+  /// No description provided for @resilienceEditCustom.
+  ///
+  /// In en, this message translates to:
+  /// **'Edit custom shield'**
+  String get resilienceEditCustom;
+
+  /// No description provided for @resilienceSourceResilienceConfig.
+  ///
+  /// In en, this message translates to:
+  /// **'ResilienceConfig'**
+  String get resilienceSourceResilienceConfig;
+
+  /// No description provided for @resilienceSourceCurrentLevel.
+  ///
+  /// In en, this message translates to:
+  /// **'CurrentLevel'**
+  String get resilienceSourceCurrentLevel;
+
+  /// No description provided for @resilienceTypeAll.
+  ///
+  /// In en, this message translates to:
+  /// **'All types'**
+  String get resilienceTypeAll;
+
+  /// No description provided for @resilienceNoShieldsFound.
+  ///
+  /// In en, this message translates to:
+  /// **'No resilience shields found'**
+  String get resilienceNoShieldsFound;
+
+  /// No description provided for @resilienceShieldInUseCannotDelete.
+  ///
+  /// In en, this message translates to:
+  /// **'Cannot delete — this shield is used by zombies in this level.'**
+  String get resilienceShieldInUseCannotDelete;
+
+  /// No description provided for @resilienceShieldDeleteTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Delete custom resilience shield?'**
+  String get resilienceShieldDeleteTitle;
+
+  /// No description provided for @resilienceShieldDeleteMessage.
+  ///
+  /// In en, this message translates to:
+  /// **'Delete \"{alias}\" from this level?'**
+  String resilienceShieldDeleteMessage(String alias);
+
+  /// No description provided for @aliasAlreadyExists.
+  ///
+  /// In en, this message translates to:
+  /// **'Alias already exists in this level.'**
+  String get aliasAlreadyExists;
 
   /// No description provided for @zombieTypeLabel.
   ///

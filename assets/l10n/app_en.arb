@@ -243,19 +243,32 @@
   "customZombieManagerTitle": "Custom Zombie Management",
   "customZombieEmpty": "No custom zombie data",
   "switchCustomZombie": "Switch custom zombie",
+  "switchProperties": "Switch properties",
+  "defaultPropertiesLabel": "Default",
+  "addNewVariation": "+ Add new variation",
+  "editCustomZombieAlias": "Edit {alias}",
+  "@editCustomZombieAlias": {
+    "placeholders": {
+      "alias": {
+        "type": "String"
+      }
+    }
+  },
   "switchZombie": "Switch zombie",
   "customZombieAppearanceLocation": "Location:",
   "customZombieNotUsed": "This custom zombie is currently not used by any wave or module.",
   "customZombieWaveItem": "Wave {n}",
   "@customZombieWaveItem": {"placeholders": {"n": {"type": "int"}}},
   "customZombieDeleteConfirm": "Remove this custom zombie entity and its property data.",
-  "customZombieOrphanDeleteTitle": "Remove custom zombie data?",
-  "customZombieOrphanDeleteMessage": "\"{alias}\" is no longer used in this level. Remove its zombie type and property objects from the level file?",
+  "customZombieOrphanDeleteTitle": "Erase custom properties from level?",
+  "customZombieOrphanDeleteMessage": "\"{alias}\" will have no remaining uses in this level. Remove its zombie type and property objects from the level file? This cannot be undone.",
   "@customZombieOrphanDeleteMessage": {
     "placeholders": {
       "alias": { "type": "String" }
     }
   },
+  "customZombieOrphanDeleteKeep": "Keep in level",
+  "customZombieOrphanDeleteErase": "Erase from level",
   "editCustomZombieProperties": "Edit custom zombie properties",
   "makeZombieAsCustom": "Make zombie as custom",
   "customLabel": "Custom",
@@ -755,6 +768,42 @@
   "resilienceIce": "Ice",
   "resilienceFire": "Fire",
   "resilienceHint": "Value range: 0.0–1.0 (0.0 = no resistance, 1.0 = full immunity)",
+  "resilienceSelectedShieldLabel": "Selected Resilience Shield:",
+  "selectionFilterBySource": "By source",
+  "selectionFilterByType": "By type",
+  "selectionPreMade": "Pre-made",
+  "selectionDefinedByUser": "Defined by user",
+  "aliasAlreadyTakenTitle": "Alias already taken",
+  "aliasRenameConfirmTitle": "Rename alias?",
+  "aliasRenameConfirmMessage": "Rename \"{oldAlias}\" to \"{newAlias}\"? All references in this level will be updated.",
+  "@aliasRenameConfirmMessage": {
+    "placeholders": {
+      "oldAlias": {
+        "type": "String"
+      },
+      "newAlias": {
+        "type": "String"
+      }
+    }
+  },
+  "resilienceSelectShield": "Select resilience shield",
+  "resilienceCreateCustom": "New custom shield",
+  "resilienceEditCustom": "Edit custom shield",
+  "resilienceSourceResilienceConfig": "ResilienceConfig",
+  "resilienceSourceCurrentLevel": "CurrentLevel",
+  "resilienceTypeAll": "All types",
+  "resilienceNoShieldsFound": "No resilience shields found",
+  "resilienceShieldInUseCannotDelete": "Cannot delete — this shield is used by zombies in this level.",
+  "resilienceShieldDeleteTitle": "Delete custom resilience shield?",
+  "resilienceShieldDeleteMessage": "Delete \"{alias}\" from this level?",
+  "@resilienceShieldDeleteMessage": {
+    "placeholders": {
+      "alias": {
+        "type": "String"
+      }
+    }
+  },
+  "aliasAlreadyExists": "Alias already exists in this level.",
   "zombieTypeLabel": "Zombie type: {type}",
   "@zombieTypeLabel": {"placeholders": {"type": {}}},
   "propertyAliasLabel": "Property alias: {alias}",

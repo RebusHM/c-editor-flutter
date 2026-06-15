@@ -780,6 +780,20 @@ class AppLocalizationsRu extends AppLocalizations {
   String get switchCustomZombie => 'Сменить пользовательского зомби';
 
   @override
+  String get switchProperties => 'Сменить свойства';
+
+  @override
+  String get defaultPropertiesLabel => 'По умолчанию';
+
+  @override
+  String get addNewVariation => '+ Добавить вариант';
+
+  @override
+  String editCustomZombieAlias(String alias) {
+    return 'Редактировать $alias';
+  }
+
+  @override
   String get switchZombie => 'Сменить зомби';
 
   @override
@@ -800,12 +814,18 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get customZombieOrphanDeleteTitle =>
-      'Удалить данные пользовательского зомби?';
+      'Удалить пользовательские свойства из уровня?';
 
   @override
   String customZombieOrphanDeleteMessage(String alias) {
-    return '«$alias» больше не используется в уровне. Удалить объект типа зомби и его свойства из файла уровня?';
+    return '«$alias» больше не будет использоваться в этом уровне. Удалить объект типа зомби и его свойства из файла уровня? Это действие нельзя отменить.';
   }
+
+  @override
+  String get customZombieOrphanDeleteKeep => 'Оставить в уровне';
+
+  @override
+  String get customZombieOrphanDeleteErase => 'Удалить из уровня';
 
   @override
   String get editCustomZombieProperties =>
@@ -2414,6 +2434,69 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get resilienceHint => '0.0 = нет, 1.0 = полный иммунитет';
+
+  @override
+  String get resilienceSelectedShieldLabel => 'Выбранный щит стойкости:';
+
+  @override
+  String get selectionFilterBySource => 'По источнику';
+
+  @override
+  String get selectionFilterByType => 'По типу';
+
+  @override
+  String get selectionPreMade => 'Готовые';
+
+  @override
+  String get selectionDefinedByUser => 'Пользовательские';
+
+  @override
+  String get aliasAlreadyTakenTitle => 'Псевдоним уже занят';
+
+  @override
+  String get aliasRenameConfirmTitle => 'Переименовать псевдоним?';
+
+  @override
+  String aliasRenameConfirmMessage(String oldAlias, String newAlias) {
+    return 'Переименовать «$oldAlias» в «$newAlias»? Все ссылки на этом уровне будут обновлены.';
+  }
+
+  @override
+  String get resilienceSelectShield => 'Выбрать щит стойкости';
+
+  @override
+  String get resilienceCreateCustom => 'Новый пользовательский щит';
+
+  @override
+  String get resilienceEditCustom => 'Редактировать щит';
+
+  @override
+  String get resilienceSourceResilienceConfig => 'ResilienceConfig';
+
+  @override
+  String get resilienceSourceCurrentLevel => 'CurrentLevel';
+
+  @override
+  String get resilienceTypeAll => 'Все типы';
+
+  @override
+  String get resilienceNoShieldsFound => 'Щиты стойкости не найдены';
+
+  @override
+  String get resilienceShieldInUseCannotDelete =>
+      'Нельзя удалить — этот щит используется зомби на уровне.';
+
+  @override
+  String get resilienceShieldDeleteTitle =>
+      'Удалить пользовательский щит стойкости?';
+
+  @override
+  String resilienceShieldDeleteMessage(String alias) {
+    return 'Удалить «$alias» из этого уровня?';
+  }
+
+  @override
+  String get aliasAlreadyExists => 'Такой псевдоним уже есть на этом уровне.';
 
   @override
   String zombieTypeLabel(Object type) {

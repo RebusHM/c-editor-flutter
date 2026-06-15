@@ -777,6 +777,20 @@ class AppLocalizationsEn extends AppLocalizations {
   String get switchCustomZombie => 'Switch custom zombie';
 
   @override
+  String get switchProperties => 'Switch properties';
+
+  @override
+  String get defaultPropertiesLabel => 'Default';
+
+  @override
+  String get addNewVariation => '+ Add new variation';
+
+  @override
+  String editCustomZombieAlias(String alias) {
+    return 'Edit $alias';
+  }
+
+  @override
   String get switchZombie => 'Switch zombie';
 
   @override
@@ -796,12 +810,19 @@ class AppLocalizationsEn extends AppLocalizations {
       'Remove this custom zombie entity and its property data.';
 
   @override
-  String get customZombieOrphanDeleteTitle => 'Remove custom zombie data?';
+  String get customZombieOrphanDeleteTitle =>
+      'Erase custom properties from level?';
 
   @override
   String customZombieOrphanDeleteMessage(String alias) {
-    return '\"$alias\" is no longer used in this level. Remove its zombie type and property objects from the level file?';
+    return '\"$alias\" will have no remaining uses in this level. Remove its zombie type and property objects from the level file? This cannot be undone.';
   }
+
+  @override
+  String get customZombieOrphanDeleteKeep => 'Keep in level';
+
+  @override
+  String get customZombieOrphanDeleteErase => 'Erase from level';
 
   @override
   String get editCustomZombieProperties => 'Edit custom zombie properties';
@@ -2442,6 +2463,68 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get resilienceHint =>
       'Value range: 0.0–1.0 (0.0 = no resistance, 1.0 = full immunity)';
+
+  @override
+  String get resilienceSelectedShieldLabel => 'Selected Resilience Shield:';
+
+  @override
+  String get selectionFilterBySource => 'By source';
+
+  @override
+  String get selectionFilterByType => 'By type';
+
+  @override
+  String get selectionPreMade => 'Pre-made';
+
+  @override
+  String get selectionDefinedByUser => 'Defined by user';
+
+  @override
+  String get aliasAlreadyTakenTitle => 'Alias already taken';
+
+  @override
+  String get aliasRenameConfirmTitle => 'Rename alias?';
+
+  @override
+  String aliasRenameConfirmMessage(String oldAlias, String newAlias) {
+    return 'Rename \"$oldAlias\" to \"$newAlias\"? All references in this level will be updated.';
+  }
+
+  @override
+  String get resilienceSelectShield => 'Select resilience shield';
+
+  @override
+  String get resilienceCreateCustom => 'New custom shield';
+
+  @override
+  String get resilienceEditCustom => 'Edit custom shield';
+
+  @override
+  String get resilienceSourceResilienceConfig => 'ResilienceConfig';
+
+  @override
+  String get resilienceSourceCurrentLevel => 'CurrentLevel';
+
+  @override
+  String get resilienceTypeAll => 'All types';
+
+  @override
+  String get resilienceNoShieldsFound => 'No resilience shields found';
+
+  @override
+  String get resilienceShieldInUseCannotDelete =>
+      'Cannot delete — this shield is used by zombies in this level.';
+
+  @override
+  String get resilienceShieldDeleteTitle => 'Delete custom resilience shield?';
+
+  @override
+  String resilienceShieldDeleteMessage(String alias) {
+    return 'Delete \"$alias\" from this level?';
+  }
+
+  @override
+  String get aliasAlreadyExists => 'Alias already exists in this level.';
 
   @override
   String zombieTypeLabel(Object type) {

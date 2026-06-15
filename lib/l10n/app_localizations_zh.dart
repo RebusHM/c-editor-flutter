@@ -764,6 +764,20 @@ class AppLocalizationsZh extends AppLocalizations {
   String get switchCustomZombie => '切换自定义僵尸';
 
   @override
+  String get switchProperties => '切换属性';
+
+  @override
+  String get defaultPropertiesLabel => '默认';
+
+  @override
+  String get addNewVariation => '+ 添加新变体';
+
+  @override
+  String editCustomZombieAlias(String alias) {
+    return '编辑 $alias';
+  }
+
+  @override
   String get switchZombie => '切换僵尸';
 
   @override
@@ -781,12 +795,18 @@ class AppLocalizationsZh extends AppLocalizations {
   String get customZombieDeleteConfirm => '将移除僵尸实体及其属性数据。';
 
   @override
-  String get customZombieOrphanDeleteTitle => '移除自定义僵尸数据？';
+  String get customZombieOrphanDeleteTitle => '从关卡中清除自定义属性？';
 
   @override
   String customZombieOrphanDeleteMessage(String alias) {
-    return '“$alias” 已不在本关卡中使用。是否从关卡文件中移除其僵尸类型与属性对象？';
+    return '“$alias”在本关卡中将不再被使用。是否从关卡文件中移除其僵尸类型与属性对象？此操作无法撤销。';
   }
+
+  @override
+  String get customZombieOrphanDeleteKeep => '保留在关卡中';
+
+  @override
+  String get customZombieOrphanDeleteErase => '从关卡中清除';
 
   @override
   String get editCustomZombieProperties => '编辑自定义属性数值';
@@ -2289,6 +2309,67 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get resilienceHint => '数值范围0.0-1.0，0.0表示无影响，1.0表示完全免疫';
+
+  @override
+  String get resilienceSelectedShieldLabel => '已选韧性护盾：';
+
+  @override
+  String get selectionFilterBySource => '按来源';
+
+  @override
+  String get selectionFilterByType => '按类型';
+
+  @override
+  String get selectionPreMade => '预设';
+
+  @override
+  String get selectionDefinedByUser => '用户自定义';
+
+  @override
+  String get aliasAlreadyTakenTitle => '别名已被占用';
+
+  @override
+  String get aliasRenameConfirmTitle => '重命名别名？';
+
+  @override
+  String aliasRenameConfirmMessage(String oldAlias, String newAlias) {
+    return '将「$oldAlias」重命名为「$newAlias」？本关卡中的所有引用都将更新。';
+  }
+
+  @override
+  String get resilienceSelectShield => '选择韧性护盾';
+
+  @override
+  String get resilienceCreateCustom => '新建自定义护盾';
+
+  @override
+  String get resilienceEditCustom => '编辑自定义护盾';
+
+  @override
+  String get resilienceSourceResilienceConfig => 'ResilienceConfig';
+
+  @override
+  String get resilienceSourceCurrentLevel => 'CurrentLevel';
+
+  @override
+  String get resilienceTypeAll => '全部类型';
+
+  @override
+  String get resilienceNoShieldsFound => '未找到韧性护盾';
+
+  @override
+  String get resilienceShieldInUseCannotDelete => '无法删除——本关卡中有僵尸正在使用此护盾。';
+
+  @override
+  String get resilienceShieldDeleteTitle => '删除自定义韧性护盾？';
+
+  @override
+  String resilienceShieldDeleteMessage(String alias) {
+    return '从本关卡中删除「$alias」？';
+  }
+
+  @override
+  String get aliasAlreadyExists => '本关卡中已存在该别名。';
 
   @override
   String zombieTypeLabel(Object type) {
