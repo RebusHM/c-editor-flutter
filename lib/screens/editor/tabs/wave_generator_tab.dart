@@ -635,170 +635,205 @@ class _WaveRowCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
-    final isDesktop = isDesktopPlatform(context);
-    final actionColumnWidth = isDesktop ? 220.0 : 112.0;
+    final isDesktopPlatformView = isDesktopPlatform(context);
     final showRandomPool = !wave.disableRandomSpawns;
     final hasRandomPool =
         showRandomPool && (globalPool.isNotEmpty || wavePoolEntries.isNotEmpty);
 
-    return Card(
-      clipBehavior: Clip.antiAlias,
-      child: InkWell(
-        onTap: onTap,
-        child: Padding(
-          padding: EdgeInsets.all(isDesktop ? 14 : 12),
-        child: IntrinsicHeight(
-          child: Row(
-            crossAxisAlignment: CrossAxisAlignment.stretch,
-            children: [
-              SizedBox(
-                width: isDesktop ? 52 : 36,
-                child: Align(
-                  alignment: Alignment.topCenter,
-                  child: Padding(
-                    padding: const EdgeInsets.only(top: 4),
-                    child: Row(
-                      mainAxisSize: MainAxisSize.min,
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Text(
-                          '$waveIndex',
-                          style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            fontSize: isDesktop ? 18 : 16,
-                            color: theme.colorScheme.primary,
-                          ),
-                        ),
-                        if (isFlagWave)
-                          Padding(
-                            padding: const EdgeInsets.only(left: 2),
-                            child: Icon(
-                              Icons.flag,
-                              size: isDesktop ? 14 : 12,
-                              color: theme.colorScheme.error,
-                            ),
-                          ),
-                      ],
-                    ),
-                  ),
-                ),
-              ),
-              Expanded(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
+    return LayoutBuilder(
+      builder: (context, constraints) {
+        final compactWidth = constraints.maxWidth < 560;
+        final veryCompactWidth = constraints.maxWidth < 420;
+        final isDesktop = isDesktopPlatformView && !compactWidth;
+        final cardPadding = isDesktop ? 14.0 : 10.0;
+        final waveNumberWidth = isDesktop ? 52.0 : 28.0;
+        final actionColumnWidth = isDesktop
+            ? 220.0
+            : (constraints.maxWidth * (veryCompactWidth ? 0.26 : 0.24))
+                .clamp(86.0, 132.0)
+                .toDouble();
+        final chipFontSize = isDesktop ? 12.0 : 10.5;
+
+        return Card(
+          clipBehavior: Clip.antiAlias,
+          child: InkWell(
+            onTap: onTap,
+            child: Padding(
+              padding: EdgeInsets.all(cardPadding),
+              child: IntrinsicHeight(
+                child: Row(
+                  crossAxisAlignment: CrossAxisAlignment.stretch,
                   children: [
-                    if (wave.zombies.isEmpty)
-                      Padding(
-                        padding: const EdgeInsets.symmetric(vertical: 8),
-                        child: Text(
-                          l10n?.waveGeneratorEmptyWaveRow ??
-                              'No scripted zombies (tap to edit)',
-                          style: theme.textTheme.bodyMedium?.copyWith(
-                            color: theme.colorScheme.onSurfaceVariant,
-                          ),
-                        ),
-                      )
-                    else
-                      Wrap(
-                        spacing: 6,
-                        runSpacing: 6,
-                        children: [
-                          for (final z in wave.zombies)
-                            WaveGeneratorZombieIconChip(
-                              localizedName: zombieDisplayName(z.type),
-                              codename: zombieCodename(z.type),
-                              iconPath: zombieIcon(z.type),
-                              rowLabel: waveGeneratorRowDisplay(z.row),
-                            ),
-                        ],
-                      ),
-                    if (hasRandomPool) ...[
-                      const SizedBox(height: 8),
-                      Text(
-                        l10n?.waveGeneratorRandomZombiesLabel ??
-                            'Random zombies:',
-                        style: theme.textTheme.labelMedium?.copyWith(
-                          fontWeight: FontWeight.bold,
-                          color: theme.colorScheme.secondary,
-                        ),
-                      ),
-                      const SizedBox(height: 4),
-                      Wrap(
-                        spacing: 6,
-                        runSpacing: 6,
-                        children: [
-                          for (final entry in globalPool)
-                            WaveGeneratorZombieIconChip(
-                              sourceBadge: 'Z',
-                              localizedName: zombieDisplayName(entry.type),
-                              codename: zombieCodename(entry.type),
-                              iconPath: zombieIcon(entry.type),
-                            ),
-                          for (final entry in wavePoolEntries)
-                            WaveGeneratorZombieIconChip(
-                              sourceBadge: 'W',
-                              localizedName: zombieDisplayName(entry.type),
-                              codename: zombieCodename(entry.type),
-                              iconPath: zombieIcon(entry.type),
-                            ),
-                        ],
-                      ),
-                    ],
-                  ],
-                ),
-              ),
-              SizedBox(
-                width: actionColumnWidth,
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.end,
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Column(
-                      mainAxisSize: MainAxisSize.min,
-                      crossAxisAlignment: CrossAxisAlignment.end,
-                      children: [
-                        for (final b in actionButtons)
-                          Padding(
-                            padding: const EdgeInsets.only(bottom: 4),
-                            child: ActionChip(
-                              label: Text(
-                                b.label,
+                    SizedBox(
+                      width: waveNumberWidth,
+                      child: Align(
+                        alignment: Alignment.topCenter,
+                        child: Padding(
+                          padding: const EdgeInsets.only(top: 4),
+                          child: Row(
+                            mainAxisSize: MainAxisSize.min,
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Text(
+                                '$waveIndex',
                                 style: TextStyle(
-                                  fontSize: isDesktop ? 12 : 11,
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: isDesktop ? 18 : 16,
+                                  color: theme.colorScheme.primary,
                                 ),
-                                softWrap: true,
                               ),
-                              onPressed: b.onTap,
-                              visualDensity: VisualDensity.compact,
+                              if (isFlagWave)
+                                Padding(
+                                  padding: const EdgeInsets.only(left: 2),
+                                  child: Icon(
+                                    Icons.flag,
+                                    size: isDesktop ? 14 : 12,
+                                    color: theme.colorScheme.error,
+                                  ),
+                                ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
+                    const SizedBox(width: 6),
+                    Expanded(
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          if (wave.zombies.isEmpty)
+                            Padding(
+                              padding: const EdgeInsets.symmetric(vertical: 8),
+                              child: Text(
+                                l10n?.waveGeneratorEmptyWaveRow ??
+                                    'No scripted zombies (tap to edit)',
+                                style: theme.textTheme.bodyMedium?.copyWith(
+                                  color: theme.colorScheme.onSurfaceVariant,
+                                ),
+                              ),
+                            )
+                          else
+                            Wrap(
+                              spacing: 6,
+                              runSpacing: 6,
+                              children: [
+                                for (final z in wave.zombies)
+                                  WaveGeneratorZombieIconChip(
+                                    localizedName: zombieDisplayName(z.type),
+                                    codename: zombieCodename(z.type),
+                                    iconPath: zombieIcon(z.type),
+                                    rowLabel: waveGeneratorRowDisplay(z.row),
+                                  ),
+                              ],
+                            ),
+                          if (hasRandomPool) ...[
+                            const SizedBox(height: 8),
+                            Text(
+                              l10n?.waveGeneratorRandomZombiesLabel ??
+                                  'Random zombies:',
+                              maxLines: 2,
+                              overflow: TextOverflow.ellipsis,
+                              style: theme.textTheme.labelMedium?.copyWith(
+                                fontWeight: FontWeight.bold,
+                                color: theme.colorScheme.secondary,
+                              ),
+                            ),
+                            const SizedBox(height: 4),
+                            Wrap(
+                              spacing: 6,
+                              runSpacing: 6,
+                              children: [
+                                for (final entry in globalPool)
+                                  WaveGeneratorZombieIconChip(
+                                    sourceBadge: 'Z',
+                                    localizedName: zombieDisplayName(entry.type),
+                                    codename: zombieCodename(entry.type),
+                                    iconPath: zombieIcon(entry.type),
+                                  ),
+                                for (final entry in wavePoolEntries)
+                                  WaveGeneratorZombieIconChip(
+                                    sourceBadge: 'W',
+                                    localizedName: zombieDisplayName(entry.type),
+                                    codename: zombieCodename(entry.type),
+                                    iconPath: zombieIcon(entry.type),
+                                  ),
+                              ],
+                            ),
+                          ],
+                        ],
+                      ),
+                    ),
+                    const SizedBox(width: 6),
+                    SizedBox(
+                      width: actionColumnWidth,
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.end,
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Column(
+                            mainAxisSize: MainAxisSize.min,
+                            crossAxisAlignment: CrossAxisAlignment.end,
+                            children: [
+                              for (final b in actionButtons)
+                                Padding(
+                                  padding: const EdgeInsets.only(bottom: 4),
+                                  child: Align(
+                                    alignment: Alignment.centerRight,
+                                    child: ActionChip(
+                                      label: ConstrainedBox(
+                                        constraints: BoxConstraints(
+                                          maxWidth: actionColumnWidth - 28,
+                                        ),
+                                        child: Text(
+                                          b.label,
+                                          textAlign: TextAlign.center,
+                                          maxLines: 2,
+                                          overflow: TextOverflow.ellipsis,
+                                          style: TextStyle(
+                                            fontSize: chipFontSize,
+                                          ),
+                                        ),
+                                      ),
+                                      onPressed: b.onTap,
+                                      visualDensity: VisualDensity.compact,
+                                      materialTapTargetSize:
+                                          MaterialTapTargetSize.shrinkWrap,
+                                    ),
+                                  ),
+                                ),
+                            ],
+                          ),
+                          FittedBox(
+                            fit: BoxFit.scaleDown,
+                            alignment: Alignment.centerRight,
+                            child: TextButton.icon(
+                              style: TextButton.styleFrom(
+                                foregroundColor: theme.colorScheme.error,
+                                padding: const EdgeInsets.symmetric(
+                                  horizontal: 6,
+                                  vertical: 4,
+                                ),
+                                visualDensity: VisualDensity.compact,
+                              ),
+                              onPressed: onDelete,
+                              icon: const Icon(Icons.delete_outline, size: 18),
+                              label: Text(
+                                l10n?.deleteWave ?? 'Delete wave',
+                                overflow: TextOverflow.ellipsis,
+                                style: const TextStyle(fontSize: 12),
+                              ),
                             ),
                           ),
-                      ],
-                    ),
-                    TextButton.icon(
-                      style: TextButton.styleFrom(
-                        foregroundColor: theme.colorScheme.error,
-                        padding: const EdgeInsets.symmetric(
-                          horizontal: 8,
-                          vertical: 4,
-                        ),
-                        visualDensity: VisualDensity.compact,
-                      ),
-                      onPressed: onDelete,
-                      icon: const Icon(Icons.delete_outline, size: 18),
-                      label: Text(
-                        l10n?.deleteWave ?? 'Delete wave',
-                        overflow: TextOverflow.ellipsis,
-                        style: const TextStyle(fontSize: 12),
+                        ],
                       ),
                     ),
                   ],
                 ),
               ),
-            ],
+            ),
           ),
-        ),
-        ),
-      ),
+        );
+      },
     );
   }
 }
