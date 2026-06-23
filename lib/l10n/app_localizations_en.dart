@@ -6819,16 +6819,16 @@ class AppLocalizationsEn extends AppLocalizations {
   String get customStageSectionGeneral => 'General';
 
   @override
-  String get customStageSectionZombies => 'Zombie types';
+  String get customStageSectionZombies => 'Zombie Types';
 
   @override
-  String get customStageSectionResourceGroups => 'Resource groups';
+  String get customStageSectionResourceGroups => 'Resource Groups';
 
   @override
-  String get customStageSectionAppearance => 'Appearance';
+  String get customStageSectionMusicAndOther => 'Music & Other';
 
   @override
-  String get customStageSectionAdvanced => 'Advanced';
+  String get customStageSectionAdvanced => 'Advanced Settings';
 
   @override
   String get customStageAlias => 'Stage alias';
@@ -6862,13 +6862,10 @@ class AppLocalizationsEn extends AppLocalizations {
   String get customStageNameSuffix => ' (Custom)';
 
   @override
-  String get customStageLawnAppearance => 'Lawn appearance';
+  String get customStageLawnAppearance => 'Lawn type (objclass)';
 
   @override
   String get selectCustomStageBase => 'Select base lawn';
-
-  @override
-  String get searchStageBase => 'Search by lawn name or codename';
 
   @override
   String get noStageBaseFound => 'No lawn found';

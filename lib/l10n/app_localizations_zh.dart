@@ -1201,7 +1201,7 @@ class AppLocalizationsZh extends AppLocalizations {
   String get noStageFound => '未找到相关地图';
 
   @override
-  String get stageTypeAll => '全部地图';
+  String get stageTypeAll => '全部';
 
   @override
   String get stageTypeMain => '主线世界';
@@ -6478,10 +6478,10 @@ class AppLocalizationsZh extends AppLocalizations {
   String get customStageSectionResourceGroups => '资源组';
 
   @override
-  String get customStageSectionAppearance => '外观';
+  String get customStageSectionMusicAndOther => '音乐与其他';
 
   @override
-  String get customStageSectionAdvanced => '高级';
+  String get customStageSectionAdvanced => '高级设置';
 
   @override
   String get customStageAlias => '场地别名';
@@ -6515,13 +6515,10 @@ class AppLocalizationsZh extends AppLocalizations {
   String get customStageNameSuffix => '（自定义）';
 
   @override
-  String get customStageLawnAppearance => '草坪外观';
+  String get customStageLawnAppearance => '场地类型 (objclass)';
 
   @override
   String get selectCustomStageBase => '选择基础场地';
-
-  @override
-  String get searchStageBase => '按草坪名称或代号搜索';
 
   @override
   String get noStageBaseFound => '未找到草坪';
@@ -6549,12 +6546,12 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String importResourceGroupsFromStageMessage(String stageName) {
-    return '将添加以下来自 $stageName 的资源组：';
+    return '将添加以下来自$stageName的资源组：';
   }
 
   @override
   String importResourceGroupsFromStageSkipped(int count) {
-    return '已有 $count 个资源组在本关卡中，将跳过。';
+    return '已有$count个资源组在本关卡中，将跳过。';
   }
 
   @override

@@ -69,7 +69,7 @@ class _StageBaseSelectionScreenState extends State<StageBaseSelectionScreen> {
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 16),
                 child: SelectionSearchField(
-                  hintText: 'Search by lawn name or codename',
+                  hintText: l10n?.searchStage ?? 'Search stage',
                   query: _searchQuery,
                   onChanged: (v) => setState(() => _searchQuery = v),
                   onClear: () => setState(() => _searchQuery = ''),

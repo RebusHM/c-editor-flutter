@@ -375,25 +375,27 @@ class _CustomStagePropertiesScreenState
           child: Row(
             children: [
               if (iconPath != null)
-                ClipOval(
+                ClipRRect(
+                  borderRadius: BorderRadius.circular(8),
                   child: SizedBox(
-                    width: 56,
-                    height: 56,
+                    width: 96,
+                    height: 96,
                     child: AssetImageWidget(
                       assetPath: iconPath,
                       altCandidates: imageAltCandidates(iconPath),
-                      width: 56,
-                      height: 56,
+                      width: 96,
+                      height: 96,
                       fit: BoxFit.cover,
                     ),
                   ),
                 )
               else
-                const SizedBox(width: 56, height: 56),
-              const SizedBox(width: 12),
+                const SizedBox(width: 96, height: 96),
+              const SizedBox(width: 16),
               Expanded(
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisSize: MainAxisSize.min,
                   children: [
                     Text(
                       label,
@@ -401,7 +403,7 @@ class _CustomStagePropertiesScreenState
                         color: Theme.of(context).colorScheme.onSurfaceVariant,
                       ),
                     ),
-                    Text(value, style: Theme.of(context).textTheme.titleSmall),
+                    Text(value, style: Theme.of(context).textTheme.titleMedium),
                   ],
                 ),
               ),
@@ -617,7 +619,7 @@ class _CustomStagePropertiesScreenState
                 targetUnloadList: true,
               ),
               const SizedBox(height: 16),
-              _sectionTitle(l10n?.customStageSectionAppearance ?? 'Appearance'),
+              _sectionTitle(l10n?.customStageSectionMusicAndOther ?? 'Music & Other'),
               _pickerTile(
                 label: _fieldLabel(context, 'MusicSuffix'),
                 value: musicName,

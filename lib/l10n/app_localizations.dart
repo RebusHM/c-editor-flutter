@@ -12199,25 +12199,25 @@ abstract class AppLocalizations {
   /// No description provided for @customStageSectionZombies.
   ///
   /// In en, this message translates to:
-  /// **'Zombie types'**
+  /// **'Zombie Types'**
   String get customStageSectionZombies;
 
   /// No description provided for @customStageSectionResourceGroups.
   ///
   /// In en, this message translates to:
-  /// **'Resource groups'**
+  /// **'Resource Groups'**
   String get customStageSectionResourceGroups;
 
-  /// No description provided for @customStageSectionAppearance.
+  /// No description provided for @customStageSectionMusicAndOther.
   ///
   /// In en, this message translates to:
-  /// **'Appearance'**
-  String get customStageSectionAppearance;
+  /// **'Music & Other'**
+  String get customStageSectionMusicAndOther;
 
   /// No description provided for @customStageSectionAdvanced.
   ///
   /// In en, this message translates to:
-  /// **'Advanced'**
+  /// **'Advanced Settings'**
   String get customStageSectionAdvanced;
 
   /// No description provided for @customStageAlias.
@@ -12283,7 +12283,7 @@ abstract class AppLocalizations {
   /// No description provided for @customStageLawnAppearance.
   ///
   /// In en, this message translates to:
-  /// **'Lawn appearance'**
+  /// **'Lawn type (objclass)'**
   String get customStageLawnAppearance;
 
   /// No description provided for @selectCustomStageBase.
@@ -12291,12 +12291,6 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Select base lawn'**
   String get selectCustomStageBase;
-
-  /// No description provided for @searchStageBase.
-  ///
-  /// In en, this message translates to:
-  /// **'Search by lawn name or codename'**
-  String get searchStageBase;
 
   /// No description provided for @noStageBaseFound.
   ///

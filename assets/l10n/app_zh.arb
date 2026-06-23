@@ -375,7 +375,7 @@
   "selectStage": "选择地图",
   "searchStage": "搜索地图名称或代号",
   "noStageFound": "未找到相关地图",
-  "stageTypeAll": "全部地图",
+  "stageTypeAll": "全部",
   "stageTypeMain": "主线世界",
   "stageTypeExtra": "活动/秘境",
   "stageTypeSeasons": "一代/季节",
@@ -2219,8 +2219,8 @@
   "customStageSectionGeneral": "常规",
   "customStageSectionZombies": "僵尸类型",
   "customStageSectionResourceGroups": "资源组",
-  "customStageSectionAppearance": "外观",
-  "customStageSectionAdvanced": "高级",
+  "customStageSectionMusicAndOther": "音乐与其他",
+  "customStageSectionAdvanced": "高级设置",
   "customStageAlias": "场地别名",
   "customStageNoResourceGroups": "列表中没有资源组",
   "customStageMissingBackgroundWarning": "请至少导入一个在场地助手中列出的 DelayLoad_Background 资源组，否则草坪可能完全显示为黑色。",
@@ -2231,9 +2231,8 @@
   "customStageEnableSubmarine": "启用潜艇",
   "customStageSubmarineHitpoints": "潜艇生命值",
   "customStageNameSuffix": "（自定义）",
-  "customStageLawnAppearance": "草坪外观",
+  "customStageLawnAppearance": "场地类型 (objclass)",
   "selectCustomStageBase": "选择基础场地",
-  "searchStageBase": "按草坪名称或代号搜索",
   "noStageBaseFound": "未找到草坪",
   "importResourceGroup": "导入资源组",
   "importResourceGroupGlobal": "从全局列表",
@@ -2242,7 +2241,7 @@
   "searchResourceGroup": "搜索资源组",
   "noResourceGroupFound": "未找到资源组",
   "importResourceGroupsFromStageTitle": "从场地添加资源组？",
-  "importResourceGroupsFromStageMessage": "将添加以下来自 {stageName} 的资源组：",
+  "importResourceGroupsFromStageMessage": "将添加以下来自{stageName}的资源组：",
   "@importResourceGroupsFromStageMessage": {
     "placeholders": {
       "stageName": {
@@ -2250,7 +2249,7 @@
       }
     }
   },
-  "importResourceGroupsFromStageSkipped": "已有 {count} 个资源组在本关卡中，将跳过。",
+  "importResourceGroupsFromStageSkipped": "已有{count}个资源组在本关卡中，将跳过。",
   "@importResourceGroupsFromStageSkipped": {
     "placeholders": {
       "count": {
