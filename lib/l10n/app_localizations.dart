@@ -12355,7 +12355,7 @@ abstract class AppLocalizations {
   /// No description provided for @customStageSectionMusicAndOther.
   ///
   /// In en, this message translates to:
-  /// **'Music & Other'**
+  /// **'Lawn appearance, Music & Other'**
   String get customStageSectionMusicAndOther;
 
   /// No description provided for @customStageSectionAdvanced.
@@ -12469,8 +12469,14 @@ abstract class AppLocalizations {
   /// No description provided for @customStageLawnAppearance.
   ///
   /// In en, this message translates to:
-  /// **'Lawn type'**
+  /// **'Lawn appearance'**
   String get customStageLawnAppearance;
+
+  /// No description provided for @customStageBaseStage.
+  ///
+  /// In en, this message translates to:
+  /// **'Base stage'**
+  String get customStageBaseStage;
 
   /// No description provided for @selectCustomStageBase.
   ///

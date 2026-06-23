@@ -6839,7 +6839,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get customStageSectionResourceGroups => 'Группы ресурсов';
 
   @override
-  String get customStageSectionMusicAndOther => 'Music & Other';
+  String get customStageSectionMusicAndOther => 'Вид газона, музыка и прочее';
 
   @override
   String get customStageSectionAdvanced => 'Дополнительно';
@@ -6900,6 +6900,9 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get customStageLawnAppearance => 'Вид газона';
+
+  @override
+  String get customStageBaseStage => 'Базовая локация';
 
   @override
   String get selectCustomStageBase => 'Выберите базовую локацию';

@@ -6550,7 +6550,7 @@ class AppLocalizationsZh extends AppLocalizations {
   String get customStageSectionResourceGroups => '资源组';
 
   @override
-  String get customStageSectionMusicAndOther => '音乐与其他';
+  String get customStageSectionMusicAndOther => '地图外观、音乐与其他';
 
   @override
   String get customStageSectionAdvanced => '高级设置';
@@ -6609,7 +6609,10 @@ class AppLocalizationsZh extends AppLocalizations {
   String get customStageNameSuffix => '（自定义）';
 
   @override
-  String get customStageLawnAppearance => '地图类型';
+  String get customStageLawnAppearance => '地图外观';
+
+  @override
+  String get customStageBaseStage => '基础地图';
 
   @override
   String get selectCustomStageBase => '选择基础地图';

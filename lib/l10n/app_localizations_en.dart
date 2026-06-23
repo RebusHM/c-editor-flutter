@@ -6897,7 +6897,8 @@ class AppLocalizationsEn extends AppLocalizations {
   String get customStageSectionResourceGroups => 'Resource Groups';
 
   @override
-  String get customStageSectionMusicAndOther => 'Music & Other';
+  String get customStageSectionMusicAndOther =>
+      'Lawn appearance, Music & Other';
 
   @override
   String get customStageSectionAdvanced => 'Advanced Settings';
@@ -6958,7 +6959,10 @@ class AppLocalizationsEn extends AppLocalizations {
   String get customStageNameSuffix => ' (Custom)';
 
   @override
-  String get customStageLawnAppearance => 'Lawn type';
+  String get customStageLawnAppearance => 'Lawn appearance';
+
+  @override
+  String get customStageBaseStage => 'Base stage';
 
   @override
   String get selectCustomStageBase => 'Select base lawn';
