@@ -4,7 +4,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'package:c_editor/data/asset_loader.dart';
 import 'package:c_editor/l10n/app_localizations.dart';
 
-enum PlantCategory { quality, role, attribute, other, collection }
+enum PlantCategory { quality, role, attribute, world, other, collection }
 
 extension PlantCategoryExtension on PlantCategory {
   String getLabel(BuildContext context) {
@@ -16,6 +16,8 @@ extension PlantCategoryExtension on PlantCategory {
         return s.plantCategoryRole;
       case PlantCategory.attribute:
         return s.plantCategoryAttribute;
+      case PlantCategory.world:
+        return s.plantCategoryWorld;
       case PlantCategory.other:
         return s.plantCategoryOther;
       case PlantCategory.collection:
@@ -44,11 +46,31 @@ enum PlantTag {
   poison,
   electric,
   physical,
+  worldEgypt,
+  worldPirate,
+  worldWildWest,
+  worldKongfu,
+  worldFuture,
+  worldDarkAges,
+  worldBeach,
+  worldIceage,
+  worldSkycity,
+  worldLostCity,
+  worldEighties,
+  worldDino,
+  worldModern,
+  worldSteam,
+  worldRenai,
+  worldHeian,
+  worldAtlantis,
+  worldFairytale,
+  worldZcorp,
+  worldMausoleum,
   original,
   parallel,
   international,
   chinese,
-  special
+  special,
 }
 
 extension PlantTagExtension on PlantTag {
@@ -93,6 +115,46 @@ extension PlantTagExtension on PlantTag {
         return s.plantTagElectric;
       case PlantTag.physical:
         return s.plantTagPhysical;
+      case PlantTag.worldEgypt:
+        return s.plantTagWorldEgypt;
+      case PlantTag.worldPirate:
+        return s.plantTagWorldPirate;
+      case PlantTag.worldWildWest:
+        return s.plantTagWorldWildWest;
+      case PlantTag.worldKongfu:
+        return s.plantTagWorldKongfu;
+      case PlantTag.worldFuture:
+        return s.plantTagWorldFuture;
+      case PlantTag.worldDarkAges:
+        return s.plantTagWorldDarkAges;
+      case PlantTag.worldBeach:
+        return s.plantTagWorldBeach;
+      case PlantTag.worldIceage:
+        return s.plantTagWorldIceage;
+      case PlantTag.worldSkycity:
+        return s.plantTagWorldSkycity;
+      case PlantTag.worldLostCity:
+        return s.plantTagWorldLostCity;
+      case PlantTag.worldEighties:
+        return s.plantTagWorldEighties;
+      case PlantTag.worldDino:
+        return s.plantTagWorldDino;
+      case PlantTag.worldModern:
+        return s.plantTagWorldModern;
+      case PlantTag.worldSteam:
+        return s.plantTagWorldSteam;
+      case PlantTag.worldRenai:
+        return s.plantTagWorldRenai;
+      case PlantTag.worldHeian:
+        return s.plantTagWorldHeian;
+      case PlantTag.worldAtlantis:
+        return s.plantTagWorldAtlantis;
+      case PlantTag.worldFairytale:
+        return s.plantTagWorldFairytale;
+      case PlantTag.worldZcorp:
+        return s.plantTagWorldZcorp;
+      case PlantTag.worldMausoleum:
+        return s.plantTagWorldMausoleum;
       case PlantTag.original:
         return s.plantTagOriginal;
       case PlantTag.parallel:
@@ -173,13 +235,32 @@ extension PlantTagExtension on PlantTag {
       case PlantTag.electric:
       case PlantTag.physical:
         return PlantCategory.attribute;
+      case PlantTag.worldEgypt:
+      case PlantTag.worldPirate:
+      case PlantTag.worldWildWest:
+      case PlantTag.worldKongfu:
+      case PlantTag.worldFuture:
+      case PlantTag.worldDarkAges:
+      case PlantTag.worldBeach:
+      case PlantTag.worldIceage:
+      case PlantTag.worldSkycity:
+      case PlantTag.worldLostCity:
+      case PlantTag.worldEighties:
+      case PlantTag.worldDino:
+      case PlantTag.worldModern:
+      case PlantTag.worldSteam:
+      case PlantTag.worldRenai:
+      case PlantTag.worldHeian:
+      case PlantTag.worldAtlantis:
+      case PlantTag.worldFairytale:
+      case PlantTag.worldZcorp:
+      case PlantTag.worldMausoleum:
+        return PlantCategory.world;
       case PlantTag.original:
       case PlantTag.parallel:
       case PlantTag.special:
       case PlantTag.international:
       case PlantTag.chinese:
-        return PlantCategory.other;
-
         return PlantCategory.other;
     }
   }
@@ -219,15 +300,54 @@ class PlantRepository {
   final List<String> _favoriteIds = [];
   bool _isLoaded = false;
   final Set<String> _uiConfiguredAliases = {};
+  final Map<PlantTag, List<String>> _worldPlantOrder = {};
 
   List<PlantInfo> get allPlants => _allPlants;
   List<String> get favoriteIds => _favoriteIds;
   bool get isLoaded => _isLoaded;
 
+  static PlantTag? _parseTagString(String tagStr) {
+    if (tagStr.startsWith('_internal_')) return null;
+    final normalizedTag = tagStr.replaceAll('_', '').toLowerCase();
+    for (final tag in PlantTag.values) {
+      if (tag == PlantTag.all) continue;
+      if (tag.name.replaceAll('_', '').toLowerCase() == normalizedTag) {
+        return tag;
+      }
+    }
+    return null;
+  }
+
+  Future<Map<String, List<PlantTag>>> _loadWorldAssignments() async {
+    final byPlantId = <String, List<PlantTag>>{};
+    _worldPlantOrder.clear();
+    try {
+      final jsonString = await loadJsonString(
+        'assets/resources/PlantWorldAssignments.json',
+      );
+      final map = json.decode(jsonString) as Map<String, dynamic>;
+      for (final entry in map.entries) {
+        final worldTag = _parseTagString(entry.key);
+        if (worldTag == null) continue;
+        final orderedIds = <String>[];
+        for (final rawId in (entry.value as List<dynamic>)) {
+          final id = rawId as String;
+          orderedIds.add(id);
+          byPlantId.putIfAbsent(id, () => []).add(worldTag);
+        }
+        _worldPlantOrder[worldTag] = orderedIds;
+      }
+    } catch (e) {
+      debugPrint('Error loading plant world assignments: $e');
+    }
+    return byPlantId;
+  }
+
   Future<void> init() async {
     if (_isLoaded) return;
     await _loadFavorites();
     try {
+      final worldAssignments = await _loadWorldAssignments();
       final jsonString = await loadJsonString('assets/resources/Plants.json');
       final List<dynamic> jsonList = json.decode(jsonString);
 
@@ -245,25 +365,20 @@ class PlantRepository {
         _uiConfiguredAliases.add(id);
 
         final internalTags = <String>[];
-        final tags =
-            tagsList
-                ?.map((tagStr) {
-                  if (tagStr.startsWith('_internal_')) {
-                    internalTags.add(tagStr);
-                    return PlantTag.all;
-                  }
-                  final normalizedTag = tagStr
-                      .replaceAll('_', '')
-                      .toLowerCase();
-                  return PlantTag.values.firstWhere(
-                    (e) => e.name.replaceAll('_', '').toLowerCase() == normalizedTag,
-                    orElse: () => PlantTag.all,
-                  );
-                })
-                .where((element) => element != PlantTag.all)
-                .toList() ??
-            [];
+        final tagSet = <PlantTag>{};
+        for (final tagStr in tagsList ?? const <String>[]) {
+          if (tagStr.startsWith('_internal_')) {
+            internalTags.add(tagStr);
+            continue;
+          }
+          final tag = _parseTagString(tagStr);
+          if (tag != null) tagSet.add(tag);
+        }
+        for (final tag in worldAssignments[id] ?? const <PlantTag>[]) {
+          tagSet.add(tag);
+        }
 
+        final tags = tagSet.toList();
         _allPlants.add(PlantInfo(
           id: id,
           name: name,
@@ -307,24 +422,58 @@ class PlantRepository {
 
   bool isFavorite(String id) => _favoriteIds.contains(id);
 
-  List<PlantInfo> search(String query, PlantTag? tag, PlantCategory category) {
-    if (!_isLoaded) return [];
-    final baseList =
-        category == PlantCategory.collection
-            ? _allPlants.where((p) => _favoriteIds.contains(p.id)).toList()
-            : (tag != null && tag != PlantTag.all
-                ? _allPlants.where((p) => p.tags.contains(tag)).toList()
-                : _allPlants);
+  bool _hasWorldTag(PlantInfo plant) =>
+      plant.tags.any((tag) => tag.category == PlantCategory.world);
 
-    if (query.trim().isEmpty) return baseList;
+  void _sortByWorldTag(List<PlantInfo> plants, PlantTag worldTag) {
+    final order = _worldPlantOrder[worldTag];
+    if (order == null || order.isEmpty) return;
+
+    final rank = <String, int>{
+      for (var i = 0; i < order.length; i++) order[i]: i,
+    };
+    plants.sort((a, b) {
+      final ai = rank[a.id] ?? 1 << 30;
+      final bi = rank[b.id] ?? 1 << 30;
+      if (ai != bi) return ai.compareTo(bi);
+      return a.id.compareTo(b.id);
+    });
+  }
+
+  List<PlantInfo> _finalizePlantList(
+    List<PlantInfo> plants,
+    PlantTag? tag,
+    String query,
+  ) {
+    if (tag != null && tag != PlantTag.all && tag.category == PlantCategory.world) {
+      _sortByWorldTag(plants, tag);
+    }
+
+    if (query.trim().isEmpty) return plants;
     final lower = query.toLowerCase();
-    return baseList
+    return plants
         .where(
           (p) =>
               p.id.toLowerCase().contains(lower) ||
               p.name.toLowerCase().contains(lower),
         )
         .toList();
+  }
+
+  List<PlantInfo> search(String query, PlantTag? tag, PlantCategory category) {
+    if (!_isLoaded) return [];
+    final List<PlantInfo> baseList;
+    if (category == PlantCategory.collection) {
+      baseList = _allPlants.where((p) => _favoriteIds.contains(p.id)).toList();
+    } else if (tag != null && tag != PlantTag.all) {
+      baseList = _allPlants.where((p) => p.tags.contains(tag)).toList();
+    } else if (category == PlantCategory.world) {
+      baseList = _allPlants.where(_hasWorldTag).toList();
+    } else {
+      baseList = _allPlants;
+    }
+
+    return _finalizePlantList(baseList, tag, query);
   }
 
   Future<void> toggleFavorite(String id) async {

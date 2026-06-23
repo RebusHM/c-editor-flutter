@@ -50,6 +50,8 @@ enum ZombieTag {
   elite,
   custom,
   evildave,
+  international,
+  chinese,
 }
 
 extension ZombieTagExtension on ZombieTag {
@@ -110,6 +112,10 @@ extension ZombieTagExtension on ZombieTag {
         return s.zombieTagCustom;
       case ZombieTag.evildave:
         return s.zombieTagEvildave;
+      case ZombieTag.international:
+        return s.plantTagInternational;
+      case ZombieTag.chinese:
+        return s.plantTagChinese;
     }
   }
 
@@ -144,6 +150,8 @@ extension ZombieTagExtension on ZombieTag {
         return ZombieCategory.size;
       case ZombieTag.evildave:
       case ZombieTag.custom:
+      case ZombieTag.international:
+      case ZombieTag.chinese:
         return ZombieCategory.other;
     }
   }

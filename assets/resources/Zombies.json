@@ -4,7 +4,8 @@
     "name": "zombie_mummy",
     "tags": [
       "Egypt_Pirate",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_mummy.webp"
   },
@@ -13,7 +14,8 @@
     "name": "zombie_mummy_armor1",
     "tags": [
       "Egypt_Pirate",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_mummy_armor1.webp"
   },
@@ -22,7 +24,8 @@
     "name": "zombie_mummy_armor2",
     "tags": [
       "Egypt_Pirate",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_mummy_armor2.webp"
   },
@@ -31,7 +34,8 @@
     "name": "zombie_mummy_flag",
     "tags": [
       "Egypt_Pirate",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_mummy_flag.webp"
   },
@@ -40,7 +44,8 @@
     "name": "zombie_egypt_gargantuar",
     "tags": [
       "Egypt_Pirate",
-      "Gargantuar"
+      "Gargantuar",
+      "International"
     ],
     "icon": "zombie_egypt_gargantuar.webp"
   },
@@ -49,7 +54,8 @@
     "name": "zombie_egypt_imp",
     "tags": [
       "Egypt_Pirate",
-      "Imp"
+      "Imp",
+      "International"
     ],
     "icon": "zombie_egypt_imp.webp"
   },
@@ -59,7 +65,8 @@
     "tags": [
       "Egypt_Pirate",
       "Evildave",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_explorer.webp"
   },
@@ -68,7 +75,8 @@
     "name": "zombie_ra",
     "tags": [
       "Egypt_Pirate",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_ra.webp"
   },
@@ -77,7 +85,8 @@
     "name": "zombie_tomb_raiser",
     "tags": [
       "Egypt_Pirate",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_tomb_raiser.webp"
   },
@@ -86,7 +95,8 @@
     "name": "zombie_camel_onehump",
     "tags": [
       "Egypt_Pirate",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_camel_onehump.webp"
   },
@@ -96,7 +106,8 @@
     "tags": [
       "Egypt_Pirate",
       "Evildave",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_camel_onehump.webp"
   },
@@ -105,7 +116,8 @@
     "name": "zombie_camel_manyhump",
     "tags": [
       "Egypt_Pirate",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_camel_onehump.webp"
   },
@@ -114,7 +126,8 @@
     "name": "zombie_pharaoh",
     "tags": [
       "Egypt_Pirate",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_pharaoh.webp"
   },
@@ -124,7 +137,8 @@
     "tags": [
       "Egypt_Pirate",
       "Universe",
-      "Fat"
+      "Fat",
+      "International"
     ],
     "icon": "zombie_treasureyeti_egypt.gif"
   },
@@ -133,7 +147,8 @@
     "name": "zombie_pirate",
     "tags": [
       "Egypt_Pirate",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_pirate.webp"
   },
@@ -142,7 +157,8 @@
     "name": "zombie_pirate_armor1",
     "tags": [
       "Egypt_Pirate",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_pirate._armor1.webp"
   },
@@ -151,7 +167,8 @@
     "name": "zombie_pirate_armor2",
     "tags": [
       "Egypt_Pirate",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_pirate._armor2.webp"
   },
@@ -160,7 +177,8 @@
     "name": "zombie_pirate_flag",
     "tags": [
       "Egypt_Pirate",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_pirate_flag.webp"
   },
@@ -169,7 +187,8 @@
     "name": "zombie_pirate_gargantuar",
     "tags": [
       "Egypt_Pirate",
-      "Gargantuar"
+      "Gargantuar",
+      "International"
     ],
     "icon": "zombie_pirate_gargantuar.webp"
   },
@@ -178,7 +197,8 @@
     "name": "zombie_pirate_imp",
     "tags": [
       "Egypt_Pirate",
-      "Imp"
+      "Imp",
+      "International"
     ],
     "icon": "zombie_pirate_imp.webp"
   },
@@ -188,7 +208,8 @@
     "tags": [
       "Egypt_Pirate",
       "Evildave",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_swashbuckler.webp"
   },
@@ -197,7 +218,8 @@
     "name": "zombie_seagull",
     "tags": [
       "Egypt_Pirate",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_seagull.webp"
   },
@@ -207,7 +229,8 @@
     "tags": [
       "Egypt_Pirate",
       "Evildave",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_barrelroller.webp"
   },
@@ -217,7 +240,8 @@
     "tags": [
       "Egypt_Pirate",
       "Evildave",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_pirate_captain.webp"
   },
@@ -226,7 +250,8 @@
     "name": "zombie_pirate_captain_parrot",
     "tags": [
       "Egypt_Pirate",
-      "Pet"
+      "Pet",
+      "International"
     ],
     "icon": "zombie_pirate_captain_parrot.webp"
   },
@@ -236,7 +261,8 @@
     "tags": [
       "Egypt_Pirate",
       "Evildave",
-      "Imp"
+      "Imp",
+      "International"
     ],
     "icon": "zombie_cannon.webp"
   },
@@ -246,7 +272,8 @@
     "tags": [
       "West_Future",
       "Evildave",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_cowboy.webp"
   },
@@ -256,7 +283,8 @@
     "tags": [
       "West_Future",
       "Evildave",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_cowboy_armor1.webp"
   },
@@ -266,7 +294,8 @@
     "tags": [
       "West_Future",
       "Evildave",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_cowboy_armor2.webp"
   },
@@ -275,7 +304,8 @@
     "name": "zombie_cowboy_flag",
     "tags": [
       "West_Future",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_cowboy_flag.webp"
   },
@@ -284,7 +314,8 @@
     "name": "zombie_cowboy_gargantuar",
     "tags": [
       "West_Future",
-      "Gargantuar"
+      "Gargantuar",
+      "International"
     ],
     "icon": "zombie_cowboy_gargantuar.webp"
   },
@@ -293,7 +324,8 @@
     "name": "zombie_west_bull",
     "tags": [
       "West_Future",
-      "Pet"
+      "Pet",
+      "International"
     ],
     "icon": "zombie_west_bull.webp"
   },
@@ -302,7 +334,8 @@
     "name": "zombie_west_bullrider",
     "tags": [
       "West_Future",
-      "Imp"
+      "Imp",
+      "International"
     ],
     "icon": "zombie_west_bullrider.webp"
   },
@@ -312,7 +345,8 @@
     "tags": [
       "West_Future",
       "Evildave",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_prospector.webp"
   },
@@ -321,7 +355,8 @@
     "name": "zombie_chicken",
     "tags": [
       "West_Future",
-      "Pet"
+      "Pet",
+      "International"
     ],
     "icon": "zombie_chicken.webp"
   },
@@ -332,7 +367,8 @@
       "West_Future",
       "Evildave",
       "Basic",
-      "Pet"
+      "Pet",
+      "International"
     ],
     "icon": "zombie_chicken_farmer.webp"
   },
@@ -342,7 +378,8 @@
     "tags": [
       "West_Future",
       "Evildave",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_piano.webp"
   },
@@ -351,7 +388,8 @@
     "name": "zombie_poncho",
     "tags": [
       "West_Future",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_poncho.webp"
   },
@@ -360,7 +398,8 @@
     "name": "zombie_poncho_plate",
     "tags": [
       "West_Future",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_poncho.webp"
   },
@@ -369,7 +408,8 @@
     "name": "zombie_poncho_no_plate",
     "tags": [
       "West_Future",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_poncho.webp"
   },
@@ -379,7 +419,8 @@
     "tags": [
       "Kongfu_Skycity",
       "Evildave",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_kongfu_basic.webp"
   },
@@ -388,7 +429,8 @@
     "name": "zombie_kongfu_basic_armor1",
     "tags": [
       "Kongfu_Skycity",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_kongfu_basic_armor1.webp"
   },
@@ -397,7 +439,8 @@
     "name": "zombie_kongfu_basic_armor2",
     "tags": [
       "Kongfu_Skycity",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_kongfu_basic_armor2.webp"
   },
@@ -407,7 +450,8 @@
     "tags": [
       "Kongfu_Skycity",
       "Evildave",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_kongfu_basic_armor3.webp"
   },
@@ -416,7 +460,8 @@
     "name": "zombie_kongfu_flag",
     "tags": [
       "Kongfu_Skycity",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_kongfu_flag.webp"
   },
@@ -425,7 +470,8 @@
     "name": "zombie_kongfu_hammer",
     "tags": [
       "Kongfu_Skycity",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_kongfu_hammer.webp"
   },
@@ -435,7 +481,8 @@
     "tags": [
       "Kongfu_Skycity",
       "Evildave",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_kongfu_selfexplode.webp"
   },
@@ -444,7 +491,8 @@
     "name": "zombie_kongfu_torch",
     "tags": [
       "Kongfu_Skycity",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_kongfu_torch.webp"
   },
@@ -453,7 +501,8 @@
     "name": "zombie_kongfu_gong",
     "tags": [
       "Kongfu_Skycity",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_kongfu_gong.webp"
   },
@@ -462,7 +511,8 @@
     "name": "zombie_kongfu_drink",
     "tags": [
       "Kongfu_Skycity",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_kongfu_drink.webp"
   },
@@ -472,7 +522,8 @@
     "tags": [
       "Kongfu_Skycity",
       "Evildave",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_kongfu_qigong.webp"
   },
@@ -481,7 +532,8 @@
     "name": "zombie_kongfu_rocket",
     "tags": [
       "Kongfu_Skycity",
-      "Imp"
+      "Imp",
+      "Chinese"
     ],
     "icon": "zombie_kongfu_rocket.webp"
   },
@@ -490,7 +542,8 @@
     "name": "zombie_kongfu_monk_basic",
     "tags": [
       "Kongfu_Skycity",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_kongfu_monk_basic.webp"
   },
@@ -499,7 +552,8 @@
     "name": "zombie_kongfu_monk_cone",
     "tags": [
       "Kongfu_Skycity",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_kongfu_monk_cone.webp"
   },
@@ -508,7 +562,8 @@
     "name": "zombie_kongfu_monk_bucket",
     "tags": [
       "Kongfu_Skycity",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_kongfu_monk_bucket.webp"
   },
@@ -517,7 +572,8 @@
     "name": "zombie_kongfu_monk_flag",
     "tags": [
       "Kongfu_Skycity",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_kongfu_monk_flag.webp"
   },
@@ -526,7 +582,8 @@
     "name": "zombie_kongfu_monk_imp",
     "tags": [
       "Kongfu_Skycity",
-      "Imp"
+      "Imp",
+      "Chinese"
     ],
     "icon": "zombie_kongfu_monk_imp.webp"
   },
@@ -535,7 +592,8 @@
     "name": "zombie_kongfu_monk_torch",
     "tags": [
       "Kongfu_Skycity",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_kongfu_monk_torch.webp"
   },
@@ -544,7 +602,8 @@
     "name": "zombie_kongfu_monk_blade",
     "tags": [
       "Kongfu_Skycity",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_kongfu_monk_blade.webp"
   },
@@ -554,7 +613,8 @@
     "tags": [
       "Kongfu_Skycity",
       "Evildave",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_kongfu_monk_drink.webp"
   },
@@ -564,7 +624,8 @@
     "tags": [
       "Kongfu_Skycity",
       "Evildave",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_kongfu_monk_nunchaku.webp"
   },
@@ -574,7 +635,8 @@
     "tags": [
       "Kongfu_Skycity",
       "Evildave",
-      "Gargantuar"
+      "Gargantuar",
+      "Chinese"
     ],
     "icon": "zombie_kongfu_strong_bronze.webp"
   },
@@ -583,7 +645,8 @@
     "name": "zombie_kongfu_magic_bronze",
     "tags": [
       "Kongfu_Skycity",
-      "Gargantuar"
+      "Gargantuar",
+      "Chinese"
     ],
     "icon": "zombie_kongfu_magic_bronze.webp"
   },
@@ -592,7 +655,8 @@
     "name": "zombie_kongfu_agile_bronze",
     "tags": [
       "Kongfu_Skycity",
-      "Gargantuar"
+      "Gargantuar",
+      "Chinese"
     ],
     "icon": "zombie_kongfu_agile_bronze.webp"
   },
@@ -602,7 +666,8 @@
     "tags": [
       "West_Future",
       "Evildave",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_future.webp"
   },
@@ -612,7 +677,8 @@
     "tags": [
       "West_Future",
       "Evildave",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_future_armor1.webp"
   },
@@ -622,7 +688,8 @@
     "tags": [
       "West_Future",
       "Evildave",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_future_armor2.webp"
   },
@@ -631,7 +698,8 @@
     "name": "zombie_future_flag",
     "tags": [
       "West_Future",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_future_flag.webp"
   },
@@ -641,7 +709,8 @@
     "tags": [
       "West_Future",
       "Evildave",
-      "Gargantuar"
+      "Gargantuar",
+      "International"
     ],
     "icon": "zombie_future_gargantuar.webp"
   },
@@ -650,7 +719,8 @@
     "name": "zombie_future_imp",
     "tags": [
       "West_Future",
-      "Imp"
+      "Imp",
+      "International"
     ],
     "icon": "zombie_future_imp.webp"
   },
@@ -660,7 +730,8 @@
     "tags": [
       "West_Future",
       "Evildave",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_future_jetpack.webp"
   },
@@ -670,7 +741,8 @@
     "tags": [
       "Tale_ZCorp",
       "West_Future",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_future_jetpack_veteran.webp"
   },
@@ -680,7 +752,8 @@
     "tags": [
       "West_Future",
       "Evildave",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_future_protector.webp"
   },
@@ -690,7 +763,8 @@
     "tags": [
       "West_Future",
       "Memory",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_wave_elecshieldgenerator.webp"
   },
@@ -699,7 +773,8 @@
     "name": "zombie_mech_cone",
     "tags": [
       "West_Future",
-      "Evildave"
+      "Evildave",
+      "International"
     ],
     "icon": "zombie_mech_cone.webp"
   },
@@ -708,7 +783,8 @@
     "name": "zombie_football_mech",
     "tags": [
       "West_Future",
-      "Evildave"
+      "Evildave",
+      "International"
     ],
     "icon": "zombie_football_mech.webp"
   },
@@ -717,7 +793,8 @@
     "name": "zombie_disco_mech",
     "tags": [
       "West_Future",
-      "Evildave"
+      "Evildave",
+      "International"
     ],
     "icon": "zombie_disco_mech.webp"
   },
@@ -727,7 +804,8 @@
     "tags": [
       "West_Future",
       "Evildave",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_future_jetpack_disco.webp"
   },
@@ -736,7 +814,8 @@
     "name": "zombie_dark",
     "tags": [
       "Dark_Beach",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_dark.webp"
   },
@@ -745,7 +824,8 @@
     "name": "zombie_dark_armor1",
     "tags": [
       "Dark_Beach",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_dark_armor1.webp"
   },
@@ -754,7 +834,8 @@
     "name": "zombie_dark_armor2",
     "tags": [
       "Dark_Beach",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_dark_armor2.webp"
   },
@@ -764,7 +845,8 @@
     "tags": [
       "Dark_Beach",
       "Evildave",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_dark_armor3.webp"
   },
@@ -773,7 +855,8 @@
     "name": "zombie_dark_flag",
     "tags": [
       "Dark_Beach",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_dark_flag.webp"
   },
@@ -782,7 +865,8 @@
     "name": "zombie_dark_imp",
     "tags": [
       "Dark_Beach",
-      "Imp"
+      "Imp",
+      "International"
     ],
     "icon": "zombie_dark_imp.webp"
   },
@@ -791,7 +875,8 @@
     "name": "zombie_dark_gargantuar",
     "tags": [
       "Dark_Beach",
-      "Gargantuar"
+      "Gargantuar",
+      "International"
     ],
     "icon": "zombie_dark_gargantuar.webp"
   },
@@ -801,7 +886,8 @@
     "tags": [
       "Dark_Beach",
       "Evildave",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_dark_juggler.webp"
   },
@@ -811,7 +897,8 @@
     "tags": [
       "Dark_Beach",
       "Evildave",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_dark_rogue.webp"
   },
@@ -821,7 +908,8 @@
     "tags": [
       "Dark_Beach",
       "Basic",
-      "Custom"
+      "Custom",
+      "International"
     ],
     "icon": "zombie_dark_rogue.webp"
   },
@@ -830,7 +918,8 @@
     "name": "zombie_dark_cavalry",
     "tags": [
       "Dark_Beach",
-      "Pet"
+      "Pet",
+      "International"
     ],
     "icon": "zombie_dark_cavalry.webp"
   },
@@ -839,7 +928,8 @@
     "name": "zombie_dark_cavalry_rider",
     "tags": [
       "Dark_Beach",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_dark_armor3.webp"
   },
@@ -848,7 +938,8 @@
     "name": "zombie_dark_king",
     "tags": [
       "Dark_Beach",
-      "Fat"
+      "Fat",
+      "International"
     ],
     "icon": "zombie_dark_king.webp"
   },
@@ -858,7 +949,8 @@
     "tags": [
       "Dark_Beach",
       "Evildave",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_dark_wizard.webp"
   },
@@ -869,7 +961,8 @@
       "Dark_Beach",
       "Evildave",
       "Imp",
-      "Pet"
+      "Pet",
+      "International"
     ],
     "icon": "zombie_dark_imp_dragon.webp"
   },
@@ -878,7 +971,8 @@
     "name": "zombie_dark_archmage",
     "tags": [
       "Dark_Beach",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_dark_archmage.webp"
   },
@@ -888,7 +982,8 @@
     "tags": [
       "Dark_Beach",
       "Elite",
-      "Fat"
+      "Fat",
+      "International"
     ],
     "icon": "zombie_dark_king_elite.webp"
   },
@@ -898,7 +993,8 @@
     "tags": [
       "Dark_Beach",
       "Elite",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_dark_wizard_elite.webp"
   },
@@ -907,7 +1003,8 @@
     "name": "zombie_zombie_towerdefend_wolf_imp",
     "tags": [
       "Dark_Beach",
-      "Imp"
+      "Imp",
+      "International"
     ],
     "icon": "zombie_towerdefend_wolf_imp.webp"
   },
@@ -916,7 +1013,8 @@
     "name": "zombie_zombie_towerdefend_wolf_fire",
     "tags": [
       "Dark_Beach",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_towerdefend_wolf_fire.webp"
   },
@@ -925,7 +1023,8 @@
     "name": "zombie_zombie_towerdefend_boss",
     "tags": [
       "Dark_Beach",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_towerdefend_boss.webp"
   },
@@ -934,7 +1033,8 @@
     "name": "zombie_beach",
     "tags": [
       "Dark_Beach",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_beach.webp"
   },
@@ -943,7 +1043,8 @@
     "name": "zombie_beach_armor1",
     "tags": [
       "Dark_Beach",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_beach_armor1.webp"
   },
@@ -952,7 +1053,8 @@
     "name": "zombie_beach_armor2",
     "tags": [
       "Dark_Beach",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_beach_armor2.webp"
   },
@@ -961,7 +1063,8 @@
     "name": "zombie_beach_fem",
     "tags": [
       "Dark_Beach",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_beach_fem.webp"
   },
@@ -970,7 +1073,8 @@
     "name": "zombie_beach_fem_armor1",
     "tags": [
       "Dark_Beach",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_beach_fem_armor1.webp"
   },
@@ -979,7 +1083,8 @@
     "name": "zombie_beach_fem_armor2",
     "tags": [
       "Dark_Beach",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_beach_fem_armor2.webp"
   },
@@ -988,7 +1093,8 @@
     "name": "zombie_beach_flag",
     "tags": [
       "Dark_Beach",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_beach_flag.webp"
   },
@@ -997,7 +1103,8 @@
     "name": "zombie_beach_gargantuar",
     "tags": [
       "Dark_Beach",
-      "Gargantuar"
+      "Gargantuar",
+      "International"
     ],
     "icon": "zombie_beach_gargantuar.webp"
   },
@@ -1006,7 +1113,8 @@
     "name": "zombie_beach_imp",
     "tags": [
       "Dark_Beach",
-      "Imp"
+      "Imp",
+      "International"
     ],
     "icon": "zombie_beach_imp.webp"
   },
@@ -1016,7 +1124,8 @@
     "tags": [
       "Dark_Beach",
       "Pet",
-      "Strong"
+      "Strong",
+      "International"
     ],
     "icon": "zombie_beach_octopus.webp"
   },
@@ -1026,7 +1135,8 @@
     "tags": [
       "Dark_Beach",
       "Evildave",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_beach_fisherman.webp"
   },
@@ -1036,7 +1146,8 @@
     "tags": [
       "Dark_Beach",
       "Evildave",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_beach_surfer.webp"
   },
@@ -1046,7 +1157,8 @@
     "tags": [
       "Dark_Beach",
       "Evildave",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_beach_snorkel.webp"
   },
@@ -1056,7 +1168,8 @@
     "tags": [
       "Dark_Beach",
       "Evildave",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_beach_shell.webp"
   },
@@ -1066,7 +1179,8 @@
     "tags": [
       "Dark_Beach",
       "Universe",
-      "Imp"
+      "Imp",
+      "International"
     ],
     "icon": "zombie_beach_imp_quiff.webp"
   },
@@ -1075,7 +1189,8 @@
     "name": "zombie_iceage",
     "tags": [
       "Iceage_Lostcity",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_iceage.webp"
   },
@@ -1084,7 +1199,8 @@
     "name": "zombie_iceage_armor1",
     "tags": [
       "Iceage_Lostcity",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_iceage_armor1.webp"
   },
@@ -1093,7 +1209,8 @@
     "name": "zombie_iceage_armor2",
     "tags": [
       "Iceage_Lostcity",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_iceage_armor2.webp"
   },
@@ -1103,7 +1220,8 @@
     "tags": [
       "Iceage_Lostcity",
       "Evildave",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_iceage_armor3.webp"
   },
@@ -1112,7 +1230,8 @@
     "name": "zombie_iceage_flag",
     "tags": [
       "Iceage_Lostcity",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_iceage_flag.webp"
   },
@@ -1121,7 +1240,8 @@
     "name": "zombie_iceage_gargantuar",
     "tags": [
       "Iceage_Lostcity",
-      "Gargantuar"
+      "Gargantuar",
+      "International"
     ],
     "icon": "zombie_iceage_gargantuar.webp"
   },
@@ -1130,7 +1250,8 @@
     "name": "zombie_iceage_imp",
     "tags": [
       "Iceage_Lostcity",
-      "Imp"
+      "Imp",
+      "International"
     ],
     "icon": "zombie_iceage_imp.webp"
   },
@@ -1139,7 +1260,8 @@
     "name": "zombie_iceage_troglobite",
     "tags": [
       "Iceage_Lostcity",
-      "Strong"
+      "Strong",
+      "International"
     ],
     "icon": "zombie_iceage_troglobite.webp"
   },
@@ -1149,7 +1271,8 @@
     "tags": [
       "Iceage_Lostcity",
       "Evildave",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_iceage_hunter.webp"
   },
@@ -1159,7 +1282,8 @@
     "tags": [
       "Iceage_Lostcity",
       "Evildave",
-      "Pet"
+      "Pet",
+      "International"
     ],
     "icon": "zombie_iceage_walrus.webp"
   },
@@ -1169,7 +1293,8 @@
     "tags": [
       "Iceage_Lostcity",
       "Evildave",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_iceage_ski.webp"
   },
@@ -1178,7 +1303,8 @@
     "name": "zombie_iceage_chief",
     "tags": [
       "Iceage_Lostcity",
-      "Strong"
+      "Strong",
+      "International"
     ],
     "icon": "zombie_iceage_chief.webp"
   },
@@ -1188,7 +1314,8 @@
     "tags": [
       "Iceage_Lostcity",
       "Evildave",
-      "Pet"
+      "Pet",
+      "International"
     ],
     "icon": "zombie_iceage_weasel.webp"
   },
@@ -1198,7 +1325,8 @@
     "tags": [
       "Iceage_Lostcity",
       "Pet",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_iceage_weaselhoarder.webp"
   },
@@ -1208,7 +1336,8 @@
     "tags": [
       "Iceage_Lostcity",
       "Evildave",
-      "Pet"
+      "Pet",
+      "International"
     ],
     "icon": "zombie_iceage_dodo.webp"
   },
@@ -1217,7 +1346,8 @@
     "name": "zombie_iceage_armor3_elite",
     "tags": [
       "Iceage_Lostcity",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_iceage_armor3_elite.webp"
   },
@@ -1227,7 +1357,8 @@
     "tags": [
       "Iceage_Lostcity",
       "Elite",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_iceage_hunter_elite.webp"
   },
@@ -1237,7 +1368,8 @@
     "tags": [
       "Iceage_Lostcity",
       "Elite",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_iceage_hunter_elite.webp"
   },
@@ -1247,7 +1379,8 @@
     "tags": [
       "Iceage_Lostcity",
       "Elite",
-      "Pet"
+      "Pet",
+      "International"
     ],
     "icon": "zombie_iceage_weasel_elite.webp"
   },
@@ -1258,7 +1391,8 @@
       "Iceage_Lostcity",
       "Elite",
       "Pet",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_iceage_weaselhoarder_elite.webp"
   },
@@ -1269,7 +1403,8 @@
       "Iceage_Lostcity",
       "Elite",
       "Pet",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_iceage_weaselhoarder_elite.webp"
   },
@@ -1279,7 +1414,8 @@
     "tags": [
       "Iceage_Lostcity",
       "Elite",
-      "Strong"
+      "Strong",
+      "International"
     ],
     "icon": "zombie_iceage_chief_elite.webp"
   },
@@ -1289,7 +1425,8 @@
     "tags": [
       "Iceage_Lostcity",
       "Elite",
-      "Strong"
+      "Strong",
+      "International"
     ],
     "icon": "zombie_iceage_chief_elite.webp"
   },
@@ -1300,7 +1437,8 @@
       "Iceage_Lostcity",
       "Elite",
       "Strong",
-      "Custom"
+      "Custom",
+      "International"
     ],
     "icon": "zombie_iceage_chief_elite.webp"
   },
@@ -1309,7 +1447,8 @@
     "name": "zombie_skycity",
     "tags": [
       "Kongfu_Skycity",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_skycity.webp"
   },
@@ -1318,7 +1457,8 @@
     "name": "zombie_skycity_armor1",
     "tags": [
       "Kongfu_Skycity",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_skycity_armor1.webp"
   },
@@ -1327,7 +1467,8 @@
     "name": "zombie_skycity_armor2",
     "tags": [
       "Kongfu_Skycity",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_skycity_armor2.webp"
   },
@@ -1336,7 +1477,8 @@
     "name": "zombie_skycity_armor3",
     "tags": [
       "Kongfu_Skycity",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_skycity_armor2.webp"
   },
@@ -1345,7 +1487,8 @@
     "name": "zombie_skycity_flag",
     "tags": [
       "Kongfu_Skycity",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_skycity_flag.webp"
   },
@@ -1354,7 +1497,8 @@
     "name": "zombie_skycity_gargantuar",
     "tags": [
       "Kongfu_Skycity",
-      "Gargantuar"
+      "Gargantuar",
+      "Chinese"
     ],
     "icon": "zombie_skycity_gargantuar.webp"
   },
@@ -1363,7 +1507,8 @@
     "name": "zombie_skycity_ggtimp",
     "tags": [
       "Kongfu_Skycity",
-      "Imp"
+      "Imp",
+      "Chinese"
     ],
     "icon": "zombie_skycity_ggtimp.webp"
   },
@@ -1372,7 +1517,8 @@
     "name": "zombie_skycity_electric",
     "tags": [
       "Kongfu_Skycity",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_skycity_electric.webp"
   },
@@ -1383,7 +1529,8 @@
       "Kongfu_Skycity",
       "Memory",
       "Basic",
-      "Elite"
+      "Elite",
+      "Chinese"
     ],
     "icon": "zombie_elite_skycity_electric.webp"
   },
@@ -1395,7 +1542,8 @@
       "Memory",
       "Basic",
       "Elite",
-      "Custom"
+      "Custom",
+      "Chinese"
     ],
     "icon": "zombie_elite_skycity_electric.webp"
   },
@@ -1407,7 +1555,8 @@
       "Memory",
       "Basic",
       "Elite",
-      "Custom"
+      "Custom",
+      "Chinese"
     ],
     "icon": "zombie_elite_skycity_electric.webp"
   },
@@ -1416,7 +1565,8 @@
     "name": "zombie_skycity_battleplane",
     "tags": [
       "Kongfu_Skycity",
-      "Imp"
+      "Imp",
+      "Chinese"
     ],
     "icon": "zombie_skycity_battleplane.webp"
   },
@@ -1424,7 +1574,8 @@
     "id": "skycity_twinsplane",
     "name": "zombie_skycity_twinsplane",
     "tags": [
-      "Kongfu_Skycity"
+      "Kongfu_Skycity",
+      "Chinese"
     ],
     "icon": "zombie_skycity_twinsplane.webp"
   },
@@ -1432,7 +1583,8 @@
     "id": "invisible_plane",
     "name": "zombie_invisible_plane",
     "tags": [
-      "Kongfu_Skycity"
+      "Kongfu_Skycity",
+      "Chinese"
     ],
     "icon": "zombie_invisible_plane.webp"
   },
@@ -1441,7 +1593,8 @@
     "name": "zombie_air_missile_launcher",
     "tags": [
       "Kongfu_Skycity",
-      "Imp"
+      "Imp",
+      "Chinese"
     ],
     "icon": "zombie_air_missile_launcher.webp"
   },
@@ -1450,7 +1603,8 @@
     "name": "zombie_skycity_protector",
     "tags": [
       "Kongfu_Skycity",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_skycity_protector.webp"
   },
@@ -1459,7 +1613,8 @@
     "name": "zombie_lostcity",
     "tags": [
       "Iceage_Lostcity",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_lostcity.webp"
   },
@@ -1468,7 +1623,8 @@
     "name": "zombie_lostcity_armor1",
     "tags": [
       "Iceage_Lostcity",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_lostcity_armor1.webp"
   },
@@ -1477,7 +1633,8 @@
     "name": "zombie_lostcity_armor2",
     "tags": [
       "Iceage_Lostcity",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_lostcity_armor2.webp"
   },
@@ -1487,7 +1644,8 @@
     "tags": [
       "Iceage_Lostcity",
       "Evildave",
-      "Pet"
+      "Pet",
+      "International"
     ],
     "icon": "zombie_lostcity_bug.webp"
   },
@@ -1496,7 +1654,8 @@
     "name": "zombie_lostcity_bug_armor1",
     "tags": [
       "Iceage_Lostcity",
-      "Pet"
+      "Pet",
+      "International"
     ],
     "icon": "zombie_lostcity_bug.webp"
   },
@@ -1505,7 +1664,8 @@
     "name": "zombie_lostcity_bug_armor2",
     "tags": [
       "Iceage_Lostcity",
-      "Pet"
+      "Pet",
+      "International"
     ],
     "icon": "zombie_lostcity_bug.webp"
   },
@@ -1514,7 +1674,8 @@
     "name": "zombie_lostcity_flag",
     "tags": [
       "Iceage_Lostcity",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_lostcity_flag.webp"
   },
@@ -1523,7 +1684,8 @@
     "name": "zombie_lostcity_gargantuar",
     "tags": [
       "Iceage_Lostcity",
-      "Gargantuar"
+      "Gargantuar",
+      "International"
     ],
     "icon": "zombie_lostcity_gargantuar.webp"
   },
@@ -1532,7 +1694,8 @@
     "name": "zombie_lostcity_imp",
     "tags": [
       "Iceage_Lostcity",
-      "Imp"
+      "Imp",
+      "International"
     ],
     "icon": "zombie_lostcity_imp.webp"
   },
@@ -1542,7 +1705,8 @@
     "tags": [
       "Iceage_Lostcity",
       "Evildave",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_lostcity_jane.webp"
   },
@@ -1552,7 +1716,8 @@
     "tags": [
       "Iceage_Lostcity",
       "Evildave",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_lostcity_excavator.webp"
   },
@@ -1561,7 +1726,8 @@
     "name": "zombie_lostcity_impporter",
     "tags": [
       "Iceage_Lostcity",
-      "Imp"
+      "Imp",
+      "International"
     ],
     "icon": "zombie_lostcity_impporter.webp"
   },
@@ -1570,7 +1736,8 @@
     "name": "zombie_lostcity_lostpilot",
     "tags": [
       "Iceage_Lostcity",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_lostcity_lostpilot.webp"
   },
@@ -1579,7 +1746,8 @@
     "name": "zombie_lostcity_relichunter",
     "tags": [
       "Iceage_Lostcity",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_lostcity_relichunter.webp"
   },
@@ -1589,7 +1757,8 @@
     "tags": [
       "Iceage_Lostcity",
       "Evildave",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_lostcity_crystalskull.webp"
   },
@@ -1598,7 +1767,8 @@
     "name": "zombie_lostcity_doctor",
     "tags": [
       "Iceage_Lostcity",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_lostcity_doctor.webp"
   },
@@ -1608,7 +1778,8 @@
     "tags": [
       "Iceage_Lostcity",
       "Evildave",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_lostcity_guide.webp"
   },
@@ -1617,7 +1788,8 @@
     "name": "zombie_eighties",
     "tags": [
       "Eighties_Dino",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_eighties.webp"
   },
@@ -1626,7 +1798,8 @@
     "name": "zombie_eighties_armor1",
     "tags": [
       "Eighties_Dino",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_eighties_armor1.webp"
   },
@@ -1635,7 +1808,8 @@
     "name": "zombie_eighties_armor2",
     "tags": [
       "Eighties_Dino",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_eighties_armor2.webp"
   },
@@ -1644,7 +1818,8 @@
     "name": "zombie_eighties_flag",
     "tags": [
       "Eighties_Dino",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_eighties_flag.webp"
   },
@@ -1654,7 +1829,8 @@
     "tags": [
       "Eighties_Dino",
       "Evildave",
-      "Gargantuar"
+      "Gargantuar",
+      "Chinese"
     ],
     "icon": "zombie_eighties_gargantuar.webp"
   },
@@ -1663,7 +1839,8 @@
     "name": "zombie_eighties_imp",
     "tags": [
       "Eighties_Dino",
-      "Imp"
+      "Imp",
+      "Chinese"
     ],
     "icon": "zombie_eighties_imp.webp"
   },
@@ -1673,7 +1850,8 @@
     "tags": [
       "Eighties_Dino",
       "Evildave",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_eighties_punk.webp"
   },
@@ -1683,7 +1861,8 @@
     "tags": [
       "Eighties_Dino",
       "Evildave",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_eighties_mc.webp"
   },
@@ -1692,7 +1871,8 @@
     "name": "zombie_eighties_glitter",
     "tags": [
       "Eighties_Dino",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_eighties_glitter.webp"
   },
@@ -1701,7 +1881,8 @@
     "name": "zombie_eighties_arcade",
     "tags": [
       "Eighties_Dino",
-      "Strong"
+      "Strong",
+      "Chinese"
     ],
     "icon": "zombie_eighties_arcade.webp"
   },
@@ -1710,7 +1891,8 @@
     "name": "zombie_eighties_8bit",
     "tags": [
       "Eighties_Dino",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_eighties_8bit.webp"
   },
@@ -1719,7 +1901,8 @@
     "name": "zombie_eighties_8bit_armor1",
     "tags": [
       "Eighties_Dino",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_eighties_8bit.webp"
   },
@@ -1728,7 +1911,8 @@
     "name": "zombie_eighties_8bit_armor2",
     "tags": [
       "Eighties_Dino",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_eighties_8bit.webp"
   },
@@ -1738,7 +1922,8 @@
     "tags": [
       "Eighties_Dino",
       "Evildave",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_eighties_breakdancer.webp"
   },
@@ -1747,7 +1932,8 @@
     "name": "zombie_eighties_bass",
     "tags": [
       "Eighties_Dino",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_eighties_bass.webp"
   },
@@ -1757,7 +1943,8 @@
     "tags": [
       "Eighties_Dino",
       "Evildave",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_eighties_boombox.webp"
   },
@@ -1766,7 +1953,8 @@
     "name": "zombie_dino",
     "tags": [
       "Eighties_Dino",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_dino.webp"
   },
@@ -1775,7 +1963,8 @@
     "name": "zombie_dino_armor1",
     "tags": [
       "Eighties_Dino",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_dino_armor1.webp"
   },
@@ -1784,7 +1973,8 @@
     "name": "zombie_dino_armor2",
     "tags": [
       "Eighties_Dino",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_dino_armor2.webp"
   },
@@ -1793,7 +1983,8 @@
     "name": "zombie_dino_armor3",
     "tags": [
       "Eighties_Dino",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_dino_armor3.webp"
   },
@@ -1802,7 +1993,8 @@
     "name": "zombie_dino_flag",
     "tags": [
       "Eighties_Dino",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_dino_flag.webp"
   },
@@ -1811,7 +2003,8 @@
     "name": "zombie_dino_gargantuar",
     "tags": [
       "Eighties_Dino",
-      "Gargantuar"
+      "Gargantuar",
+      "Chinese"
     ],
     "icon": "zombie_dino_gargantuar.webp"
   },
@@ -1821,7 +2014,8 @@
     "tags": [
       "Eighties_Dino",
       "Evildave",
-      "Imp"
+      "Imp",
+      "Chinese"
     ],
     "icon": "zombie_dino_imp.webp"
   },
@@ -1830,7 +2024,8 @@
     "name": "zombie_dino_bully",
     "tags": [
       "Eighties_Dino",
-      "Strong"
+      "Strong",
+      "Chinese"
     ],
     "icon": "zombie_dino_bully.webp"
   },
@@ -1839,7 +2034,8 @@
     "name": "zombie_dino_pushegg",
     "tags": [
       "Eighties_Dino",
-      "Imp"
+      "Imp",
+      "Chinese"
     ],
     "icon": "zombie_dino_pushegg.webp"
   },
@@ -1848,7 +2044,8 @@
     "name": "zombie_dino_pushptero",
     "tags": [
       "Eighties_Dino",
-      "Imp"
+      "Imp",
+      "Chinese"
     ],
     "icon": "zombie_dino_pushegg.webp"
   },
@@ -1857,7 +2054,8 @@
     "name": "zombie_dino_pushbronto",
     "tags": [
       "Eighties_Dino",
-      "Imp"
+      "Imp",
+      "Chinese"
     ],
     "icon": "zombie_dino_pushegg.webp"
   },
@@ -1866,7 +2064,8 @@
     "name": "zombie_dino_pushtyranno",
     "tags": [
       "Eighties_Dino",
-      "Imp"
+      "Imp",
+      "Chinese"
     ],
     "icon": "zombie_dino_pushegg.webp"
   },
@@ -1875,7 +2074,8 @@
     "name": "zombie_dino_pushzomshell",
     "tags": [
       "Eighties_Dino",
-      "Imp"
+      "Imp",
+      "Chinese"
     ],
     "icon": "zombie_dino_pushegg.webp"
   },
@@ -1884,7 +2084,8 @@
     "name": "zombie_dino_stealegg",
     "tags": [
       "Eighties_Dino",
-      "Imp"
+      "Imp",
+      "Chinese"
     ],
     "icon": "zombie_dino_stealegg.webp"
   },
@@ -1893,7 +2094,8 @@
     "name": "zombie_dino_stealptero",
     "tags": [
       "Eighties_Dino",
-      "Imp"
+      "Imp",
+      "Chinese"
     ],
     "icon": "zombie_dino_stealegg.webp"
   },
@@ -1902,7 +2104,8 @@
     "name": "zombie_dino_stealbronto",
     "tags": [
       "Eighties_Dino",
-      "Imp"
+      "Imp",
+      "Chinese"
     ],
     "icon": "zombie_dino_stealegg.webp"
   },
@@ -1911,7 +2114,8 @@
     "name": "zombie_dino_stealtyranno",
     "tags": [
       "Eighties_Dino",
-      "Imp"
+      "Imp",
+      "Chinese"
     ],
     "icon": "zombie_dino_stealegg.webp"
   },
@@ -1920,7 +2124,8 @@
     "name": "zombie_dino_stealzomshell",
     "tags": [
       "Eighties_Dino",
-      "Imp"
+      "Imp",
+      "Chinese"
     ],
     "icon": "zombie_dino_stealegg.webp"
   },
@@ -1929,7 +2134,8 @@
     "name": "zombie_dino_eggshell",
     "tags": [
       "Eighties_Dino",
-      "Imp"
+      "Imp",
+      "Chinese"
     ],
     "icon": "zombie_dino_eggshell.webp"
   },
@@ -1939,7 +2145,8 @@
     "tags": [
       "Modern_Pvz1",
       "Evildave",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_tutorial.webp"
   },
@@ -1949,7 +2156,8 @@
     "tags": [
       "Modern_Pvz1",
       "Evildave",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_tutorial_armor1.webp"
   },
@@ -1959,7 +2167,8 @@
     "tags": [
       "Modern_Pvz1",
       "Evildave",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_tutorial_armor2.webp"
   },
@@ -1968,7 +2177,8 @@
     "name": "zombie_tutorial_flag",
     "tags": [
       "Modern_Pvz1",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_tutorial_flag.webp"
   },
@@ -1978,7 +2188,8 @@
     "tags": [
       "Modern_Pvz1",
       "Evildave",
-      "Gargantuar"
+      "Gargantuar",
+      "International"
     ],
     "icon": "zombie_tutorial_gargantuar.webp"
   },
@@ -1988,7 +2199,8 @@
     "tags": [
       "Modern_Pvz1",
       "Gargantuar",
-      "Custom"
+      "Custom",
+      "International"
     ],
     "icon": "zombie_tutorial_gargantuar.webp"
   },
@@ -1997,7 +2209,8 @@
     "name": "zombie_vase_gargantuar",
     "tags": [
       "Modern_Pvz1",
-      "Gargantuar"
+      "Gargantuar",
+      "International"
     ],
     "icon": "zombie_vase_gargantuar.webp"
   },
@@ -2006,7 +2219,8 @@
     "name": "zombie_tutorial_imp",
     "tags": [
       "Modern_Pvz1",
-      "Imp"
+      "Imp",
+      "International"
     ],
     "icon": "zombie_tutorial_imp.webp"
   },
@@ -2016,7 +2230,8 @@
     "tags": [
       "Modern_Pvz1",
       "Evildave",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_modern_newspaper.webp"
   },
@@ -2026,7 +2241,8 @@
     "tags": [
       "Modern_Pvz1",
       "Basic",
-      "Custom"
+      "Custom",
+      "International"
     ],
     "icon": "zombie_modern_newspaper.webp"
   },
@@ -2035,7 +2251,8 @@
     "name": "zombie_beghouled_newspaper",
     "tags": [
       "Modern_Pvz1",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_modern_newspaper.webp"
   },
@@ -2044,7 +2261,8 @@
     "name": "zombie_newspaper_veteran",
     "tags": [
       "Modern_Pvz1",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_newspaper_veteran.webp"
   },
@@ -2054,7 +2272,8 @@
     "tags": [
       "Modern_Pvz1",
       "Evildave",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_modern_balloon.webp"
   },
@@ -2064,7 +2283,8 @@
     "tags": [
       "Modern_Pvz1",
       "Evildave",
-      "Strong"
+      "Strong",
+      "International"
     ],
     "icon": "zombie_modern_allstar.webp"
   },
@@ -2073,7 +2293,8 @@
     "name": "zombie_modern_superfanimp",
     "tags": [
       "Modern_Pvz1",
-      "Imp"
+      "Imp",
+      "International"
     ],
     "icon": "zombie_modern_superfanimp.webp"
   },
@@ -2082,7 +2303,8 @@
     "name": "zombie_explosion_proof",
     "tags": [
       "Modern_Pvz1",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_explosion_proof.webp"
   },
@@ -2090,7 +2312,8 @@
     "id": "modern_solar_truck",
     "name": "zombie_modern_solar_truck",
     "tags": [
-      "Modern_Pvz1"
+      "Modern_Pvz1",
+      "International"
     ],
     "icon": "zombie_modern_solar_truck.webp"
   },
@@ -2100,7 +2323,8 @@
     "tags": [
       "Modern_Pvz1",
       "Evildave",
-      "Fat"
+      "Fat",
+      "International"
     ],
     "icon": "zombie_modern_miner.webp"
   },
@@ -2110,7 +2334,8 @@
     "tags": [
       "Modern_Pvz1",
       "Memory",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_neuropathy.webp"
   },
@@ -2120,18 +2345,20 @@
     "tags": [
       "Modern_Pvz1",
       "Memory",
-      "Fat"
+      "Fat",
+      "International"
     ],
     "icon": "zombie_catapult.webp"
   },
-    {
+  {
     "id": "catapult_zomboss",
     "name": "zombie_catapult_zomboss",
     "tags": [
       "Modern_Pvz1",
       "Memory",
       "Fat",
-      "Custom"
+      "Custom",
+      "International"
     ],
     "icon": "zombie_catapult.webp"
   },
@@ -2141,7 +2368,8 @@
     "tags": [
       "Modern_Pvz1",
       "Memory",
-      "Evildave"
+      "Evildave",
+      "International"
     ],
     "icon": "zombie_pvz1_bungee.webp"
   },
@@ -2151,7 +2379,8 @@
     "tags": [
       "Modern_Pvz1",
       "Memory",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_dancer_king.webp"
   },
@@ -2161,7 +2390,8 @@
     "tags": [
       "Modern_Pvz1",
       "Memory",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_dancer.webp"
   },
@@ -2171,7 +2401,8 @@
     "tags": [
       "Modern_Pvz1",
       "Memory",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_pole_vaulting.webp"
   },
@@ -2181,7 +2412,8 @@
     "tags": [
       "Modern_Pvz1",
       "Memory",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_ladder.webp"
   },
@@ -2191,7 +2423,8 @@
     "tags": [
       "Modern_Pvz1",
       "Memory",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_bobsled_punk.webp"
   },
@@ -2201,7 +2434,8 @@
     "tags": [
       "Modern_Pvz1",
       "Memory",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_sled_punk.webp"
   },
@@ -2211,7 +2445,8 @@
     "tags": [
       "Modern_Pvz1",
       "Memory",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_sled_punk.webp"
   },
@@ -2221,7 +2456,8 @@
     "tags": [
       "Modern_Pvz1",
       "Memory",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_pogo.webp"
   },
@@ -2231,7 +2467,8 @@
     "tags": [
       "Modern_Pvz1",
       "Memory",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_ScreenDoor.webp"
   },
@@ -2242,7 +2479,8 @@
       "Modern_Pvz1",
       "Memory",
       "Dark_Beach",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_SwimmingRing.webp"
   },
@@ -2253,7 +2491,8 @@
       "Modern_Pvz1",
       "Memory",
       "Dark_Beach",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_SwimmingRingCone.webp"
   },
@@ -2264,7 +2503,8 @@
       "Modern_Pvz1",
       "Memory",
       "Dark_Beach",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_SwimmingRingBucket.webp"
   },
@@ -2276,7 +2516,8 @@
       "Memory",
       "Dark_Beach",
       "Basic",
-      "Pet"
+      "Pet",
+      "International"
     ],
     "icon": "zombie_dolphin_rider_zombie.webp"
   },
@@ -2285,7 +2526,8 @@
     "name": "zombie_yeti",
     "tags": [
       "Modern_Pvz1",
-      "Fat"
+      "Fat",
+      "International"
     ],
     "icon": "zombie_yeti.webp"
   },
@@ -2294,7 +2536,8 @@
     "name": "zombie_steam_worker",
     "tags": [
       "Steam_Renai",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_steam_worker.webp"
   },
@@ -2303,7 +2546,8 @@
     "name": "zombie_steam_armor1",
     "tags": [
       "Steam_Renai",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_steam_armor1.webp"
   },
@@ -2312,7 +2556,8 @@
     "name": "zombie_steam_armor2",
     "tags": [
       "Steam_Renai",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_steam_armor2.webp"
   },
@@ -2321,7 +2566,8 @@
     "name": "zombie_steam_flag",
     "tags": [
       "Steam_Renai",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_steam_flag.webp"
   },
@@ -2330,7 +2576,8 @@
     "name": "zombie_steam_gargantuar",
     "tags": [
       "Steam_Renai",
-      "Gargantuar"
+      "Gargantuar",
+      "Chinese"
     ],
     "icon": "zombie_steam_gargantuar.webp"
   },
@@ -2339,7 +2586,8 @@
     "name": "zombie_steam_imp",
     "tags": [
       "Steam_Renai",
-      "Imp"
+      "Imp",
+      "Chinese"
     ],
     "icon": "zombie_steam_imp.webp"
   },
@@ -2348,7 +2596,8 @@
     "name": "zombie_steam_gentleman",
     "tags": [
       "Steam_Renai",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_steam_gentleman.webp"
   },
@@ -2357,7 +2606,8 @@
     "name": "zombie_steam_stove",
     "tags": [
       "Steam_Renai",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_steam_stove.webp"
   },
@@ -2366,7 +2616,8 @@
     "name": "zombie_steam_coal_miner",
     "tags": [
       "Steam_Renai",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_steam_coal_miner.webp"
   },
@@ -2375,7 +2626,8 @@
     "name": "zombie_renai_worker",
     "tags": [
       "Steam_Renai",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_renai_worker.webp"
   },
@@ -2384,7 +2636,8 @@
     "name": "zombie_renai_armor1",
     "tags": [
       "Steam_Renai",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_renai_armor1.webp"
   },
@@ -2393,7 +2646,8 @@
     "name": "zombie_renai_armor2",
     "tags": [
       "Steam_Renai",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_renai_armor2.webp"
   },
@@ -2402,7 +2656,8 @@
     "name": "zombie_renai_flag",
     "tags": [
       "Steam_Renai",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_renai_flag.webp"
   },
@@ -2411,7 +2666,8 @@
     "name": "zombie_renai_gargantuar",
     "tags": [
       "Steam_Renai",
-      "Gargantuar"
+      "Gargantuar",
+      "Chinese"
     ],
     "icon": "zombie_renai_gargantuar.webp"
   },
@@ -2420,7 +2676,8 @@
     "name": "zombie_renai_carver",
     "tags": [
       "Steam_Renai",
-      "Imp"
+      "Imp",
+      "Chinese"
     ],
     "icon": "zombie_renai_carver.webp"
   },
@@ -2429,7 +2686,8 @@
     "name": "zombie_renai_perfumer",
     "tags": [
       "Steam_Renai",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_renai_perfumer.webp"
   },
@@ -2438,7 +2696,8 @@
     "name": "zombie_renai_gliding",
     "tags": [
       "Steam_Renai",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_renai_gliding.webp"
   },
@@ -2447,7 +2706,8 @@
     "name": "zombie_renai_ballet",
     "tags": [
       "Steam_Renai",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_renai_ballet_mid.webp"
   },
@@ -2456,7 +2716,8 @@
     "name": "zombie_renai_ballet_mid",
     "tags": [
       "Steam_Renai",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_renai_ballet_mid.webp"
   },
@@ -2465,7 +2726,8 @@
     "name": "zombie_renai_ballet_imp",
     "tags": [
       "Steam_Renai",
-      "Imp"
+      "Imp",
+      "Chinese"
     ],
     "icon": "zombie_renai_ballet_imp.webp"
   },
@@ -2475,7 +2737,8 @@
     "tags": [
       "Steam_Renai",
       "Elite",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_renai_sherlock.webp"
   },
@@ -2486,7 +2749,8 @@
       "Steam_Renai",
       "Elite",
       "Basic",
-      "Custom"
+      "Custom",
+      "Chinese"
     ],
     "icon": "zombie_renai_sherlock.webp"
   },
@@ -2496,7 +2760,8 @@
     "tags": [
       "Steam_Renai",
       "Elite",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_renai_hamlet.webp"
   },
@@ -2506,7 +2771,8 @@
     "tags": [
       "Steam_Renai",
       "Elite",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_renai_romeo.webp"
   },
@@ -2517,7 +2783,8 @@
       "Steam_Renai",
       "Elite",
       "Basic",
-      "Custom"
+      "Custom",
+      "Chinese"
     ],
     "icon": "zombie_renai_romeo.webp"
   },
@@ -2528,7 +2795,8 @@
       "Steam_Renai",
       "Elite",
       "Basic",
-      "Custom"
+      "Custom",
+      "Chinese"
     ],
     "icon": "zombie_renai_romeo.webp"
   },
@@ -2538,7 +2806,8 @@
     "tags": [
       "Steam_Renai",
       "Elite",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_renai_juliet.webp"
   },
@@ -2549,7 +2818,8 @@
       "Steam_Renai",
       "Elite",
       "Basic",
-      "Custom"
+      "Custom",
+      "Chinese"
     ],
     "icon": "zombie_renai_juliet.webp"
   },
@@ -2560,7 +2830,8 @@
       "Steam_Renai",
       "Elite",
       "Basic",
-      "Custom"
+      "Custom",
+      "Chinese"
     ],
     "icon": "zombie_renai_juliet.webp"
   },
@@ -2569,7 +2840,8 @@
     "name": "zombie_heian_worker",
     "tags": [
       "Henai_Atlantis",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_heian_worker.webp"
   },
@@ -2578,7 +2850,8 @@
     "name": "zombie_heian_armor1",
     "tags": [
       "Henai_Atlantis",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_heian_armor1.webp"
   },
@@ -2587,7 +2860,8 @@
     "name": "zombie_heian_armor2",
     "tags": [
       "Henai_Atlantis",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_heian_armor2.webp"
   },
@@ -2596,7 +2870,8 @@
     "name": "zombie_heian_flag",
     "tags": [
       "Henai_Atlantis",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_heian_flag.webp"
   },
@@ -2605,7 +2880,8 @@
     "name": "zombie_heian_gargantuar",
     "tags": [
       "Henai_Atlantis",
-      "Gargantuar"
+      "Gargantuar",
+      "Chinese"
     ],
     "icon": "zombie_heian_gargantuar.webp"
   },
@@ -2614,7 +2890,8 @@
     "name": "zombie_heian_ninja",
     "tags": [
       "Henai_Atlantis",
-      "Imp"
+      "Imp",
+      "Chinese"
     ],
     "icon": "zombie_heian_ninja.webp"
   },
@@ -2623,7 +2900,8 @@
     "name": "zombie_heian_hanabi",
     "tags": [
       "Henai_Atlantis",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_heian_hanabi.webp"
   },
@@ -2632,7 +2910,8 @@
     "name": "zombie_heian_akinndo",
     "tags": [
       "Henai_Atlantis",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_heian_akinndo.webp"
   },
@@ -2641,7 +2920,8 @@
     "name": "zombie_heian_sushi",
     "tags": [
       "Henai_Atlantis",
-      "Strong"
+      "Strong",
+      "Chinese"
     ],
     "icon": "zombie_heian_sushi.webp"
   },
@@ -2650,7 +2930,8 @@
     "name": "zombie_heian_onmyoji",
     "tags": [
       "Henai_Atlantis",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_heian_onmyoji.webp"
   },
@@ -2660,7 +2941,8 @@
     "tags": [
       "Memory",
       "Basic",
-      "Elite"
+      "Elite",
+      "Chinese"
     ],
     "icon": "zombie_elite_heian_onmyoji.webp"
   },
@@ -2671,7 +2953,8 @@
       "Memory",
       "Basic",
       "Elite",
-      "Custom"
+      "Custom",
+      "Chinese"
     ],
     "icon": "zombie_elite_heian_onmyoji.webp"
   },
@@ -2682,7 +2965,8 @@
       "Memory",
       "Basic",
       "Elite",
-      "Custom"
+      "Custom",
+      "Chinese"
     ],
     "icon": "zombie_elite_heian_onmyoji.webp"
   },
@@ -2691,7 +2975,8 @@
     "name": "zombie_atlantis_basic",
     "tags": [
       "Henai_Atlantis",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_atlantis_basic.webp"
   },
@@ -2700,7 +2985,8 @@
     "name": "zombie_atlantis_flag",
     "tags": [
       "Henai_Atlantis",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_atlantis_flag.webp"
   },
@@ -2709,7 +2995,8 @@
     "name": "zombie_atlantis_armor1",
     "tags": [
       "Henai_Atlantis",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_atlantis_armor1.webp"
   },
@@ -2718,7 +3005,8 @@
     "name": "zombie_atlantis_armor2",
     "tags": [
       "Henai_Atlantis",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_atlantis_armor2.webp"
   },
@@ -2727,7 +3015,8 @@
     "name": "zombie_atlantis_land_basic",
     "tags": [
       "Henai_Atlantis",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_atlantis_land_basic.webp"
   },
@@ -2736,7 +3025,8 @@
     "name": "zombie_atlantis_land_armor1",
     "tags": [
       "Henai_Atlantis",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_atlantis_land_armor1.webp"
   },
@@ -2745,7 +3035,8 @@
     "name": "zombie_atlantis_land_armor2",
     "tags": [
       "Henai_Atlantis",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_atlantis_land_armor2.webp"
   },
@@ -2754,7 +3045,8 @@
     "name": "zombie_atlantis_land_flag",
     "tags": [
       "Henai_Atlantis",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_atlantis_land_flag.webp"
   },
@@ -2763,7 +3055,8 @@
     "name": "zombie_atlantis_gargantuar",
     "tags": [
       "Henai_Atlantis",
-      "Gargantuar"
+      "Gargantuar",
+      "Chinese"
     ],
     "icon": "zombie_atlantis_gargantuar.webp"
   },
@@ -2772,7 +3065,8 @@
     "name": "zombie_atlantis_land_gargantuar",
     "tags": [
       "Henai_Atlantis",
-      "Gargantuar"
+      "Gargantuar",
+      "Chinese"
     ],
     "icon": "zombie_atlantis_gargantuar.webp"
   },
@@ -2781,7 +3075,8 @@
     "name": "zombie_atlantis_imp",
     "tags": [
       "Henai_Atlantis",
-      "Imp"
+      "Imp",
+      "Chinese"
     ],
     "icon": "zombie_atlantis_imp.webp"
   },
@@ -2790,7 +3085,8 @@
     "name": "zombie_fat_dive",
     "tags": [
       "Henai_Atlantis",
-      "Fat"
+      "Fat",
+      "Chinese"
     ],
     "icon": "zombie_fat_dive.webp"
   },
@@ -2800,7 +3096,8 @@
     "tags": [
       "Henai_Atlantis",
       "Basic",
-      "Pet"
+      "Pet",
+      "Chinese"
     ],
     "icon": "zombie_lanternfish_rider.webp"
   },
@@ -2809,7 +3106,8 @@
     "name": "zombie_priest",
     "tags": [
       "Henai_Atlantis",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_priest.webp"
   },
@@ -2819,7 +3117,8 @@
     "tags": [
       "Henai_Atlantis",
       "Strong",
-      "Pet"
+      "Pet",
+      "Chinese"
     ],
     "icon": "zombie_poseidon_assistant.webp"
   },
@@ -2829,7 +3128,8 @@
     "tags": [
       "Henai_Atlantis",
       "Strong",
-      "Pet"
+      "Pet",
+      "Chinese"
     ],
     "icon": "zombie_seaurchinpitcher.webp"
   },
@@ -2838,7 +3138,8 @@
     "name": "zombie_fairy_tale",
     "tags": [
       "Tale_ZCorp",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_fairy_tale.webp"
   },
@@ -2847,7 +3148,8 @@
     "name": "zombie_fairy_tale_armor1",
     "tags": [
       "Tale_ZCorp",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_fairy_tale_armor1.webp"
   },
@@ -2856,7 +3158,8 @@
     "name": "zombie_fairy_tale_armor2",
     "tags": [
       "Tale_ZCorp",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_fairy_tale_armor2.webp"
   },
@@ -2865,7 +3168,8 @@
     "name": "zombie_fairy_tale_flag",
     "tags": [
       "Tale_ZCorp",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_fairy_tale_flag.webp"
   },
@@ -2874,7 +3178,8 @@
     "name": "zombie_fairy_tale_gargantuar",
     "tags": [
       "Tale_ZCorp",
-      "Gargantuar"
+      "Gargantuar",
+      "Chinese"
     ],
     "icon": "zombie_fairy_tale_gargantuar.webp"
   },
@@ -2883,7 +3188,8 @@
     "name": "zombie_fairy_tale_armed_gargantuar",
     "tags": [
       "Tale_ZCorp",
-      "Gargantuar"
+      "Gargantuar",
+      "Chinese"
     ],
     "icon": "zombie_fairy_tale_gargantuar.webp"
   },
@@ -2892,7 +3198,8 @@
     "name": "zombie_fairy_tale_imp",
     "tags": [
       "Tale_ZCorp",
-      "Imp"
+      "Imp",
+      "Chinese"
     ],
     "icon": "zombie_fairy_tale_imp.webp"
   },
@@ -2902,7 +3209,8 @@
     "tags": [
       "Tale_ZCorp",
       "Imp",
-      "Custom"
+      "Custom",
+      "Chinese"
     ],
     "icon": "zombie_fairy_tale_imp.webp"
   },
@@ -2911,7 +3219,8 @@
     "name": "zombie_fairy_tale_witch",
     "tags": [
       "Tale_ZCorp",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_fairy_tale_witch.webp"
   },
@@ -2920,7 +3229,8 @@
     "name": "zombie_fairy_tale_knight",
     "tags": [
       "Tale_ZCorp",
-      "Pet"
+      "Pet",
+      "Chinese"
     ],
     "icon": "zombie_fairy_tale_knight.webp"
   },
@@ -2930,7 +3240,8 @@
     "tags": [
       "Tale_ZCorp",
       "Pet",
-      "Custom"
+      "Custom",
+      "Chinese"
     ],
     "icon": "zombie_fairy_tale_knight.webp"
   },
@@ -2939,7 +3250,8 @@
     "name": "zombie_fairy_tale_knight_rider",
     "tags": [
       "Tale_ZCorp",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_fairy_tale_knight.webp"
   },
@@ -2949,7 +3261,8 @@
     "tags": [
       "Tale_ZCorp",
       "Elite",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_mirror_queen_phase1.webp"
   },
@@ -2959,7 +3272,8 @@
     "tags": [
       "Tale_ZCorp",
       "Elite",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_mirror_queen_phase1.webp"
   },
@@ -2969,7 +3283,8 @@
     "tags": [
       "Tale_ZCorp",
       "Elite",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_mirror_queen_phase1.webp"
   },
@@ -2979,7 +3294,8 @@
     "tags": [
       "Tale_ZCorp",
       "Elite",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_plantwars_mirror_queen_phase3.webp"
   },
@@ -2989,7 +3305,8 @@
     "tags": [
       "Tale_ZCorp",
       "Evildave",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_zcorp.webp"
   },
@@ -2999,7 +3316,8 @@
     "tags": [
       "Tale_ZCorp",
       "Evildave",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_zcorp_armor1.webp"
   },
@@ -3009,7 +3327,8 @@
     "tags": [
       "Tale_ZCorp",
       "Evildave",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_zcorp_armor2.webp"
   },
@@ -3018,7 +3337,8 @@
     "name": "zombie_zcorp_flag",
     "tags": [
       "Tale_ZCorp",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_zcorp_flag.webp"
   },
@@ -3027,7 +3347,8 @@
     "name": "zombie_zcorp_fem",
     "tags": [
       "Tale_ZCorp",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_zcorp_fem.webp"
   },
@@ -3036,7 +3357,8 @@
     "name": "zombie_zcorp_fem_armor1",
     "tags": [
       "Tale_ZCorp",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_zcorp_fem_armor1.webp"
   },
@@ -3045,7 +3367,8 @@
     "name": "zombie_zcorp_fem_armor2",
     "tags": [
       "Tale_ZCorp",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_zcorp_fem_armor2.webp"
   },
@@ -3055,7 +3378,8 @@
     "tags": [
       "Tale_ZCorp",
       "Evildave",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_zcorp_consultant.webp"
   },
@@ -3065,7 +3389,8 @@
     "tags": [
       "Tale_ZCorp",
       "Evildave",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_zcorp_racer.webp"
   },
@@ -3074,7 +3399,8 @@
     "name": "zombie_zcorp_racer",
     "tags": [
       "Tale_ZCorp",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_zcorp_racer.webp"
   },
@@ -3084,7 +3410,8 @@
     "tags": [
       "Tale_ZCorp",
       "Evildave",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_zcorp_helpdesk.webp"
   },
@@ -3093,7 +3420,8 @@
     "name": "zombie_zcorp_gargantuar",
     "tags": [
       "Tale_ZCorp",
-      "Gargantuar"
+      "Gargantuar",
+      "Chinese"
     ],
     "icon": "zombie_zcorp_gargantuar.webp"
   },
@@ -3104,7 +3432,8 @@
       "Tale_ZCorp",
       "Evildave",
       "Imp",
-      "Gargantuar"
+      "Gargantuar",
+      "Chinese"
     ],
     "icon": "zombie_zcorp_imp.webp"
   },
@@ -3114,7 +3443,8 @@
     "tags": [
       "Tale_ZCorp",
       "Elite",
-      "Imp"
+      "Imp",
+      "Chinese"
     ],
     "icon": "zombie_general_zmech_phase1.webp"
   },
@@ -3124,7 +3454,8 @@
     "tags": [
       "Tale_ZCorp",
       "Elite",
-      "Imp"
+      "Imp",
+      "Chinese"
     ],
     "icon": "zombie_general_zmech_phase1.webp"
   },
@@ -3134,7 +3465,8 @@
     "tags": [
       "Tale_ZCorp",
       "Elite",
-      "Imp"
+      "Imp",
+      "Chinese"
     ],
     "icon": "zombie_general_zmech_phase1.webp"
   },
@@ -3143,7 +3475,8 @@
     "name": "zombie_parkour",
     "tags": [
       "Parkour_Speed",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_parkour.webp"
   },
@@ -3152,7 +3485,8 @@
     "name": "zombie_parkour_armor1",
     "tags": [
       "Parkour_Speed",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_parkour_armor1.webp"
   },
@@ -3161,7 +3495,8 @@
     "name": "zombie_parkour_armor2",
     "tags": [
       "Parkour_Speed",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_parkour_armor2.webp"
   },
@@ -3170,7 +3505,8 @@
     "name": "zombie_parkour_flag",
     "tags": [
       "Parkour_Speed",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_parkour_flag.webp"
   },
@@ -3179,7 +3515,8 @@
     "name": "zombie_parkour_gargantuar",
     "tags": [
       "Parkour_Speed",
-      "Gargantuar"
+      "Gargantuar",
+      "Chinese"
     ],
     "icon": "zombie_parkour_gargantuar.webp"
   },
@@ -3188,7 +3525,8 @@
     "name": "zombie_parkour_imp",
     "tags": [
       "Parkour_Speed",
-      "Imp"
+      "Imp",
+      "Chinese"
     ],
     "icon": "zombie_parkour_imp.webp"
   },
@@ -3197,7 +3535,8 @@
     "name": "zombie_parkour_runner",
     "tags": [
       "Parkour_Speed",
-      "Strong"
+      "Strong",
+      "Chinese"
     ],
     "icon": "zombie_parkour_runner.webp"
   },
@@ -3207,7 +3546,8 @@
     "tags": [
       "Parkour_Speed",
       "Evildave",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_needforspeed.webp"
   },
@@ -3217,7 +3557,8 @@
     "tags": [
       "Parkour_Speed",
       "Evildave",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_needforspeed_armor1.webp"
   },
@@ -3227,7 +3568,8 @@
     "tags": [
       "Parkour_Speed",
       "Evildave",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_needforspeed_armor2.webp"
   },
@@ -3236,7 +3578,8 @@
     "name": "zombie_needforspeed_flag",
     "tags": [
       "Parkour_Speed",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_needforspeed_flag.webp"
   },
@@ -3245,7 +3588,8 @@
     "name": "zombie_needforspeed_gargantuar",
     "tags": [
       "Parkour_Speed",
-      "Gargantuar"
+      "Gargantuar",
+      "Chinese"
     ],
     "icon": "zombie_needforspeed_gargantuar.webp"
   },
@@ -3254,7 +3598,8 @@
     "name": "zombie_needforspeed_imp",
     "tags": [
       "Parkour_Speed",
-      "Imp"
+      "Imp",
+      "Chinese"
     ],
     "icon": "zombie_needforspeed_imp.webp"
   },
@@ -3264,7 +3609,8 @@
     "tags": [
       "Parkour_Speed",
       "Elite",
-      "Imp"
+      "Imp",
+      "Chinese"
     ],
     "icon": "zombie_zombie_van.webp"
   },
@@ -3274,7 +3620,8 @@
     "tags": [
       "Universe",
       "Imp",
-      "Gargantuar"
+      "Gargantuar",
+      "Chinese"
     ],
     "icon": "zombie_universe_uncharted_mini_gargantuar.webp"
   },
@@ -3283,7 +3630,8 @@
     "name": "zombie_universe_uncharted_armor1",
     "tags": [
       "Universe",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_universe_uncharted_armor1.webp"
   },
@@ -3292,7 +3640,8 @@
     "name": "zombie_universe_uncharted_armor2",
     "tags": [
       "Universe",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_universe_uncharted_armor2.webp"
   },
@@ -3301,7 +3650,8 @@
     "name": "zombie_universe_uncharted_gargantuar_basic",
     "tags": [
       "Universe",
-      "Gargantuar"
+      "Gargantuar",
+      "Chinese"
     ],
     "icon": "zombie_universe_uncharted_gargantuar_basic.webp"
   },
@@ -3310,7 +3660,8 @@
     "name": "zombie_universe_uncharted_lostcity_excavator",
     "tags": [
       "Universe",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_universe_uncharted_lostcity_excavator.webp"
   },
@@ -3319,7 +3670,8 @@
     "name": "zombie_universe_uncharted_lostcity_jane",
     "tags": [
       "Universe",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_universe_uncharted_lostcity_jane.webp"
   },
@@ -3328,7 +3680,8 @@
     "name": "zombie_universe_uncharted_doctor",
     "tags": [
       "Universe",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_universe_uncharted_doctor.webp"
   },
@@ -3337,7 +3690,8 @@
     "name": "zombie_universe_uncharted_allstar",
     "tags": [
       "Universe",
-      "Strong"
+      "Strong",
+      "Chinese"
     ],
     "icon": "zombie_universe_uncharted_allstar.webp"
   },
@@ -3346,7 +3700,8 @@
     "name": "zombie_universe_uncharted_kongfu_selfexplode",
     "tags": [
       "Universe",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_universe_uncharted_kongfu_selfexplode.webp"
   },
@@ -3355,7 +3710,8 @@
     "name": "zombie_universe_uncharted_ra",
     "tags": [
       "Universe",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_universe_uncharted_ra.webp"
   },
@@ -3364,7 +3720,8 @@
     "name": "zombie_universe_uncharted_heian_akinndo",
     "tags": [
       "Universe",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_universe_uncharted_heian_akinndo.webp"
   },
@@ -3374,7 +3731,8 @@
     "tags": [
       "Universe",
       "Evildave",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_universe_uncharted_prospector.webp"
   },
@@ -3383,7 +3741,8 @@
     "name": "zombie_universe_uncharted_modern_newspaper",
     "tags": [
       "Universe",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_universe_uncharted_modern_newspaper.webp"
   },
@@ -3392,7 +3751,8 @@
     "name": "zombie_universe_uncharted_juggler",
     "tags": [
       "Universe",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_universe_uncharted_juggler.webp"
   },
@@ -3401,7 +3761,8 @@
     "name": "zombie_universe_uncharted_chicken",
     "tags": [
       "Universe",
-      "Pet"
+      "Pet",
+      "Chinese"
     ],
     "icon": "zombie_universe_uncharted_chicken.webp"
   },
@@ -3410,7 +3771,8 @@
     "name": "zombie_universe_uncharted_iceage_weasel",
     "tags": [
       "Universe",
-      "Pet"
+      "Pet",
+      "Chinese"
     ],
     "icon": "zombie_universe_uncharted_iceage_weasel.webp"
   },
@@ -3419,7 +3781,8 @@
     "name": "zombie_uncharted_crystalskull",
     "tags": [
       "Universe",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_uncharted_crystalskull.webp"
   },
@@ -3428,7 +3791,8 @@
     "name": "zombie_uncharted_qigong",
     "tags": [
       "Universe",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_uncharted_qigong.webp"
   },
@@ -3438,7 +3802,8 @@
     "tags": [
       "Universe",
       "Evildave",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_uncharted_glitter.webp"
   },
@@ -3448,7 +3813,8 @@
     "tags": [
       "Universe",
       "Evildave",
-      "Fat"
+      "Fat",
+      "Chinese"
     ],
     "icon": "zombie_uncharted_miner.webp"
   },
@@ -3457,7 +3823,8 @@
     "name": "zombie_uncharted_gentleman",
     "tags": [
       "Universe",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_uncharted_gentleman.webp"
   },
@@ -3466,7 +3833,8 @@
     "name": "zombie_uncharted_cannon",
     "tags": [
       "Universe",
-      "Gargantuar"
+      "Gargantuar",
+      "Chinese"
     ],
     "icon": "zombie_uncharted_cannon.webp"
   },
@@ -3475,7 +3843,8 @@
     "name": "zombie_roman_ballista_no42",
     "tags": [
       "Universe",
-      "Imp"
+      "Imp",
+      "Chinese"
     ],
     "icon": "zombie_roman_ballista.webp"
   },
@@ -3484,7 +3853,8 @@
     "name": "zombie_slimes_gargantuar_no42",
     "tags": [
       "Universe",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_slimes.webp"
   },
@@ -3495,7 +3865,8 @@
       "Universe",
       "Pet",
       "Fat",
-      "Elite"
+      "Elite",
+      "Chinese"
     ],
     "icon": "zombie_iceage_fat_weasel_elite.webp"
   },
@@ -3505,7 +3876,8 @@
     "tags": [
       "Universe",
       "Gargantuar",
-      "Elite"
+      "Elite",
+      "Chinese"
     ],
     "icon": "zombie_gargantuar_uncharted_imp.webp"
   },
@@ -3514,7 +3886,8 @@
     "name": "zombie_lny",
     "tags": [
       "Festival1",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_lny.webp"
   },
@@ -3523,7 +3896,8 @@
     "name": "zombie_lny_armor1",
     "tags": [
       "Festival1",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_lny_armor1.webp"
   },
@@ -3532,7 +3906,8 @@
     "name": "zombie_lny_armor2",
     "tags": [
       "Festival1",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_lny_armor2.webp"
   },
@@ -3541,7 +3916,8 @@
     "name": "zombie_lny_flag",
     "tags": [
       "Festival1",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_lny_flag.webp"
   },
@@ -3550,7 +3926,8 @@
     "name": "zombie_lny_camel_onehump",
     "tags": [
       "Festival1",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_lny_camel_onehump.webp"
   },
@@ -3559,7 +3936,8 @@
     "name": "zombie_lny_camel_twohump",
     "tags": [
       "Festival1",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_lny_camel_onehump.webp"
   },
@@ -3568,7 +3946,8 @@
     "name": "zombie_lny_camel_manyhump",
     "tags": [
       "Festival1",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_lny_camel_onehump.webp"
   },
@@ -3577,7 +3956,8 @@
     "name": "zombie_lny_imp",
     "tags": [
       "Festival1",
-      "Imp"
+      "Imp",
+      "International"
     ],
     "icon": "zombie_lny_imp.webp"
   },
@@ -3586,7 +3966,8 @@
     "name": "zombie_zombie_moneytree",
     "tags": [
       "Festival1",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_zombie_moneytree.webp"
   },
@@ -3595,7 +3976,8 @@
     "name": "zombie_endlesswealth",
     "tags": [
       "Festival1",
-      "Fat"
+      "Fat",
+      "Chinese"
     ],
     "icon": "zombie_endlesswealth.webp"
   },
@@ -3604,7 +3986,8 @@
     "name": "zombie_feastivus_swashbuckler",
     "tags": [
       "Festival1",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_feastivus_swashbuckler.webp"
   },
@@ -3613,16 +3996,18 @@
     "name": "zombie_lion_dance",
     "tags": [
       "Festival1",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_lion_dance.webp"
-    },
+  },
   {
     "id": "treasureyeti",
     "name": "zombie_treasureyeti",
     "tags": [
       "Festival1",
-      "Fat"
+      "Fat",
+      "Chinese"
     ],
     "icon": "zombie_treasureyeti.webp"
   },
@@ -3633,7 +4018,8 @@
       "Festival1",
       "Elite",
       "Imp",
-      "Pet"
+      "Pet",
+      "Chinese"
     ],
     "icon": "zombie_zombie_yearmonster.webp"
   },
@@ -3644,7 +4030,8 @@
       "Festival1",
       "Elite",
       "Imp",
-      "Pet"
+      "Pet",
+      "Chinese"
     ],
     "icon": "zombie_iceyearmonster.webp"
   },
@@ -3655,7 +4042,8 @@
       "Festival1",
       "Elite",
       "Imp",
-      "Pet"
+      "Pet",
+      "Chinese"
     ],
     "icon": "zombie_iceyearmonster.webp"
   },
@@ -3664,7 +4052,8 @@
     "name": "zombie_spring",
     "tags": [
       "Festival1",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_spring.webp"
   },
@@ -3673,7 +4062,8 @@
     "name": "zombie_spring_armor1",
     "tags": [
       "Festival1",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_spring_armor1.webp"
   },
@@ -3682,7 +4072,8 @@
     "name": "zombie_spring_armor2",
     "tags": [
       "Festival1",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_spring_armor2.webp"
   },
@@ -3691,7 +4082,8 @@
     "name": "zombie_spring_flag",
     "tags": [
       "Festival1",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_spring_flag.webp"
   },
@@ -3700,7 +4092,8 @@
     "name": "zombie_spring_camel_onehump",
     "tags": [
       "Festival1",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_spring_camel_onehump.webp"
   },
@@ -3709,7 +4102,8 @@
     "name": "zombie_spring_camel_twohump",
     "tags": [
       "Festival1",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_spring_camel_onehump.webp"
   },
@@ -3718,7 +4112,8 @@
     "name": "zombie_spring_camel_manyhump",
     "tags": [
       "Festival1",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_spring_camel_onehump.webp"
   },
@@ -3727,7 +4122,8 @@
     "name": "zombie_spring_imp",
     "tags": [
       "Festival1",
-      "Imp"
+      "Imp",
+      "International"
     ],
     "icon": "zombie_spring_imp.webp"
   },
@@ -3736,7 +4132,8 @@
     "name": "zombie_spring_gargantuar",
     "tags": [
       "Festival1",
-      "Gargantuar"
+      "Gargantuar",
+      "International"
     ],
     "icon": "zombie_spring_gargantuar.webp"
   },
@@ -3745,7 +4142,8 @@
     "name": "zombie_spring_wizard",
     "tags": [
       "Festival1",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_spring_wizard.webp"
   },
@@ -3754,7 +4152,8 @@
     "name": "zombie_spring_poncho",
     "tags": [
       "Festival1",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_spring_poncho.webp"
   },
@@ -3763,7 +4162,8 @@
     "name": "zombie_childrensday",
     "tags": [
       "Festival1",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_childrensday.webp"
   },
@@ -3772,7 +4172,8 @@
     "name": "zombie_childrensday_armor1",
     "tags": [
       "Festival1",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_childrensday_armor1.webp"
   },
@@ -3781,7 +4182,8 @@
     "name": "zombie_childrensday_armor2",
     "tags": [
       "Festival1",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_childrensday_armor2.webp"
   },
@@ -3790,7 +4192,8 @@
     "name": "zombie_childrensday_flag",
     "tags": [
       "Festival1",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_childrensday_flag.webp"
   },
@@ -3799,7 +4202,8 @@
     "name": "zombie_childrensday_gargantuar",
     "tags": [
       "Festival1",
-      "Gargantuar"
+      "Gargantuar",
+      "Chinese"
     ],
     "icon": "zombie_childrensday_gargantuar.webp"
   },
@@ -3808,7 +4212,8 @@
     "name": "zombie_childrensday_imp",
     "tags": [
       "Festival1",
-      "Imp"
+      "Imp",
+      "Chinese"
     ],
     "icon": "zombie_childrensday_imp.webp"
   },
@@ -3817,7 +4222,8 @@
     "name": "zombie_children_ballon",
     "tags": [
       "Festival1",
-      "Imp"
+      "Imp",
+      "Chinese"
     ],
     "icon": "zombie_children_ballon.webp"
   },
@@ -3826,7 +4232,8 @@
     "name": "zombie_children_schoolbag",
     "tags": [
       "Festival1",
-      "Imp"
+      "Imp",
+      "Chinese"
     ],
     "icon": "zombie_children_schoolbag.webp"
   },
@@ -3835,7 +4242,8 @@
     "name": "zombie_children_toycar",
     "tags": [
       "Festival1",
-      "Imp"
+      "Imp",
+      "Chinese"
     ],
     "icon": "zombie_children_toycar.webp"
   },
@@ -3844,7 +4252,8 @@
     "name": "zombie_children_toygun",
     "tags": [
       "Festival1",
-      "Imp"
+      "Imp",
+      "Chinese"
     ],
     "icon": "zombie_children_toygun.webp"
   },
@@ -3852,7 +4261,8 @@
     "id": "children_airbubble",
     "name": "zombie_children_airbubble",
     "tags": [
-      "Festival1"
+      "Festival1",
+      "Chinese"
     ],
     "icon": "zombie_children_airbubble.webp"
   },
@@ -3861,7 +4271,8 @@
     "name": "zombie_children_lollipops",
     "tags": [
       "Festival1",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_children_lollipops.webp"
   },
@@ -3870,7 +4281,8 @@
     "name": "zombie_trench_coat_imps",
     "tags": [
       "Festival1",
-      "Imp"
+      "Imp",
+      "Chinese"
     ],
     "icon": "zombie_trench_coat_imps.webp"
   },
@@ -3879,7 +4291,8 @@
     "name": "zombie_plushie_cart",
     "tags": [
       "Festival1",
-      "Imp"
+      "Imp",
+      "Chinese"
     ],
     "icon": "zombie_plushie_cart.webp"
   },
@@ -3889,7 +4302,8 @@
     "tags": [
       "Festival1",
       "Elite",
-      "Imp"
+      "Imp",
+      "Chinese"
     ],
     "icon": "zombie_bumpercar.webp"
   },
@@ -3899,7 +4313,8 @@
     "tags": [
       "Festival1",
       "Elite",
-      "Imp"
+      "Imp",
+      "Chinese"
     ],
     "icon": "zombie_bumpercar_elite.webp"
   },
@@ -3909,7 +4324,8 @@
     "tags": [
       "Festival1",
       "Elite",
-      "Imp"
+      "Imp",
+      "Chinese"
     ],
     "icon": "zombie_bumpercar_elite.webp"
   },
@@ -3919,7 +4335,8 @@
     "tags": [
       "Festival1",
       "Elite",
-      "Imp"
+      "Imp",
+      "Chinese"
     ],
     "icon": "zombie_bubble_machine_imp.webp"
   },
@@ -3927,7 +4344,8 @@
     "id": "children_airbubble_elite",
     "name": "zombie_children_airbubble_elite",
     "tags": [
-      "Festival1"
+      "Festival1",
+      "Chinese"
     ],
     "icon": "zombie_children_airbubble.webp"
   },
@@ -3936,7 +4354,8 @@
     "name": "zombie_sportzball_buckethead",
     "tags": [
       "Festival1",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_sportzball_buckethead.webp"
   },
@@ -3945,7 +4364,8 @@
     "name": "zombie_sportzball_wizard",
     "tags": [
       "Festival1",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_sportzball_wizard.webp"
   },
@@ -3954,7 +4374,8 @@
     "name": "zombie_sportzball_imp",
     "tags": [
       "Festival1",
-      "Imp"
+      "Imp",
+      "International"
     ],
     "icon": "zombie_sportzball_imp.webp"
   },
@@ -3963,7 +4384,8 @@
     "name": "zombie_sportzball_gargantuar",
     "tags": [
       "Festival1",
-      "Gargantuar"
+      "Gargantuar",
+      "International"
     ],
     "icon": "zombie_sportzball_gargantuar.webp"
   },
@@ -3972,7 +4394,8 @@
     "name": "zombie_Goalkeeper_Zombie",
     "tags": [
       "Festival1",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_Goalkeeper_Zombie.webp"
   },
@@ -3981,7 +4404,8 @@
     "name": "zombie_general_treadmill_phase1",
     "tags": [
       "Festival1",
-      "Elite"
+      "Elite",
+      "International"
     ],
     "icon": "zombie_general_treadmill_phase1.webp"
   },
@@ -3990,7 +4414,8 @@
     "name": "zombie_general_treadmill_phase2",
     "tags": [
       "Festival1",
-      "Elite"
+      "Elite",
+      "International"
     ],
     "icon": "zombie_general_treadmill_phase1.webp"
   },
@@ -3999,7 +4424,8 @@
     "name": "zombie_general_treadmill_phase3",
     "tags": [
       "Festival1",
-      "Elite"
+      "Elite",
+      "International"
     ],
     "icon": "zombie_general_treadmill_phase1.webp"
   },
@@ -4008,7 +4434,8 @@
     "name": "zombie_summer_basic",
     "tags": [
       "Festival1",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_summer_basic.webp"
   },
@@ -4017,7 +4444,8 @@
     "name": "zombie_summer_armor1",
     "tags": [
       "Festival1",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_summer_armor1.webp"
   },
@@ -4026,7 +4454,8 @@
     "name": "zombie_summer_armor2",
     "tags": [
       "Festival1",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_summer_armor2.webp"
   },
@@ -4035,7 +4464,8 @@
     "name": "zombie_summer_flag",
     "tags": [
       "Festival1",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_summer_flag.webp"
   },
@@ -4044,7 +4474,8 @@
     "name": "zombie_summer_gargantuar",
     "tags": [
       "Festival1",
-      "Gargantuar"
+      "Gargantuar",
+      "International"
     ],
     "icon": "zombie_summer_gargantuar.webp"
   },
@@ -4053,7 +4484,8 @@
     "name": "zombie_summer_imp",
     "tags": [
       "Festival1",
-      "Imp"
+      "Imp",
+      "International"
     ],
     "icon": "zombie_summer_imp.webp"
   },
@@ -4062,7 +4494,8 @@
     "name": "zombie_summer_bug",
     "tags": [
       "Festival1",
-      "Pet"
+      "Pet",
+      "International"
     ],
     "icon": "zombie_summer_bug.webp"
   },
@@ -4071,7 +4504,8 @@
     "name": "zombie_summer_bug_armor1",
     "tags": [
       "Festival1",
-      "Pet"
+      "Pet",
+      "International"
     ],
     "icon": "zombie_summer_bug.webp"
   },
@@ -4080,7 +4514,8 @@
     "name": "zombie_summer_bug_armor2",
     "tags": [
       "Festival1",
-      "Pet"
+      "Pet",
+      "International"
     ],
     "icon": "zombie_summer_bug.webp"
   },
@@ -4089,7 +4524,8 @@
     "name": "zombie_birthday",
     "tags": [
       "Festival2",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_birthday.webp"
   },
@@ -4098,7 +4534,8 @@
     "name": "zombie_birthday_flag",
     "tags": [
       "Festival2",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_birthday_flag.webp"
   },
@@ -4107,7 +4544,8 @@
     "name": "zombie_birthday_gargantuar",
     "tags": [
       "Festival2",
-      "Gargantuar"
+      "Gargantuar",
+      "International"
     ],
     "icon": "zombie_birthday_gargantuar.webp"
   },
@@ -4116,7 +4554,8 @@
     "name": "zombie_birthday_pharaoh",
     "tags": [
       "Festival2",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_birthday_pharaoh.webp"
   },
@@ -4125,7 +4564,8 @@
     "name": "zombie_birthday_barrelroller",
     "tags": [
       "Festival2",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_birthday_barrelroller.webp"
   },
@@ -4134,7 +4574,8 @@
     "name": "zombie_birthday_jetpack",
     "tags": [
       "Festival2",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_birthday_jetpack.webp"
   },
@@ -4143,7 +4584,8 @@
     "name": "zombie_birthday_juggler",
     "tags": [
       "Festival2",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_birthday_juggler.webp"
   },
@@ -4152,7 +4594,8 @@
     "name": "zombie_birthday_troglobite",
     "tags": [
       "Festival2",
-      "Strong"
+      "Strong",
+      "International"
     ],
     "icon": "zombie_birthday_troglobite.webp"
   },
@@ -4161,7 +4604,8 @@
     "name": "zombie_caketank",
     "tags": [
       "Festival2",
-      "Elite"
+      "Elite",
+      "International"
     ],
     "icon": "zombie_caketank.webp"
   },
@@ -4170,7 +4614,8 @@
     "name": "zombie_halloween",
     "tags": [
       "Festival2",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_halloween.webp"
   },
@@ -4179,7 +4624,8 @@
     "name": "zombie_halloween_armor1",
     "tags": [
       "Festival2",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_halloween_armor1.webp"
   },
@@ -4188,7 +4634,8 @@
     "name": "zombie_halloween_armor2",
     "tags": [
       "Festival2",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_halloween_armor2.webp"
   },
@@ -4197,7 +4644,8 @@
     "name": "zombie_halloween_flag",
     "tags": [
       "Festival2",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_halloween_flag.webp"
   },
@@ -4206,7 +4654,8 @@
     "name": "zombie_halloween_gargantuar",
     "tags": [
       "Festival2",
-      "Gargantuar"
+      "Gargantuar",
+      "International"
     ],
     "icon": "zombie_halloween_gargantuar.webp"
   },
@@ -4215,7 +4664,8 @@
     "name": "zombie_halloween_imp",
     "tags": [
       "Festival2",
-      "Imp"
+      "Imp",
+      "International"
     ],
     "icon": "zombie_halloween_imp.webp"
   },
@@ -4225,7 +4675,8 @@
     "tags": [
       "Festival2",
       "Imp",
-      "Pet"
+      "Pet",
+      "International"
     ],
     "icon": "zombie_pumpkin_knight_ghost.webp"
   },
@@ -4234,7 +4685,8 @@
     "name": "zombie_pumpkin_scarecrow_bird",
     "tags": [
       "Festival2",
-      "Pet"
+      "Pet",
+      "International"
     ],
     "icon": "zombie_pumpkin_scarecrow_bird.webp"
   },
@@ -4244,7 +4696,8 @@
     "tags": [
       "Festival2",
       "Elite",
-      "Pet"
+      "Pet",
+      "International"
     ],
     "icon": "zombie_pumpkin_house_ghost.webp"
   },
@@ -4255,7 +4708,8 @@
       "Festival2",
       "Elite",
       "Basic",
-      "Pet"
+      "Pet",
+      "International"
     ],
     "icon": "zombie_pumpkin_knight.webp"
   },
@@ -4267,7 +4721,8 @@
       "Elite",
       "Basic",
       "Pet",
-      "Custom"
+      "Custom",
+      "International"
     ],
     "icon": "zombie_pumpkin_knight.webp"
   },
@@ -4277,7 +4732,8 @@
     "tags": [
       "Festival2",
       "Elite",
-      "Strong"
+      "Strong",
+      "International"
     ],
     "icon": "zombie_pumpkin_necromancer.webp"
   },
@@ -4286,7 +4742,8 @@
     "name": "zombie_christmas",
     "tags": [
       "Festival2",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_christmas.webp"
   },
@@ -4295,7 +4752,8 @@
     "name": "zombie_christmas_armor1",
     "tags": [
       "Festival2",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_christmas_armor1.webp"
   },
@@ -4304,7 +4762,8 @@
     "name": "zombie_christmas_armor2",
     "tags": [
       "Festival2",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_christmas_armor2.webp"
   },
@@ -4313,7 +4772,8 @@
     "name": "zombie_giftbox",
     "tags": [
       "Festival2",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_giftbox.webp"
   },
@@ -4322,7 +4782,8 @@
     "name": "zombie_giftbox_armor1",
     "tags": [
       "Festival2",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_giftbox.webp"
   },
@@ -4331,7 +4792,8 @@
     "name": "zombie_giftbox_armor2",
     "tags": [
       "Festival2",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_giftbox.webp"
   },
@@ -4340,7 +4802,8 @@
     "name": "zombie_christmas_flag",
     "tags": [
       "Festival2",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_christmas_flag.webp"
   },
@@ -4349,7 +4812,8 @@
     "name": "zombie_christmas_gargantuar",
     "tags": [
       "Festival2",
-      "Gargantuar"
+      "Gargantuar",
+      "International"
     ],
     "icon": "zombie_christmas_gargantuar.webp"
   },
@@ -4358,7 +4822,8 @@
     "name": "zombie_christmas_gargantuar2",
     "tags": [
       "Festival2",
-      "Gargantuar"
+      "Gargantuar",
+      "International"
     ],
     "icon": "zombie_christmas_gargantuar2.webp"
   },
@@ -4367,7 +4832,8 @@
     "name": "zombie_christmas_imp",
     "tags": [
       "Festival2",
-      "Imp"
+      "Imp",
+      "International"
     ],
     "icon": "zombie_christmas_imp.webp"
   },
@@ -4376,7 +4842,8 @@
     "name": "zombie_christmas_imp2",
     "tags": [
       "Festival2",
-      "Imp"
+      "Imp",
+      "International"
     ],
     "icon": "zombie_christmas_imp2.webp"
   },
@@ -4385,7 +4852,8 @@
     "name": "zombie_christmas_camel_onehump",
     "tags": [
       "Festival2",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_christmas_camel_onehump.webp"
   },
@@ -4394,7 +4862,8 @@
     "name": "zombie_christmas_camel_twohump",
     "tags": [
       "Festival2",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_christmas_camel_onehump.webp"
   },
@@ -4403,7 +4872,8 @@
     "name": "zombie_christmas_camel_manyhump",
     "tags": [
       "Festival2",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_christmas_camel_onehump.webp"
   },
@@ -4412,7 +4882,8 @@
     "name": "zombie_christmas_swashbuckler",
     "tags": [
       "Festival2",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_christmas_swashbuckler.webp"
   },
@@ -4421,7 +4892,8 @@
     "name": "zombie_christmas_poncho",
     "tags": [
       "Festival2",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_christmas_poncho.webp"
   },
@@ -4430,7 +4902,8 @@
     "name": "zombie_christmas_poncho_no_plate",
     "tags": [
       "Festival2",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_christmas_poncho.webp"
   },
@@ -4439,7 +4912,8 @@
     "name": "zombie_christmas_poncho_plate",
     "tags": [
       "Festival2",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_christmas_poncho.webp"
   },
@@ -4448,7 +4922,8 @@
     "name": "zombie_christmas_piano",
     "tags": [
       "Festival2",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_christmas_piano.webp"
   },
@@ -4457,7 +4932,8 @@
     "name": "zombie_nutcracker",
     "tags": [
       "Festival2",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_nutcracker.webp"
   },
@@ -4466,7 +4942,8 @@
     "name": "zombie_nutcracker_gargantuar",
     "tags": [
       "Festival2",
-      "Gargantuar"
+      "Gargantuar",
+      "International"
     ],
     "icon": "zombie_nutcracker_gargantuar.webp"
   },
@@ -4475,7 +4952,8 @@
     "name": "zombie_nutcracker_gargantuar_white",
     "tags": [
       "Festival2",
-      "Gargantuar"
+      "Gargantuar",
+      "International"
     ],
     "icon": "zombie_nutcracker_gargantuar.webp"
   },
@@ -4484,7 +4962,8 @@
     "name": "zombie_sled",
     "tags": [
       "Festival2",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_sled.webp"
   },
@@ -4493,7 +4972,8 @@
     "name": "zombie_sled_armor",
     "tags": [
       "Festival2",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_sled.webp"
   },
@@ -4502,7 +4982,8 @@
     "name": "zombie_bobsled",
     "tags": [
       "Festival2",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_bobsled.webp"
   },
@@ -4511,7 +4992,8 @@
     "name": "zombie_pole_vaulting_feastivus",
     "tags": [
       "Festival2",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_pole_vaulting_feastivus.webp"
   },
@@ -4520,7 +5002,8 @@
     "name": "zombie_ladder_festival",
     "tags": [
       "Festival2",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_ladder_festival.webp"
   },
@@ -4529,7 +5012,8 @@
     "name": "zombie_snow_ballroller",
     "tags": [
       "Festival2",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_snow_ballroller.webp"
   },
@@ -4538,7 +5022,8 @@
     "name": "zombie_figure_skating",
     "tags": [
       "Festival2",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_figure_skating.webp"
   },
@@ -4548,7 +5033,8 @@
     "tags": [
       "Festival2",
       "Pet",
-      "Imp"
+      "Imp",
+      "International"
     ],
     "icon": "zombie_santa.webp"
   },
@@ -4557,7 +5043,8 @@
     "name": "zombie_christmas_caketank",
     "tags": [
       "Festival2",
-      "Elite"
+      "Elite",
+      "International"
     ],
     "icon": "zombie_christmas_caketank.webp"
   },
@@ -4567,7 +5054,8 @@
     "tags": [
       "Festival2",
       "Elite",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_dark_juggler_elite.webp"
   },
@@ -4577,7 +5065,8 @@
     "tags": [
       "Festival2",
       "Imp",
-      "Elite"
+      "Elite",
+      "Chinese"
     ],
     "icon": "zombie_fairy_tale_imp_elite.webp"
   },
@@ -4588,7 +5077,8 @@
       "Modern_Pvz1",
       "Evildave",
       "Memory",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_zombie_snowpea.webp"
   },
@@ -4599,7 +5089,8 @@
       "Modern_Pvz1",
       "Evildave",
       "Memory",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_zombie_gatlingpea.webp"
   },
@@ -4610,7 +5101,8 @@
       "Modern_Pvz1",
       "Memory",
       "Basic",
-      "Custom"
+      "Custom",
+      "International"
     ],
     "icon": "zombie_zombie_gatlingpea.webp"
   },
@@ -4621,7 +5113,8 @@
       "Modern_Pvz1",
       "Memory",
       "Basic",
-      "Custom"
+      "Custom",
+      "International"
     ],
     "icon": "zombie_zombie_gatlingpea.webp"
   },
@@ -4632,7 +5125,8 @@
       "Modern_Pvz1",
       "Memory",
       "Basic",
-      "Custom"
+      "Custom",
+      "International"
     ],
     "icon": "zombie_zombie_gatlingpea.webp"
   },
@@ -4642,7 +5136,8 @@
     "tags": [
       "Memory",
       "Evildave",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_zombie_explodenut.webp"
   },
@@ -4652,7 +5147,8 @@
     "tags": [
       "Modern_Pvz1",
       "Memory",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_zombie_jalapeno.webp"
   },
@@ -4662,7 +5158,8 @@
     "tags": [
       "Memory",
       "Evildave",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_izombie_sunflower.webp"
   },
@@ -4673,7 +5170,8 @@
       "Modern_Pvz1",
       "Memory",
       "Evildave",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_izombie_zombie_gatlingpea.webp"
   },
@@ -4684,7 +5182,8 @@
       "Modern_Pvz1",
       "Memory",
       "Evildave",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_izombie_zombie_wallnut.webp"
   },
@@ -4694,7 +5193,8 @@
     "tags": [
       "Memory",
       "Evildave",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_izombie_chicken_farmer.webp"
   },
@@ -4704,7 +5204,8 @@
     "tags": [
       "Memory",
       "Evildave",
-      "Gargantuar"
+      "Gargantuar",
+      "Chinese"
     ],
     "icon": "zombie_izombie_tutorial_gargantuar.webp"
   },
@@ -4714,7 +5215,8 @@
     "tags": [
       "Memory",
       "Evildave",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_izombie_lostcity_doctor.webp"
   },
@@ -4723,7 +5225,8 @@
     "name": "zombie_slimes",
     "tags": [
       "Memory",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_slimes.webp"
   },
@@ -4732,7 +5235,8 @@
     "name": "zombie_slimes_gargantuar_memo",
     "tags": [
       "Memory",
-      "Custom"
+      "Custom",
+      "Chinese"
     ],
     "icon": "zombie_slimes.webp"
   },
@@ -4742,7 +5246,8 @@
     "tags": [
       "Memory",
       "Basic",
-      "Pet"
+      "Pet",
+      "Chinese"
     ],
     "icon": "zombie_carnie_magician.webp"
   },
@@ -4751,7 +5256,8 @@
     "name": "zombie_carnie_dove",
     "tags": [
       "Memory",
-      "Pet"
+      "Pet",
+      "Chinese"
     ],
     "icon": "zombie_carnie_dove.webp"
   },
@@ -4760,7 +5266,8 @@
     "name": "zombie_journey_to_the_west",
     "tags": [
       "Tothewest",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_journey_to_the_west.webp"
   },
@@ -4769,7 +5276,8 @@
     "name": "zombie_journey_to_the_west_armor1",
     "tags": [
       "Tothewest",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_journey_to_the_west_armor1.webp"
   },
@@ -4778,7 +5286,8 @@
     "name": "zombie_journey_to_the_west_armor2",
     "tags": [
       "Tothewest",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_journey_to_the_west_armor2.webp"
   },
@@ -4787,7 +5296,8 @@
     "name": "zombie_journey_to_the_west_flag",
     "tags": [
       "Tothewest",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_journey_to_the_west_flag.webp"
   },
@@ -4796,7 +5306,8 @@
     "name": "zombie_journey_to_the_west_gargantuar",
     "tags": [
       "Tothewest",
-      "Gargantuar"
+      "Gargantuar",
+      "Chinese"
     ],
     "icon": "zombie_journey_to_the_west_gargantuar.webp"
   },
@@ -4805,7 +5316,8 @@
     "name": "zombie_journey_to_the_west_trident",
     "tags": [
       "Tothewest",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_journey_to_the_west_trident.webp"
   },
@@ -4814,7 +5326,8 @@
     "name": "zombie_journey_to_the_west_balloon",
     "tags": [
       "Tothewest",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_journey_to_the_west_balloon.webp"
   },
@@ -4823,7 +5336,8 @@
     "name": "zombie_journey_to_the_west_allstar",
     "tags": [
       "Tothewest",
-      "Strong"
+      "Strong",
+      "Chinese"
     ],
     "icon": "zombie_journey_to_the_west_allstar.webp"
   },
@@ -4832,7 +5346,8 @@
     "name": "zombie_journey_to_the_west_superfan",
     "tags": [
       "Tothewest",
-      "Imp"
+      "Imp",
+      "Chinese"
     ],
     "icon": "zombie_journey_to_the_west_superfan.webp"
   },
@@ -4841,7 +5356,8 @@
     "name": "zombie_journey_to_the_west_catapult",
     "tags": [
       "Tothewest",
-      "Fat"
+      "Fat",
+      "Chinese"
     ],
     "icon": "zombie_journey_to_the_west_catapult.webp"
   },
@@ -4850,7 +5366,8 @@
     "name": "zombie_journey_to_the_west_miner",
     "tags": [
       "Tothewest",
-      "Fat"
+      "Fat",
+      "Chinese"
     ],
     "icon": "zombie_journey_to_the_west_miner.webp"
   },
@@ -4859,7 +5376,8 @@
     "name": "zombie_journey_to_the_west_poncho",
     "tags": [
       "Tothewest",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_journey_to_the_west_poncho.webp"
   },
@@ -4869,7 +5387,8 @@
     "tags": [
       "Tothewest",
       "Elite",
-      "Imp"
+      "Imp",
+      "Chinese"
     ],
     "icon": "zombie_journey_to_the_west_red_boy.webp"
   },
@@ -4879,7 +5398,8 @@
     "tags": [
       "Tothewest",
       "Elite",
-      "Gargantuar"
+      "Gargantuar",
+      "Chinese"
     ],
     "icon": "zombie_journey_to_the_west_huangmei.webp"
   },
@@ -4888,7 +5408,8 @@
     "name": "zombie_mausoleum_basic",
     "tags": [
       "Tothewest",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_mausoleum_basic.webp"
   },
@@ -4897,7 +5418,8 @@
     "name": "zombie_mausoleum_armor1",
     "tags": [
       "Tothewest",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_mausoleum_armor1.webp"
   },
@@ -4906,7 +5428,8 @@
     "name": "zombie_mausoleum_armor2",
     "tags": [
       "Tothewest",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_mausoleum_armor2.webp"
   },
@@ -4915,7 +5438,8 @@
     "name": "zombie_mausoleum_flag",
     "tags": [
       "Tothewest",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_mausoleum_flag.webp"
   },
@@ -4924,7 +5448,8 @@
     "name": "zombie_mausoleum_gargantuar",
     "tags": [
       "Tothewest",
-      "Gargantuar"
+      "Gargantuar",
+      "Chinese"
     ],
     "icon": "zombie_mausoleum_gargantuar.webp"
   },
@@ -4933,7 +5458,8 @@
     "name": "zombie_mausoleum_imp",
     "tags": [
       "Tothewest",
-      "Imp"
+      "Imp",
+      "Chinese"
     ],
     "icon": "zombie_mausoleum_imp.webp"
   },
@@ -4943,7 +5469,8 @@
     "tags": [
       "Tothewest",
       "Pet",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_mausoleum_vendor.webp"
   },
@@ -4952,7 +5479,8 @@
     "name": "zombie_mausoleum_piggy",
     "tags": [
       "Tothewest",
-      "Pet"
+      "Pet",
+      "Chinese"
     ],
     "icon": "zombie_mausoleum_piggy.webp"
   },
@@ -4961,7 +5489,8 @@
     "name": "zombie_mausoleum_cavalry",
     "tags": [
       "Tothewest",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_mausoleum_cavalry.webp"
   },
@@ -4970,7 +5499,8 @@
     "name": "zombie_mausoleum_archer",
     "tags": [
       "Tothewest",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_mausoleum_archer.webp"
   },
@@ -4979,7 +5509,8 @@
     "name": "zombie_qin_shield_segment",
     "tags": [
       "Tothewest",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_qin_shield_segment.webp"
   },
@@ -4988,7 +5519,8 @@
     "name": "zombie_qin_shield_pair",
     "tags": [
       "Tothewest",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_qin_shield_segment.webp"
   },
@@ -4997,7 +5529,8 @@
     "name": "zombie_qin_shield_triad",
     "tags": [
       "Tothewest",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_qin_shield_segment.webp"
   },
@@ -5006,7 +5539,8 @@
     "name": "zombie_qin_jingke",
     "tags": [
       "Tothewest",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_qin_jingke.webp"
   },
@@ -5015,7 +5549,8 @@
     "name": "zombie_qin_taoist",
     "tags": [
       "Tothewest",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_qin_taoist.webp"
   },
@@ -5024,7 +5559,8 @@
     "name": "zombie_qin_terracotta_small",
     "tags": [
       "Tothewest",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_qin_terracotta_mid.webp"
   },
@@ -5033,7 +5569,8 @@
     "name": "zombie_qin_terracotta_mid",
     "tags": [
       "Tothewest",
-      "Strong"
+      "Strong",
+      "Chinese"
     ],
     "icon": "zombie_qin_terracotta_mid.webp"
   },
@@ -5042,7 +5579,8 @@
     "name": "zombie_mausoleum_basic_ghost",
     "tags": [
       "Tothewest",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_mausoleum_basic_ghost.webp"
   },
@@ -5051,7 +5589,8 @@
     "name": "zombie_mausoleum_basic_ghost_spirit",
     "tags": [
       "Tothewest",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_mausoleum_basic_ghost_spirit.webp"
   },
@@ -5060,7 +5599,8 @@
     "name": "zombie_mausoleum_armor1_ghost",
     "tags": [
       "Tothewest",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_mausoleum_armor1_ghost.webp"
   },
@@ -5069,7 +5609,8 @@
     "name": "zombie_mausoleum_armor1_ghost_spirit",
     "tags": [
       "Tothewest",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_mausoleum_armor1_ghost_spirit.webp"
   },
@@ -5078,7 +5619,8 @@
     "name": "zombie_mausoleum_armor2_ghost",
     "tags": [
       "Tothewest",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_mausoleum_armor2_ghost.webp"
   },
@@ -5087,7 +5629,8 @@
     "name": "zombie_mausoleum_armor2_ghost_spirit",
     "tags": [
       "Tothewest",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_mausoleum_armor2_ghost_spirit.webp"
   },
@@ -5096,7 +5639,8 @@
     "name": "zombie_mausoleum_gargantuar_ghost",
     "tags": [
       "Tothewest",
-      "Gargantuar"
+      "Gargantuar",
+      "Chinese"
     ],
     "icon": "zombie_mausoleum_gargantuar_ghost.webp"
   },
@@ -5105,7 +5649,8 @@
     "name": "zombie_mausoleum_gargantuar_ghost_sp",
     "tags": [
       "Tothewest",
-      "Gargantuar"
+      "Gargantuar",
+      "Chinese"
     ],
     "icon": "zombie_mausoleum_gargantuar_ghost_sp.webp"
   },
@@ -5114,7 +5659,8 @@
     "name": "zombie_mausoleum_archer_ghost",
     "tags": [
       "Tothewest",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_mausoleum_archer_ghost.webp"
   },
@@ -5123,7 +5669,8 @@
     "name": "zombie_mausoleum_archer_ghost_spirit",
     "tags": [
       "Tothewest",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_mausoleum_archer_ghost_spirit.webp"
   },
@@ -5132,7 +5679,8 @@
     "name": "zombie_qin_jingke_ghost",
     "tags": [
       "Tothewest",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_qin_jingke_ghost.webp"
   },
@@ -5141,7 +5689,8 @@
     "name": "zombie_qin_jingke_ghost_spirit",
     "tags": [
       "Tothewest",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_qin_jingke_ghost_spirit.webp"
   },
@@ -5150,7 +5699,8 @@
     "name": "zombie_mausoleum_drunkard",
     "tags": [
       "Tothewest",
-      "Fat"
+      "Fat",
+      "Chinese"
     ],
     "icon": "zombie_mausoleum_drunkard.webp"
   },
@@ -5159,7 +5709,8 @@
     "name": "zombie_mausoleum_drunkard_ghost",
     "tags": [
       "Tothewest",
-      "Fat"
+      "Fat",
+      "Chinese"
     ],
     "icon": "zombie_mausoleum_drunkard_ghost.webp"
   },
@@ -5168,7 +5719,8 @@
     "name": "zombie_mausoleum_drunkard_ghost_spirit",
     "tags": [
       "Tothewest",
-      "Fat"
+      "Fat",
+      "Chinese"
     ],
     "icon": "zombie_mausoleum_drunkard_ghost_spirit.webp"
   },
@@ -5177,7 +5729,8 @@
     "name": "zombie_qin_mystic_formation_summon",
     "tags": [
       "Tothewest",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_qin_mystic_formation_summon.webp"
   },
@@ -5186,7 +5739,8 @@
     "name": "zombie_qin_mystic_formation_defense",
     "tags": [
       "Tothewest",
-      "Basic"
+      "Basic",
+      "Chinese"
     ],
     "icon": "zombie_qin_mystic_formation_defense.webp"
   },
@@ -5195,7 +5749,8 @@
     "name": "zombie_roman",
     "tags": [
       "Roman",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_roman.webp"
   },
@@ -5204,7 +5759,8 @@
     "name": "zombie_roman_armor1",
     "tags": [
       "Roman",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_roman_armor1.webp"
   },
@@ -5213,7 +5769,8 @@
     "name": "zombie_roman_armor2",
     "tags": [
       "Roman",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_roman_armor2.webp"
   },
@@ -5222,7 +5779,8 @@
     "name": "zombie_roman_armor3",
     "tags": [
       "Roman",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_roman_armor3.webp"
   },
@@ -5231,7 +5789,8 @@
     "name": "zombie_roman_armor4",
     "tags": [
       "Roman",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_roman_armor4.webp"
   },
@@ -5240,7 +5799,8 @@
     "name": "zombie_roman_flag",
     "tags": [
       "Roman",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_roman_flag.webp"
   },
@@ -5249,7 +5809,8 @@
     "name": "zombie_roman_gargantuar",
     "tags": [
       "Roman",
-      "Gargantuar"
+      "Gargantuar",
+      "International"
     ],
     "icon": "zombie_roman_gargantuar.webp"
   },
@@ -5258,7 +5819,8 @@
     "name": "zombie_roman_imp",
     "tags": [
       "Roman",
-      "Imp"
+      "Imp",
+      "International"
     ],
     "icon": "zombie_roman_imp.webp"
   },
@@ -5268,7 +5830,8 @@
     "tags": [
       "Roman",
       "Evildave",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_roman_healer.webp"
   },
@@ -5279,7 +5842,8 @@
       "Roman",
       "Memory",
       "Basic",
-      "Elite"
+      "Elite",
+      "International"
     ],
     "icon": "zombie_elite_roman_healer.webp"
   },
@@ -5291,7 +5855,8 @@
       "Memory",
       "Basic",
       "Elite",
-      "Custom"
+      "Custom",
+      "International"
     ],
     "icon": "zombie_elite_roman_healer.webp"
   },
@@ -5303,7 +5868,8 @@
       "Memory",
       "Basic",
       "Elite",
-      "Custom"
+      "Custom",
+      "International"
     ],
     "icon": "zombie_elite_roman_healer.webp"
   },
@@ -5312,7 +5878,8 @@
     "name": "zombie_roman_shield_top",
     "tags": [
       "Roman",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_roman_shield_top.webp"
   },
@@ -5321,7 +5888,8 @@
     "name": "zombie_roman_shield_almanac",
     "tags": [
       "Roman",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_roman_shield_top.webp"
   },
@@ -5330,7 +5898,8 @@
     "name": "zombie_roman_shield_pair",
     "tags": [
       "Roman",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_roman_shield_top.webp"
   },
@@ -5339,7 +5908,8 @@
     "name": "zombie_roman_shield_triad",
     "tags": [
       "Roman",
-      "Basic"
+      "Basic",
+      "International"
     ],
     "icon": "zombie_roman_shield_top.webp"
   },
@@ -5348,7 +5918,8 @@
     "name": "zombie_roman_ballista",
     "tags": [
       "Roman",
-      "Imp"
+      "Imp",
+      "International"
     ],
     "icon": "zombie_roman_ballista.webp"
   },
@@ -5358,7 +5929,8 @@
     "tags": [
       "Roman",
       "Imp",
-      "Custom"
+      "Custom",
+      "International"
     ],
     "icon": "zombie_roman_ballista.webp"
   },
@@ -5368,7 +5940,8 @@
     "tags": [
       "Roman",
       "Imp",
-      "Custom"
+      "Custom",
+      "International"
     ],
     "icon": "zombie_roman_ballista.webp"
   },
@@ -5379,7 +5952,8 @@
       "Roman",
       "Memory",
       "Elite",
-      "Imp"
+      "Imp",
+      "International"
     ],
     "icon": "zombie_elite_roman_ballista.webp"
   },
@@ -5391,7 +5965,8 @@
       "Memory",
       "Elite",
       "Imp",
-      "Custom"
+      "Custom",
+      "International"
     ],
     "icon": "zombie_elite_roman_ballista.webp"
   },
@@ -5403,7 +5978,8 @@
       "Memory",
       "Elite",
       "Imp",
-      "Custom"
+      "Custom",
+      "International"
     ],
     "icon": "zombie_elite_roman_ballista.webp"
   },
@@ -5412,7 +5988,8 @@
     "name": "zombie_roman_medusa",
     "tags": [
       "Roman",
-      "Strong"
+      "Strong",
+      "International"
     ],
     "icon": "zombie_roman_medusa.webp"
   },
@@ -5423,7 +6000,8 @@
       "Roman",
       "Elite",
       "Imp",
-      "Strong"
+      "Strong",
+      "International"
     ],
     "icon": "zombie_general_caesar_phase1.webp"
   },
@@ -5434,7 +6012,8 @@
       "Roman",
       "Elite",
       "Imp",
-      "Strong"
+      "Strong",
+      "International"
     ],
     "icon": "zombie_general_caesar_phase1.webp"
   },
@@ -5445,7 +6024,8 @@
       "Roman",
       "Elite",
       "Imp",
-      "Strong"
+      "Strong",
+      "International"
     ],
     "icon": "zombie_general_caesar_phase1.webp"
   }

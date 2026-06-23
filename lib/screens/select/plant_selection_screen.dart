@@ -274,17 +274,11 @@ class _PlantSelectionScreenState extends State<PlantSelectionScreen> {
 
   List<PlantInfo> _categoryFilteredPlants(PlantRepository repo) {
     if (!repo.isLoaded) return [];
-    if (_selectedCategory == PlantCategory.collection) {
-      return repo.allPlants
-          .where((p) => repo.favoriteIds.contains(p.id))
-          .toList();
-    }
-    if (_selectedTag != PlantTag.all) {
-      return repo.allPlants
-          .where((p) => p.tags.contains(_selectedTag))
-          .toList();
-    }
-    return repo.allPlants;
+    return repo.search(
+      '',
+      _selectedCategory == PlantCategory.collection ? null : _selectedTag,
+      _selectedCategory,
+    );
   }
 
   @override
