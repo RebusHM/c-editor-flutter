@@ -59,7 +59,7 @@ import UIKit
     }
     do {
       let data = try url.bookmarkData(
-        options: .withSecurityScope,
+        options: .minimalBookmark,
         includingResourceValuesForKeys: nil,
         relativeTo: nil
       )
@@ -77,7 +77,7 @@ import UIKit
     do {
       let url = try URL(
         resolvingBookmarkData: data,
-        options: .withSecurityScope,
+        options: [],
         relativeTo: nil,
         bookmarkDataIsStale: &isStale
       )
