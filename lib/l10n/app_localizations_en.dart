@@ -206,7 +206,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get newFileName => 'New file name';
 
   @override
-  String get copySuccess => 'Copy successful';
+  String get copySuccess => 'Copied successfully';
 
   @override
   String get copyFail => 'Copy failed';
@@ -1194,7 +1194,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get startingSun => 'Starting sun';
 
   @override
-  String get stageModule => 'Stage module';
+  String get stageModule => 'Lawn module';
 
   @override
   String get musicType => 'Music type';

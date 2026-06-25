@@ -2142,22 +2142,14 @@ class _EditorScreenState extends State<EditorScreen> {
                 max: 1.5,
                 onChanged: (v) => setDialogState(() => tempScale = v),
               ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Flexible(
-                    child: Text(l10n.small, overflow: TextOverflow.ellipsis),
-                  ),
-                  Flexible(
-                    child: Text(l10n.standard, overflow: TextOverflow.ellipsis),
-                  ),
-                  Flexible(
-                    child: Text(l10n.large, overflow: TextOverflow.ellipsis),
-                  ),
-                  Flexible(
-                    child: Text(l10n.ultra, overflow: TextOverflow.ellipsis),
-                  ),
-                ],
+              _UiScalePresetLabels(
+                currentScale: tempScale,
+                onPresetSelected: (scale) =>
+                    setDialogState(() => tempScale = scale),
+                smallLabel: l10n.small,
+                standardLabel: l10n.standard,
+                largeLabel: l10n.large,
+                ultraLabel: l10n.ultra,
               ),
             ],
           ),
@@ -3504,6 +3496,113 @@ class _EditorScreenState extends State<EditorScreen> {
         }
         return body;
       },
+    );
+  }
+}
+
+class _UiScalePresetLabels extends StatelessWidget {
+  const _UiScalePresetLabels({
+    required this.currentScale,
+    required this.onPresetSelected,
+    required this.smallLabel,
+    required this.standardLabel,
+    required this.largeLabel,
+    required this.ultraLabel,
+  });
+
+  static const double smallScale = 0.75;
+  static const double standardScale = 1.0;
+  static const double largeScale = 1.25;
+  static const double ultraScale = 1.5;
+  static const double _presetTolerance = 0.0001;
+
+  final double currentScale;
+  final ValueChanged<double> onPresetSelected;
+  final String smallLabel;
+  final String standardLabel;
+  final String largeLabel;
+  final String ultraLabel;
+
+  bool _isSelected(double scale) {
+    return (currentScale - scale).abs() <= _presetTolerance;
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Row(
+      children: [
+        _UiScalePresetLabel(
+          label: smallLabel,
+          scale: smallScale,
+          alignment: Alignment.centerLeft,
+          isSelected: _isSelected(smallScale),
+          onSelected: onPresetSelected,
+        ),
+        _UiScalePresetLabel(
+          label: standardLabel,
+          scale: standardScale,
+          alignment: Alignment.center,
+          isSelected: _isSelected(standardScale),
+          onSelected: onPresetSelected,
+        ),
+        _UiScalePresetLabel(
+          label: largeLabel,
+          scale: largeScale,
+          alignment: Alignment.center,
+          isSelected: _isSelected(largeScale),
+          onSelected: onPresetSelected,
+        ),
+        _UiScalePresetLabel(
+          label: ultraLabel,
+          scale: ultraScale,
+          alignment: Alignment.centerRight,
+          isSelected: _isSelected(ultraScale),
+          onSelected: onPresetSelected,
+        ),
+      ],
+    );
+  }
+}
+
+class _UiScalePresetLabel extends StatelessWidget {
+  const _UiScalePresetLabel({
+    required this.label,
+    required this.scale,
+    required this.alignment,
+    required this.isSelected,
+    required this.onSelected,
+  });
+
+  final String label;
+  final double scale;
+  final AlignmentGeometry alignment;
+  final bool isSelected;
+  final ValueChanged<double> onSelected;
+
+  @override
+  Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    final style = theme.textTheme.bodySmall?.copyWith(
+      color: isSelected ? theme.colorScheme.primary : null,
+      fontWeight: isSelected ? FontWeight.bold : null,
+    );
+
+    return Expanded(
+      child: Semantics(
+        button: true,
+        selected: isSelected,
+        child: InkWell(
+          borderRadius: BorderRadius.circular(6),
+          onTap: () => onSelected(scale),
+          child: Padding(
+            padding: const EdgeInsets.symmetric(vertical: 8),
+            child: Align(
+              alignment: alignment,
+              child: Text(label, overflow: TextOverflow.ellipsis, style: style),
+            ),
+          ),
+        ),
+      ),
     );
   }
 }

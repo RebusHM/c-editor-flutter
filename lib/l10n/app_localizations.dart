@@ -481,7 +481,7 @@ abstract class AppLocalizations {
   /// No description provided for @copySuccess.
   ///
   /// In en, this message translates to:
-  /// **'Copy successful'**
+  /// **'Copied successfully'**
   String get copySuccess;
 
   /// No description provided for @copyFail.
@@ -2305,7 +2305,7 @@ abstract class AppLocalizations {
   /// No description provided for @stageModule.
   ///
   /// In en, this message translates to:
-  /// **'Stage module'**
+  /// **'Lawn module'**
   String get stageModule;
 
   /// No description provided for @musicType.

@@ -3,7 +3,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
 
-/// Top-centered banner (below [AppBar], content width, theme-neutral) with FAB-style motion.
+/// Screen-centered banner (content width, theme-neutral) with FAB-style motion.
 class AppMessage {
   AppMessage._();
 
@@ -188,61 +188,58 @@ class _AppMessageBannerState extends State<AppMessageBanner>
     final fg = AppMessage.foregroundColor(_displayBrightness);
     final bg = AppMessage.backgroundColor(_displayBrightness);
     final icon = _displayIcon;
-    final top = MediaQuery.paddingOf(context).top + kToolbarHeight + 8;
 
-    return Positioned(
-      top: top,
-      left: 0,
-      right: 0,
+    return Positioned.fill(
       child: IgnorePointer(
-        child: AnimatedBuilder(
-          animation: _reveal,
-          builder: (context, child) {
-            return ClipRect(
-              child: Align(
-                alignment: Alignment.topCenter,
-                heightFactor: _reveal.value.clamp(0.001, 1.0),
-                child: Opacity(
-                  opacity: _reveal.value,
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: _horizontalMargin),
+          child: Center(
+            child: AnimatedBuilder(
+              animation: _reveal,
+              builder: (context, child) {
+                final value = _reveal.value;
+                return Opacity(
+                  opacity: value,
                   child: Transform.translate(
-                    offset: Offset(0, -10 * (1 - _reveal.value)),
-                    child: child,
+                    offset: Offset(0, 8 * (1 - value)),
+                    child: Transform.scale(
+                      scale: 0.96 + 0.04 * value,
+                      child: child,
+                    ),
                   ),
-                ),
-              ),
-            );
-          },
-          child: Padding(
-            padding: const EdgeInsets.symmetric(horizontal: _horizontalMargin),
-            child: Material(
-              color: bg,
-              elevation: 4,
-              borderRadius: BorderRadius.circular(6),
-              child: Padding(
-                padding: const EdgeInsets.symmetric(
-                  horizontal: 16,
-                  vertical: 12,
-                ),
-                child: Row(
-                  mainAxisSize: MainAxisSize.min,
-                  children: [
-                    if (icon != null) ...[
-                      Icon(icon, size: 20, color: fg),
-                      const SizedBox(width: 8),
-                    ],
-                    ConstrainedBox(
-                      constraints: const BoxConstraints(
-                        maxWidth: _maxWidth - 56,
-                      ),
-                      child: Text(
-                        text,
-                        style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                          color: fg,
-                          fontWeight: FontWeight.w500,
+                );
+              },
+              child: Material(
+                color: bg,
+                elevation: 4,
+                borderRadius: BorderRadius.circular(6),
+                child: Padding(
+                  padding: const EdgeInsets.symmetric(
+                    horizontal: 16,
+                    vertical: 12,
+                  ),
+                  child: Row(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      if (icon != null) ...[
+                        Icon(icon, size: 20, color: fg),
+                        const SizedBox(width: 8),
+                      ],
+                      ConstrainedBox(
+                        constraints: const BoxConstraints(
+                          maxWidth: _maxWidth - 56,
+                        ),
+                        child: Text(
+                          text,
+                          style:
+                              Theme.of(context).textTheme.bodyMedium?.copyWith(
+                                    color: fg,
+                                    fontWeight: FontWeight.w500,
+                                  ),
                         ),
                       ),
-                    ),
-                  ],
+                    ],
+                  ),
                 ),
               ),
             ),
