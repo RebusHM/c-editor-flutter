@@ -880,6 +880,12 @@ abstract class AppLocalizations {
   /// **'C-Editor Discord server invite link:'**
   String get cEditorInviteLabel;
 
+  /// No description provided for @linksSubsection.
+  ///
+  /// In en, this message translates to:
+  /// **'Links'**
+  String get linksSubsection;
+
   /// No description provided for @creditsSection.
   ///
   /// In en, this message translates to:
@@ -963,12 +969,6 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Z-Editor QQ group:'**
   String get zEditorQqGroupLabel;
-
-  /// No description provided for @zEditorQqGroupNumber.
-  ///
-  /// In en, this message translates to:
-  /// **'960722092'**
-  String get zEditorQqGroupNumber;
 
   /// No description provided for @tagline.
   ///

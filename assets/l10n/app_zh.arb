@@ -137,6 +137,7 @@
   "usageRecommendedLevelsLabel": "创意庭院·推荐关卡展示：",
   "discordInviteLabel": "植物大战僵尸 Discord 服务器邀请链接：",
   "cEditorInviteLabel": "C-Editor Discord 服务器邀请链接：",
+  "linksSubsection": "链接",
   "creditsSection": "致谢名单",
   "authorLabel": "作者：",
   "authorName": "CyberSteve777",
@@ -151,7 +152,6 @@
   "zEditorThanksLabel": "特别鸣谢：",
   "zEditorThanksNames": "星寻、metal海枣、超越自我3333、桃酱、凉沈、小小师、顾小言、PhiLia093、咖啡、不留名",
   "zEditorQqGroupLabel": "Z-Editor QQ群：",
-  "zEditorQqGroupNumber": "960722092",
   "tagline": "穿越时空 创造无穷可能",
   "editorVersion": "编辑器版本：{version}",
   "@editorVersion": {

@@ -422,6 +422,9 @@ class AppLocalizationsZh extends AppLocalizations {
   String get cEditorInviteLabel => 'C-Editor Discord 服务器邀请链接：';
 
   @override
+  String get linksSubsection => '链接';
+
+  @override
   String get creditsSection => '致谢名单';
 
   @override
@@ -465,9 +468,6 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get zEditorQqGroupLabel => 'Z-Editor QQ群：';
-
-  @override
-  String get zEditorQqGroupNumber => '960722092';
 
   @override
   String get tagline => '穿越时空 创造无穷可能';

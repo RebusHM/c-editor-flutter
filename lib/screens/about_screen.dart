@@ -61,10 +61,13 @@ class _AboutScreenState extends State<AboutScreen> {
           onPressed: widget.onBack,
         ),
       ),
-      body: FutureBuilder<AppLinks>(
-        future: _linksFuture,
-        builder: (context, linksSnapshot) {
-          final links = linksSnapshot.data;
+      body: FutureBuilder<(AppLinks, AppProperties)>(
+        future: Future.wait([_linksFuture, _propertiesFuture]).then(
+          (results) => (results[0] as AppLinks, results[1] as AppProperties),
+        ),
+        builder: (context, snapshot) {
+          final links = snapshot.data?.$1;
+          final properties = snapshot.data?.$2;
 
           return SingleChildScrollView(
             padding: const EdgeInsets.all(16),
@@ -123,24 +126,25 @@ class _AboutScreenState extends State<AboutScreen> {
                         ),
                       ),
                       if (links != null &&
-                          l10n.usageRecommendedLevelsLabel.isNotEmpty) ...[
+                          (l10n.usageRecommendedLevelsLabel.isNotEmpty ||
+                              l10n.discordInviteLabel.isNotEmpty)) ...[
+                        const SizedBox(height: 12),
+                        _SubsectionTitle(l10n.linksSubsection),
                         const SizedBox(height: 8),
-                        _LinkRow(
-                          label: l10n.usageRecommendedLevelsLabel,
-                          url: links.recommendedLevels,
-                          onSurface: theme.colorScheme.onSurface,
-                          linkColor: theme.colorScheme.primary,
-                        ),
-                      ],
-                      if (links != null &&
-                          l10n.discordInviteLabel.isNotEmpty) ...[
-                        const SizedBox(height: 8),
-                        _LinkRow(
-                          label: l10n.discordInviteLabel,
-                          url: links.pvzDiscordInviteLink,
-                          onSurface: theme.colorScheme.onSurface,
-                          linkColor: theme.colorScheme.primary,
-                        ),
+                        if (l10n.usageRecommendedLevelsLabel.isNotEmpty)
+                          _LinkRow(
+                            label: l10n.usageRecommendedLevelsLabel,
+                            url: links.recommendedLevels,
+                            onSurface: theme.colorScheme.onSurface,
+                            linkColor: theme.colorScheme.primary,
+                          ),
+                        if (l10n.discordInviteLabel.isNotEmpty)
+                          _LinkRow(
+                            label: l10n.discordInviteLabel,
+                            url: links.pvzDiscordInviteLink,
+                            onSurface: theme.colorScheme.onSurface,
+                            linkColor: theme.colorScheme.primary,
+                          ),
                       ],
                     ],
                   ),
@@ -161,6 +165,9 @@ class _AboutScreenState extends State<AboutScreen> {
                         style: TextStyle(color: theme.colorScheme.onSurface),
                       ),
                       if (links != null) ...[
+                        const SizedBox(height: 12),
+                        _SubsectionTitle(l10n.linksSubsection),
+                        const SizedBox(height: 8),
                         _LinkRow(
                           label: l10n.sourceLabel,
                           url: links.source,
@@ -173,13 +180,6 @@ class _AboutScreenState extends State<AboutScreen> {
                           onSurface: theme.colorScheme.onSurface,
                           linkColor: theme.colorScheme.primary,
                         ),
-                        if (l10n.discordInviteLabel.isNotEmpty)
-                          _LinkRow(
-                            label: l10n.discordInviteLabel,
-                            url: links.pvzDiscordInviteLink,
-                            onSurface: theme.colorScheme.onSurface,
-                            linkColor: theme.colorScheme.primary,
-                          ),
                         if (l10n.cEditorInviteLabel.isNotEmpty)
                           _LinkRow(
                             label: l10n.cEditorInviteLabel,
@@ -188,7 +188,7 @@ class _AboutScreenState extends State<AboutScreen> {
                             linkColor: theme.colorScheme.primary,
                           ),
                       ],
-                      const SizedBox(height: 12),
+                      const SizedBox(height: 16),
                       Text(
                         l10n.zEditorAcknowledgment,
                         style: TextStyle(
@@ -197,13 +197,7 @@ class _AboutScreenState extends State<AboutScreen> {
                         ),
                       ),
                       const SizedBox(height: 12),
-                      Text(
-                        l10n.zEditorCreditsSubsection,
-                        style: theme.textTheme.titleSmall?.copyWith(
-                          fontWeight: FontWeight.bold,
-                          color: theme.colorScheme.primary,
-                        ),
-                      ),
+                      _SubsectionTitle(l10n.zEditorCreditsSubsection),
                       const SizedBox(height: 8),
                       _Bullet(l10n.zEditorAuthorLabel),
                       Text(
@@ -216,10 +210,11 @@ class _AboutScreenState extends State<AboutScreen> {
                         style: TextStyle(color: theme.colorScheme.onSurface),
                       ),
                       _Bullet(l10n.zEditorQqGroupLabel),
-                      Text(
-                        l10n.zEditorQqGroupNumber,
-                        style: TextStyle(color: theme.colorScheme.onSurface),
-                      ),
+                      if (properties?.zEditorQqGroup.isNotEmpty == true)
+                        Text(
+                          properties!.zEditorQqGroup,
+                          style: TextStyle(color: theme.colorScheme.onSurface),
+                        ),
                     ],
                   ),
                 ),
@@ -352,6 +347,24 @@ class _LinkRow extends StatelessWidget {
   }
 }
 
+class _SubsectionTitle extends StatelessWidget {
+  const _SubsectionTitle(this.text);
+
+  final String text;
+
+  @override
+  Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    return Text(
+      text,
+      style: theme.textTheme.titleSmall?.copyWith(
+        fontWeight: FontWeight.bold,
+        color: theme.colorScheme.primary,
+      ),
+    );
+  }
+}
+
 class _InfoCard extends StatelessWidget {
   const _InfoCard({required this.title, required this.child});
 
@@ -373,6 +386,7 @@ class _InfoCard extends StatelessWidget {
               style: theme.textTheme.titleMedium?.copyWith(
                 fontWeight: FontWeight.bold,
                 color: theme.colorScheme.primary,
+                fontSize: (theme.textTheme.titleMedium?.fontSize ?? 16) + 2,
               ),
             ),
             const Divider(height: 16),

@@ -137,6 +137,7 @@
   "usageRecommendedLevelsLabel": "Creative Courtyard · Recommended Levels Showcase:",
   "discordInviteLabel": "Plants vs. Zombies Discord server invite link:",
   "cEditorInviteLabel": "C-Editor Discord server invite link:",
+  "linksSubsection": "Links",
   "creditsSection": "Credits",
   "authorLabel": "Author:",
   "authorName": "CyberSteve777",
@@ -151,7 +152,6 @@
   "zEditorThanksLabel": "Special thanks:",
   "zEditorThanksNames": "星寻、metal海枣、超越自我3333、桃酱、凉沈、小小师、顾小言、PhiLia093、咖啡、不留名",
   "zEditorQqGroupLabel": "Z-Editor QQ group:",
-  "zEditorQqGroupNumber": "960722092",
   "tagline": "Create infinite possibilities",
   "editorVersion": "Editor version: {version}",
   "@editorVersion": {

@@ -432,6 +432,9 @@ class AppLocalizationsEn extends AppLocalizations {
   String get cEditorInviteLabel => 'C-Editor Discord server invite link:';
 
   @override
+  String get linksSubsection => 'Links';
+
+  @override
   String get creditsSection => 'Credits';
 
   @override
@@ -475,9 +478,6 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get zEditorQqGroupLabel => 'Z-Editor QQ group:';
-
-  @override
-  String get zEditorQqGroupNumber => '960722092';
 
   @override
   String get tagline => 'Create infinite possibilities';

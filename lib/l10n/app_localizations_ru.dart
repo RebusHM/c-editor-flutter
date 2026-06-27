@@ -436,6 +436,9 @@ class AppLocalizationsRu extends AppLocalizations {
       'Ссылка-приглашение на Discord-сервер C-Editor:';
 
   @override
+  String get linksSubsection => 'Ссылки';
+
+  @override
   String get creditsSection => 'Благодарности';
 
   @override
@@ -479,9 +482,6 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get zEditorQqGroupLabel => 'Z-Editor QQ-группа:';
-
-  @override
-  String get zEditorQqGroupNumber => '960722092';
 
   @override
   String get tagline => 'Создавайте бесконечные возможности';

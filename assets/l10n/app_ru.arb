@@ -137,6 +137,7 @@
   "usageRecommendedLevelsLabel": "Creative Courtyard · Recommended Levels Showcase:",
   "discordInviteLabel": "Ссылка-приглашение на Discord-сервер Plants vs. Zombies:",
   "cEditorInviteLabel": "Ссылка-приглашение на Discord-сервер C-Editor:",
+  "linksSubsection": "Ссылки",
   "creditsSection": "Благодарности",
   "authorLabel": "Автор:",
   "authorName": "CyberSteve777",
@@ -151,7 +152,6 @@
   "zEditorThanksLabel": "Благодарность:",
   "zEditorThanksNames": "星寻、metal海枣、超越自我3333、桃酱、凉沈、小小师、顾小言、PhiLia093、咖啡、不留名",
   "zEditorQqGroupLabel": "Z-Editor QQ-группа:",
-  "zEditorQqGroupNumber": "960722092",
   "tagline": "Создавайте бесконечные возможности",
   "editorVersion": "Версия редактора: {version}",
   "@editorVersion": {

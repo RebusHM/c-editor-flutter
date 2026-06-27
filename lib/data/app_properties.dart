@@ -4,11 +4,15 @@ import 'package:c_editor/data/asset_loader.dart';
 
 /// App metadata loaded from [assetPath] (editable without recompiling).
 class AppProperties {
-  AppProperties({required this.supportedGameVersion});
+  AppProperties({
+    required this.supportedGameVersion,
+    required this.zEditorQqGroup,
+  });
 
   static const assetPath = 'assets/meta/properties.json';
 
   final String supportedGameVersion;
+  final String zEditorQqGroup;
 
   static AppProperties? _cached;
 
@@ -18,6 +22,7 @@ class AppProperties {
         json.decode(await loadJsonString(assetPath)) as Map<String, dynamic>;
     _cached = AppProperties(
       supportedGameVersion: raw['supported_game_version'] as String? ?? '0.0.0',
+      zEditorQqGroup: raw['z_editor_qq_group'] as String? ?? '',
     );
     return _cached!;
   }
