@@ -527,16 +527,16 @@ class AppLocalizationsRu extends AppLocalizations {
   String get templateIZombieExample => 'Пример «Я зомби»';
 
   @override
-  String get templateVaseBreakerExample => 'Пример «Разбей горшки»';
+  String get templateVaseBreakerExample => 'Пример «Вазобой»';
 
   @override
-  String get templateZombossMechExample => 'Пример боя с ZombossMech';
+  String get templateZombossMechExample => 'Пример боя с Зомботом';
 
   @override
   String get templateZombossBattleExample => 'Пример боя с Зомбоссом';
 
   @override
-  String get templateCustomZombieExample => 'Пример пользовательского зомби';
+  String get templateCustomZombieExample => 'Пример кастомного зомби';
 
   @override
   String get templateIPlantExample => 'Пример «Я растение»';
@@ -841,10 +841,10 @@ class AppLocalizationsRu extends AppLocalizations {
   String get iZombie => 'Я зомби';
 
   @override
-  String get vaseBreaker => 'Разбей горшки';
+  String get vaseBreaker => 'Вазобой';
 
   @override
-  String get zombossMech => 'Бой с ZombossMech';
+  String get zombossMech => 'Бой с Зомботом';
 
   @override
   String get zombossBattle => 'Бой с Зомбоссом';
@@ -943,7 +943,7 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get customZombieNotUsed =>
-      'Этот пользовательский зомби не используется ни в одной волне.';
+      'Этот кастомный зомби не используется ни в одной волне.';
 
   @override
   String customZombieWaveItem(int n) {
@@ -952,7 +952,7 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get customZombieDeleteConfirm =>
-      'Удалить этого пользовательского зомби и его данные.';
+      'Удалить этого кастомного зомби и его данные.';
 
   @override
   String get customZombieOrphanDeleteTitle =>
@@ -971,10 +971,10 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get editCustomZombieProperties =>
-      'Редактировать свойства пользовательского зомби';
+      'Редактировать свойства кастомного зомби';
 
   @override
-  String get makeZombieAsCustom => 'Сделать зомби пользовательским';
+  String get makeZombieAsCustom => 'Сделать зомби кастомным';
 
   @override
   String get customLabel => 'Пользовательский';
