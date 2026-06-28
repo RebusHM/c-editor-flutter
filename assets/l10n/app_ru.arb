@@ -1055,7 +1055,7 @@
   "waveStartMessage": "Сообщение при старте волны",
   "zombieTypeZombieName": "Тип зомби (ZombieName)",
   "optional": "Необязательно",
-  "eventHelpBeachStageBody": "Зомби появляются при отливе. Используется в Pirate Seas.",
+  "eventHelpBeachStageBody": "Зомби появляются при отливе. Используется в Пиратских морях.",
   "eventHelpTidalChangeBody": "Это событие меняет позицию прилива во время волны.",
   "eventHelpTidalChangePosition": "Колонка 0 — справа, 9 — слева. ChangeAmount задаёт границу воды.",
   "eventHelpBlackHoleBody": "Событие мира Кунг-фу. Чёрная дыра притягивает растения вправо.",
